@@ -8,14 +8,14 @@ from src.workflow.main_workflow import execute_unified_workflow
 # Experiment configurations
 # Each config produces ONE unified JSON with both RAG and MCP results
 CONFIGURATIONS = [
-    {"model": "gpt-4o", "rag_type": "naive", "mcp_server": "tavily"},
-    {"model": "gpt-4o", "rag_type": "naive", "mcp_server": "duckduckgo"},
-    {"model": "gpt-4o", "rag_type": "hybrid", "mcp_server": "tavily"},
-    {"model": "gpt-4o", "rag_type": "hybrid", "mcp_server": "duckduckgo"},
-    {"model": "gemini-1.5-pro", "rag_type": "naive", "mcp_server": "tavily"},
-    {"model": "gemini-1.5-pro", "rag_type": "naive", "mcp_server": "duckduckgo"},
-    {"model": "gemini-1.5-pro", "rag_type": "hybrid", "mcp_server": "tavily"},
-    {"model": "gemini-1.5-pro", "rag_type": "hybrid", "mcp_server": "duckduckgo"},
+    {"model": "gpt-5", "rag_type": "naive", "mcp_server": "tavily"},
+    {"model": "gpt-5", "rag_type": "naive", "mcp_server": "duckduckgo"},
+    {"model": "gpt-5", "rag_type": "hybrid", "mcp_server": "tavily"},
+    {"model": "gpt-5", "rag_type": "hybrid", "mcp_server": "duckduckgo"},
+    {"model": "gemini-2.5-pro", "rag_type": "naive", "mcp_server": "tavily"},
+    {"model": "gemini-2.5-pro", "rag_type": "naive", "mcp_server": "duckduckgo"},
+    {"model": "gemini-2.5-pro", "rag_type": "hybrid", "mcp_server": "tavily"},
+    {"model": "gemini-2.5-pro", "rag_type": "hybrid", "mcp_server": "duckduckgo"},
 ]
 
 

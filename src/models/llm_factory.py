@@ -7,7 +7,13 @@ load_dotenv()
 
 
 def create_llm(model_name: str):
-    """Factory function to create LLM instances."""
+    """
+    Factory function to create LLM instances.
+
+    Supported models:
+    - "gpt-5": OpenAI GPT-5 (released August 2025)
+    - "gemini-2.5-pro": Google Gemini 2.5 Pro
+    """
 
     if model_name == "gpt-5":
         return ChatOpenAI(
@@ -15,14 +21,15 @@ def create_llm(model_name: str):
             temperature=0,
             api_key=os.getenv("OPENAI_API_KEY")
         )
-    elif model_name == "Gemini-2.5-pro":
+    elif model_name == "gemini-2.5-pro":
         return ChatGoogleGenerativeAI(
             model="gemini-2.5-pro",
             temperature=0,
             google_api_key=os.getenv("GOOGLE_API_KEY")
         )
     else:
-        raise ValueError(f"Unsupported model: {model_name}")
+        raise ValueError(
+            f"Unsupported model: {model_name}. Use 'gpt-5' or 'gemini-2.5-pro'")
 
 
 def get_available_models():

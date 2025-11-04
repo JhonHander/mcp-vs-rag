@@ -36,7 +36,7 @@ This project implements a comparison system between static search (RAG - Retriev
 - **Vector Database**: Qdrant (Docker)
 - **MCP Servers**: Tavily and DuckDuckGo (both in Docker)
 - **Evaluation Framework**: RAGAS (metrics: Answer Relevancy and Faithfulness)
-- **LLM Models**: GPT-5 and Gemini 2.5
+- **LLM Models**: GPT-5 (OpenAI, released August 2025) and Gemini 2.5 Pro (Google)
 - **Language**: Python
 
 ## System Components
@@ -130,7 +130,7 @@ Both MCP servers (Tavily and DuckDuckGo) will be running in Docker.
   "execution_id": "string",
   "timestamp": "ISO 8601 datetime",
   "configuration": {
-    "model": "gpt-5 | gemini-2.5",
+    "model": "gpt-5 | gemini-2.5-pro",
     "rag_type": "naive | hybrid",
     "mcp_server": "tavily | duckduckgo"
   },
@@ -166,11 +166,11 @@ The system produces **8 unified JSON files**, each containing both RAG and MCP r
 3. **Config 3**: `Prompt → GPT-5 → [HybridRAG || Tavily] → Unified JSON`
 4. **Config 4**: `Prompt → GPT-5 → [HybridRAG || DuckDuckGo] → Unified JSON`
 
-### With Gemini 2.5:
-5. **Config 5**: `Prompt → Gemini-2.5 → [NaiveRAG || Tavily] → Unified JSON`
-6. **Config 6**: `Prompt → Gemini-2.5 → [NaiveRAG || DuckDuckGo] → Unified JSON`
-7. **Config 7**: `Prompt → Gemini-2.5 → [HybridRAG || Tavily] → Unified JSON`
-8. **Config 8**: `Prompt → Gemini-2.5 → [HybridRAG || DuckDuckGo] → Unified JSON`
+### With Gemini 2.5 Pro:
+5. **Config 5**: `Prompt → Gemini-2.5-Pro → [NaiveRAG || Tavily] → Unified JSON`
+6. **Config 6**: `Prompt → Gemini-2.5-Pro → [NaiveRAG || DuckDuckGo] → Unified JSON`
+7. **Config 7**: `Prompt → Gemini-2.5-Pro → [HybridRAG || Tavily] → Unified JSON`
+8. **Config 8**: `Prompt → Gemini-2.5-Pro → [HybridRAG || DuckDuckGo] → Unified JSON`
 
 **Note**: `[A || B]` indicates parallel execution where both A and B run simultaneously, then merge results.
 
@@ -180,7 +180,7 @@ The system produces **8 unified JSON files**, each containing both RAG and MCP r
 
 ```
 1. Receive user prompt
-2. Initialize LLM model (GPT-5 or Gemini 2.5)
+2. Initialize LLM model (GPT-5 or Gemini 2.5 Pro)
 3. PARALLEL EXECUTION (using LangGraph):
    
    RAG Branch:                        MCP Branch:
@@ -206,7 +206,7 @@ Create a unified workflow function with parallel execution:
 ```python
 async def execute_unified_workflow(
     prompt: str,
-    model: str,  # "gpt-5" | "gemini-2.5"
+    model: str,  # "gpt-5" | "gemini-2.5-pro"
     rag_type: str,  # "naive" | "hybrid"
     mcp_server: str  # "tavily" | "duckduckgo"
 ) -> dict:
@@ -227,10 +227,10 @@ configurations = [
     {"model": "gpt-5", "rag_type": "naive", "mcp_server": "duckduckgo"},
     {"model": "gpt-5", "rag_type": "hybrid", "mcp_server": "tavily"},
     {"model": "gpt-5", "rag_type": "hybrid", "mcp_server": "duckduckgo"},
-    {"model": "gemini-2.5", "rag_type": "naive", "mcp_server": "tavily"},
-    {"model": "gemini-2.5", "rag_type": "naive", "mcp_server": "duckduckgo"},
-    {"model": "gemini-2.5", "rag_type": "hybrid", "mcp_server": "tavily"},
-    {"model": "gemini-2.5", "rag_type": "hybrid", "mcp_server": "duckduckgo"},
+    {"model": "gemini-2.5-pro", "rag_type": "naive", "mcp_server": "tavily"},
+    {"model": "gemini-2.5-pro", "rag_type": "naive", "mcp_server": "duckduckgo"},
+    {"model": "gemini-2.5-pro", "rag_type": "hybrid", "mcp_server": "tavily"},
+    {"model": "gemini-2.5-pro", "rag_type": "hybrid", "mcp_server": "duckduckgo"},
 ]
 
 for config in configurations:

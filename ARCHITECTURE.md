@@ -129,7 +129,7 @@ class UnifiedWorkflowState(BaseModel):
   "execution_id": "uuid-here",
   "timestamp": "2025-11-03T10:30:00",
   "configuration": {
-    "model": "gpt-4o",
+    "model": "gpt-5",
     "rag_type": "naive",
     "mcp_server": "tavily"
   },
@@ -163,10 +163,10 @@ class UnifiedWorkflowState(BaseModel):
 ### File Naming Convention
 
 Files are named to reflect their complete configuration:
-- `gpt4o_naive_tavily_1.json`
-- `gpt4o_naive_duckduckgo_2.json`
-- `gpt4o_hybrid_tavily_3.json`
-- `gemini15pro_naive_tavily_5.json`
+- `gpt5_naive_tavily_1.json`
+- `gpt5_naive_duckduckgo_2.json`
+- `gpt5_hybrid_tavily_3.json`
+- `gemini25pro_naive_tavily_5.json`
 
 ## Execution Flow
 
@@ -262,7 +262,7 @@ After running all experiments, you can analyze:
    - Does it vary by model or RAG type?
 
 2. **Model Comparison**
-   - Does GPT-4o or Gemini-1.5-Pro perform better?
+   - Does GPT-5 or Gemini 2.5 Pro perform better?
    - Are differences consistent across RAG/MCP?
 
 3. **RAG Strategy**
