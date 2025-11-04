@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  tavily:
+    image: mcp/tavily
+    environment:
+      - TAVILY_API_KEY=your-tavily-apikey-here
+    # Si necesitas exponer puertos, agrégalos aquí. Tavily normalmente no expone (stdio).
+    restart: unless-stopped
+
+  duckduckgo:
+    image: mcp/duckduckgo
+    # DuckDuckGo tampoco expone por defecto puertos.
+    restart: unless-stopped
+
+  qdrant:
+    image: qdrant/qdrant
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_data:/qdrant/storage
+    restart: unless-stopped
+    # docker run -p 6333:6333 -p 6334:6334 -v qdrant_data:/qdrant/storage qdrant/qdrant
+
+volumes:
+  qdrant_data:
