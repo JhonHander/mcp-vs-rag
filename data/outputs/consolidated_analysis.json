@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "experiment_date": "2025-11-06T17:26:46.810943",
+    "total_configurations": 8,
+    "prompt": "¿Cuándo realizar la valoración de riesgo psico social en el seguimiento de una materna?"
+  },
+  "comparative_analysis": {
+    "by_model": {
+      "gpt-5": {
+        "configurations_tested": 4,
+        "average_rag_relevancy": 0.8700894781938178,
+        "average_rag_faithfulness": 0.9142857142857143,
+        "average_mcp_relevancy": 0.9330123404435793,
+        "average_mcp_faithfulness": 0.2738095238095238
+      },
+      "gemini-2.5-pro": {
+        "configurations_tested": 4,
+        "average_rag_relevancy": 0.9747305642010646,
+        "average_rag_faithfulness": 0.7916666666666667,
+        "average_mcp_relevancy": 0.7366964010484758,
+        "average_mcp_faithfulness": 0.5988095238095238
+      }
+    },
+    "by_rag_type": {
+      "naive": {
+        "configurations_tested": 4,
+        "average_relevancy": 0.9247195441063332,
+        "average_faithfulness": 0.9583333333333334
+      },
+      "hybrid": {
+        "configurations_tested": 4,
+        "average_relevancy": 0.9201004982885493,
+        "average_faithfulness": 0.7476190476190476
+      }
+    },
+    "by_mcp_server": {
+      "tavily": {
+        "configurations_tested": 4,
+        "average_relevancy": 0.9573443298669204,
+        "average_faithfulness": 0.7238095238095238
+      },
+      "duckduckgo": {
+        "configurations_tested": 4,
+        "average_relevancy": 0.7123644116251346,
+        "average_faithfulness": 0.1488095238095238
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "config_id": 1,
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "tavily",
+      "rag_metrics": {
+        "answer_relevancy": 0.8729139142077683,
+        "faithfulness": 1.0
+      },
+      "mcp_metrics": {
+        "answer_relevancy": 0.9386557851603524,
+        "faithfulness": 0.6666666666666666
+      },
+      "file_reference": "gpt-5_naive_tavily_1.json"
+    },
+    {
+      "config_id": 2,
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo",
+      "rag_metrics": {
+        "answer_relevancy": 0.876500235131145,
+        "faithfulness": 1.0
+      },
+      "mcp_metrics": {
+        "answer_relevancy": 0.8914338292512003,
+        "faithfulness": 0.0
+      },
+      "file_reference": "gpt-5_naive_duckduckgo_2.json"
+    },
+    {
+      "config_id": 3,
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily",
+      "rag_metrics": {
+        "answer_relevancy": 0.876571520349365,
+        "faithfulness": 0.8
+      },
+      "mcp_metrics": {
+        "answer_relevancy": 0.9306152170348795,
+        "faithfulness": 0.42857142857142855
+      },
+      "file_reference": "gpt-5_hybrid_tavily_3.json"
+    },
+    {
+      "config_id": 4,
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo",
+      "rag_metrics": {
+        "answer_relevancy": 0.854372243086993,
+        "faithfulness": 0.8571428571428571
+      },
+      "mcp_metrics": {
+        "answer_relevancy": 0.9713445303278848,
+        "faithfulness": 0.0
+      },
+      "file_reference": "gpt-5_hybrid_duckduckgo_4.json"
+    },
+    {
+      "config_id": 5,
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "tavily",
+      "rag_metrics": {
+        "answer_relevancy": 0.9763849351787003,
+        "faithfulness": 1.0
+      },
+      "mcp_metrics": {
+        "answer_relevancy": 0.973427030350996,
+        "faithfulness": 1.0
+      },
+      "file_reference": "gemini-2.5-pro_naive_tavily_5.json"
+    },
+    {
+      "config_id": 6,
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo",
+      "rag_metrics": {
+        "answer_relevancy": 0.973079091907719,
+        "faithfulness": 0.8333333333333334
+      },
+      "mcp_metrics": {
+        "answer_relevancy": 0.9866792869214537,
+        "faithfulness": 0.16666666666666666
+      },
+      "file_reference": "gemini-2.5-pro_naive_duckduckgo_6.json"
+    },
+    {
+      "config_id": 7,
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily",
+      "rag_metrics": {
+        "answer_relevancy": 0.9763791378101204,
+        "faithfulness": 0.5
+      },
+      "mcp_metrics": {
+        "answer_relevancy": 0.9866792869214537,
+        "faithfulness": 0.8
+      },
+      "file_reference": "gemini-2.5-pro_hybrid_tavily_7.json"
+    },
+    {
+      "config_id": 8,
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo",
+      "rag_metrics": {
+        "answer_relevancy": 0.973079091907719,
+        "faithfulness": 0.8333333333333334
+      },
+      "mcp_metrics": {
+        "answer_relevancy": 0.0,
+        "faithfulness": 0.42857142857142855
+      },
+      "file_reference": "gemini-2.5-pro_hybrid_duckduckgo_8.json"
+    }
+  ]
+}

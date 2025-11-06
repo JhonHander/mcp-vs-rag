@@ -1,9 +1,9 @@
 {
-  "execution_id": "c3e5cd64-a963-426f-9b4e-9e8439e14b62",
-  "timestamp": "2025-11-06T17:14:22.637786",
+  "execution_id": "43696066-0a27-4834-b0c2-16cb52c210a8",
+  "timestamp": "2025-11-06T17:24:19.699700",
   "configuration": {
-    "model": "gpt-5",
-    "rag_type": "naive",
+    "model": "gemini-2.5-pro",
+    "rag_type": "hybrid",
     "mcp_server": "tavily"
   },
   "prompt": "¿Cuándo realizar la valoración de riesgo psico social en el seguimiento de una materna?",
@@ -15,20 +15,20 @@
       "n remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control. Se recomienda en cada trimestre del embarazo evaluar en la gestante, el estrés materno crónico, la ansiedad, los trastornos del sueño y el pobre apoyo de la red social. Se recomienda identificar la depresión materna mediante un tamizaje trimestral durante el control prenatal porque las mujeres con depresión durante el embarazo tienen mayor riesgo de parto pretérmino y bajo peso al nacer.",
       "implementación de una lista de chequeo acorde con los objetivos de cada cita de control prenatal. 5. ¿CÓMO DEBE REALIZARSE LA DETECCIÓN DE RIESGO EN EL CONTROL PRENATAL Y CUAL ES SU UTILIDAD EN GESTACIONES DE CURSO NORMAL? La evaluación del riesgo psicosocial y biológico es un elemento de la consulta de inscripción al control prenatal, a la vez que sirve como tamizaje para definir el profesional que realiza el primer control prenatal y la necesidad de un cuidado adicional por un equipo"
     ],
-    "generated_answer": "- En la inscripción/primer control prenatal.\n- Repetirla en cada trimestre del embarazo durante el control prenatal.\n- Si se identifica riesgo en cualquier momento, reevaluar y remitir a consulta especializada garantizando la continuidad del control.",
+    "generated_answer": "Según la información proporcionada, la valoración de riesgo psicosocial en el seguimiento de una materna se debe realizar en los siguientes momentos:\n\n1.  **Al inicio:** En el momento de la **inscripción al control prenatal**. Esta primera evaluación es fundamental para definir el plan de seguimiento.\n2.  **Durante el seguimiento:** Se debe repetir la valoración **en cada trimestre del embarazo**.\n\nAdemás, el texto especifica que se deben evaluar ciertos aspectos en cada trimestre, como el estrés crónico, la ansiedad, los trastornos del sueño, el pobre apoyo social y realizar un tamizaje para la depresión materna.\n\nFinalmente, se destaca que la **detección de violencia** debe realizarse mediante una entrevista en **todas las consultas** de control prenatal.",
     "ragas_metrics": {
-      "answer_relevancy": 0.8729139142077683,
-      "faithfulness": 1.0
+      "answer_relevancy": 0.9763791378101204,
+      "faithfulness": 0.5
     }
   },
   "mcp_results": {
     "retrieved_context": [
       "Detailed Results:\n\nTitle: [PDF] Evaluación periódica del riesgo biopsicosocial prenatal en la ...\nURL: https://www.partners-popdev.org/docs/RiesgoBPS-Asia.pdf\nContent: dos evaluaciones de seguimiento del riesgo (semana 28-. 32, semana 33-42), o porque se intervino en su riesgo psicosocial durante el seguimiento. Las\n\nTitle: Evaluación periódica del riesgo biopsicosocial prenatal en la ...\nURL: https://colombiamedica.univalle.edu.co/colombiamedica311/index.php/comedica/article/download/431/1067?inline=1\nContent: ... evaluaciones de seguimiento del riesgo (semana 28-32, semana 33-42), o porque se intervino en su riesgo psicosocial durante el seguimiento. Las exclusiones\n\nTitle: [PDF] valoración del riesgo biopsicosocial en gestantes caso en la\nURL: https://scispace.com/pdf/valoracion-del-riesgo-biopsicosocial-en-gestantes-caso-en-la-44w51h1aay.pdf\nContent: riesgo, para hacer seguimiento al desarrollo normal de la gestación y detectar oportunamente las complicaciones que puedan aparecer en cualquier momento. El\n\nTitle: Análisis de los riesgos psicosociales para las gestantes y lactantes ...\nURL: https://bulletin.sipsych.org/index.php/2022/12/30/analisis-de-los-riesgos-psicosociales-para-las-gestantes-y-lactantes-trabajadoras/\nContent: En el caso de las mujeres mentalmente sanas se debería hacer una valoración por ginecólogo especialista SST que conforme a los antecedentes\n\nTitle: [PDF] BVCM007093 Detección de riesgo social en la embarazada y ...\nURL: http://www.madrid.org/bvirtual/BVCM007093.pdf\nContent: historia clínica que permita detectar y hacer el seguimiento de problemas psicosociales que pue- dan afectar al desarrollo del niño. • Consejos de Atención"
     ],
-    "generated_answer": "En el control prenatal, la valoración del riesgo psicosocial debe repetirse durante el seguimiento en dos momentos del tercer trimestre:\n- Entre las semanas 28–32\n- Entre las semanas 33–42\n\nAdemás, debe reevaluarse si se realizan intervenciones o si cambian las condiciones psicosociales de la gestante. Fuentes: Evaluación periódica del riesgo biopsicosocial prenatal (Colombia Médica) y documento técnico relacionado, ambos señalan estas dos evaluaciones de seguimiento (semanas 28–32 y 33–42). \n- https://colombiamedica.univalle.edu.co/colombiamedica311/index.php/comedica/article/download/431/1067?inline=1\n- https://www.partners-popdev.org/docs/RiesgoBPS-Asia.pdf",
+    "generated_answer": "Según la información de los resultados de búsqueda, la valoración de riesgo psicosocial en el seguimiento de una materna se debe realizar en los siguientes periodos:\n\n*   **Entre la semana 28 y 32** de gestación.\n*   **Entre la semana 33 y 42** de gestación.\n\nAdemás de estas evaluaciones programadas, se destaca la importancia de un **seguimiento continuo** durante todo el embarazo para detectar oportunamente cualquier complicación que pueda aparecer \"en cualquier momento\". Este seguimiento se apoya en la historia clínica para identificar problemas psicosociales.",
     "ragas_metrics": {
-      "answer_relevancy": 0.9386557851603524,
-      "faithfulness": 0.6666666666666666
+      "answer_relevancy": 0.9866792869214537,
+      "faithfulness": 0.8
     }
   }
 }
