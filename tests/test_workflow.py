@@ -2,9 +2,15 @@
 Test script to verify the complete unified workflow.
 Tests parallel execution of RAG and MCP branches with a simple query.
 """
-import asyncio
-from src.workflow.main_workflow import execute_unified_workflow
 import json
+from src.workflow.main_workflow import execute_unified_workflow
+import asyncio
+import sys
+from pathlib import Path
+
+# Add project root to Python path
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root))
 
 
 async def test_workflow_single_config():

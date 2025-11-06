@@ -2,8 +2,14 @@
 Test script to verify MCP tools connection and functionality.
 Tests both Tavily and DuckDuckGo MCP servers running in Docker.
 """
-import asyncio
 from src.mcp.mcp_client import MCPClient, get_search_tool_for_server
+import asyncio
+import sys
+from pathlib import Path
+
+# Add project root to Python path
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root))
 
 
 async def test_mcp_connection(server_type: str):

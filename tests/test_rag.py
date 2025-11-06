@@ -1,8 +1,14 @@
 """
 Test script for NaiveRAG and HybridRAG implementations.
 """
-from src.rag.naive_rag import NaiveRAG
 from src.rag.hybrid_rag import HybridRAG
+from src.rag.naive_rag import NaiveRAG
+import sys
+from pathlib import Path
+
+# Add project root to Python path
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root))
 
 
 def test_naive_rag():
