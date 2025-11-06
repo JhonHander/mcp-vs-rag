@@ -1,0 +1,36 @@
+{
+  "execution_id": "b790a6ef-7c7c-4997-b243-899d70035be5",
+  "timestamp": "2025-11-06T00:36:07.741546",
+  "configuration": {
+    "model": "gpt-5",
+    "rag_type": "naive",
+    "mcp_server": "tavily"
+  },
+  "prompt": "¿Cuándo se considera inicio tardío de controles prenatales?",
+  "rag_results": {
+    "retrieved_context": [
+      "es recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual. Por lo tanto, se recomienda que un primer control prenatal tardío se haga con una duración de 40 minutos. 3. ¿CUAL ES LA FRECUENCIA Y NUMERO DE CITAS DE CONTROL PRENATAL QUE DEBE RECIBIR UNA GESTANTE CON EMBARAZO DE CURSO NORMAL? En 1929 la Dra. Janet Campbell sugirió que, \"el primer requisito de un servicio de obstetricia es la supervisión efectiva de la salud de la mujer durante el embarazo...”",
+      "ripción al control prenatal y la primera cita de control prenatal tengan una duración de 30 minutos. Para los siguientes controles se recomienda una duración de 20 minutos. Cuando una gestante comience tardíamente su control prenatal, sobre todo después de la semana 26 de gestación, se recomienda tener en su primer control todas las actividades recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual.",
+      "dó que el primer control prenatal debe realizarse preferentemente antes de la semana 12 de embarazo. Sin embargo, independientemente de la edad gestacional en el momento de la primera consulta, la OMS subraya que todas las embarazadas al iniciar su control prenatal (CPN), deben ser examinadas de acuerdo a las normas para la primera visita y las visitas subsecuentes. La OMS recomienda que la primera visita debe durar entre 30 a 40 minutos.",
+      "RECOMENDACIÓN CLINICA Si el control prenatal se inicia en el primer trimestre para una mujer nulípara con un embarazo de curso normal, se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas. No se recomienda un programa de control prenatal con un número reducido de citas porque se asocia con un aumento de la mortalidad perinatal. Se recomienda que las mujeres al principio del embarazo reciban información adecuada",
+      "en una consulta preconcepcional o en la primera consulta de control prenatal previa a la semana 10. Esta detección precoz permite intervenir algunos riesgos que son modificables tales como patologías infecciosas o trastornos metabólicos, entre otras. Los estudios incluidos muestran múltiples factores biológicos y"
+    ],
+    "generated_answer": "Cuando el control prenatal se inicia después de la semana 26 de gestación.",
+    "ragas_metrics": {
+      "answer_relevancy": 0.0,
+      "faithfulness": 0.0,
+      "error": "float() argument must be a string or a real number, not 'list'"
+    }
+  },
+  "mcp_results": {
+    "retrieved_context": [
+      "Detailed Results:\n\nTitle: [PDF] Factores que influyen en el inicio tardío del control prenatal\nURL: https://iydt.wordpress.com/wp-content/uploads/2024/01/1_27_factores-que-influyen-en-el-inicio-tardio-del-control-prenatal.pdf\nContent: Se considera inicio tardío al haber comenzado atención prenatal a las 12 semanas o más de gestación (Cáceres,. 2018), una de cada tres\n\nTitle: Factores asociados al inicio tardío del control prenatal en mujeres ...\nURL: https://repositorioacademico.upc.edu.pe/handle/10757/672240?locale-attribute=es\nContent: En ese sentido, se considera CPN tardío cuando sea del cuarto hasta el noveno mes o posterior a las 12 semanas de gestación. Asimismo, se\n\nTitle: [PDF] CONTROL PRENATAL TARDÍO Y COMPLICACIONES EN EL ...\nURL: http://riaa.uaem.mx/xmlui/bitstream/handle/20.500.12055/1789/GOGALD07T.pdf?sequence=1&isAllowed=y\nContent: El control prenatal de inicio tardío es cuando la mujer embarazada concurre por primera vez a la consulta habiendo cumplido ya su tercer mes de embarazo.\n\nTitle: Factores asociados al inicio tardío de la atención prenatal en un ...\nURL: http://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S0138-600X2019000400003\nContent: La variable en estudio fue el inicio tardío del control prenatal, la cual correspondió a la primera atención posterior a la semana 14 de gestación, de acuerdo\n\nTitle: Control Prenatal Tardío - San Juan - Sanatorio Argentino\nURL: https://www.sanatorioargentino.com.ar/novedades/recomendaciones/control-prenatal-tard-o.html\nContent: Hablamos de Control Prenatal de inicio tardío cuando la mujer embarazada concurre por primera vez a la consulta habiendo cumplido ya su tercer"
+    ],
+    "generated_answer": "En general, se considera inicio tardío del control prenatal cuando la primera consulta ocurre en el segundo trimestre, es decir, a las 12 semanas de gestación o más. Algunas fuentes lo precisan como:\n\n- Posterior a la semana 12 (Cáceres, 2018).\n- Una vez cumplido el tercer mes/de 4º a 9º mes.\n- Posterior a la semana 14.\n\nEn síntesis: iniciar la atención prenatal desde las 12 semanas en adelante suele clasificarse como tardío, aunque algunos estudios usan el umbral de >14 semanas.",
+    "ragas_metrics": {
+      "answer_relevancy": 0.0,
+      "faithfulness": 0.0,
+      "error": "Metric 'answer_relevancy' has no valid LLM provided (self.llm is None). Please instantiate the metric with an LLM to run."
+    }
+  }
+}
