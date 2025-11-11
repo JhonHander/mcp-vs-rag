@@ -85,12 +85,31 @@ docker-compose up -d
 python run_experiment.py
 ```
 
-This executes **8 configurations** comparing:
+This executes the experiment with **ALL questions** from the ground truth dataset, running **8 configurations** for each question:
+
 - **Models**: GPT-5 (OpenAI) vs Gemini 2.5 Pro (Google)
 - **RAG Types**: Naive vs Hybrid
 - **MCP Tools**: Tavily vs DuckDuckGo
 
-Results are saved to `data/outputs/` as unified JSON files.
+#### Command Line Options
+
+- `python run_experiment.py` - Run with ALL questions (default)
+- `python run_experiment.py 5` - Run with 5 random questions
+- `python run_experiment.py 1` - Run with 1 random question
+
+Results are saved to `data/outputs/` as two main JSON files.
+
+## 📊 Output Files
+
+When running experiments with multiple questions, the system generates **only two main files**:
+
+### Main Output Files
+- **`experiment_summary.json`** - Complete experiment summary with all results from all questions and configurations
+- **`consolidated_analysis.json`** - Global comparative analysis across ALL questions with metrics grouped by:
+  - Model performance (GPT-5 vs Gemini 2.5 Pro)
+  - RAG type performance (Naive vs Hybrid)
+  - MCP server performance (Tavily vs DuckDuckGo)
+  - Question-by-question performance
 
 ## 📊 Output Format
 
@@ -126,13 +145,6 @@ Each experiment produces a **unified JSON file** containing both RAG and MCP res
   }
 }
 ```
-
-### File Naming
-
-- `gpt5_naive_tavily_1.json`
-- `gpt5_hybrid_duckduckgo_4.json`
-- `gemini25pro_naive_tavily_5.json`
-- `gemini25pro_hybrid_duckduckgo_8.json`
 
 ## 🔧 Configuration
 
