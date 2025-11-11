@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "experiment_date": "2025-11-10T23:30:47.275915",
+    "total_configurations": 8,
+    "prompt": "¿Con cuál herramienta realizo la valoración de riesgo psico social en los controles prenatales?"
+  },
+  "comparative_analysis": {
+    "by_model": {
+      "gpt-5": {
+        "configurations_tested": 4,
+        "average_rag_relevancy": 0.9083504590119195,
+        "average_rag_faithfulness": 0.7035714285714286,
+        "average_mcp_relevancy": 0.6744754290887265,
+        "average_mcp_faithfulness": 0.0
+      },
+      "gemini-2.5-pro": {
+        "configurations_tested": 4,
+        "average_rag_relevancy": NaN,
+        "average_rag_faithfulness": NaN,
+        "average_mcp_relevancy": NaN,
+        "average_mcp_faithfulness": NaN
+      }
+    },
+    "by_rag_type": {
+      "naive": {
+        "configurations_tested": 4,
+        "average_relevancy": NaN,
+        "average_faithfulness": NaN
+      },
+      "hybrid": {
+        "configurations_tested": 4,
+        "average_relevancy": 0.4513310275019883,
+        "average_faithfulness": 0.3035714285714286
+      }
+    },
+    "by_mcp_server": {
+      "tavily": {
+        "configurations_tested": 4,
+        "average_relevancy": NaN,
+        "average_faithfulness": NaN
+      },
+      "duckduckgo": {
+        "configurations_tested": 4,
+        "average_relevancy": 0.4468925150378642,
+        "average_faithfulness": 0.0
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "config_id": 1,
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "tavily",
+      "rag_metrics": {
+        "answer_relevancy": 0.9053194289809361,
+        "faithfulness": 0.6
+      },
+      "mcp_metrics": {
+        "answer_relevancy": 0.0,
+        "faithfulness": 0.0
+      },
+      "file_reference": "gpt-5_naive_tavily_1.json"
+    },
+    {
+      "config_id": 2,
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo",
+      "rag_metrics": {
+        "answer_relevancy": 0.9227582970587885,
+        "faithfulness": 1.0
+      },
+      "mcp_metrics": {
+        "answer_relevancy": 0.8487231910568032,
+        "faithfulness": 0.0
+      },
+      "file_reference": "gpt-5_naive_duckduckgo_2.json"
+    },
+    {
+      "config_id": 3,
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily",
+      "rag_metrics": {
+        "answer_relevancy": 0.8972682523021991,
+        "faithfulness": 0.5
+      },
+      "mcp_metrics": {
+        "answer_relevancy": 0.9103316562034495,
+        "faithfulness": 0.0
+      },
+      "file_reference": "gpt-5_hybrid_tavily_3.json"
+    },
+    {
+      "config_id": 4,
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo",
+      "rag_metrics": {
+        "answer_relevancy": 0.908055857705754,
+        "faithfulness": 0.7142857142857143
+      },
+      "mcp_metrics": {
+        "answer_relevancy": 0.9388468690946536,
+        "faithfulness": 0.0
+      },
+      "file_reference": "gpt-5_hybrid_duckduckgo_4.json"
+    },
+    {
+      "config_id": 5,
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "tavily",
+      "rag_metrics": {
+        "answer_relevancy": NaN,
+        "faithfulness": NaN
+      },
+      "mcp_metrics": {
+        "answer_relevancy": NaN,
+        "faithfulness": NaN
+      },
+      "file_reference": "gemini-2.5-pro_naive_tavily_5.json"
+    },
+    {
+      "config_id": 6,
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo",
+      "rag_metrics": {
+        "answer_relevancy": 0.0,
+        "faithfulness": 0.0
+      },
+      "mcp_metrics": {
+        "answer_relevancy": 0.0,
+        "faithfulness": 0.0
+      },
+      "file_reference": "gemini-2.5-pro_naive_duckduckgo_6.json"
+    },
+    {
+      "config_id": 7,
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily",
+      "rag_metrics": {
+        "answer_relevancy": 0.0,
+        "faithfulness": 0.0
+      },
+      "mcp_metrics": {
+        "answer_relevancy": 0.0,
+        "faithfulness": 0.0
+      },
+      "file_reference": "gemini-2.5-pro_hybrid_tavily_7.json"
+    },
+    {
+      "config_id": 8,
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo",
+      "rag_metrics": {
+        "answer_relevancy": 0.0,
+        "faithfulness": 0.0
+      },
+      "mcp_metrics": {
+        "answer_relevancy": 0.0,
+        "faithfulness": 0.0
+      },
+      "file_reference": "gemini-2.5-pro_hybrid_duckduckgo_8.json"
+    }
+  ]
+}
