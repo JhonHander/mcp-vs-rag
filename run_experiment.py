@@ -77,7 +77,173 @@ def save_result(result: Dict, filename: str = None, output_dir: str = "data/outp
     print(f"[SAVED] {filename}")
 
 
-def calculate_consolidated_analysis(results: List[Dict], prompt: str) -> Dict:
+def calculate_consolidated_analysis(all_results: List[Dict]) -> Dict:
+    """
+    Calculate global consolidated analysis across all questions and configurations.
+    Groups results by model, RAG type, and MCP server with averages across all questions.
+    """
+    analysis = {
+        "metadata": {
+            "experiment_date": datetime.now().isoformat(),
+            "total_questions": len(set(result.get("question_id") for result in all_results if result.get("question_id"))),
+            "total_configurations": len(all_results),
+            "total_unique_questions": len(set(result.get("question_id") for result in all_results if result.get("question_id")))
+        },
+        "comparative_analysis": {
+            "by_model": {},
+            "by_rag_type": {},
+            "by_mcp_server": {},
+            "by_question": {}
+        },
+        "detailed_results": []
+    }
+
+    # Collect metrics for each configuration across all questions
+    for idx, result in enumerate(all_results, 1):
+        config = result.get("configuration", {})
+        model = config.get("model", "unknown")
+        rag_type = config.get("rag_type", "unknown")
+        mcp_server = config.get("mcp_server", "unknown")
+        question_id = result.get("question_id", "unknown")
+
+        rag_metrics = result.get("rag_results", {}).get("ragas_metrics", {})
+        mcp_metrics = result.get("mcp_results", {}).get("ragas_metrics", {})
+
+        # Initialize model grouping
+        if model not in analysis["comparative_analysis"]["by_model"]:
+            analysis["comparative_analysis"]["by_model"][model] = {
+                "rag_relevancy_scores": [],
+                "rag_faithfulness_scores": [],
+                "mcp_relevancy_scores": [],
+                "mcp_faithfulness_scores": [],
+                "total_configurations": 0
+            }
+
+        # Initialize RAG type grouping
+        if rag_type not in analysis["comparative_analysis"]["by_rag_type"]:
+            analysis["comparative_analysis"]["by_rag_type"][rag_type] = {
+                "relevancy_scores": [],
+                "faithfulness_scores": [],
+                "total_configurations": 0
+            }
+
+        # Initialize MCP server grouping
+        if mcp_server not in analysis["comparative_analysis"]["by_mcp_server"]:
+            analysis["comparative_analysis"]["by_mcp_server"][mcp_server] = {
+                "relevancy_scores": [],
+                "faithfulness_scores": [],
+                "total_configurations": 0
+            }
+
+        # Initialize question grouping
+        if question_id not in analysis["comparative_analysis"]["by_question"]:
+            analysis["comparative_analysis"]["by_question"][question_id] = {
+                "rag_relevancy_scores": [],
+                "rag_faithfulness_scores": [],
+                "mcp_relevancy_scores": [],
+                "mcp_faithfulness_scores": [],
+                "total_configurations": 0
+            }
+
+        # Add scores to model grouping
+        analysis["comparative_analysis"]["by_model"][model]["rag_relevancy_scores"].append(
+            rag_metrics.get("answer_relevancy", 0.0))
+        analysis["comparative_analysis"]["by_model"][model]["rag_faithfulness_scores"].append(
+            rag_metrics.get("faithfulness", 0.0))
+        analysis["comparative_analysis"]["by_model"][model]["mcp_relevancy_scores"].append(
+            mcp_metrics.get("answer_relevancy", 0.0))
+        analysis["comparative_analysis"]["by_model"][model]["mcp_faithfulness_scores"].append(
+            mcp_metrics.get("faithfulness", 0.0))
+        analysis["comparative_analysis"]["by_model"][model]["total_configurations"] += 1
+
+        # Add scores to RAG type grouping
+        analysis["comparative_analysis"]["by_rag_type"][rag_type]["relevancy_scores"].append(
+            rag_metrics.get("answer_relevancy", 0.0))
+        analysis["comparative_analysis"]["by_rag_type"][rag_type]["faithfulness_scores"].append(
+            rag_metrics.get("faithfulness", 0.0))
+        analysis["comparative_analysis"]["by_rag_type"][rag_type]["total_configurations"] += 1
+
+        # Add scores to MCP server grouping
+        analysis["comparative_analysis"]["by_mcp_server"][mcp_server]["relevancy_scores"].append(
+            mcp_metrics.get("answer_relevancy", 0.0))
+        analysis["comparative_analysis"]["by_mcp_server"][mcp_server]["faithfulness_scores"].append(
+            mcp_metrics.get("faithfulness", 0.0))
+        analysis["comparative_analysis"]["by_mcp_server"][mcp_server]["total_configurations"] += 1
+
+        # Add scores to question grouping
+        analysis["comparative_analysis"]["by_question"][question_id]["rag_relevancy_scores"].append(
+            rag_metrics.get("answer_relevancy", 0.0))
+        analysis["comparative_analysis"]["by_question"][question_id]["rag_faithfulness_scores"].append(
+            rag_metrics.get("faithfulness", 0.0))
+        analysis["comparative_analysis"]["by_question"][question_id]["mcp_relevancy_scores"].append(
+            mcp_metrics.get("answer_relevancy", 0.0))
+        analysis["comparative_analysis"]["by_question"][question_id]["mcp_faithfulness_scores"].append(
+            mcp_metrics.get("faithfulness", 0.0))
+        analysis["comparative_analysis"]["by_question"][question_id]["total_configurations"] += 1
+
+        # Add to detailed results with file reference
+        analysis["detailed_results"].append({
+            "config_id": idx,
+            "question_id": question_id,
+            "model": model,
+            "rag_type": rag_type,
+            "mcp_server": mcp_server,
+            "rag_metrics": rag_metrics,
+            "mcp_metrics": mcp_metrics,
+            "file_reference": f"{model}_{rag_type}_{mcp_server}_{idx}.json"
+        })
+
+    # Calculate averages for model grouping
+    for model_data in analysis["comparative_analysis"]["by_model"].values():
+        model_data["average_rag_relevancy"] = sum(
+            model_data["rag_relevancy_scores"]) / len(model_data["rag_relevancy_scores"]) if model_data["rag_relevancy_scores"] else 0.0
+        model_data["average_rag_faithfulness"] = sum(
+            model_data["rag_faithfulness_scores"]) / len(model_data["rag_faithfulness_scores"]) if model_data["rag_faithfulness_scores"] else 0.0
+        model_data["average_mcp_relevancy"] = sum(
+            model_data["mcp_relevancy_scores"]) / len(model_data["mcp_relevancy_scores"]) if model_data["mcp_relevancy_scores"] else 0.0
+        model_data["average_mcp_faithfulness"] = sum(
+            model_data["mcp_faithfulness_scores"]) / len(model_data["mcp_faithfulness_scores"]) if model_data["mcp_faithfulness_scores"] else 0.0
+        # Remove individual scores, keep only averages
+        del model_data["rag_relevancy_scores"]
+        del model_data["rag_faithfulness_scores"]
+        del model_data["mcp_relevancy_scores"]
+        del model_data["mcp_faithfulness_scores"]
+
+    # Calculate averages for RAG type grouping
+    for rag_data in analysis["comparative_analysis"]["by_rag_type"].values():
+        rag_data["average_relevancy"] = sum(
+            rag_data["relevancy_scores"]) / len(rag_data["relevancy_scores"]) if rag_data["relevancy_scores"] else 0.0
+        rag_data["average_faithfulness"] = sum(
+            rag_data["faithfulness_scores"]) / len(rag_data["faithfulness_scores"]) if rag_data["faithfulness_scores"] else 0.0
+        del rag_data["relevancy_scores"]
+        del rag_data["faithfulness_scores"]
+
+    # Calculate averages for MCP server grouping
+    for mcp_data in analysis["comparative_analysis"]["by_mcp_server"].values():
+        mcp_data["average_relevancy"] = sum(
+            mcp_data["relevancy_scores"]) / len(mcp_data["relevancy_scores"]) if mcp_data["relevancy_scores"] else 0.0
+        mcp_data["average_faithfulness"] = sum(
+            mcp_data["faithfulness_scores"]) / len(mcp_data["faithfulness_scores"]) if mcp_data["faithfulness_scores"] else 0.0
+        del mcp_data["relevancy_scores"]
+        del mcp_data["faithfulness_scores"]
+
+    # Calculate averages for question grouping
+    for question_data in analysis["comparative_analysis"]["by_question"].values():
+        question_data["average_rag_relevancy"] = sum(
+            question_data["rag_relevancy_scores"]) / len(question_data["rag_relevancy_scores"]) if question_data["rag_relevancy_scores"] else 0.0
+        question_data["average_rag_faithfulness"] = sum(
+            question_data["rag_faithfulness_scores"]) / len(question_data["rag_faithfulness_scores"]) if question_data["rag_faithfulness_scores"] else 0.0
+        question_data["average_mcp_relevancy"] = sum(
+            question_data["mcp_relevancy_scores"]) / len(question_data["mcp_relevancy_scores"]) if question_data["mcp_relevancy_scores"] else 0.0
+        question_data["average_mcp_faithfulness"] = sum(
+            question_data["mcp_faithfulness_scores"]) / len(question_data["mcp_faithfulness_scores"]) if question_data["mcp_faithfulness_scores"] else 0.0
+        # Remove individual scores, keep only averages
+        del question_data["rag_relevancy_scores"]
+        del question_data["rag_faithfulness_scores"]
+        del question_data["mcp_relevancy_scores"]
+        del question_data["mcp_faithfulness_scores"]
+
+    return analysis
     """
     Calculate consolidated analysis with comparative metrics.
     Groups results by model, RAG type, and MCP server with averages.
@@ -224,42 +390,9 @@ async def run_full_experiment(prompt: str):
         result = await run_single_experiment(prompt, config)
         results.append(result)
 
-        # Save unified result with descriptive filename
-        filename = f"{config['model']}_{config['rag_type']}_{config['mcp_server']}_{i}.json"
-        save_result(result, filename=filename)
-
         # Small delay between experiments
         await asyncio.sleep(1)
 
-    # Save full summary with all results
-    summary = {
-        "experiment_summary": {
-            "total_configurations": len(CONFIGURATIONS),
-            "total_unified_results": len(results),
-            "timestamp": datetime.now().isoformat(),
-            "prompt": prompt,
-            "configurations": CONFIGURATIONS
-        },
-        "results": results
-    }
-
-    summary_path = os.path.join("data/outputs", "experiment_summary.json")
-    with open(summary_path, 'w', encoding='utf-8') as f:
-        json.dump(summary, f, indent=2, ensure_ascii=False)
-
-    # Save consolidated analysis with comparative metrics
-    consolidated = calculate_consolidated_analysis(results, prompt)
-    consolidated_path = os.path.join(
-        "data/outputs", "consolidated_analysis.json")
-    with open(consolidated_path, 'w', encoding='utf-8') as f:
-        json.dump(consolidated, f, indent=2, ensure_ascii=False)
-
-    print("\n" + "="*60)
-    print("Experiment completed!")
-    print(f"Total unified results: {len(results)}")
-    print(f"Full summary saved to: {summary_path}")
-    print(f"Consolidated analysis saved to: {consolidated_path}")
-    print("="*60)
     return results
 
 
@@ -302,27 +435,47 @@ async def run_experiment_with_dataset(use_all_questions: bool = False, num_quest
             # Run experiment with this question
             results = await run_full_experiment(question_text)
 
-            # Add ground truth to results
+            # Add ground truth and question_id to results
             for result in results:
                 result['ground_truth'] = ground_truth
                 result['question_id'] = question_id
 
             all_results.extend(results)
 
-            # Save per-question summary
-            question_summary = {
-                "question_id": question_id,
-                "question": question_text,
-                "ground_truth": ground_truth,
-                "results": results
-            }
-
-            filename = f"question_{question_id}_results.json"
-            save_result(question_summary, filename=filename)
-
         print(f"\n{'='*60}")
         print(f"Completed experiment with {len(questions)} question(s)")
         print(f"Total results: {len(all_results)}")
+        print(f"{'='*60}")
+
+        # Generate final consolidated files
+        print("\nGenerating final consolidated files...")
+
+        # Save experiment summary with all results
+        summary = {
+            "experiment_summary": {
+                "total_questions": len(questions),
+                "total_configurations_per_question": len(CONFIGURATIONS),
+                "total_results": len(all_results),
+                "timestamp": datetime.now().isoformat(),
+                "configurations": CONFIGURATIONS,
+                "questions_processed": [q['id'] for q in questions]
+            },
+            "results": all_results
+        }
+
+        summary_path = os.path.join("data/outputs", "experiment_summary.json")
+        with open(summary_path, 'w', encoding='utf-8') as f:
+            json.dump(summary, f, indent=2, ensure_ascii=False)
+
+        # Save global consolidated analysis
+        global_analysis = calculate_consolidated_analysis(all_results)
+        consolidated_path = os.path.join(
+            "data/outputs", "consolidated_analysis.json")
+        with open(consolidated_path, 'w', encoding='utf-8') as f:
+            json.dump(global_analysis, f, indent=2, ensure_ascii=False)
+
+        print(f"Experiment summary saved to: {summary_path}")
+        print(f"Global consolidated analysis saved to: {consolidated_path}")
         print(f"{'='*60}")
 
         return all_results
@@ -346,20 +499,17 @@ if __name__ == "__main__":
 
     # Parse command line arguments
     if len(sys.argv) > 1:
-        if sys.argv[1] == "--all":
-            # Run with all questions
-            asyncio.run(run_experiment_with_dataset(use_all_questions=True))
-        elif sys.argv[1].isdigit():
+        if sys.argv[1].isdigit():
             # Run with N random questions
             num = int(sys.argv[1])
             asyncio.run(run_experiment_with_dataset(
                 use_all_questions=False, num_questions=num))
         else:
             print("Usage:")
-            print("  python run_experiment.py           # Run with 1 random question")
+            print("  python run_experiment.py           # Run with ALL questions")
             print("  python run_experiment.py 5         # Run with 5 random questions")
-            print("  python run_experiment.py --all     # Run with all questions")
+            print("  python run_experiment.py 1         # Run with 1 random question")
     else:
-        # Default: run with 1 random question
+        # Default: run with ALL questions
         asyncio.run(run_experiment_with_dataset(
-            use_all_questions=False, num_questions=1))
+            use_all_questions=True))

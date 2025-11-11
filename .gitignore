@@ -47,6 +47,9 @@ venv.bak/
 .env.local
 .env.*.local
 
+# Project-specific
+copilot-instructions.md
+
 # Data and outputs
 # data/knowledge_base/chunks/*
 # data/knowledge_base/embeddings/*
