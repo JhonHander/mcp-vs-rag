@@ -23,8 +23,8 @@ class RAGASEvaluator:
         if llm is None:
             # Use GPT-4 as default for evaluation
             base_llm = ChatOpenAI(
-                model="gpt-4",
-                temperature=0.0,
+                model="gpt-4.1",
+                temperature=0.1,
                 openai_api_key=os.getenv("OPENAI_API_KEY")
             )
         else:

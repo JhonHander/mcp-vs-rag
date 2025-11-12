@@ -14,6 +14,7 @@ from src.rag.hybrid_rag import HybridRAG
 from src.mcp.mcp_client import get_search_tool_for_server
 from src.models.llm_factory import create_llm
 from src.evaluation.ragas_evaluator import RAGASEvaluator
+from src.config.mcp_config import get_mcp_search_config, should_truncate_context
 
 
 class UnifiedWorkflowState(TypedDict):
@@ -32,10 +33,12 @@ class UnifiedWorkflowState(TypedDict):
     rag_context: List[str]
     rag_answer: str
     rag_metrics: Dict[str, float]
+    rag_generation_cost: Dict[str, Any]  # Cost tracking for RAG generation
 
     mcp_context: str
     mcp_answer: str
     mcp_metrics: Dict[str, float]
+    mcp_generation_cost: Dict[str, Any]  # Cost tracking for MCP generation
 
 
 class UnifiedWorkflow:
@@ -75,8 +78,14 @@ Context (from knowledge base):
 {rag_text}
 
 Please provide a comprehensive answer based on the available information."""
-            response = llm.invoke(prompt_template)
-            return {"rag_answer": response.content}
+            
+            # Capture response and cost information
+            response, cost = llm.invoke(prompt_template)
+            
+            return {
+                "rag_answer": response.content,
+                "rag_generation_cost": cost
+            }
 
         def evaluate_rag(state: UnifiedWorkflowState) -> Dict[str, Any]:
             """RAG Branch Step 3: Evaluate RAG answer with RAGAS."""
@@ -88,13 +97,28 @@ Please provide a comprehensive answer based on the available information."""
             return {"rag_metrics": metrics}
 
         async def search_mcp_context(state: UnifiedWorkflowState) -> Dict[str, Any]:
-            """MCP Branch Step 1: Search using MCP tool."""
+            """MCP Branch Step 1: Search using MCP tool with configurable limits."""
             search_tool = await get_search_tool_for_server(state["mcp_server"])
             if not search_tool:
                 return {"mcp_context": f"No search tool available for {state['mcp_server']}"}
             try:
-                result = await search_tool.ainvoke({"query": state["prompt"]})
-                return {"mcp_context": str(result)}
+                # Get configured search parameters for this server
+                base_params = {"query": state["prompt"]}
+                server_config = get_mcp_search_config(state["mcp_server"])
+                search_params = {**base_params, **server_config}
+                
+                print(f"🔍 MCP Search ({state['mcp_server']}): {search_params}")
+                
+                result = await search_tool.ainvoke(search_params)
+                result_str = str(result)
+                
+                # Check if truncation is needed
+                was_truncated, final_context = should_truncate_context(result_str)
+                
+                if was_truncated:
+                    print(f"⚠️  Context truncated from {len(result_str)} to {len(final_context)} chars")
+                
+                return {"mcp_context": final_context}
             except Exception as e:
                 return {"mcp_context": f"Error executing search: {str(e)}"}
 
@@ -107,8 +131,14 @@ Context (from web search):
 {state["mcp_context"]}
 
 Please provide a comprehensive answer based on the available information."""
-            response = llm.invoke(prompt_template)
-            return {"mcp_answer": response.content}
+            
+            # Capture response and cost information
+            response, cost = llm.invoke(prompt_template)
+            
+            return {
+                "mcp_answer": response.content,
+                "mcp_generation_cost": cost
+            }
 
         def evaluate_mcp(state: UnifiedWorkflowState) -> Dict[str, Any]:
             """MCP Branch Step 3: Evaluate MCP answer with RAGAS."""
@@ -175,12 +205,19 @@ async def execute_unified_workflow(
         "rag_context": [],
         "rag_answer": "",
         "rag_metrics": {},
+        "rag_generation_cost": {},  # Initialize cost tracking
         "mcp_context": "",
         "mcp_answer": "",
-        "mcp_metrics": {}
+        "mcp_metrics": {},
+        "mcp_generation_cost": {}  # Initialize cost tracking
     }
 
     result = await workflow.ainvoke(initial_state)
+
+    # Calculate total costs from both branches
+    rag_cost = result.get("rag_generation_cost", {}).get("total_cost_usd", 0.0)
+    mcp_cost = result.get("mcp_generation_cost", {}).get("total_cost_usd", 0.0)
+    total_cost = rag_cost + mcp_cost
 
     output = {
         "execution_id": result["execution_id"],
@@ -194,12 +231,20 @@ async def execute_unified_workflow(
         "rag_results": {
             "retrieved_context": result["rag_context"],
             "generated_answer": result["rag_answer"],
-            "ragas_metrics": result["rag_metrics"]
+            "ragas_metrics": result["rag_metrics"],
+            "cost_details": result.get("rag_generation_cost", {})  # Add cost details
         },
         "mcp_results": {
             "retrieved_context": [result["mcp_context"]],
             "generated_answer": result["mcp_answer"],
-            "ragas_metrics": result["mcp_metrics"]
+            "ragas_metrics": result["mcp_metrics"],
+            "cost_details": result.get("mcp_generation_cost", {})  # Add cost details
+        },
+        "cost_summary": {
+            "rag_cost_usd": round(rag_cost, 8),
+            "mcp_cost_usd": round(mcp_cost, 8),
+            "total_cost_usd": round(total_cost, 8),
+            "model_used": model_name
         }
     }
 
