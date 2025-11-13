@@ -1,0 +1,531 @@
+{
+  "question_id": 2,
+  "question": "Cual es la semana ideal para iniciar los controles prenatales",
+  "ground_truth": "Se recomienda realizar el primer control prenatal en el primer trimestre, idealmente antes de la semana 10 de gestación.",
+  "total_configurations": 8,
+  "timestamp": "2025-11-12T12:23:29.059011",
+  "configurations": [
+    {
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo"
+    }
+  ],
+  "results": [
+    {
+      "execution_id": "0cf013fc-8a2f-43d8-bcfb-8a570cd13e8d",
+      "timestamp": "2025-11-12T12:11:55.055653",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "naive",
+        "mcp_server": "tavily"
+      },
+      "prompt": "Cual es la semana ideal para iniciar los controles prenatales",
+      "rag_results": {
+        "retrieved_context": [
+          "dó que el primer control prenatal debe realizarse preferentemente antes de la semana 12 de embarazo. Sin embargo, independientemente de la edad gestacional en el momento de la primera consulta, la OMS subraya que todas las embarazadas al iniciar su control prenatal (CPN), deben ser examinadas de acuerdo a las normas para la primera visita y las visitas subsecuentes. La OMS recomienda que la primera visita debe durar entre 30 a 40 minutos.",
+          "mpo garantiza el cumplimiento de los objetivos y permite la educación a la gestante. Las demás citas pueden desarrollarse en un tiempo menor a esta consulta inicial. RECOMENDACIONES CLÍNICAS Se recomienda realizar el primer control prenatal en el primer trimestre, idealmente antes de la semana 10 de gestación. Se recomienda que la cita de inscripción al control prenatal y la primera cita de control prenatal tengan una duración de 30 minutos.",
+          "RECOMENDACIÓN CLINICA Si el control prenatal se inicia en el primer trimestre para una mujer nulípara con un embarazo de curso normal, se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas. No se recomienda un programa de control prenatal con un número reducido de citas porque se asocia con un aumento de la mortalidad perinatal. Se recomienda que las mujeres al principio del embarazo reciban información adecuada",
+          "alle la evolución de la gestación y realizar las actividades administrativas que cada cita requiere. RESUMEN Y DESCRIPCION DE LA EVIDENCIA Basado en consenso de expertos la Organización Mundial de la Salud (OMS) recomendó que el primer control prenatal debe realizarse preferentemente antes de la semana 12 de embarazo.",
+          "es recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual. Por lo tanto, se recomienda que un primer control prenatal tardío se haga con una duración de 40 minutos. 3. ¿CUAL ES LA FRECUENCIA Y NUMERO DE CITAS DE CONTROL PRENATAL QUE DEBE RECIBIR UNA GESTANTE CON EMBARAZO DE CURSO NORMAL? En 1929 la Dra. Janet Campbell sugirió que, \"el primer requisito de un servicio de obstetricia es la supervisión efectiva de la salud de la mujer durante el embarazo...”"
+        ],
+        "generated_answer": "La semana ideal para iniciar los controles prenatales es en el primer trimestre, idealmente antes de la semana 10 de gestación. Si no es posible, se recomienda iniciarlos lo antes posible y preferentemente antes de la semana 12 (según la OMS). Esto permite una evaluación temprana, exámenes básicos y la educación oportuna de la gestante.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9783104600155949,
+          "faithfulness": 0.7142857142857143
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 526,
+          "output_tokens": 341,
+          "total_tokens": 867,
+          "input_cost_usd": 0.00263,
+          "output_cost_usd": 0.005115,
+          "total_cost_usd": 0.007745
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Atenciones prenatales para tener un embarazo saludable\nURL: https://www.gob.pe/40283-atenciones-prenatales-para-tener-un-embarazo-saludable\nContent: La atención prenatal es muy importante para un embarazo saludable. Establecer la fecha de parto (o fecha estimada) permite al personal de salud controlar el crecimiento de tu bebé y la evolución de tu embarazo. + El personal de salud puede realizar una variedad de pruebas prenatales que pueden incluir ecografías o análisis de sangre. El personal de salud puede programar controles prenatales cada cuatro semanas durante el segundo trimestre. Durante el tercer trimestre, el control prenatal puede comprender exámenes o pruebas para verificar la posición del bebé a medida que se acerca la fecha del parto. El personal de salud te pedirá que programes tus controles cada 2 o 4 semanas, dependiendo de tu estado de salud y de tus antecedentes de embarazo.\n\nTitle: El control del embarazo, semana a semana - Hospital Privado\nURL: https://hospitalprivado.com.ar/blog/cuidados-preventivos/el-control-del-embarazo-semana-a-semana.html\nContent: A partir de las **3 semanas** de gestación, en algunas mujeres, el test de embarazo puede ser positivo, aunque no es lo más frecuente. Entre las **8 y las 12 semanas** de embarazo se deberá programar el primer análisis de sangre, que informará acerca del estado sanguíneo, del grupo y factor sanguíneo de la madre y se analizarán las pruebas de infecciones (en términos médicos serologías) que permitirán saber si se han pasado determinadas enfermedades. **Entre las 41 y las 42 semanas** se realizan controles más seguidos y se suele llevar a cabo una monitorización de la frecuencia cardíaca del feto y de las contracciones maternas, una ecografía para valorar el líquido amniótico, el peso y los movimientos del feto y el cuello uterino.\n\nTitle: Cuidados prenatales en el primer trimestre - MedlinePlus\nURL: https://medlineplus.gov/spanish/ency/patientinstructions/000544.htm\nContent: Su proveedor de atención médica puede hablar acerca de su embarazo expresándose en semanas, en lugar de en meses o trimestres. En su primera consulta, el médico o la enfermera obstétrica le sacarán sangre para un grupo de exámenes conocidos como pruebas prenatales. En una prueba, su médico o la enfermera obstétrica puede utilizar un ultrasonido para medir la parte posterior del cuello del bebé. Otra prueba, llamada muestra de vellosidades coriónicas (MVC), puede detectar el síndrome de Down y otros trastornos genéticos incluso ya a las 10 semanas de un embarazo. Un examen más novedoso, llamado prueba de ADN libre de células, busca pequeños fragmentos de los genes de su bebé en una muestra de sangre de la madre."
+        ],
+        "generated_answer": "La semana ideal es lo antes posible tras confirmar el embarazo, preferiblemente en el primer trimestre y antes de la semana 12. En la práctica, muchas instituciones programan la primera consulta entre las semanas 8 y 12, cuando se realizan los primeros análisis y se planifican los tamizajes del primer trimestre. Esto permite fechar bien el embarazo y acceder a pruebas tempranas (por ejemplo, la muestra de vellosidades coriónicas desde la semana 10).\n\nSi tienes factores de riesgo, síntomas (dolor intenso, sangrado) o dudas sobre la fecha, consulta de inmediato, sin esperar a la semana 8.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9078566174042759,
+          "faithfulness": 0.8
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 660,
+          "output_tokens": 1162,
+          "total_tokens": 1822,
+          "input_cost_usd": 0.0033,
+          "output_cost_usd": 0.01743,
+          "total_cost_usd": 0.02073
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.007745,
+        "mcp_cost_usd": 0.02073,
+        "total_cost_usd": 0.028475,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "Se recomienda realizar el primer control prenatal en el primer trimestre, idealmente antes de la semana 10 de gestación.",
+      "question_id": 2
+    },
+    {
+      "execution_id": "adbb0f9d-9ee8-4fca-a5af-c46db4842a6d",
+      "timestamp": "2025-11-12T12:14:14.526346",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "naive",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "Cual es la semana ideal para iniciar los controles prenatales",
+      "rag_results": {
+        "retrieved_context": [
+          "dó que el primer control prenatal debe realizarse preferentemente antes de la semana 12 de embarazo. Sin embargo, independientemente de la edad gestacional en el momento de la primera consulta, la OMS subraya que todas las embarazadas al iniciar su control prenatal (CPN), deben ser examinadas de acuerdo a las normas para la primera visita y las visitas subsecuentes. La OMS recomienda que la primera visita debe durar entre 30 a 40 minutos.",
+          "mpo garantiza el cumplimiento de los objetivos y permite la educación a la gestante. Las demás citas pueden desarrollarse en un tiempo menor a esta consulta inicial. RECOMENDACIONES CLÍNICAS Se recomienda realizar el primer control prenatal en el primer trimestre, idealmente antes de la semana 10 de gestación. Se recomienda que la cita de inscripción al control prenatal y la primera cita de control prenatal tengan una duración de 30 minutos.",
+          "RECOMENDACIÓN CLINICA Si el control prenatal se inicia en el primer trimestre para una mujer nulípara con un embarazo de curso normal, se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas. No se recomienda un programa de control prenatal con un número reducido de citas porque se asocia con un aumento de la mortalidad perinatal. Se recomienda que las mujeres al principio del embarazo reciban información adecuada",
+          "alle la evolución de la gestación y realizar las actividades administrativas que cada cita requiere. RESUMEN Y DESCRIPCION DE LA EVIDENCIA Basado en consenso de expertos la Organización Mundial de la Salud (OMS) recomendó que el primer control prenatal debe realizarse preferentemente antes de la semana 12 de embarazo.",
+          "es recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual. Por lo tanto, se recomienda que un primer control prenatal tardío se haga con una duración de 40 minutos. 3. ¿CUAL ES LA FRECUENCIA Y NUMERO DE CITAS DE CONTROL PRENATAL QUE DEBE RECIBIR UNA GESTANTE CON EMBARAZO DE CURSO NORMAL? En 1929 la Dra. Janet Campbell sugirió que, \"el primer requisito de un servicio de obstetricia es la supervisión efectiva de la salud de la mujer durante el embarazo...”"
+        ],
+        "generated_answer": "Idealmente en el primer trimestre, antes de la semana 10 de gestación; a más tardar, preferentemente antes de la semana 12 (según la OMS).",
+        "ragas_metrics": {
+          "answer_relevancy": 0.8942561578534642,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 526,
+          "output_tokens": 237,
+          "total_tokens": 763,
+          "input_cost_usd": 0.00263,
+          "output_cost_usd": 0.003555,
+          "total_cost_usd": 0.006185
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. ¿Cuándo debo iniciar el control prenatal? - Dr. Leonardo Guerra\n   URL: https://drleoginecologo.com/cuando-debo-iniciar-el-control-prenatal/\n   Summary: Acude aloscontrolesprenatalesa tiempoparaprevenir síntomas comolosmencionados anteriormente. Recuerda que si has presentado estos síntomas en tu embarazoesfundamental tener un control prenatal especializado. En el que cuentes conlaayuda y guía de un médico especialista en medicina materno fetal y embarazos de alto riesgo.\n\n2. Control prenatal: la clave para un embarazo saludable y sin complicaciones\n   URL: https://www.armoniaginecologica.com/post/control-prenatal-la-clave-para-un-embarazo-saludable-y-sin-complicaciones\n   Summary: Su objetivoesvigilar el desarrollo adecuado del embarazo, detectar factores de riesgo y prevenir complicaciones obstétricas y perinatales. ¿Cuándo debeiniciar?Loidealescomenzar el control prenatal en el primer trimestre, tan pronto se confirme el embarazo. Cuanto antes se inicie, mayor serálacapacidad de prevenir y corregir ...\n\n3. Cuidado prenatal: Visitas del primer trimestre - Mayo Clinic\n   URL: https://www.mayoclinic.org/es/healthy-lifestyle/pregnancy-week-by-week/in-depth/prenatal-care/art-20044882\n   Summary: Laspróximas consultasprenatales(que suelen programarse cada cuatrosemanasdurante el primer trimestre) podrían ser más cortas quelaprimera. Cerca del final del primer trimestre, entrelas12 ylas14semanasde embarazo,esposible que oigasloslatidos del corazón del bebé con un pequeño dispositivo llamado Doppler que hace rebotarlasondas sonoras en el corazón del bebé.Es...\n"
+        ],
+        "generated_answer": "Lo ideal es iniciar los controles prenatales en el primer trimestre, tan pronto se confirme el embarazo, preferentemente antes de la semana 12. Comenzar temprano permite detectar factores de riesgo y prevenir complicaciones de manera oportuna (fuentes: Armonía Ginecológica; Mayo Clinic). Si presentas síntomas o factores de alto riesgo, consulta de inmediato para un control especializado.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9507108391736048,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 443,
+          "output_tokens": 794,
+          "total_tokens": 1237,
+          "input_cost_usd": 0.002215,
+          "output_cost_usd": 0.01191,
+          "total_cost_usd": 0.014125
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.006185,
+        "mcp_cost_usd": 0.014125,
+        "total_cost_usd": 0.02031,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "Se recomienda realizar el primer control prenatal en el primer trimestre, idealmente antes de la semana 10 de gestación.",
+      "question_id": 2
+    },
+    {
+      "execution_id": "a1fb4858-2f84-400a-82d7-42502f4e9db5",
+      "timestamp": "2025-11-12T12:15:12.528446",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "hybrid",
+        "mcp_server": "tavily"
+      },
+      "prompt": "Cual es la semana ideal para iniciar los controles prenatales",
+      "rag_results": {
+        "retrieved_context": [
+          "dó que el primer control prenatal debe realizarse preferentemente antes de la semana 12 de embarazo. Sin embargo, independientemente de la edad gestacional en el momento de la primera consulta, la OMS subraya que todas las embarazadas al iniciar su control prenatal (CPN), deben ser examinadas de acuerdo a las normas para la primera visita y las visitas subsecuentes. La OMS recomienda que la primera visita debe durar entre 30 a 40 minutos.",
+          "mpo garantiza el cumplimiento de los objetivos y permite la educación a la gestante. Las demás citas pueden desarrollarse en un tiempo menor a esta consulta inicial. RECOMENDACIONES CLÍNICAS Se recomienda realizar el primer control prenatal en el primer trimestre, idealmente antes de la semana 10 de gestación. Se recomienda que la cita de inscripción al control prenatal y la primera cita de control prenatal tengan una duración de 30 minutos.",
+          "RECOMENDACIÓN CLINICA Si el control prenatal se inicia en el primer trimestre para una mujer nulípara con un embarazo de curso normal, se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas. No se recomienda un programa de control prenatal con un número reducido de citas porque se asocia con un aumento de la mortalidad perinatal. Se recomienda que las mujeres al principio del embarazo reciban información adecuada",
+          "alle la evolución de la gestación y realizar las actividades administrativas que cada cita requiere. RESUMEN Y DESCRIPCION DE LA EVIDENCIA Basado en consenso de expertos la Organización Mundial de la Salud (OMS) recomendó que el primer control prenatal debe realizarse preferentemente antes de la semana 12 de embarazo.",
+          "es recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual. Por lo tanto, se recomienda que un primer control prenatal tardío se haga con una duración de 40 minutos. 3. ¿CUAL ES LA FRECUENCIA Y NUMERO DE CITAS DE CONTROL PRENATAL QUE DEBE RECIBIR UNA GESTANTE CON EMBARAZO DE CURSO NORMAL? En 1929 la Dra. Janet Campbell sugirió que, \"el primer requisito de un servicio de obstetricia es la supervisión efectiva de la salud de la mujer durante el embarazo...”"
+        ],
+        "generated_answer": "Idealmente, el primer control prenatal debe iniciarse en el primer trimestre, antes de la semana 10 de gestación. Si no es posible, la OMS recomienda realizarlo a más tardar antes de la semana 12.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9006863505085906,
+          "faithfulness": 0.6666666666666666
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 526,
+          "output_tokens": 311,
+          "total_tokens": 837,
+          "input_cost_usd": 0.00263,
+          "output_cost_usd": 0.004665,
+          "total_cost_usd": 0.007295
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Atenciones prenatales para tener un embarazo saludable\nURL: https://www.gob.pe/40283-atenciones-prenatales-para-tener-un-embarazo-saludable\nContent: La atención prenatal es muy importante para un embarazo saludable. Establecer la fecha de parto (o fecha estimada) permite al personal de salud controlar el crecimiento de tu bebé y la evolución de tu embarazo. + El personal de salud puede realizar una variedad de pruebas prenatales que pueden incluir ecografías o análisis de sangre. El personal de salud puede programar controles prenatales cada cuatro semanas durante el segundo trimestre. Durante el tercer trimestre, el control prenatal puede comprender exámenes o pruebas para verificar la posición del bebé a medida que se acerca la fecha del parto. El personal de salud te pedirá que programes tus controles cada 2 o 4 semanas, dependiendo de tu estado de salud y de tus antecedentes de embarazo.\n\nTitle: El control del embarazo, semana a semana - Hospital Privado\nURL: https://hospitalprivado.com.ar/blog/cuidados-preventivos/el-control-del-embarazo-semana-a-semana.html\nContent: A partir de las **3 semanas** de gestación, en algunas mujeres, el test de embarazo puede ser positivo, aunque no es lo más frecuente. Entre las **8 y las 12 semanas** de embarazo se deberá programar el primer análisis de sangre, que informará acerca del estado sanguíneo, del grupo y factor sanguíneo de la madre y se analizarán las pruebas de infecciones (en términos médicos serologías) que permitirán saber si se han pasado determinadas enfermedades. **Entre las 41 y las 42 semanas** se realizan controles más seguidos y se suele llevar a cabo una monitorización de la frecuencia cardíaca del feto y de las contracciones maternas, una ecografía para valorar el líquido amniótico, el peso y los movimientos del feto y el cuello uterino.\n\nTitle: Cuidados prenatales en el primer trimestre - MedlinePlus\nURL: https://medlineplus.gov/spanish/ency/patientinstructions/000544.htm\nContent: Su proveedor de atención médica puede hablar acerca de su embarazo expresándose en semanas, en lugar de en meses o trimestres. En su primera consulta, el médico o la enfermera obstétrica le sacarán sangre para un grupo de exámenes conocidos como pruebas prenatales. En una prueba, su médico o la enfermera obstétrica puede utilizar un ultrasonido para medir la parte posterior del cuello del bebé. Otra prueba, llamada muestra de vellosidades coriónicas (MVC), puede detectar el síndrome de Down y otros trastornos genéticos incluso ya a las 10 semanas de un embarazo. Un examen más novedoso, llamado prueba de ADN libre de células, busca pequeños fragmentos de los genes de su bebé en una muestra de sangre de la madre."
+        ],
+        "generated_answer": "La semana ideal es “lo antes posible” tras confirmar o sospechar el embarazo, preferentemente en el primer trimestre y no más allá de la semana 12. Muchas instituciones programan la primera consulta entre las semanas 6 y 8, cuando ya pueden solicitarse los análisis iniciales y tamizajes (algunos desde la semana 10) y fechar bien el embarazo.\n\n- Evidencia: primeras pruebas entre 8–12 semanas y tests específicos desde la semana 10 (MedlinePlus; Hospital Privado). Luego los controles se espacian según trimestre y estado de salud (gob.pe).",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9039253417416229,
+          "faithfulness": 0.8
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 660,
+          "output_tokens": 900,
+          "total_tokens": 1560,
+          "input_cost_usd": 0.0033,
+          "output_cost_usd": 0.0135,
+          "total_cost_usd": 0.0168
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.007295,
+        "mcp_cost_usd": 0.0168,
+        "total_cost_usd": 0.024095,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "Se recomienda realizar el primer control prenatal en el primer trimestre, idealmente antes de la semana 10 de gestación.",
+      "question_id": 2
+    },
+    {
+      "execution_id": "7047f710-af6b-46c5-a76f-c73a39fc2c6e",
+      "timestamp": "2025-11-12T12:16:49.274093",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "hybrid",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "Cual es la semana ideal para iniciar los controles prenatales",
+      "rag_results": {
+        "retrieved_context": [
+          "dó que el primer control prenatal debe realizarse preferentemente antes de la semana 12 de embarazo. Sin embargo, independientemente de la edad gestacional en el momento de la primera consulta, la OMS subraya que todas las embarazadas al iniciar su control prenatal (CPN), deben ser examinadas de acuerdo a las normas para la primera visita y las visitas subsecuentes. La OMS recomienda que la primera visita debe durar entre 30 a 40 minutos.",
+          "mpo garantiza el cumplimiento de los objetivos y permite la educación a la gestante. Las demás citas pueden desarrollarse en un tiempo menor a esta consulta inicial. RECOMENDACIONES CLÍNICAS Se recomienda realizar el primer control prenatal en el primer trimestre, idealmente antes de la semana 10 de gestación. Se recomienda que la cita de inscripción al control prenatal y la primera cita de control prenatal tengan una duración de 30 minutos.",
+          "RECOMENDACIÓN CLINICA Si el control prenatal se inicia en el primer trimestre para una mujer nulípara con un embarazo de curso normal, se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas. No se recomienda un programa de control prenatal con un número reducido de citas porque se asocia con un aumento de la mortalidad perinatal. Se recomienda que las mujeres al principio del embarazo reciban información adecuada",
+          "alle la evolución de la gestación y realizar las actividades administrativas que cada cita requiere. RESUMEN Y DESCRIPCION DE LA EVIDENCIA Basado en consenso de expertos la Organización Mundial de la Salud (OMS) recomendó que el primer control prenatal debe realizarse preferentemente antes de la semana 12 de embarazo.",
+          "es recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual. Por lo tanto, se recomienda que un primer control prenatal tardío se haga con una duración de 40 minutos. 3. ¿CUAL ES LA FRECUENCIA Y NUMERO DE CITAS DE CONTROL PRENATAL QUE DEBE RECIBIR UNA GESTANTE CON EMBARAZO DE CURSO NORMAL? En 1929 la Dra. Janet Campbell sugirió que, \"el primer requisito de un servicio de obstetricia es la supervisión efectiva de la salud de la mujer durante el embarazo...”"
+        ],
+        "generated_answer": "Idealmente, el primer control prenatal debe iniciarse antes de la semana 10 de gestación. Si no es posible, la OMS recomienda que sea a más tardar antes de la semana 12.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9006863505085906,
+          "faithfulness": 0.5
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 526,
+          "output_tokens": 306,
+          "total_tokens": 832,
+          "input_cost_usd": 0.00263,
+          "output_cost_usd": 0.00459,
+          "total_cost_usd": 0.00722
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. ¿Cuándo debo iniciar el control prenatal? - Dr. Leonardo Guerra\n   URL: https://drleoginecologo.com/cuando-debo-iniciar-el-control-prenatal/\n   Summary: Acude aloscontrolesprenatalesa tiempoparaprevenir síntomas comolosmencionados anteriormente. Recuerda que si has presentado estos síntomas en tu embarazoesfundamental tener un control prenatal especializado. En el que cuentes conlaayuda y guía de un médico especialista en medicina materno fetal y embarazos de alto riesgo.\n\n2. Control prenatal: cuándo se debe comenzar, consultas y exámenes\n   URL: https://www.tuasaude.com/es/prenatal/\n   Summary: El controlprenatalesun derecho de toda gestante y puede realizarse enloscentros de salud, hospitales o clínicas particulares o públicas. Durante estas consultaslamujer también debe informarse sobrelosprocedimientos y preparaciónparael parto.\n\n3. Cuidado prenatal: Visitas del primer trimestre - Mayo Clinic\n   URL: https://www.mayoclinic.org/es/healthy-lifestyle/pregnancy-week-by-week/in-depth/prenatal-care/art-20044882\n   Summary: Laspróximas consultasprenatales(que suelen programarse cada cuatrosemanasdurante el primer trimestre) podrían ser más cortas quelaprimera. Cerca del final del primer trimestre, entrelas12 ylas14semanasde embarazo,esposible que oigasloslatidos del corazón del bebé con un pequeño dispositivo llamado Doppler que hace rebotarlasondas sonoras en el corazón del bebé.Es...\n"
+        ],
+        "generated_answer": "La semana “ideal” es: cuanto antes tras confirmar el embarazo. En la práctica, se recomienda iniciar el control prenatal en el primer trimestre, preferiblemente antes de la semana 12; muchas clínicas programan la primera consulta alrededor de las 6–8 semanas. Si presentas síntomas (sangrado, dolor), enfermedades previas o factores de alto riesgo, consulta de inmediato sin esperar.\n\nReferencias:\n- Mayo Clinic: visitas del primer trimestre y seguimiento temprano del embarazo (primer trimestre) https://www.mayoclinic.org/es/healthy-lifestyle/pregnancy-week-by-week/in-depth/prenatal-care/art-20044882\n- Tuasaude: orientación sobre cuándo comenzar y qué incluyen los controles prenatales https://www.tuasaude.com/es/prenatal/\n- Dr. Leonardo Guerra: importancia de acudir “a tiempo” y, si hay síntomas, realizar control especializado https://drleoginecologo.com/cuando-debo-iniciar-el-control-prenatal/",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9095905316324909,
+          "faithfulness": 0.5
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 396,
+          "output_tokens": 1238,
+          "total_tokens": 1634,
+          "input_cost_usd": 0.00198,
+          "output_cost_usd": 0.01857,
+          "total_cost_usd": 0.02055
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00722,
+        "mcp_cost_usd": 0.02055,
+        "total_cost_usd": 0.02777,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "Se recomienda realizar el primer control prenatal en el primer trimestre, idealmente antes de la semana 10 de gestación.",
+      "question_id": 2
+    },
+    {
+      "execution_id": "f902ff74-9dfe-4881-bd60-311326ef1c02",
+      "timestamp": "2025-11-12T12:17:38.435328",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "naive",
+        "mcp_server": "tavily"
+      },
+      "prompt": "Cual es la semana ideal para iniciar los controles prenatales",
+      "rag_results": {
+        "retrieved_context": [
+          "dó que el primer control prenatal debe realizarse preferentemente antes de la semana 12 de embarazo. Sin embargo, independientemente de la edad gestacional en el momento de la primera consulta, la OMS subraya que todas las embarazadas al iniciar su control prenatal (CPN), deben ser examinadas de acuerdo a las normas para la primera visita y las visitas subsecuentes. La OMS recomienda que la primera visita debe durar entre 30 a 40 minutos.",
+          "mpo garantiza el cumplimiento de los objetivos y permite la educación a la gestante. Las demás citas pueden desarrollarse en un tiempo menor a esta consulta inicial. RECOMENDACIONES CLÍNICAS Se recomienda realizar el primer control prenatal en el primer trimestre, idealmente antes de la semana 10 de gestación. Se recomienda que la cita de inscripción al control prenatal y la primera cita de control prenatal tengan una duración de 30 minutos.",
+          "RECOMENDACIÓN CLINICA Si el control prenatal se inicia en el primer trimestre para una mujer nulípara con un embarazo de curso normal, se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas. No se recomienda un programa de control prenatal con un número reducido de citas porque se asocia con un aumento de la mortalidad perinatal. Se recomienda que las mujeres al principio del embarazo reciban información adecuada",
+          "alle la evolución de la gestación y realizar las actividades administrativas que cada cita requiere. RESUMEN Y DESCRIPCION DE LA EVIDENCIA Basado en consenso de expertos la Organización Mundial de la Salud (OMS) recomendó que el primer control prenatal debe realizarse preferentemente antes de la semana 12 de embarazo.",
+          "es recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual. Por lo tanto, se recomienda que un primer control prenatal tardío se haga con una duración de 40 minutos. 3. ¿CUAL ES LA FRECUENCIA Y NUMERO DE CITAS DE CONTROL PRENATAL QUE DEBE RECIBIR UNA GESTANTE CON EMBARAZO DE CURSO NORMAL? En 1929 la Dra. Janet Campbell sugirió que, \"el primer requisito de un servicio de obstetricia es la supervisión efectiva de la salud de la mujer durante el embarazo...”"
+        ],
+        "generated_answer": "Según la información proporcionada, la semana ideal para iniciar los controles prenatales es **antes de la semana 10 de gestación**.\n\nAdemás, se especifica que:\n\n*   El primer control prenatal debe realizarse durante el **primer trimestre**.\n*   La Organización Mundial de la Salud (OMS) recomienda que se realice preferentemente **antes de la semana 12** de embarazo.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9783104600155949,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 525,
+          "output_tokens": 714,
+          "total_tokens": 1239,
+          "input_cost_usd": 0.00065625,
+          "output_cost_usd": 0.00357,
+          "total_cost_usd": 0.00422625
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Atenciones prenatales para tener un embarazo saludable\nURL: https://www.gob.pe/40283-atenciones-prenatales-para-tener-un-embarazo-saludable\nContent: La atención prenatal es muy importante para un embarazo saludable. Establecer la fecha de parto (o fecha estimada) permite al personal de salud controlar el crecimiento de tu bebé y la evolución de tu embarazo. + El personal de salud puede realizar una variedad de pruebas prenatales que pueden incluir ecografías o análisis de sangre. El personal de salud puede programar controles prenatales cada cuatro semanas durante el segundo trimestre. Durante el tercer trimestre, el control prenatal puede comprender exámenes o pruebas para verificar la posición del bebé a medida que se acerca la fecha del parto. El personal de salud te pedirá que programes tus controles cada 2 o 4 semanas, dependiendo de tu estado de salud y de tus antecedentes de embarazo.\n\nTitle: El control del embarazo, semana a semana - Hospital Privado\nURL: https://hospitalprivado.com.ar/blog/cuidados-preventivos/el-control-del-embarazo-semana-a-semana.html\nContent: A partir de las **3 semanas** de gestación, en algunas mujeres, el test de embarazo puede ser positivo, aunque no es lo más frecuente. Entre las **8 y las 12 semanas** de embarazo se deberá programar el primer análisis de sangre, que informará acerca del estado sanguíneo, del grupo y factor sanguíneo de la madre y se analizarán las pruebas de infecciones (en términos médicos serologías) que permitirán saber si se han pasado determinadas enfermedades. **Entre las 41 y las 42 semanas** se realizan controles más seguidos y se suele llevar a cabo una monitorización de la frecuencia cardíaca del feto y de las contracciones maternas, una ecografía para valorar el líquido amniótico, el peso y los movimientos del feto y el cuello uterino.\n\nTitle: Cuidados prenatales en el primer trimestre - MedlinePlus\nURL: https://medlineplus.gov/spanish/ency/patientinstructions/000544.htm\nContent: Su proveedor de atención médica puede hablar acerca de su embarazo expresándose en semanas, en lugar de en meses o trimestres. En su primera consulta, el médico o la enfermera obstétrica le sacarán sangre para un grupo de exámenes conocidos como pruebas prenatales. En una prueba, su médico o la enfermera obstétrica puede utilizar un ultrasonido para medir la parte posterior del cuello del bebé. Otra prueba, llamada muestra de vellosidades coriónicas (MVC), puede detectar el síndrome de Down y otros trastornos genéticos incluso ya a las 10 semanas de un embarazo. Un examen más novedoso, llamado prueba de ADN libre de células, busca pequeños fragmentos de los genes de su bebé en una muestra de sangre de la madre."
+        ],
+        "generated_answer": "Según la información de los resultados de búsqueda, la semana ideal para iniciar los controles prenatales es **entre la semana 8 y la 12 de embarazo**.\n\nAquí está el desglose de la información:\n\n*   **El primer análisis de sangre**, que es una parte fundamental del control inicial, se debe programar **entre las 8 y 12 semanas** de gestación. Este análisis verifica el grupo sanguíneo de la madre y detecta posibles infecciones.\n*   Existen pruebas específicas, como la muestra de vellosidades coriónicas (MVC) para detectar el síndrome de Down y otros trastornos genéticos, que se pueden realizar **a partir de la semana 10**.\n\nEn resumen, es crucial comenzar los controles prenatales durante el primer trimestre, idealmente entre la semana 8 y 12, para realizar las primeras pruebas importantes y asegurar un seguimiento adecuado para un embarazo saludable.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9783032053352245,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 683,
+          "output_tokens": 983,
+          "total_tokens": 1666,
+          "input_cost_usd": 0.00085375,
+          "output_cost_usd": 0.004915,
+          "total_cost_usd": 0.00576875
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00422625,
+        "mcp_cost_usd": 0.00576875,
+        "total_cost_usd": 0.009995,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "Se recomienda realizar el primer control prenatal en el primer trimestre, idealmente antes de la semana 10 de gestación.",
+      "question_id": 2
+    },
+    {
+      "execution_id": "a294c46a-9588-4f01-9d87-de8dccb1c33a",
+      "timestamp": "2025-11-12T12:19:46.351851",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "naive",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "Cual es la semana ideal para iniciar los controles prenatales",
+      "rag_results": {
+        "retrieved_context": [
+          "dó que el primer control prenatal debe realizarse preferentemente antes de la semana 12 de embarazo. Sin embargo, independientemente de la edad gestacional en el momento de la primera consulta, la OMS subraya que todas las embarazadas al iniciar su control prenatal (CPN), deben ser examinadas de acuerdo a las normas para la primera visita y las visitas subsecuentes. La OMS recomienda que la primera visita debe durar entre 30 a 40 minutos.",
+          "mpo garantiza el cumplimiento de los objetivos y permite la educación a la gestante. Las demás citas pueden desarrollarse en un tiempo menor a esta consulta inicial. RECOMENDACIONES CLÍNICAS Se recomienda realizar el primer control prenatal en el primer trimestre, idealmente antes de la semana 10 de gestación. Se recomienda que la cita de inscripción al control prenatal y la primera cita de control prenatal tengan una duración de 30 minutos.",
+          "RECOMENDACIÓN CLINICA Si el control prenatal se inicia en el primer trimestre para una mujer nulípara con un embarazo de curso normal, se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas. No se recomienda un programa de control prenatal con un número reducido de citas porque se asocia con un aumento de la mortalidad perinatal. Se recomienda que las mujeres al principio del embarazo reciban información adecuada",
+          "alle la evolución de la gestación y realizar las actividades administrativas que cada cita requiere. RESUMEN Y DESCRIPCION DE LA EVIDENCIA Basado en consenso de expertos la Organización Mundial de la Salud (OMS) recomendó que el primer control prenatal debe realizarse preferentemente antes de la semana 12 de embarazo.",
+          "es recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual. Por lo tanto, se recomienda que un primer control prenatal tardío se haga con una duración de 40 minutos. 3. ¿CUAL ES LA FRECUENCIA Y NUMERO DE CITAS DE CONTROL PRENATAL QUE DEBE RECIBIR UNA GESTANTE CON EMBARAZO DE CURSO NORMAL? En 1929 la Dra. Janet Campbell sugirió que, \"el primer requisito de un servicio de obstetricia es la supervisión efectiva de la salud de la mujer durante el embarazo...”"
+        ],
+        "generated_answer": "Según la información proporcionada, la semana ideal para iniciar los controles prenatales es **antes de la semana 10 de gestación**.\n\nAdemás, se especifica que:\n\n*   El primer control prenatal debe realizarse durante el **primer trimestre**.\n*   La Organización Mundial de la Salud (OMS) recomienda que se realice preferentemente **antes de la semana 12** de embarazo.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9783104600155949,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 525,
+          "output_tokens": 714,
+          "total_tokens": 1239,
+          "input_cost_usd": 0.00065625,
+          "output_cost_usd": 0.00357,
+          "total_cost_usd": 0.00422625
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. ¿Cuándo debo iniciar el control prenatal? - Dr. Leonardo Guerra\n   URL: https://drleoginecologo.com/cuando-debo-iniciar-el-control-prenatal/\n   Summary: Acude aloscontrolesprenatalesa tiempoparaprevenir síntomas comolosmencionados anteriormente. Recuerda que si has presentado estos síntomas en tu embarazoesfundamental tener un control prenatal especializado. En el que cuentes conlaayuda y guía de un médico especialista en medicina materno fetal y embarazos de alto riesgo.\n\n2. Cuidado prenatal: Visitas del primer trimestre - Mayo Clinic\n   URL: https://www.mayoclinic.org/es/healthy-lifestyle/pregnancy-week-by-week/in-depth/prenatal-care/art-20044882\n   Summary: Laspróximas consultasprenatales(que suelen programarse cada cuatrosemanasdurante el primer trimestre) podrían ser más cortas quelaprimera. Cerca del final del primer trimestre, entrelas12 ylas14semanasde embarazo,esposible que oigasloslatidos del corazón del bebé con un pequeño dispositivo llamado Doppler que hace rebotarlasondas sonoras en el corazón del bebé.Es...\n\n3. Control prenatal: cuándo se debe comenzar, consultas y exámenes\n   URL: https://www.tuasaude.com/es/prenatal/\n   Summary: El controlprenatalesun derecho de toda gestante y puede realizarse enloscentros de salud, hospitales o clínicas particulares o públicas. Durante estas consultaslamujer también debe informarse sobrelosprocedimientos y preparaciónparael parto.\n"
+        ],
+        "generated_answer": "Según la información de los resultados de búsqueda, la semana ideal para iniciar los controles prenatales es durante el **primer trimestre del embarazo**.\n\nAquí están los detalles clave extraídos de las fuentes:\n\n*   **Mayo Clinic** indica que las consultas prenatales se programan durante el primer trimestre, generalmente cada cuatro semanas. Menciona que hacia el final de este período, entre las semanas 12 y 14, ya es posible escuchar los latidos del corazón del bebé, lo que sugiere que la primera visita debe ocurrir antes de ese momento.\n*   El **Dr. Leonardo Guerra** enfatiza la importancia de acudir a los controles \"a tiempo\" para prevenir síntomas y recibir la guía de un especialista, especialmente en embarazos de alto riesgo.\n\nEn resumen, aunque no se especifica una única \"semana ideal\", el consenso es que el control prenatal debe comenzar lo antes posible, dentro del primer trimestre, una vez que se confirma el embarazo.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.5714285714285714
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 418,
+          "output_tokens": 1084,
+          "total_tokens": 1502,
+          "input_cost_usd": 0.0005225,
+          "output_cost_usd": 0.00542,
+          "total_cost_usd": 0.0059425
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00422625,
+        "mcp_cost_usd": 0.0059425,
+        "total_cost_usd": 0.01016875,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "Se recomienda realizar el primer control prenatal en el primer trimestre, idealmente antes de la semana 10 de gestación.",
+      "question_id": 2
+    },
+    {
+      "execution_id": "1518303b-041f-450e-b427-f3b18e993bc9",
+      "timestamp": "2025-11-12T12:20:45.462083",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "hybrid",
+        "mcp_server": "tavily"
+      },
+      "prompt": "Cual es la semana ideal para iniciar los controles prenatales",
+      "rag_results": {
+        "retrieved_context": [
+          "dó que el primer control prenatal debe realizarse preferentemente antes de la semana 12 de embarazo. Sin embargo, independientemente de la edad gestacional en el momento de la primera consulta, la OMS subraya que todas las embarazadas al iniciar su control prenatal (CPN), deben ser examinadas de acuerdo a las normas para la primera visita y las visitas subsecuentes. La OMS recomienda que la primera visita debe durar entre 30 a 40 minutos.",
+          "mpo garantiza el cumplimiento de los objetivos y permite la educación a la gestante. Las demás citas pueden desarrollarse en un tiempo menor a esta consulta inicial. RECOMENDACIONES CLÍNICAS Se recomienda realizar el primer control prenatal en el primer trimestre, idealmente antes de la semana 10 de gestación. Se recomienda que la cita de inscripción al control prenatal y la primera cita de control prenatal tengan una duración de 30 minutos.",
+          "RECOMENDACIÓN CLINICA Si el control prenatal se inicia en el primer trimestre para una mujer nulípara con un embarazo de curso normal, se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas. No se recomienda un programa de control prenatal con un número reducido de citas porque se asocia con un aumento de la mortalidad perinatal. Se recomienda que las mujeres al principio del embarazo reciban información adecuada",
+          "alle la evolución de la gestación y realizar las actividades administrativas que cada cita requiere. RESUMEN Y DESCRIPCION DE LA EVIDENCIA Basado en consenso de expertos la Organización Mundial de la Salud (OMS) recomendó que el primer control prenatal debe realizarse preferentemente antes de la semana 12 de embarazo.",
+          "es recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual. Por lo tanto, se recomienda que un primer control prenatal tardío se haga con una duración de 40 minutos. 3. ¿CUAL ES LA FRECUENCIA Y NUMERO DE CITAS DE CONTROL PRENATAL QUE DEBE RECIBIR UNA GESTANTE CON EMBARAZO DE CURSO NORMAL? En 1929 la Dra. Janet Campbell sugirió que, \"el primer requisito de un servicio de obstetricia es la supervisión efectiva de la salud de la mujer durante el embarazo...”"
+        ],
+        "generated_answer": "Según la información proporcionada, la semana ideal para iniciar los controles prenatales es **antes de la semana 10 de gestación**.\n\nAdicionalmente, el texto menciona que la Organización Mundial de la Salud (OMS) recomienda que el primer control prenatal se realice preferentemente **antes de la semana 12 de embarazo**.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9693401628061097,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 525,
+          "output_tokens": 745,
+          "total_tokens": 1270,
+          "input_cost_usd": 0.00065625,
+          "output_cost_usd": 0.003725,
+          "total_cost_usd": 0.00438125
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Atenciones prenatales para tener un embarazo saludable\nURL: https://www.gob.pe/40283-atenciones-prenatales-para-tener-un-embarazo-saludable\nContent: La atención prenatal es muy importante para un embarazo saludable. Establecer la fecha de parto (o fecha estimada) permite al personal de salud controlar el crecimiento de tu bebé y la evolución de tu embarazo. + El personal de salud puede realizar una variedad de pruebas prenatales que pueden incluir ecografías o análisis de sangre. El personal de salud puede programar controles prenatales cada cuatro semanas durante el segundo trimestre. Durante el tercer trimestre, el control prenatal puede comprender exámenes o pruebas para verificar la posición del bebé a medida que se acerca la fecha del parto. El personal de salud te pedirá que programes tus controles cada 2 o 4 semanas, dependiendo de tu estado de salud y de tus antecedentes de embarazo.\n\nTitle: El control del embarazo, semana a semana - Hospital Privado\nURL: https://hospitalprivado.com.ar/blog/cuidados-preventivos/el-control-del-embarazo-semana-a-semana.html\nContent: A partir de las **3 semanas** de gestación, en algunas mujeres, el test de embarazo puede ser positivo, aunque no es lo más frecuente. Entre las **8 y las 12 semanas** de embarazo se deberá programar el primer análisis de sangre, que informará acerca del estado sanguíneo, del grupo y factor sanguíneo de la madre y se analizarán las pruebas de infecciones (en términos médicos serologías) que permitirán saber si se han pasado determinadas enfermedades. **Entre las 41 y las 42 semanas** se realizan controles más seguidos y se suele llevar a cabo una monitorización de la frecuencia cardíaca del feto y de las contracciones maternas, una ecografía para valorar el líquido amniótico, el peso y los movimientos del feto y el cuello uterino.\n\nTitle: Cuidados prenatales en el primer trimestre - MedlinePlus\nURL: https://medlineplus.gov/spanish/ency/patientinstructions/000544.htm\nContent: Su proveedor de atención médica puede hablar acerca de su embarazo expresándose en semanas, en lugar de en meses o trimestres. En su primera consulta, el médico o la enfermera obstétrica le sacarán sangre para un grupo de exámenes conocidos como pruebas prenatales. En una prueba, su médico o la enfermera obstétrica puede utilizar un ultrasonido para medir la parte posterior del cuello del bebé. Otra prueba, llamada muestra de vellosidades coriónicas (MVC), puede detectar el síndrome de Down y otros trastornos genéticos incluso ya a las 10 semanas de un embarazo. Un examen más novedoso, llamado prueba de ADN libre de células, busca pequeños fragmentos de los genes de su bebé en una muestra de sangre de la madre."
+        ],
+        "generated_answer": "Según la información de los resultados de búsqueda, la semana ideal para iniciar los controles prenatales es **entre la semana 8 y la 12 de gestación**.\n\nAquí están los puntos clave que respaldan esta respuesta:\n\n*   **Primer análisis de sangre:** Se debe programar el primer análisis de sangre entre las semanas 8 y 12. Este análisis es crucial para conocer el estado sanguíneo, el grupo y factor de la madre, y para detectar posibles infecciones.\n*   **Pruebas genéticas tempranas:** Algunas pruebas genéticas, como la muestra de vellosidades coriónicas (MVC) para detectar el síndrome de Down y otros trastornos, se pueden realizar a partir de la semana 10 de embarazo.\n*   **Importancia del inicio temprano:** Comenzar los controles prenatales a tiempo permite al personal de salud establecer una fecha estimada de parto, controlar el crecimiento del bebé y la evolución general del embarazo desde una etapa temprana.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9859652366734922,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 683,
+          "output_tokens": 1269,
+          "total_tokens": 1952,
+          "input_cost_usd": 0.00085375,
+          "output_cost_usd": 0.006345,
+          "total_cost_usd": 0.00719875
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00438125,
+        "mcp_cost_usd": 0.00719875,
+        "total_cost_usd": 0.01158,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "Se recomienda realizar el primer control prenatal en el primer trimestre, idealmente antes de la semana 10 de gestación.",
+      "question_id": 2
+    },
+    {
+      "execution_id": "4e001048-2325-47ca-bf48-2f3ee4f8b546",
+      "timestamp": "2025-11-12T12:21:53.024981",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "hybrid",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "Cual es la semana ideal para iniciar los controles prenatales",
+      "rag_results": {
+        "retrieved_context": [
+          "dó que el primer control prenatal debe realizarse preferentemente antes de la semana 12 de embarazo. Sin embargo, independientemente de la edad gestacional en el momento de la primera consulta, la OMS subraya que todas las embarazadas al iniciar su control prenatal (CPN), deben ser examinadas de acuerdo a las normas para la primera visita y las visitas subsecuentes. La OMS recomienda que la primera visita debe durar entre 30 a 40 minutos.",
+          "mpo garantiza el cumplimiento de los objetivos y permite la educación a la gestante. Las demás citas pueden desarrollarse en un tiempo menor a esta consulta inicial. RECOMENDACIONES CLÍNICAS Se recomienda realizar el primer control prenatal en el primer trimestre, idealmente antes de la semana 10 de gestación. Se recomienda que la cita de inscripción al control prenatal y la primera cita de control prenatal tengan una duración de 30 minutos.",
+          "RECOMENDACIÓN CLINICA Si el control prenatal se inicia en el primer trimestre para una mujer nulípara con un embarazo de curso normal, se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas. No se recomienda un programa de control prenatal con un número reducido de citas porque se asocia con un aumento de la mortalidad perinatal. Se recomienda que las mujeres al principio del embarazo reciban información adecuada",
+          "alle la evolución de la gestación y realizar las actividades administrativas que cada cita requiere. RESUMEN Y DESCRIPCION DE LA EVIDENCIA Basado en consenso de expertos la Organización Mundial de la Salud (OMS) recomendó que el primer control prenatal debe realizarse preferentemente antes de la semana 12 de embarazo.",
+          "es recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual. Por lo tanto, se recomienda que un primer control prenatal tardío se haga con una duración de 40 minutos. 3. ¿CUAL ES LA FRECUENCIA Y NUMERO DE CITAS DE CONTROL PRENATAL QUE DEBE RECIBIR UNA GESTANTE CON EMBARAZO DE CURSO NORMAL? En 1929 la Dra. Janet Campbell sugirió que, \"el primer requisito de un servicio de obstetricia es la supervisión efectiva de la salud de la mujer durante el embarazo...”"
+        ],
+        "generated_answer": "Según la información proporcionada, la semana ideal para iniciar los controles prenatales es **antes de la semana 10 de gestación**.\n\nAdicionalmente, el texto menciona que la Organización Mundial de la Salud (OMS) recomienda que el primer control prenatal se realice preferentemente **antes de la semana 12 de embarazo**.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9169163230089482,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 525,
+          "output_tokens": 677,
+          "total_tokens": 1202,
+          "input_cost_usd": 0.00065625,
+          "output_cost_usd": 0.003385,
+          "total_cost_usd": 0.00404125
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. ¿Cuándo debo iniciar el control prenatal? - Dr. Leonardo Guerra\n   URL: https://drleoginecologo.com/cuando-debo-iniciar-el-control-prenatal/\n   Summary: Acude aloscontrolesprenatalesa tiempoparaprevenir síntomas comolosmencionados anteriormente. Recuerda que si has presentado estos síntomas en tu embarazoesfundamental tener un control prenatal especializado. En el que cuentes conlaayuda y guía de un médico especialista en medicina materno fetal y embarazos de alto riesgo.\n\n2. Control prenatal: cuándo se debe comenzar, consultas y exámenes\n   URL: https://www.tuasaude.com/es/prenatal/\n   Summary: El controlprenatalesun derecho de toda gestante y puede realizarse enloscentros de salud, hospitales o clínicas particulares o públicas. Durante estas consultaslamujer también debe informarse sobrelosprocedimientos y preparaciónparael parto.\n\n3. Cuidado prenatal: Visitas del primer trimestre - Mayo Clinic\n   URL: https://www.mayoclinic.org/es/healthy-lifestyle/pregnancy-week-by-week/in-depth/prenatal-care/art-20044882\n   Summary: Laspróximas consultasprenatales(que suelen programarse cada cuatrosemanasdurante el primer trimestre) podrían ser más cortas quelaprimera. Cerca del final del primer trimestre, entrelas12 ylas14semanasde embarazo,esposible que oigasloslatidos del corazón del bebé con un pequeño dispositivo llamado Doppler que hace rebotarlasondas sonoras en el corazón del bebé.Es...\n"
+        ],
+        "generated_answer": "Según los resultados de la búsqueda, la semana ideal para iniciar los controles prenatales es durante el **primer trimestre** del embarazo.\n\nLa información más específica proviene de la **Mayo Clinic**, que indica:\n\n*   Las consultas prenatales suelen programarse cada cuatro semanas durante el primer trimestre.\n*   Hacia el final del primer trimestre, entre las semanas 12 y 14, ya es posible escuchar los latidos del corazón del bebé, lo que sugiere que el control ya debe haber comenzado para ese momento.\n\nAunque los otros resultados no especifican una semana exacta, refuerzan la importancia de acudir a los controles prenatales \"a tiempo\" para prevenir síntomas y complicaciones, especialmente en embarazos de alto riesgo.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9783104600155949,
+          "faithfulness": 0.7777777777777778
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 418,
+          "output_tokens": 1086,
+          "total_tokens": 1504,
+          "input_cost_usd": 0.0005225,
+          "output_cost_usd": 0.00543,
+          "total_cost_usd": 0.0059525
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00404125,
+        "mcp_cost_usd": 0.0059525,
+        "total_cost_usd": 0.00999375,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "Se recomienda realizar el primer control prenatal en el primer trimestre, idealmente antes de la semana 10 de gestación.",
+      "question_id": 2
+    }
+  ]
+}

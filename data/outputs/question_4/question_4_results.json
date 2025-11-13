@@ -1,0 +1,531 @@
+{
+  "question_id": 4,
+  "question": "¿Cuál es la cantidad ideal de controles prenatales?",
+  "ground_truth": "se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas",
+  "total_configurations": 8,
+  "timestamp": "2025-11-12T13:45:12.480441",
+  "configurations": [
+    {
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo"
+    }
+  ],
+  "results": [
+    {
+      "execution_id": "4bb6a40b-990c-4ddb-b2fd-f6605fbcce16",
+      "timestamp": "2025-11-12T13:29:33.872194",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "naive",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Cuál es la cantidad ideal de controles prenatales?",
+      "rag_results": {
+        "retrieved_context": [
+          "RECOMENDACIÓN CLINICA Si el control prenatal se inicia en el primer trimestre para una mujer nulípara con un embarazo de curso normal, se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas. No se recomienda un programa de control prenatal con un número reducido de citas porque se asocia con un aumento de la mortalidad perinatal. Se recomienda que las mujeres al principio del embarazo reciban información adecuada",
+          "es recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual. Por lo tanto, se recomienda que un primer control prenatal tardío se haga con una duración de 40 minutos. 3. ¿CUAL ES LA FRECUENCIA Y NUMERO DE CITAS DE CONTROL PRENATAL QUE DEBE RECIBIR UNA GESTANTE CON EMBARAZO DE CURSO NORMAL? En 1929 la Dra. Janet Campbell sugirió que, \"el primer requisito de un servicio de obstetricia es la supervisión efectiva de la salud de la mujer durante el embarazo...”",
+          "en embarazo previos prefirieron un esquema con un mayor número de citas. Una revisión sistemática de siete ECC con más de 60.000 mujeres junto con un ensayo clínico incluido en la revisión , encontraron que las mujeres en países de altos ingresos económicos asistieron a un promedio de 8,2 a 12 consultas prenatales, mientras que las mujeres en países de bajo o mediano ingreso asistieron a menos de cinco citas. La mortalidad perinatal se incrementó en el grupo de controles reducidos en comparación",
+          "bjetivos específicos, podría ser igualmente eficaz, en términos de mortalidad y morbilidad materna y neonatal, a los esquemas con un número mayor de controles (de 10 a 12). RESUMEN Y DISCUSIÓN DE LA EVIDENCIA Dos revisiones sistemáticas con 10 ECC (60.000 mujeres) y siete ECC (57.418 mujeres) respectivamente, evaluaron las diferencias entre un número reducido de consultas vs. un número estándar de controles prenatales (44, 49).",
+          "ncias entre un número reducido de consultas vs. un número estándar de controles prenatales (44, 49). Dichos estudios no encontraron diferencias significativas en desenlaces como pre- eclampsia (OR= 0,91; IC 95%= 0,66–1,26), cesárea (OR=0,99; IC 95%= 0,79-1,25), hemorragia prenatal (OR= 0,79; IC 95%= 0,57-1,10), hemorragia posparto (OR=1,02; IC 95%= 0,64-1,64), bajo peso al nacer (OR=1,04; IC 95%= 0,93–1,17), mortalidad perinatal (OR= 1,06; IC 95%= 0,82 – 1,36), mortalidad materna (OR= 0,91; IC"
+        ],
+        "generated_answer": "- Nulípara con embarazo de curso normal (inicia control en el 1.er trimestre): 10 controles.\n- Multípara con embarazo de curso normal: 7 controles.\n\nNo se recomienda reducir más el número de citas, pues se ha asociado con mayor mortalidad perinatal.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.8241376630881713,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 691,
+          "output_tokens": 454,
+          "total_tokens": 1145,
+          "input_cost_usd": 0.003455,
+          "output_cost_usd": 0.00681,
+          "total_cost_usd": 0.010265
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Todo sobre cuidados y controles durante el embarazo - Promedco\nURL: https://www.promedco.com/noticias/cuidados-y-controles-en-el-embarazo\nContent: Basados en las investigaciones realizadas sobre este factor se estima que lo ideal es realizar entre 8 y 10 consultas prenatales, las cuales\n\nTitle: Atenciones prenatales para tener un embarazo saludable\nURL: https://www.gob.pe/40283-atenciones-prenatales-para-tener-un-embarazo-saludable\nContent: La atención prenatal es muy importante para un embarazo saludable. Establecer la fecha de parto (o fecha estimada) permite al personal de salud controlar el crecimiento de tu bebé y la evolución de tu embarazo. + El personal de salud puede realizar una variedad de pruebas prenatales que pueden incluir ecografías o análisis de sangre. El personal de salud puede programar controles prenatales cada cuatro semanas durante el segundo trimestre. Durante el tercer trimestre, el control prenatal puede comprender exámenes o pruebas para verificar la posición del bebé a medida que se acerca la fecha del parto. El personal de salud te pedirá que programes tus controles cada 2 o 4 semanas, dependiendo de tu estado de salud y de tus antecedentes de embarazo.\n\nTitle: Control Prenatal | Revista Médica Clínica Las Condes - Elsevier\nURL: https://www.elsevier.es/es-revista-revista-medica-clinica-las-condes-202-articulo-control-prenatal-S0716864014706340\nContent: Una mujer sana debe comenzar a tomar ácido fólico (400mg/día), idealmente dos meses antes de la concepción y continuarlo hasta al menos las 12 semanas (3–5)."
+        ],
+        "generated_answer": "Lo ideal es realizar entre 8 y 10 controles prenatales. Además, la programación suele ser cada 4 semanas en el segundo trimestre y cada 2 a 4 semanas en el tercero, ajustándose a tu salud y antecedentes.\n\nFuentes:\n- Promedco: “lo ideal es realizar entre 8 y 10 consultas prenatales” (https://www.promedco.com/noticias/cuidados-y-controles-en-el-embarazo)\n- Gob.pe: orientaciones sobre la frecuencia de controles por trimestre (https://www.gob.pe/40283-atenciones-prenatales-para-tener-un-embarazo-saludable)",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9539421013908097,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 409,
+          "output_tokens": 720,
+          "total_tokens": 1129,
+          "input_cost_usd": 0.002045,
+          "output_cost_usd": 0.0108,
+          "total_cost_usd": 0.012845
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.010265,
+        "mcp_cost_usd": 0.012845,
+        "total_cost_usd": 0.02311,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas",
+      "question_id": 4
+    },
+    {
+      "execution_id": "7e73da0f-be5d-42e9-a255-53ddc8b3483e",
+      "timestamp": "2025-11-12T13:31:14.692013",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "naive",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Cuál es la cantidad ideal de controles prenatales?",
+      "rag_results": {
+        "retrieved_context": [
+          "RECOMENDACIÓN CLINICA Si el control prenatal se inicia en el primer trimestre para una mujer nulípara con un embarazo de curso normal, se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas. No se recomienda un programa de control prenatal con un número reducido de citas porque se asocia con un aumento de la mortalidad perinatal. Se recomienda que las mujeres al principio del embarazo reciban información adecuada",
+          "es recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual. Por lo tanto, se recomienda que un primer control prenatal tardío se haga con una duración de 40 minutos. 3. ¿CUAL ES LA FRECUENCIA Y NUMERO DE CITAS DE CONTROL PRENATAL QUE DEBE RECIBIR UNA GESTANTE CON EMBARAZO DE CURSO NORMAL? En 1929 la Dra. Janet Campbell sugirió que, \"el primer requisito de un servicio de obstetricia es la supervisión efectiva de la salud de la mujer durante el embarazo...”",
+          "en embarazo previos prefirieron un esquema con un mayor número de citas. Una revisión sistemática de siete ECC con más de 60.000 mujeres junto con un ensayo clínico incluido en la revisión , encontraron que las mujeres en países de altos ingresos económicos asistieron a un promedio de 8,2 a 12 consultas prenatales, mientras que las mujeres en países de bajo o mediano ingreso asistieron a menos de cinco citas. La mortalidad perinatal se incrementó en el grupo de controles reducidos en comparación",
+          "bjetivos específicos, podría ser igualmente eficaz, en términos de mortalidad y morbilidad materna y neonatal, a los esquemas con un número mayor de controles (de 10 a 12). RESUMEN Y DISCUSIÓN DE LA EVIDENCIA Dos revisiones sistemáticas con 10 ECC (60.000 mujeres) y siete ECC (57.418 mujeres) respectivamente, evaluaron las diferencias entre un número reducido de consultas vs. un número estándar de controles prenatales (44, 49).",
+          "ncias entre un número reducido de consultas vs. un número estándar de controles prenatales (44, 49). Dichos estudios no encontraron diferencias significativas en desenlaces como pre- eclampsia (OR= 0,91; IC 95%= 0,66–1,26), cesárea (OR=0,99; IC 95%= 0,79-1,25), hemorragia prenatal (OR= 0,79; IC 95%= 0,57-1,10), hemorragia posparto (OR=1,02; IC 95%= 0,64-1,64), bajo peso al nacer (OR=1,04; IC 95%= 0,93–1,17), mortalidad perinatal (OR= 1,06; IC 95%= 0,82 – 1,36), mortalidad materna (OR= 0,91; IC"
+        ],
+        "generated_answer": "- Nulípara con embarazo de curso normal (inicio del control en el 1er trimestre): 10 controles.\n- Multípara con embarazo de curso normal: 7 controles.\n\nNo se recomienda reducir el número de citas porque se asocia con mayor mortalidad perinatal.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9134938508401665,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 691,
+          "output_tokens": 388,
+          "total_tokens": 1079,
+          "input_cost_usd": 0.003455,
+          "output_cost_usd": 0.00582,
+          "total_cost_usd": 0.009275
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. ¿Cuántos y cuáles son los controles prenatales?\n   URL: https://drleoginecologo.com/cuantos-y-cuales-son-los-controles-prenatales/\n   Summary: Preparación para el parto y postparto: En los últimoscontrolesprenatales, se discuten detalles del parto, se establecen planesdeparto y se brinda información sobre el postparto.Lapreparación paralalactancia y el cuidado del recién nacido son temas importantes que se abordan para una transición suave hacialamaternidad.\n\n2. CONTROL PRENATAL Flashcards | Quizlet\n   URL: https://quizlet.com/co/611167606/control-prenatal-flash-cards/\n   Summary: Study with Quizlet and memorize flashcards containing terms like¿Cualeslacantidaddecontrolesprenatalesideales ?, ¿Cuando debe ser el iniciodeloscontrolesprenatales?, ¿Cuanto dura una consultadecontrol prenatal? and more.\n\n3. ¿Cuántos controles prenatales debe tener una gestante oms?\n   URL: https://todosloshechos.es/cuantos-controles-prenatales-debe-tener-una-gestante-oms\n   Summary: ¿Cuántoscontrolesse realizan durante el embarazo?Larecomendación del organismoesque haya un mínimodeochocontrolesdurante el embarazo: el primero antesdelasemana 12 y, luego, enlassemanas 20, 26, 30, 34, 36, 38 y 40. ¿Cuántoscontrolesprenatalesdebe hacer una mujer durante el embarazo según OMS?\n"
+        ],
+        "generated_answer": "La cantidad ideal es un mínimo de 8 controles prenatales, según la recomendación actual de la OMS. Cronograma sugerido: uno antes de la semana 12 y luego en las semanas 20, 26, 30, 34, 36, 38 y 40. Si existen factores de riesgo o complicaciones, pueden requerirse controles adicionales.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9783803502726388,
+          "faithfulness": 0.8
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 402,
+          "output_tokens": 661,
+          "total_tokens": 1063,
+          "input_cost_usd": 0.00201,
+          "output_cost_usd": 0.009915,
+          "total_cost_usd": 0.011925
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.009275,
+        "mcp_cost_usd": 0.011925,
+        "total_cost_usd": 0.0212,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas",
+      "question_id": 4
+    },
+    {
+      "execution_id": "cb751e1b-67d9-41b7-9885-dedec0b9b666",
+      "timestamp": "2025-11-12T13:33:16.612951",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "hybrid",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Cuál es la cantidad ideal de controles prenatales?",
+      "rag_results": {
+        "retrieved_context": [
+          "RECOMENDACIÓN CLINICA Si el control prenatal se inicia en el primer trimestre para una mujer nulípara con un embarazo de curso normal, se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas. No se recomienda un programa de control prenatal con un número reducido de citas porque se asocia con un aumento de la mortalidad perinatal. Se recomienda que las mujeres al principio del embarazo reciban información adecuada",
+          "es recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual. Por lo tanto, se recomienda que un primer control prenatal tardío se haga con una duración de 40 minutos. 3. ¿CUAL ES LA FRECUENCIA Y NUMERO DE CITAS DE CONTROL PRENATAL QUE DEBE RECIBIR UNA GESTANTE CON EMBARAZO DE CURSO NORMAL? En 1929 la Dra. Janet Campbell sugirió que, \"el primer requisito de un servicio de obstetricia es la supervisión efectiva de la salud de la mujer durante el embarazo...”",
+          "en embarazo previos prefirieron un esquema con un mayor número de citas. Una revisión sistemática de siete ECC con más de 60.000 mujeres junto con un ensayo clínico incluido en la revisión , encontraron que las mujeres en países de altos ingresos económicos asistieron a un promedio de 8,2 a 12 consultas prenatales, mientras que las mujeres en países de bajo o mediano ingreso asistieron a menos de cinco citas. La mortalidad perinatal se incrementó en el grupo de controles reducidos en comparación",
+          "bjetivos específicos, podría ser igualmente eficaz, en términos de mortalidad y morbilidad materna y neonatal, a los esquemas con un número mayor de controles (de 10 a 12). RESUMEN Y DISCUSIÓN DE LA EVIDENCIA Dos revisiones sistemáticas con 10 ECC (60.000 mujeres) y siete ECC (57.418 mujeres) respectivamente, evaluaron las diferencias entre un número reducido de consultas vs. un número estándar de controles prenatales (44, 49).",
+          "ncias entre un número reducido de consultas vs. un número estándar de controles prenatales (44, 49). Dichos estudios no encontraron diferencias significativas en desenlaces como pre- eclampsia (OR= 0,91; IC 95%= 0,66–1,26), cesárea (OR=0,99; IC 95%= 0,79-1,25), hemorragia prenatal (OR= 0,79; IC 95%= 0,57-1,10), hemorragia posparto (OR=1,02; IC 95%= 0,64-1,64), bajo peso al nacer (OR=1,04; IC 95%= 0,93–1,17), mortalidad perinatal (OR= 1,06; IC 95%= 0,82 – 1,36), mortalidad materna (OR= 0,91; IC"
+        ],
+        "generated_answer": "Para un embarazo de curso normal iniciado en el primer trimestre:\n- Nulíparas: 10 controles prenatales.\n- Multíparas: 7 controles prenatales.\n\nNo se recomienda reducir el número de citas, porque se asocia con mayor mortalidad perinatal.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9374748202711402,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 691,
+          "output_tokens": 387,
+          "total_tokens": 1078,
+          "input_cost_usd": 0.003455,
+          "output_cost_usd": 0.005805,
+          "total_cost_usd": 0.00926
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Todo sobre cuidados y controles durante el embarazo - Promedco\nURL: https://www.promedco.com/noticias/cuidados-y-controles-en-el-embarazo\nContent: Basados en las investigaciones realizadas sobre este factor se estima que lo ideal es realizar entre 8 y 10 consultas prenatales, las cuales\n\nTitle: Atenciones prenatales para tener un embarazo saludable\nURL: https://www.gob.pe/40283-atenciones-prenatales-para-tener-un-embarazo-saludable\nContent: La atención prenatal es muy importante para un embarazo saludable. Establecer la fecha de parto (o fecha estimada) permite al personal de salud controlar el crecimiento de tu bebé y la evolución de tu embarazo. + El personal de salud puede realizar una variedad de pruebas prenatales que pueden incluir ecografías o análisis de sangre. El personal de salud puede programar controles prenatales cada cuatro semanas durante el segundo trimestre. Durante el tercer trimestre, el control prenatal puede comprender exámenes o pruebas para verificar la posición del bebé a medida que se acerca la fecha del parto. El personal de salud te pedirá que programes tus controles cada 2 o 4 semanas, dependiendo de tu estado de salud y de tus antecedentes de embarazo.\n\nTitle: Control Prenatal | Revista Médica Clínica Las Condes - Elsevier\nURL: https://www.elsevier.es/es-revista-revista-medica-clinica-las-condes-202-articulo-control-prenatal-S0716864014706340\nContent: Una mujer sana debe comenzar a tomar ácido fólico (400mg/día), idealmente dos meses antes de la concepción y continuarlo hasta al menos las 12 semanas (3–5)."
+        ],
+        "generated_answer": "Lo ideal es realizar entre 8 y 10 controles prenatales. La frecuencia exacta se ajusta a cada embarazo: comúnmente se programan controles cada 4 semanas en el segundo trimestre y cada 2–4 semanas en el tercero, según tu salud y antecedentes. Fuentes: Promedco (8–10 controles) y Gob.pe (frecuencia por trimestre).",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.8333333333333334
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 409,
+          "output_tokens": 471,
+          "total_tokens": 880,
+          "input_cost_usd": 0.002045,
+          "output_cost_usd": 0.007065,
+          "total_cost_usd": 0.00911
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00926,
+        "mcp_cost_usd": 0.00911,
+        "total_cost_usd": 0.01837,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas",
+      "question_id": 4
+    },
+    {
+      "execution_id": "82f4aedf-df35-471e-a147-e321becc6295",
+      "timestamp": "2025-11-12T13:34:56.637578",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "hybrid",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Cuál es la cantidad ideal de controles prenatales?",
+      "rag_results": {
+        "retrieved_context": [
+          "RECOMENDACIÓN CLINICA Si el control prenatal se inicia en el primer trimestre para una mujer nulípara con un embarazo de curso normal, se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas. No se recomienda un programa de control prenatal con un número reducido de citas porque se asocia con un aumento de la mortalidad perinatal. Se recomienda que las mujeres al principio del embarazo reciban información adecuada",
+          "es recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual. Por lo tanto, se recomienda que un primer control prenatal tardío se haga con una duración de 40 minutos. 3. ¿CUAL ES LA FRECUENCIA Y NUMERO DE CITAS DE CONTROL PRENATAL QUE DEBE RECIBIR UNA GESTANTE CON EMBARAZO DE CURSO NORMAL? En 1929 la Dra. Janet Campbell sugirió que, \"el primer requisito de un servicio de obstetricia es la supervisión efectiva de la salud de la mujer durante el embarazo...”",
+          "en embarazo previos prefirieron un esquema con un mayor número de citas. Una revisión sistemática de siete ECC con más de 60.000 mujeres junto con un ensayo clínico incluido en la revisión , encontraron que las mujeres en países de altos ingresos económicos asistieron a un promedio de 8,2 a 12 consultas prenatales, mientras que las mujeres en países de bajo o mediano ingreso asistieron a menos de cinco citas. La mortalidad perinatal se incrementó en el grupo de controles reducidos en comparación",
+          "bjetivos específicos, podría ser igualmente eficaz, en términos de mortalidad y morbilidad materna y neonatal, a los esquemas con un número mayor de controles (de 10 a 12). RESUMEN Y DISCUSIÓN DE LA EVIDENCIA Dos revisiones sistemáticas con 10 ECC (60.000 mujeres) y siete ECC (57.418 mujeres) respectivamente, evaluaron las diferencias entre un número reducido de consultas vs. un número estándar de controles prenatales (44, 49).",
+          "ncias entre un número reducido de consultas vs. un número estándar de controles prenatales (44, 49). Dichos estudios no encontraron diferencias significativas en desenlaces como pre- eclampsia (OR= 0,91; IC 95%= 0,66–1,26), cesárea (OR=0,99; IC 95%= 0,79-1,25), hemorragia prenatal (OR= 0,79; IC 95%= 0,57-1,10), hemorragia posparto (OR=1,02; IC 95%= 0,64-1,64), bajo peso al nacer (OR=1,04; IC 95%= 0,93–1,17), mortalidad perinatal (OR= 1,06; IC 95%= 0,82 – 1,36), mortalidad materna (OR= 0,91; IC"
+        ],
+        "generated_answer": "- Embarazo de curso normal iniciado en el primer trimestre:\n  - Nulípara (primigesta): 10 controles prenatales.\n  - Multípara: 7 controles prenatales.\n\nNo se recomiendan esquemas con menos controles, pues se asocian a mayor mortalidad perinatal. En embarazos de alto riesgo se individualiza y suelen requerirse más visitas.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.8199557250717984,
+          "faithfulness": 0.6666666666666666
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 691,
+          "output_tokens": 605,
+          "total_tokens": 1296,
+          "input_cost_usd": 0.003455,
+          "output_cost_usd": 0.009075,
+          "total_cost_usd": 0.01253
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. ¿Cuántos y cuáles son los controles prenatales?\n   URL: https://drleoginecologo.com/cuantos-y-cuales-son-los-controles-prenatales/\n   Summary: Preparación para el parto y postparto: En los últimoscontrolesprenatales, se discuten detalles del parto, se establecen planesdeparto y se brinda información sobre el postparto.Lapreparación paralalactancia y el cuidado del recién nacido son temas importantes que se abordan para una transición suave hacialamaternidad.\n\n2. ¿Cuántos controles prenatales debe tener una gestante oms?\n   URL: https://todosloshechos.es/cuantos-controles-prenatales-debe-tener-una-gestante-oms\n   Summary: ¿Cuántoscontrolesse realizan durante el embarazo?Larecomendación del organismoesque haya un mínimodeochocontrolesdurante el embarazo: el primero antesdelasemana 12 y, luego, enlassemanas 20, 26, 30, 34, 36, 38 y 40. ¿Cuántoscontrolesprenatalesdebe hacer una mujer durante el embarazo según OMS?\n\n3. CONTROL PRENATAL Flashcards | Quizlet\n   URL: https://quizlet.com/co/611167606/control-prenatal-flash-cards/\n   Summary: Study with Quizlet and memorize flashcards containing terms like¿Cualeslacantidaddecontrolesprenatalesideales ?, ¿Cuando debe ser el iniciodeloscontrolesprenatales?, ¿Cuanto dura una consultadecontrol prenatal? and more.\n"
+        ],
+        "generated_answer": "La cantidad ideal es un mínimo de 8 controles prenatales (contactos), según la recomendación de la OMS. El esquema sugerido es:\n- 1.º antes de la semana 12\n- Luego en las semanas 20, 26, 30, 34, 36, 38 y 40\n\nEn embarazos con factores de riesgo o si aparecen síntomas, pueden requerirse controles adicionales. Fuentes: OMS (resultado 2) y material de estudio (resultado 3).",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9783826702836167,
+          "faithfulness": 0.5714285714285714
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 402,
+          "output_tokens": 753,
+          "total_tokens": 1155,
+          "input_cost_usd": 0.00201,
+          "output_cost_usd": 0.011295,
+          "total_cost_usd": 0.013305
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.01253,
+        "mcp_cost_usd": 0.013305,
+        "total_cost_usd": 0.025835,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas",
+      "question_id": 4
+    },
+    {
+      "execution_id": "3be28a7d-d1e5-4b96-b9a8-bc0feb9fddac",
+      "timestamp": "2025-11-12T13:36:21.456438",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "naive",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Cuál es la cantidad ideal de controles prenatales?",
+      "rag_results": {
+        "retrieved_context": [
+          "RECOMENDACIÓN CLINICA Si el control prenatal se inicia en el primer trimestre para una mujer nulípara con un embarazo de curso normal, se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas. No se recomienda un programa de control prenatal con un número reducido de citas porque se asocia con un aumento de la mortalidad perinatal. Se recomienda que las mujeres al principio del embarazo reciban información adecuada",
+          "es recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual. Por lo tanto, se recomienda que un primer control prenatal tardío se haga con una duración de 40 minutos. 3. ¿CUAL ES LA FRECUENCIA Y NUMERO DE CITAS DE CONTROL PRENATAL QUE DEBE RECIBIR UNA GESTANTE CON EMBARAZO DE CURSO NORMAL? En 1929 la Dra. Janet Campbell sugirió que, \"el primer requisito de un servicio de obstetricia es la supervisión efectiva de la salud de la mujer durante el embarazo...”",
+          "en embarazo previos prefirieron un esquema con un mayor número de citas. Una revisión sistemática de siete ECC con más de 60.000 mujeres junto con un ensayo clínico incluido en la revisión , encontraron que las mujeres en países de altos ingresos económicos asistieron a un promedio de 8,2 a 12 consultas prenatales, mientras que las mujeres en países de bajo o mediano ingreso asistieron a menos de cinco citas. La mortalidad perinatal se incrementó en el grupo de controles reducidos en comparación",
+          "bjetivos específicos, podría ser igualmente eficaz, en términos de mortalidad y morbilidad materna y neonatal, a los esquemas con un número mayor de controles (de 10 a 12). RESUMEN Y DISCUSIÓN DE LA EVIDENCIA Dos revisiones sistemáticas con 10 ECC (60.000 mujeres) y siete ECC (57.418 mujeres) respectivamente, evaluaron las diferencias entre un número reducido de consultas vs. un número estándar de controles prenatales (44, 49).",
+          "ncias entre un número reducido de consultas vs. un número estándar de controles prenatales (44, 49). Dichos estudios no encontraron diferencias significativas en desenlaces como pre- eclampsia (OR= 0,91; IC 95%= 0,66–1,26), cesárea (OR=0,99; IC 95%= 0,79-1,25), hemorragia prenatal (OR= 0,79; IC 95%= 0,57-1,10), hemorragia posparto (OR=1,02; IC 95%= 0,64-1,64), bajo peso al nacer (OR=1,04; IC 95%= 0,93–1,17), mortalidad perinatal (OR= 1,06; IC 95%= 0,82 – 1,36), mortalidad materna (OR= 0,91; IC"
+        ],
+        "generated_answer": "Según la información proporcionada, la cantidad ideal de controles prenatales para un embarazo de curso normal que se inicia en el primer trimestre depende de si la mujer ha tenido embarazos previos:\n\n*   Para una **mujer nulípara** (es decir, en su primer embarazo), se recomienda un programa de **diez citas**.\n*   Para una **mujer multípara** (que ya ha tenido embarazos previos), se recomienda un programa de **siete citas**.\n\nEl texto también destaca que **no se recomienda un programa de control prenatal con un número reducido de citas**, ya que esto se asocia con un aumento de la mortalidad perinatal.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9770730266056518,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 712,
+          "output_tokens": 1030,
+          "total_tokens": 1742,
+          "input_cost_usd": 0.00089,
+          "output_cost_usd": 0.00515,
+          "total_cost_usd": 0.00604
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Todo sobre cuidados y controles durante el embarazo - Promedco\nURL: https://www.promedco.com/noticias/cuidados-y-controles-en-el-embarazo\nContent: Basados en las investigaciones realizadas sobre este factor se estima que lo ideal es realizar entre 8 y 10 consultas prenatales, las cuales\n\nTitle: Atenciones prenatales para tener un embarazo saludable\nURL: https://www.gob.pe/40283-atenciones-prenatales-para-tener-un-embarazo-saludable\nContent: La atención prenatal es muy importante para un embarazo saludable. Establecer la fecha de parto (o fecha estimada) permite al personal de salud controlar el crecimiento de tu bebé y la evolución de tu embarazo. + El personal de salud puede realizar una variedad de pruebas prenatales que pueden incluir ecografías o análisis de sangre. El personal de salud puede programar controles prenatales cada cuatro semanas durante el segundo trimestre. Durante el tercer trimestre, el control prenatal puede comprender exámenes o pruebas para verificar la posición del bebé a medida que se acerca la fecha del parto. El personal de salud te pedirá que programes tus controles cada 2 o 4 semanas, dependiendo de tu estado de salud y de tus antecedentes de embarazo.\n\nTitle: Control Prenatal | Revista Médica Clínica Las Condes - Elsevier\nURL: https://www.elsevier.es/es-revista-revista-medica-clinica-las-condes-202-articulo-control-prenatal-S0716864014706340\nContent: Una mujer sana debe comenzar a tomar ácido fólico (400mg/día), idealmente dos meses antes de la concepción y continuarlo hasta al menos las 12 semanas (3–5)."
+        ],
+        "generated_answer": "Según la información proporcionada en los resultados de la búsqueda, la cantidad ideal de controles prenatales es **entre 8 y 10 consultas**.\n\nAdicionalmente, la frecuencia de estos controles varía a lo largo de la gestación:\n\n*   **Segundo trimestre:** Se pueden programar controles cada cuatro semanas.\n*   **Tercer trimestre:** La frecuencia puede aumentar a cada 2 o 4 semanas, dependiendo del estado de salud y los antecedentes de la madre.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9708584847886131,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 444,
+          "output_tokens": 1021,
+          "total_tokens": 1465,
+          "input_cost_usd": 0.000555,
+          "output_cost_usd": 0.005105,
+          "total_cost_usd": 0.00566
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00604,
+        "mcp_cost_usd": 0.00566,
+        "total_cost_usd": 0.0117,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas",
+      "question_id": 4
+    },
+    {
+      "execution_id": "fd8a1697-cb82-4091-811a-1faacab9a530",
+      "timestamp": "2025-11-12T13:38:25.515455",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "naive",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Cuál es la cantidad ideal de controles prenatales?",
+      "rag_results": {
+        "retrieved_context": [
+          "RECOMENDACIÓN CLINICA Si el control prenatal se inicia en el primer trimestre para una mujer nulípara con un embarazo de curso normal, se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas. No se recomienda un programa de control prenatal con un número reducido de citas porque se asocia con un aumento de la mortalidad perinatal. Se recomienda que las mujeres al principio del embarazo reciban información adecuada",
+          "es recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual. Por lo tanto, se recomienda que un primer control prenatal tardío se haga con una duración de 40 minutos. 3. ¿CUAL ES LA FRECUENCIA Y NUMERO DE CITAS DE CONTROL PRENATAL QUE DEBE RECIBIR UNA GESTANTE CON EMBARAZO DE CURSO NORMAL? En 1929 la Dra. Janet Campbell sugirió que, \"el primer requisito de un servicio de obstetricia es la supervisión efectiva de la salud de la mujer durante el embarazo...”",
+          "en embarazo previos prefirieron un esquema con un mayor número de citas. Una revisión sistemática de siete ECC con más de 60.000 mujeres junto con un ensayo clínico incluido en la revisión , encontraron que las mujeres en países de altos ingresos económicos asistieron a un promedio de 8,2 a 12 consultas prenatales, mientras que las mujeres en países de bajo o mediano ingreso asistieron a menos de cinco citas. La mortalidad perinatal se incrementó en el grupo de controles reducidos en comparación",
+          "bjetivos específicos, podría ser igualmente eficaz, en términos de mortalidad y morbilidad materna y neonatal, a los esquemas con un número mayor de controles (de 10 a 12). RESUMEN Y DISCUSIÓN DE LA EVIDENCIA Dos revisiones sistemáticas con 10 ECC (60.000 mujeres) y siete ECC (57.418 mujeres) respectivamente, evaluaron las diferencias entre un número reducido de consultas vs. un número estándar de controles prenatales (44, 49).",
+          "ncias entre un número reducido de consultas vs. un número estándar de controles prenatales (44, 49). Dichos estudios no encontraron diferencias significativas en desenlaces como pre- eclampsia (OR= 0,91; IC 95%= 0,66–1,26), cesárea (OR=0,99; IC 95%= 0,79-1,25), hemorragia prenatal (OR= 0,79; IC 95%= 0,57-1,10), hemorragia posparto (OR=1,02; IC 95%= 0,64-1,64), bajo peso al nacer (OR=1,04; IC 95%= 0,93–1,17), mortalidad perinatal (OR= 1,06; IC 95%= 0,82 – 1,36), mortalidad materna (OR= 0,91; IC"
+        ],
+        "generated_answer": "Según la información proporcionada, la cantidad ideal de controles prenatales para un embarazo de curso normal que se inicia en el primer trimestre depende de si la mujer ha tenido embarazos previos:\n\n*   Para una mujer **nulípara** (su primer embarazo), se recomienda un programa de **diez citas**.\n*   Para una mujer **multípara** (que ya ha tenido embarazos), se recomienda un programa de **siete citas**.\n\nEl texto enfatiza que **no se recomienda un programa con un número reducido de citas**, ya que esto se asocia con un aumento de la mortalidad perinatal.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9684018293613802,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 712,
+          "output_tokens": 1257,
+          "total_tokens": 1969,
+          "input_cost_usd": 0.00089,
+          "output_cost_usd": 0.006285,
+          "total_cost_usd": 0.007175
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. ¿Cuántos y cuáles son los controles prenatales?\n   URL: https://drleoginecologo.com/cuantos-y-cuales-son-los-controles-prenatales/\n   Summary: Preparación para el parto y postparto: En los últimoscontrolesprenatales, se discuten detalles del parto, se establecen planesdeparto y se brinda información sobre el postparto.Lapreparación paralalactancia y el cuidado del recién nacido son temas importantes que se abordan para una transición suave hacialamaternidad.\n\n2. ¿Cuántos controles prenatales debe tener una gestante oms?\n   URL: https://todosloshechos.es/cuantos-controles-prenatales-debe-tener-una-gestante-oms\n   Summary: ¿Cuántoscontrolesse realizan durante el embarazo?Larecomendación del organismoesque haya un mínimodeochocontrolesdurante el embarazo: el primero antesdelasemana 12 y, luego, enlassemanas 20, 26, 30, 34, 36, 38 y 40. ¿Cuántoscontrolesprenatalesdebe hacer una mujer durante el embarazo según OMS?\n\n3. CONTROL PRENATAL Flashcards | Quizlet\n   URL: https://quizlet.com/co/611167606/control-prenatal-flash-cards/\n   Summary: Study with Quizlet and memorize flashcards containing terms like¿Cualeslacantidaddecontrolesprenatalesideales ?, ¿Cuando debe ser el iniciodeloscontrolesprenatales?, ¿Cuanto dura una consultadecontrol prenatal? and more.\n"
+        ],
+        "generated_answer": "Según la información de los resultados de búsqueda, la cantidad ideal de controles prenatales es de un **mínimo de ocho** durante el embarazo.\n\nEsta recomendación, atribuida a la Organización Mundial de la Salud (OMS), sugiere el siguiente calendario para los controles:\n\n*   **El primero:** Antes de la semana 12.\n*   **Siguientes controles:** En las semanas 20, 26, 30, 34, 36, 38 y 40.\n\nAdemás, se menciona que en los últimos controles se abordan temas importantes como la preparación para el parto, el postparto y la lactancia.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9721041789081455,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 427,
+          "output_tokens": 1102,
+          "total_tokens": 1529,
+          "input_cost_usd": 0.00053375,
+          "output_cost_usd": 0.00551,
+          "total_cost_usd": 0.00604375
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.007175,
+        "mcp_cost_usd": 0.00604375,
+        "total_cost_usd": 0.01321875,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas",
+      "question_id": 4
+    },
+    {
+      "execution_id": "37e80559-c2c3-4004-9f52-f440c827d9c0",
+      "timestamp": "2025-11-12T13:40:49.595890",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "hybrid",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Cuál es la cantidad ideal de controles prenatales?",
+      "rag_results": {
+        "retrieved_context": [
+          "RECOMENDACIÓN CLINICA Si el control prenatal se inicia en el primer trimestre para una mujer nulípara con un embarazo de curso normal, se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas. No se recomienda un programa de control prenatal con un número reducido de citas porque se asocia con un aumento de la mortalidad perinatal. Se recomienda que las mujeres al principio del embarazo reciban información adecuada",
+          "es recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual. Por lo tanto, se recomienda que un primer control prenatal tardío se haga con una duración de 40 minutos. 3. ¿CUAL ES LA FRECUENCIA Y NUMERO DE CITAS DE CONTROL PRENATAL QUE DEBE RECIBIR UNA GESTANTE CON EMBARAZO DE CURSO NORMAL? En 1929 la Dra. Janet Campbell sugirió que, \"el primer requisito de un servicio de obstetricia es la supervisión efectiva de la salud de la mujer durante el embarazo...”",
+          "en embarazo previos prefirieron un esquema con un mayor número de citas. Una revisión sistemática de siete ECC con más de 60.000 mujeres junto con un ensayo clínico incluido en la revisión , encontraron que las mujeres en países de altos ingresos económicos asistieron a un promedio de 8,2 a 12 consultas prenatales, mientras que las mujeres en países de bajo o mediano ingreso asistieron a menos de cinco citas. La mortalidad perinatal se incrementó en el grupo de controles reducidos en comparación",
+          "bjetivos específicos, podría ser igualmente eficaz, en términos de mortalidad y morbilidad materna y neonatal, a los esquemas con un número mayor de controles (de 10 a 12). RESUMEN Y DISCUSIÓN DE LA EVIDENCIA Dos revisiones sistemáticas con 10 ECC (60.000 mujeres) y siete ECC (57.418 mujeres) respectivamente, evaluaron las diferencias entre un número reducido de consultas vs. un número estándar de controles prenatales (44, 49).",
+          "ncias entre un número reducido de consultas vs. un número estándar de controles prenatales (44, 49). Dichos estudios no encontraron diferencias significativas en desenlaces como pre- eclampsia (OR= 0,91; IC 95%= 0,66–1,26), cesárea (OR=0,99; IC 95%= 0,79-1,25), hemorragia prenatal (OR= 0,79; IC 95%= 0,57-1,10), hemorragia posparto (OR=1,02; IC 95%= 0,64-1,64), bajo peso al nacer (OR=1,04; IC 95%= 0,93–1,17), mortalidad perinatal (OR= 1,06; IC 95%= 0,82 – 1,36), mortalidad materna (OR= 0,91; IC"
+        ],
+        "generated_answer": "Según el contexto proporcionado, la cantidad ideal de controles prenatales para un embarazo de curso normal que se inicia en el primer trimestre depende de si la mujer ha tenido embarazos previos:\n\n*   **Para una mujer nulípara (primer embarazo):** Se recomienda un programa de **diez citas**.\n*   **Para una mujer multípara (con embarazos previos):** Se recomienda un programa de **siete citas**.\n\nEl texto también enfatiza que **no se recomienda un programa con un número reducido de citas**, ya que se asocia con un aumento de la mortalidad perinatal.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9770798007580747,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 712,
+          "output_tokens": 1165,
+          "total_tokens": 1877,
+          "input_cost_usd": 0.00089,
+          "output_cost_usd": 0.005825,
+          "total_cost_usd": 0.006715
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Todo sobre cuidados y controles durante el embarazo - Promedco\nURL: https://www.promedco.com/noticias/cuidados-y-controles-en-el-embarazo\nContent: Basados en las investigaciones realizadas sobre este factor se estima que lo ideal es realizar entre 8 y 10 consultas prenatales, las cuales\n\nTitle: Atenciones prenatales para tener un embarazo saludable\nURL: https://www.gob.pe/40283-atenciones-prenatales-para-tener-un-embarazo-saludable\nContent: La atención prenatal es muy importante para un embarazo saludable. Establecer la fecha de parto (o fecha estimada) permite al personal de salud controlar el crecimiento de tu bebé y la evolución de tu embarazo. + El personal de salud puede realizar una variedad de pruebas prenatales que pueden incluir ecografías o análisis de sangre. El personal de salud puede programar controles prenatales cada cuatro semanas durante el segundo trimestre. Durante el tercer trimestre, el control prenatal puede comprender exámenes o pruebas para verificar la posición del bebé a medida que se acerca la fecha del parto. El personal de salud te pedirá que programes tus controles cada 2 o 4 semanas, dependiendo de tu estado de salud y de tus antecedentes de embarazo.\n\nTitle: Control Prenatal | Revista Médica Clínica Las Condes - Elsevier\nURL: https://www.elsevier.es/es-revista-revista-medica-clinica-las-condes-202-articulo-control-prenatal-S0716864014706340\nContent: Una mujer sana debe comenzar a tomar ácido fólico (400mg/día), idealmente dos meses antes de la concepción y continuarlo hasta al menos las 12 semanas (3–5)."
+        ],
+        "generated_answer": "Según la información de los resultados de búsqueda, la cantidad ideal de controles prenatales es **entre 8 y 10 consultas**.\n\nAdemás, la frecuencia de estas visitas puede variar según la etapa del embarazo:\n\n*   **Segundo trimestre:** Los controles se pueden programar cada cuatro semanas.\n*   **Tercer trimestre:** La frecuencia aumenta a cada 2 o 4 semanas, dependiendo del estado de salud de la madre y sus antecedentes.\n\nEstos controles son fundamentales para monitorear el crecimiento del bebé, la evolución del embarazo y realizar pruebas necesarias para asegurar un embarazo saludable.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9908037021019642,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 444,
+          "output_tokens": 850,
+          "total_tokens": 1294,
+          "input_cost_usd": 0.000555,
+          "output_cost_usd": 0.00425,
+          "total_cost_usd": 0.004805
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.006715,
+        "mcp_cost_usd": 0.004805,
+        "total_cost_usd": 0.01152,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas",
+      "question_id": 4
+    },
+    {
+      "execution_id": "1a58af8f-e22d-445f-956c-7461e56ea4c8",
+      "timestamp": "2025-11-12T13:42:15.947074",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "hybrid",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Cuál es la cantidad ideal de controles prenatales?",
+      "rag_results": {
+        "retrieved_context": [
+          "RECOMENDACIÓN CLINICA Si el control prenatal se inicia en el primer trimestre para una mujer nulípara con un embarazo de curso normal, se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas. No se recomienda un programa de control prenatal con un número reducido de citas porque se asocia con un aumento de la mortalidad perinatal. Se recomienda que las mujeres al principio del embarazo reciban información adecuada",
+          "es recomendadas para los controles previos, así como aquéllas que corresponden a la consulta actual. Por lo tanto, se recomienda que un primer control prenatal tardío se haga con una duración de 40 minutos. 3. ¿CUAL ES LA FRECUENCIA Y NUMERO DE CITAS DE CONTROL PRENATAL QUE DEBE RECIBIR UNA GESTANTE CON EMBARAZO DE CURSO NORMAL? En 1929 la Dra. Janet Campbell sugirió que, \"el primer requisito de un servicio de obstetricia es la supervisión efectiva de la salud de la mujer durante el embarazo...”",
+          "en embarazo previos prefirieron un esquema con un mayor número de citas. Una revisión sistemática de siete ECC con más de 60.000 mujeres junto con un ensayo clínico incluido en la revisión , encontraron que las mujeres en países de altos ingresos económicos asistieron a un promedio de 8,2 a 12 consultas prenatales, mientras que las mujeres en países de bajo o mediano ingreso asistieron a menos de cinco citas. La mortalidad perinatal se incrementó en el grupo de controles reducidos en comparación",
+          "bjetivos específicos, podría ser igualmente eficaz, en términos de mortalidad y morbilidad materna y neonatal, a los esquemas con un número mayor de controles (de 10 a 12). RESUMEN Y DISCUSIÓN DE LA EVIDENCIA Dos revisiones sistemáticas con 10 ECC (60.000 mujeres) y siete ECC (57.418 mujeres) respectivamente, evaluaron las diferencias entre un número reducido de consultas vs. un número estándar de controles prenatales (44, 49).",
+          "ncias entre un número reducido de consultas vs. un número estándar de controles prenatales (44, 49). Dichos estudios no encontraron diferencias significativas en desenlaces como pre- eclampsia (OR= 0,91; IC 95%= 0,66–1,26), cesárea (OR=0,99; IC 95%= 0,79-1,25), hemorragia prenatal (OR= 0,79; IC 95%= 0,57-1,10), hemorragia posparto (OR=1,02; IC 95%= 0,64-1,64), bajo peso al nacer (OR=1,04; IC 95%= 0,93–1,17), mortalidad perinatal (OR= 1,06; IC 95%= 0,82 – 1,36), mortalidad materna (OR= 0,91; IC"
+        ],
+        "generated_answer": "Según el contexto proporcionado, la cantidad ideal de controles prenatales para un embarazo de curso normal depende de si la mujer ha tenido embarazos previos:\n\n*   **Para una mujer nulípara** (primeriza) con un embarazo normal, se recomienda un programa de **diez citas**.\n*   **Para una mujer multípara** (que ya ha tenido hijos) con un embarazo normal, se recomienda un programa de **siete citas**.\n\nEl texto también destaca que **no se recomienda un número reducido de citas**, ya que esto se asocia con un aumento de la mortalidad perinatal.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9703606473690108,
+          "faithfulness": 0.75
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 712,
+          "output_tokens": 1087,
+          "total_tokens": 1799,
+          "input_cost_usd": 0.00089,
+          "output_cost_usd": 0.005435,
+          "total_cost_usd": 0.006325
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. ¿Cuántos y cuáles son los controles prenatales?\n   URL: https://drleoginecologo.com/cuantos-y-cuales-son-los-controles-prenatales/\n   Summary: Preparación para el parto y postparto: En los últimoscontrolesprenatales, se discuten detalles del parto, se establecen planesdeparto y se brinda información sobre el postparto.Lapreparación paralalactancia y el cuidado del recién nacido son temas importantes que se abordan para una transición suave hacialamaternidad.\n\n2. ¿Cuántos controles prenatales debe tener una gestante oms?\n   URL: https://todosloshechos.es/cuantos-controles-prenatales-debe-tener-una-gestante-oms\n   Summary: ¿Cuántoscontrolesse realizan durante el embarazo?Larecomendación del organismoesque haya un mínimodeochocontrolesdurante el embarazo: el primero antesdelasemana 12 y, luego, enlassemanas 20, 26, 30, 34, 36, 38 y 40. ¿Cuántoscontrolesprenatalesdebe hacer una mujer durante el embarazo según OMS?\n\n3. CONTROL PRENATAL Flashcards | Quizlet\n   URL: https://quizlet.com/co/611167606/control-prenatal-flash-cards/\n   Summary: Study with Quizlet and memorize flashcards containing terms like¿Cualeslacantidaddecontrolesprenatalesideales ?, ¿Cuando debe ser el iniciodeloscontrolesprenatales?, ¿Cuanto dura una consultadecontrol prenatal? and more.\n"
+        ],
+        "generated_answer": "Según los resultados de la búsqueda, la cantidad ideal de controles prenatales recomendada por la Organización Mundial de la Salud (OMS) es de un **mínimo de ocho controles** durante el embarazo.\n\nEl cronograma sugerido para estos controles es el siguiente:\n\n*   El primer control antes de la semana 12.\n*   Los siguientes controles en las semanas 20, 26, 30, 34, 36, 38 y 40.\n\nAdemás, se destaca que en los últimos controles prenatales se tratan temas importantes como la preparación para el parto, el postparto, la lactancia y el cuidado del recién nacido.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9720389167177363,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 427,
+          "output_tokens": 1125,
+          "total_tokens": 1552,
+          "input_cost_usd": 0.00053375,
+          "output_cost_usd": 0.005625,
+          "total_cost_usd": 0.00615875
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.006325,
+        "mcp_cost_usd": 0.00615875,
+        "total_cost_usd": 0.01248375,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "se recomienda un programa de diez citas. Para una mujer multípara con un embarazo de curso normal se recomienda un programa de siete citas",
+      "question_id": 4
+    }
+  ]
+}

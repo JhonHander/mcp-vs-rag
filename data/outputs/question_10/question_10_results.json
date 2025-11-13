@@ -1,0 +1,531 @@
+{
+  "question_id": 10,
+  "question": "Cual es el tratamiento para las nauseas y vomito del embarazo",
+  "ground_truth": "A juicio del médico tratante, las intervenciones recomendadas para la reducción de la náusea y el vómito incluyen el jengibre, los antihistamínicos y la vitamina B6",
+  "total_configurations": 8,
+  "timestamp": "2025-11-12T15:23:20.432414",
+  "configurations": [
+    {
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo"
+    }
+  ],
+  "results": [
+    {
+      "execution_id": "4554abef-5b6c-4733-8bf4-7882c61e5c26",
+      "timestamp": "2025-11-12T15:02:29.824376",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "naive",
+        "mcp_server": "tavily"
+      },
+      "prompt": "Cual es el tratamiento para las nauseas y vomito del embarazo",
+      "rag_results": {
+        "retrieved_context": [
+          "ENCIONES RECOMENDADAS PARA EL TRATAMIENTO DE LA NÁUSEA Y EL VÓMITO EN LA PRIMERA MITAD DEL EMBARAZO? La náusea y el vómito son los síntomas gastrointestinales que con más frecuencia se presentan durante el embarazo, presentándose en cerca del 80% de las embarazadas durante el primer trimestre. RESUMEN Y DESCRIPCION DE LA EVIDENCIA Un ECC que incluyó 70 pacientes evaluó el tratamiento de la náusea y el vómito con base en jengibre (250 mg cuatro veces al día) vs. placebo.",
+          "las intervenciones recomendadas para la reducción de la nausea y el vómito incluyen el jengibre, los antihistamínicos y la vitamina B6. Se recomienda que las mujeres reciban información acerca de los aspectos relacionados con la náusea y el vómito en la gestación, incluyendo que la mayoría de los casos en el embarazo se resuelven espontáneamente antes de la semana 16 a 20 de gestación, y no suelen estar asociados con un resultado adverso del embarazo. 10.",
+          "lio espectro de intervenciones, las cuales mejoran los síntomas de náuseas y vómitos en el embarazo. Entre las intervenciones que han mostrado ser eficaces se encuentran intervenciones no farmacológicas basadas en cambios en el hábito alimenticio, uso de jengibre y acupuntura e intervenciones farmacológicas como los antihistamínicos, los cuales han mostrado ser eficaces y seguros.",
+          "rvenciones farmacológicas como los antihistamínicos, los cuales han mostrado ser eficaces y seguros. Dado lo anterior, el GDG concluyó que se pueden tener en cuenta durante el control prenatal intervenciones no farmacológicas como el jengibre y la acupuntura en el punto P6 y farmacológicas basadas principalmente en antihistamínicos RECOMENDACIONES CLÍNICAS juicio del médico tratante, las intervenciones recomendadas para la reducción de la nausea y el vómito incluyen el jengibre, los",
+          "derar si la mujer responde \"sí\" a cualquiera de las preguntas iniciales: ¿Siente que necesita ayuda? En las pacientes en que se detecte alto riesgo de depresión postparto se recomienda garantizar una intervención en el postparto inmediato. 9. ¿CUÁLES SON LAS INTERVENCIONES RECOMENDADAS PARA EL TRATAMIENTO DE LA NÁUSEA Y EL VÓMITO EN LA PRIMERA MITAD DEL EMBARAZO?"
+        ],
+        "generated_answer": "Tratamiento recomendado para náuseas y vómito en la primera mitad del embarazo:\n\n- Educación y consejería: informar que en la mayoría de los casos los síntomas mejoran espontáneamente antes de las semanas 16–20 y no suelen asociarse con resultados adversos del embarazo.\n\n- Intervenciones no farmacológicas:\n  - Cambios en el hábito alimenticio.\n  - Jengibre: eficaz; en un ensayo se usó 250 mg por vía oral cuatro veces al día.\n  - Acupuntura/acupresión en el punto P6.\n\n- Intervenciones farmacológicas:\n  - Antihistamínicos: han mostrado ser eficaces y seguros.\n  - Vitamina B6 (piridoxina).\n\nLa selección debe individualizarse según el juicio del médico tratante y la preferencia de la mujer, pudiendo iniciarse con medidas no farmacológicas y avanzar a farmacológicas si es necesario.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.8858456197738209,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 584,
+          "output_tokens": 905,
+          "total_tokens": 1489,
+          "input_cost_usd": 0.00292,
+          "output_cost_usd": 0.013575,
+          "total_cost_usd": 0.016495
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Tratamientos para náuseas y vómitos durante el embarazo\nURL: https://sites.jamanetwork.com/spanish-patient-pages/2016/hoja-para-el-paciente-de-jama-161004.pdf\nContent: Enfoque para el tratamiento Dado que no existe una causa clara de las náuseas y los vómitos durante el embarazo, el enfoque del tratamiento está en disminuir la gravedad de los síntomas. Tratamientos para náuseas y vómitos durante el embarazo Medicamentos de venta libre Medicamentos recetados • Acupresión • Vitamina B6 • Jengibre • Combinación de vitamina B6 y doxilamina • Antihistamínicos • Coma alimentos blandos con alto contenido en carbohidratos y proteínas • Evite alimentos con olores y sabores fuertes • \u0007 Antagonistas de la dopamina • \u0007 Antagonistas de la serotonina • Coma porciones pequeñas, con más frecuencia PARA OBTENER MÁS INFORMACIÓN •\tMayo Clinic www.mayoclinic.org/diseases-conditions/morning-sickness/ basics/definition/con-20033445 Para encontrar esta y otras Hojas para el Paciente de JAMA anteriores, vaya al enlace Patient Page (Hoja para el Paciente) del sitio web de JAMA en www.jama.com.\n\nTitle: Náuseas del embarazo - Goodtime Family Care\nURL: https://goodtimefamilycare.com/Embarazo-Nauseas-del-embarazo\nContent: *   El problema principal son las náuseas o el vómito a causa del embarazo *   Las náuseas y el vómito empiezan durante la semana 4 a 8 del embarazo *   Estos síntomas se conocen como náuseas y vómitos del embarazo o simplemente \"náuseas del embarazo\". *   Náuseas o vómitos leves por el embarazo Tratamiento de las náuseas y vómito del embarazo Aproximadamente 4 de cada 5 mujeres embarazadas tienen náuseas y 1 de cada 2 tiene vómito. *   Las mujeres embarazadas que tienen vómito necesitan mantenerse hidratadas; si se deshidratan deben llamar o ir al médico. Deje de tomar hierro si tiene náuseas con vómito por el embarazo. *   La especia de jengibre puede ayudar a disminuir las náuseas y los vómitos durante el embarazo.\n\nTitle: Alivio de las Náuseas del Embarazo: Tratamiento y Suplementos\nURL: https://americanpregnancy.org/es/healthy-pregnancy/pregnancy-health-wellness-healthy-pregnancy/morning-sickness-remedies/\nContent: Las Náuseas del Embarazo (comúnmente se llama enfermedad de la mañana) es la sensación de náuseas comúnmente experimentado durante el primer trimestre. Si pasas a despertarte en el medio de la noche para ir al baño, tratas a comer algo pequeño de tu un alijo por la cama. **Dispositivo de banda de alivio:** Un dispositivo que puede estar usado continúamente para el alivio de leves a moderadas náuseas y vomitando asociado con el embarazo. Hablas con tu proveedor de atención médica sobre cualquieres suplementos y tratamientos para las náuseas del embarazo. Si las náuseas del embarazo son tan graves que estás vomitando constantemente y no mantener nada en el estómago, consultes con tu proveedor de atención médica sobre la posibilidad de tener *hiperemesis gravídica*. + Suplementos para el embarazo y Medicamentos14"
+        ],
+        "generated_answer": "En general, como no hay una causa única, el objetivo es reducir la intensidad de los síntomas. Según JAMA (hoja para pacientes) y otras fuentes, el manejo se hace por pasos:\n\nMedidas no farmacológicas\n- Comer porciones pequeñas con más frecuencia.\n- Elegir alimentos suaves, ricos en carbohidratos y con algo de proteína; evitar comidas grasosas o muy picantes.\n- Evitar olores y sabores fuertes que desencadenen náuseas.\n- Mantener una buena hidratación; beber sorbos frecuentes de líquidos claros.\n- Jengibre (infusiones, galletas o suplementos) puede ayudar.\n- Acupresión o bandas de presión para náuseas.\n- Si el suplemento de hierro empeora las náuseas, consulta si puedes pausarlo o cambiar la formulación.\n\nMedicamentos de venta libre\n- Vitamina B6 (piridoxina).\n- Combinación de vitamina B6 con doxilamina (antihistamínico). Consulta a tu profesional de salud para dosis y presentaciones seguras en el embarazo.\n\nMedicamentos con receta (si lo anterior no basta)\n- Antihistamínicos.\n- Antagonistas de la dopamina.\n- Antagonistas de la serotonina.\nTu profesional elegirá el fármaco y la dosis adecuados según tu situación.\n\nCuándo consultar de inmediato\n- Vómitos persistentes que impiden retener líquidos o alimentos.\n- Signos de deshidratación (orina muy escasa u oscura, mareo, sequedad de boca).\n- Pérdida de peso, dolor abdominal intenso o vómitos con sangre.\nEstos pueden indicar hiperemesis gravídica y requieren valoración médica.\n\nFuentes: Hoja para el paciente de JAMA sobre náuseas y vómitos del embarazo; American Pregnancy Association; Goodtime Family Care.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.8260869565217391
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 807,
+          "output_tokens": 1100,
+          "total_tokens": 1907,
+          "input_cost_usd": 0.004035,
+          "output_cost_usd": 0.0165,
+          "total_cost_usd": 0.020535
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.016495,
+        "mcp_cost_usd": 0.020535,
+        "total_cost_usd": 0.03703,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "A juicio del médico tratante, las intervenciones recomendadas para la reducción de la náusea y el vómito incluyen el jengibre, los antihistamínicos y la vitamina B6",
+      "question_id": 10
+    },
+    {
+      "execution_id": "e08ffe17-9bb1-4d34-91cd-a0d2ffb772d2",
+      "timestamp": "2025-11-12T15:04:51.779386",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "naive",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "Cual es el tratamiento para las nauseas y vomito del embarazo",
+      "rag_results": {
+        "retrieved_context": [
+          "ENCIONES RECOMENDADAS PARA EL TRATAMIENTO DE LA NÁUSEA Y EL VÓMITO EN LA PRIMERA MITAD DEL EMBARAZO? La náusea y el vómito son los síntomas gastrointestinales que con más frecuencia se presentan durante el embarazo, presentándose en cerca del 80% de las embarazadas durante el primer trimestre. RESUMEN Y DESCRIPCION DE LA EVIDENCIA Un ECC que incluyó 70 pacientes evaluó el tratamiento de la náusea y el vómito con base en jengibre (250 mg cuatro veces al día) vs. placebo.",
+          "las intervenciones recomendadas para la reducción de la nausea y el vómito incluyen el jengibre, los antihistamínicos y la vitamina B6. Se recomienda que las mujeres reciban información acerca de los aspectos relacionados con la náusea y el vómito en la gestación, incluyendo que la mayoría de los casos en el embarazo se resuelven espontáneamente antes de la semana 16 a 20 de gestación, y no suelen estar asociados con un resultado adverso del embarazo. 10.",
+          "lio espectro de intervenciones, las cuales mejoran los síntomas de náuseas y vómitos en el embarazo. Entre las intervenciones que han mostrado ser eficaces se encuentran intervenciones no farmacológicas basadas en cambios en el hábito alimenticio, uso de jengibre y acupuntura e intervenciones farmacológicas como los antihistamínicos, los cuales han mostrado ser eficaces y seguros.",
+          "rvenciones farmacológicas como los antihistamínicos, los cuales han mostrado ser eficaces y seguros. Dado lo anterior, el GDG concluyó que se pueden tener en cuenta durante el control prenatal intervenciones no farmacológicas como el jengibre y la acupuntura en el punto P6 y farmacológicas basadas principalmente en antihistamínicos RECOMENDACIONES CLÍNICAS juicio del médico tratante, las intervenciones recomendadas para la reducción de la nausea y el vómito incluyen el jengibre, los",
+          "derar si la mujer responde \"sí\" a cualquiera de las preguntas iniciales: ¿Siente que necesita ayuda? En las pacientes en que se detecte alto riesgo de depresión postparto se recomienda garantizar una intervención en el postparto inmediato. 9. ¿CUÁLES SON LAS INTERVENCIONES RECOMENDADAS PARA EL TRATAMIENTO DE LA NÁUSEA Y EL VÓMITO EN LA PRIMERA MITAD DEL EMBARAZO?"
+        ],
+        "generated_answer": "Tratamiento recomendado para las náuseas y vómito del embarazo (primera mitad), según la evidencia del contexto:\n\n- Educación y tranquilidad: informar que en la mayoría de los casos los síntomas mejoran y suelen resolverse espontáneamente antes de las 16–20 semanas y no se asocian con malos resultados del embarazo.\n- Medidas no farmacológicas:\n  - Cambios en el hábito alimenticio.\n  - Jengibre: eficaz en ensayos clínicos; una pauta evaluada fue 250 mg por vía oral cuatro veces al día.\n  - Acupuntura/acupresión en el punto P6 (Neiguan).\n- Tratamiento farmacológico:\n  - Antihistamínicos: han mostrado ser eficaces y seguros.\n  - Vitamina B6 (piridoxina).\n\nEn el control prenatal se pueden considerar primero las intervenciones no farmacológicas (jengibre, acupuntura P6, cambios dietarios) y, si persisten los síntomas, usar antihistamínicos y/o vitamina B6.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.8846448208561584,
+          "faithfulness": 0.9230769230769231
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 584,
+          "output_tokens": 868,
+          "total_tokens": 1452,
+          "input_cost_usd": 0.00292,
+          "output_cost_usd": 0.01302,
+          "total_cost_usd": 0.01594
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. Náuseas y vómitos en el embarazo: ¿qué los causa? ¿Se pueden aliviar?\n   URL: https://www.reproduccionasistida.org/aliviar-las-nauseas-en-el-embarazo/\n   Summary: Lasnáuseasylosvómitosson una delasmolestias más habituales enelembarazo. Esta molestia se produce, especialmente, a lo largodelprimer trimestre de gestación. Sin embargo, hay algunos consejosyrecomendaciones útiles quelaembarazada puede hacerparaaliviarlos.\n\n2. Tratamiento de las nauseas durante el embarazo - TuOtroMedico\n   URL: https://www.tuotromedico.com/temas/tratamiento_nauseas_embarazo.htm\n   Summary: Lasnáuseasylosvómitoseslasintomatología más frecuente enelembarazo. Los antieméticos son los medicamentos más utilizadosparareducirlafrecuencia delasnáuseasenlafase inicialdelembarazo.\n\n3. Náuseas y vómitos en el embarazo (y hiperémesis gravídica)\n   URL: https://www.mdsaude.com/es/embarazo/nauseas-y-vomitos-en-el-embarazo/\n   Summary: En este texto vamos a abordarlascausasytratamientosparalassimplesnáuseasdelembarazoyparalallamada hiperémesis gravídica.\n"
+        ],
+        "generated_answer": "Resumen breve: las náuseas y vómitos del embarazo suelen ser leves y transitorias (más intensas entre semanas 6–12) y mejoran hacia la semana 16–20. El tratamiento es escalonado: primero medidas no farmacológicas; si no bastan, fármacos seguros en el embarazo; y, en casos graves (hiperémesis gravídica), manejo hospitalario.\n\nQué hacer sin medicamentos\n- Comer poco y con frecuencia (5–6 tomas/día). Evitar el estómago vacío; tomar un snack seco al despertar.\n- Evitar desencadenantes: olores intensos, comidas grasas/picantes, calor, movimientos bruscos.\n- Preferir alimentos fríos o a temperatura ambiente; ricos en proteína y carbohidratos complejos.\n- Hidratación en sorbos frecuentes: agua fría, suero de rehidratación oral, hielo picado. Añadir limón o jengibre si ayuda.\n- Jengibre (infusión o en alimentos/suplementos) y acupresión en la muñeca (punto P6) pueden aliviar.\n- Tomar la vitamina prenatal por la noche o con comida; si el hierro empeora las náuseas, consulte para ajustar la fórmula.\n- Descanso y ventilación adecuada; evitar olores gatillo en casa/cocina.\n\nTratamiento farmacológico (consultar con su profesional de salud)\n- Primera línea: vitamina B6 (piridoxina) sola o combinada con doxilamina (antihistamínico). Es el esquema con mejor balance eficacia/seguridad en embarazo.\n- Si no es suficiente: pueden usarse antihistamínicos (p. ej., dimenhidrinato, meclizina, prometazina) o procinéticos como metoclopramida.\n- Ondansetrón se reserva para casos refractarios cuando no funcionó lo anterior.\n- Si hay acidez/reflujo asociado, antiácidos o inhibidores de la bomba de protones pueden ayudar.\n- Evite automedicarse; la elección y dosis deben individualizarse.\n\nHiperémesis gravídica (forma severa)\n- Señales: vómitos incoercibles, pérdida de >5% del peso, deshidratación, cetonuria, alteraciones electrolíticas.\n- Manejo: puede requerir ingreso para sueroterapia, tiamina (vitamina B1) antes de administrar glucosa, antieméticos intravenosos, corrección de sales, y en casos rebeldes, nutrición enteral/parenteral y, ocasionalmente, corticoides.\n\nCuándo consultar de forma prioritaria\n- Incapacidad para retener líquidos >24 horas, signos de deshidratación (orina muy oscura o escasa, mareo), pérdida de peso, sangre en el vómito, dolor abdominal intenso, fiebre, palpitaciones o desmayo.\n\nFuentes consultadas\n- Recomendaciones de alivio y causas: reproduccionasistida.org/aliviar-las-nauseas-en-el-embarazo/\n- Opciones de tratamiento farmacológico: tuotromedico.com/temas/tratamiento_nauseas_embarazo.htm\n- Abordaje completo y hiperémesis gravídica: mdsaude.com/es/embarazo/nauseas-y-vomitos-en-el-embarazo/",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9351942808715346,
+          "faithfulness": 0.8529411764705882
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 352,
+          "output_tokens": 2127,
+          "total_tokens": 2479,
+          "input_cost_usd": 0.00176,
+          "output_cost_usd": 0.031905,
+          "total_cost_usd": 0.033665
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.01594,
+        "mcp_cost_usd": 0.033665,
+        "total_cost_usd": 0.049605,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "A juicio del médico tratante, las intervenciones recomendadas para la reducción de la náusea y el vómito incluyen el jengibre, los antihistamínicos y la vitamina B6",
+      "question_id": 10
+    },
+    {
+      "execution_id": "6c51ae38-150f-4392-94fd-e4ddf7f21a16",
+      "timestamp": "2025-11-12T15:08:53.540097",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "hybrid",
+        "mcp_server": "tavily"
+      },
+      "prompt": "Cual es el tratamiento para las nauseas y vomito del embarazo",
+      "rag_results": {
+        "retrieved_context": [
+          "ENCIONES RECOMENDADAS PARA EL TRATAMIENTO DE LA NÁUSEA Y EL VÓMITO EN LA PRIMERA MITAD DEL EMBARAZO? La náusea y el vómito son los síntomas gastrointestinales que con más frecuencia se presentan durante el embarazo, presentándose en cerca del 80% de las embarazadas durante el primer trimestre. RESUMEN Y DESCRIPCION DE LA EVIDENCIA Un ECC que incluyó 70 pacientes evaluó el tratamiento de la náusea y el vómito con base en jengibre (250 mg cuatro veces al día) vs. placebo.",
+          "las intervenciones recomendadas para la reducción de la nausea y el vómito incluyen el jengibre, los antihistamínicos y la vitamina B6. Se recomienda que las mujeres reciban información acerca de los aspectos relacionados con la náusea y el vómito en la gestación, incluyendo que la mayoría de los casos en el embarazo se resuelven espontáneamente antes de la semana 16 a 20 de gestación, y no suelen estar asociados con un resultado adverso del embarazo. 10.",
+          "lio espectro de intervenciones, las cuales mejoran los síntomas de náuseas y vómitos en el embarazo. Entre las intervenciones que han mostrado ser eficaces se encuentran intervenciones no farmacológicas basadas en cambios en el hábito alimenticio, uso de jengibre y acupuntura e intervenciones farmacológicas como los antihistamínicos, los cuales han mostrado ser eficaces y seguros.",
+          "rvenciones farmacológicas como los antihistamínicos, los cuales han mostrado ser eficaces y seguros. Dado lo anterior, el GDG concluyó que se pueden tener en cuenta durante el control prenatal intervenciones no farmacológicas como el jengibre y la acupuntura en el punto P6 y farmacológicas basadas principalmente en antihistamínicos RECOMENDACIONES CLÍNICAS juicio del médico tratante, las intervenciones recomendadas para la reducción de la nausea y el vómito incluyen el jengibre, los",
+          "derar si la mujer responde \"sí\" a cualquiera de las preguntas iniciales: ¿Siente que necesita ayuda? En las pacientes en que se detecte alto riesgo de depresión postparto se recomienda garantizar una intervención en el postparto inmediato. 9. ¿CUÁLES SON LAS INTERVENCIONES RECOMENDADAS PARA EL TRATAMIENTO DE LA NÁUSEA Y EL VÓMITO EN LA PRIMERA MITAD DEL EMBARAZO?"
+        ],
+        "generated_answer": "Tratamiento recomendado para las náuseas y el vómito en la primera mitad del embarazo (según la evidencia disponible):\n\n- Educación y tranquilidad: informar que es muy frecuente (≈80% en el 1er trimestre), suele resolverse de forma espontánea antes de las semanas 16–20 y generalmente no se asocia con desenlaces adversos.\n- Medidas no farmacológicas:\n  - Cambios en los hábitos alimentarios (por ejemplo, fraccionar comidas, evitar desencadenantes).\n  - Jengibre: evidencia de eficacia con 250 mg cuatro veces al día.\n  - Acupuntura/acupresión en el punto P6.\n- Tratamiento farmacológico:\n  - Vitamina B6 (piridoxina).\n  - Antihistamínicos, que han mostrado ser eficaces y seguros.\n\nA juicio del médico tratante, se pueden combinar estas intervenciones y ajustar según respuesta clínica durante el control prenatal.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9509531388830708,
+          "faithfulness": 0.9
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 584,
+          "output_tokens": 909,
+          "total_tokens": 1493,
+          "input_cost_usd": 0.00292,
+          "output_cost_usd": 0.013635,
+          "total_cost_usd": 0.016555
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Tratamientos para náuseas y vómitos durante el embarazo\nURL: https://sites.jamanetwork.com/spanish-patient-pages/2016/hoja-para-el-paciente-de-jama-161004.pdf\nContent: Enfoque para el tratamiento Dado que no existe una causa clara de las náuseas y los vómitos durante el embarazo, el enfoque del tratamiento está en disminuir la gravedad de los síntomas. Tratamientos para náuseas y vómitos durante el embarazo Medicamentos de venta libre Medicamentos recetados • Acupresión • Vitamina B6 • Jengibre • Combinación de vitamina B6 y doxilamina • Antihistamínicos • Coma alimentos blandos con alto contenido en carbohidratos y proteínas • Evite alimentos con olores y sabores fuertes • \u0007 Antagonistas de la dopamina • \u0007 Antagonistas de la serotonina • Coma porciones pequeñas, con más frecuencia PARA OBTENER MÁS INFORMACIÓN •\tMayo Clinic www.mayoclinic.org/diseases-conditions/morning-sickness/ basics/definition/con-20033445 Para encontrar esta y otras Hojas para el Paciente de JAMA anteriores, vaya al enlace Patient Page (Hoja para el Paciente) del sitio web de JAMA en www.jama.com.\n\nTitle: Náuseas del embarazo - Goodtime Family Care\nURL: https://goodtimefamilycare.com/Embarazo-Nauseas-del-embarazo\nContent: *   El problema principal son las náuseas o el vómito a causa del embarazo *   Las náuseas y el vómito empiezan durante la semana 4 a 8 del embarazo *   Estos síntomas se conocen como náuseas y vómitos del embarazo o simplemente \"náuseas del embarazo\". *   Náuseas o vómitos leves por el embarazo Tratamiento de las náuseas y vómito del embarazo Aproximadamente 4 de cada 5 mujeres embarazadas tienen náuseas y 1 de cada 2 tiene vómito. *   Las mujeres embarazadas que tienen vómito necesitan mantenerse hidratadas; si se deshidratan deben llamar o ir al médico. Deje de tomar hierro si tiene náuseas con vómito por el embarazo. *   La especia de jengibre puede ayudar a disminuir las náuseas y los vómitos durante el embarazo.\n\nTitle: Alivio de las Náuseas del Embarazo: Tratamiento y Suplementos\nURL: https://americanpregnancy.org/es/healthy-pregnancy/pregnancy-health-wellness-healthy-pregnancy/morning-sickness-remedies/\nContent: Las Náuseas del Embarazo (comúnmente se llama enfermedad de la mañana) es la sensación de náuseas comúnmente experimentado durante el primer trimestre. Si pasas a despertarte en el medio de la noche para ir al baño, tratas a comer algo pequeño de tu un alijo por la cama. **Dispositivo de banda de alivio:** Un dispositivo que puede estar usado continúamente para el alivio de leves a moderadas náuseas y vomitando asociado con el embarazo. Hablas con tu proveedor de atención médica sobre cualquieres suplementos y tratamientos para las náuseas del embarazo. Si las náuseas del embarazo son tan graves que estás vomitando constantemente y no mantener nada en el estómago, consultes con tu proveedor de atención médica sobre la posibilidad de tener *hiperemesis gravídica*. + Suplementos para el embarazo y Medicamentos14"
+        ],
+        "generated_answer": "Tratamiento de las náuseas y vómitos del embarazo (NVE)\n\nObjetivo: reducir la intensidad de los síntomas más que “curarlos” (no suele haber una causa única).\n\nMedidas no farmacológicas\n- Alimentación y hábitos:\n  - Comer porciones pequeñas con más frecuencia.\n  - Preferir alimentos blandos, con buen aporte de carbohidratos y proteínas.\n  - Evitar alimentos con olores o sabores fuertes.\n  - Mantener buena hidratación con sorbos frecuentes; si hay vómitos, priorizar líquidos claros.\n- Acupresión: bandas en la muñeca pueden ayudar en casos leves a moderados.\n- Jengibre: puede disminuir náuseas y vómitos.\n\nMedicamentos\n- De venta libre:\n  - Vitamina B6 (piridoxina).\n  - Combinación de vitamina B6 con doxilamina (un antihistamínico).\n  - Otros antihistamínicos.\n- Con receta médica:\n  - Antagonistas de la dopamina.\n  - Antagonistas de la serotonina.\nNota: antes de iniciar cualquier medicamento o suplemento en el embarazo, consulte con su profesional de salud.\n\nOtras consideraciones\n- Si los vómitos son significativos, manténgase hidratada; si aparece deshidratación, contacte a su médico.\n- Si el hierro de las vitaminas prenatales empeora las náuseas con vómitos, puede considerarse suspender temporalmente el hierro y comentarlo con su profesional.\n\nCuándo consultar de inmediato\n- Vómitos persistentes que impiden retener líquidos o alimentos.\n- Signos de deshidratación (orina muy oscura o escasa, mareo, sequedad de boca), pérdida de peso, o empeoramiento de síntomas.\n- Estos cuadros pueden indicar hiperemesis gravídica y requerir tratamiento específico (por ejemplo, sueros y antieméticos).\n\nFuentes: Hoja para el Paciente de JAMA sobre náuseas y vómitos del embarazo; Goodtime Family Care; American Pregnancy Association.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9070782790733622,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 807,
+          "output_tokens": 1466,
+          "total_tokens": 2273,
+          "input_cost_usd": 0.004035,
+          "output_cost_usd": 0.02199,
+          "total_cost_usd": 0.026025
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.016555,
+        "mcp_cost_usd": 0.026025,
+        "total_cost_usd": 0.04258,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "A juicio del médico tratante, las intervenciones recomendadas para la reducción de la náusea y el vómito incluyen el jengibre, los antihistamínicos y la vitamina B6",
+      "question_id": 10
+    },
+    {
+      "execution_id": "f3736d06-26dd-40e1-9e6f-c1825a74c6ff",
+      "timestamp": "2025-11-12T15:11:32.355958",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "hybrid",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "Cual es el tratamiento para las nauseas y vomito del embarazo",
+      "rag_results": {
+        "retrieved_context": [
+          "ENCIONES RECOMENDADAS PARA EL TRATAMIENTO DE LA NÁUSEA Y EL VÓMITO EN LA PRIMERA MITAD DEL EMBARAZO? La náusea y el vómito son los síntomas gastrointestinales que con más frecuencia se presentan durante el embarazo, presentándose en cerca del 80% de las embarazadas durante el primer trimestre. RESUMEN Y DESCRIPCION DE LA EVIDENCIA Un ECC que incluyó 70 pacientes evaluó el tratamiento de la náusea y el vómito con base en jengibre (250 mg cuatro veces al día) vs. placebo.",
+          "las intervenciones recomendadas para la reducción de la nausea y el vómito incluyen el jengibre, los antihistamínicos y la vitamina B6. Se recomienda que las mujeres reciban información acerca de los aspectos relacionados con la náusea y el vómito en la gestación, incluyendo que la mayoría de los casos en el embarazo se resuelven espontáneamente antes de la semana 16 a 20 de gestación, y no suelen estar asociados con un resultado adverso del embarazo. 10.",
+          "lio espectro de intervenciones, las cuales mejoran los síntomas de náuseas y vómitos en el embarazo. Entre las intervenciones que han mostrado ser eficaces se encuentran intervenciones no farmacológicas basadas en cambios en el hábito alimenticio, uso de jengibre y acupuntura e intervenciones farmacológicas como los antihistamínicos, los cuales han mostrado ser eficaces y seguros.",
+          "rvenciones farmacológicas como los antihistamínicos, los cuales han mostrado ser eficaces y seguros. Dado lo anterior, el GDG concluyó que se pueden tener en cuenta durante el control prenatal intervenciones no farmacológicas como el jengibre y la acupuntura en el punto P6 y farmacológicas basadas principalmente en antihistamínicos RECOMENDACIONES CLÍNICAS juicio del médico tratante, las intervenciones recomendadas para la reducción de la nausea y el vómito incluyen el jengibre, los",
+          "derar si la mujer responde \"sí\" a cualquiera de las preguntas iniciales: ¿Siente que necesita ayuda? En las pacientes en que se detecte alto riesgo de depresión postparto se recomienda garantizar una intervención en el postparto inmediato. 9. ¿CUÁLES SON LAS INTERVENCIONES RECOMENDADAS PARA EL TRATAMIENTO DE LA NÁUSEA Y EL VÓMITO EN LA PRIMERA MITAD DEL EMBARAZO?"
+        ],
+        "generated_answer": "Tratamiento recomendado para las náuseas y vómito en la primera mitad del embarazo:\n\n- Educación y tranquilidad:\n  - Informar que en ~80% de las gestantes ocurre en el primer trimestre y, en la mayoría, se resuelve espontáneamente antes de las 16–20 semanas.\n  - Usualmente no se asocia con resultados adversos del embarazo.\n\n- Medidas no farmacológicas:\n  - Cambios en hábitos alimentarios: comidas pequeñas y frecuentes, evitar olores/sabores que desencadenen síntomas.\n  - Jengibre: evidencia de eficacia; en un estudio se usó 250 mg cada 6 horas (4 veces al día).\n  - Acupuntura en el punto P6 (Neiguan).\n\n- Tratamiento farmacológico:\n  - Antihistamínicos: han demostrado ser eficaces y seguros.\n  - Vitamina B6 (piridoxina).\n\nNotas prácticas:\n- Iniciar con medidas no farmacológicas y progresar a vitamina B6 y/o antihistamínicos según respuesta clínica y juicio del profesional.\n- Incluir estas intervenciones dentro del control prenatal.\n- Consultar de urgencia si hay signos de deshidratación, incapacidad para retener líquidos o pérdida de peso.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.8857610298774087,
+          "faithfulness": 0.8888888888888888
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 584,
+          "output_tokens": 1102,
+          "total_tokens": 1686,
+          "input_cost_usd": 0.00292,
+          "output_cost_usd": 0.01653,
+          "total_cost_usd": 0.01945
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. 17 remedios caseros para las náuseas y vómitos en el embarazo\n   URL: https://www.tuasaude.com/es/remedios-caseros-para-las-nauseas-y-vomitos-en-el-embarazo/\n   Summary: Cuandolasnáuseasson muy persistentesyprovocanvómitosconstantes, se debe informar al médico obstetraparaque pueda recetar un medicamentoparalasnáuseas, ya queesimportante quelamujer embarazada esté bien nutridaybien hidratadaparasu bienestaryeldesarrollodelbebé. Vea algunos medicamentosparaaliviarlasnáuseasyvómitosenelembarazo.\n\n2. Náuseas y vómitos en el embarazo (y hiperémesis gravídica)\n   URL: https://www.mdsaude.com/es/embarazo/nauseas-y-vomitos-en-el-embarazo/\n   Summary: En este texto vamos a abordarlascausasytratamientosparalassimplesnáuseasdelembarazoyparalallamada hiperémesis gravídica.\n\n3. Náuseas y vómitos en el embarazo: ¿qué los causa? ¿Se pueden aliviar?\n   URL: https://www.reproduccionasistida.org/aliviar-las-nauseas-en-el-embarazo/\n   Summary: Lasnáuseasylosvómitosson una delasmolestias más habituales enelembarazo. Esta molestia se produce, especialmente, a lo largodelprimer trimestre de gestación. Sin embargo, hay algunos consejosyrecomendaciones útiles quelaembarazada puede hacerparaaliviarlos.\n"
+        ],
+        "generated_answer": "El tratamiento de las náuseas y vómitos del embarazo suele ser escalonado, empezando por medidas no farmacológicas y, si no bastan, con medicación segura indicada por el profesional de salud. En casos graves (hiperémesis gravídica) puede requerir hospitalización.\n\n- Medidas no farmacológicas (primera línea):\n  - Comidas pequeñas y frecuentes; evitar el estómago vacío y las comidas grasas o muy condimentadas.\n  - Tomar líquidos a sorbos frecuentes, preferir fríos/claros; sueros orales si hay riesgo de deshidratación.\n  - Comer algo seco al despertar (p. ej., galletas saladas) y levantarse despacio.\n  - Identificar y evitar olores o alimentos que desencadenan náuseas.\n  - Jengibre (infusión, caramelos o en alimentos) y limón pueden aliviar en algunos casos.\n  - Acupresión en muñeca (punto P6, pulseras antináuseas).\n  - Descanso adecuado y manejo del estrés.\n  (Fuentes: Tuasaude; Reproducción Asistida)\n\n- Tratamiento farmacológico (si las medidas anteriores no son suficientes):\n  - Vitamina B6 (piridoxina), sola o combinada con doxilamina (antihistamínico): opción de primera línea en el embarazo.\n  - Otras alternativas según valoración médica: antihistamínicos (p. ej., dimenhidrinato, meclizina), metoclopramida, y, en casos refractarios, ondansetrón. Si hay reflujo/pirosis asociados, considerar antiácidos o bloqueadores de ácido.\n  - Todo fármaco debe ser indicado por el obstetra para asegurar seguridad materno‑fetal.\n  (Fuente: MDsaude; Tuasaude)\n\n- Hiperémesis gravídica (forma severa):\n  - Señales: vómitos persistentes que impiden comer/beber, pérdida de peso, deshidratación, cetonuria.\n  - Manejo: consulta urgente; hidratación y antieméticos por vía intravenosa, corrección de electrolitos y soporte nutricional; en casos seleccionados pueden usarse corticoides. \n  (Fuente: MDsaude)\n\n- Cuándo consultar de inmediato:\n  - Vómitos que no permiten retener líquidos/alimentos, signos de deshidratación (poca orina, muy oscura, mareos), sangre en el vómito, dolor abdominal intenso o fiebre, pérdida de peso.\n\nFuentes:\n- Tuasaude: Remedios caseros y cuándo usar medicación para náuseas del embarazo: https://www.tuasaude.com/es/remedios-caseros-para-las-nauseas-y-vomitos-en-el-embarazo/\n- MDsaude: Náuseas y vómitos en el embarazo e hiperémesis gravídica: https://www.mdsaude.com/es/embarazo/nauseas-y-vomitos-en-el-embarazo/\n- Reproducción Asistida: Consejos para aliviar las náuseas: https://www.reproduccionasistida.org/aliviar-las-nauseas-en-el-embarazo/",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9702015114776205,
+          "faithfulness": 0.3684210526315789
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 409,
+          "output_tokens": 1657,
+          "total_tokens": 2066,
+          "input_cost_usd": 0.002045,
+          "output_cost_usd": 0.024855,
+          "total_cost_usd": 0.0269
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.01945,
+        "mcp_cost_usd": 0.0269,
+        "total_cost_usd": 0.04635,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "A juicio del médico tratante, las intervenciones recomendadas para la reducción de la náusea y el vómito incluyen el jengibre, los antihistamínicos y la vitamina B6",
+      "question_id": 10
+    },
+    {
+      "execution_id": "563778ed-eb97-4431-a57c-46c5104b64cd",
+      "timestamp": "2025-11-12T15:16:01.474576",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "naive",
+        "mcp_server": "tavily"
+      },
+      "prompt": "Cual es el tratamiento para las nauseas y vomito del embarazo",
+      "rag_results": {
+        "retrieved_context": [
+          "ENCIONES RECOMENDADAS PARA EL TRATAMIENTO DE LA NÁUSEA Y EL VÓMITO EN LA PRIMERA MITAD DEL EMBARAZO? La náusea y el vómito son los síntomas gastrointestinales que con más frecuencia se presentan durante el embarazo, presentándose en cerca del 80% de las embarazadas durante el primer trimestre. RESUMEN Y DESCRIPCION DE LA EVIDENCIA Un ECC que incluyó 70 pacientes evaluó el tratamiento de la náusea y el vómito con base en jengibre (250 mg cuatro veces al día) vs. placebo.",
+          "las intervenciones recomendadas para la reducción de la nausea y el vómito incluyen el jengibre, los antihistamínicos y la vitamina B6. Se recomienda que las mujeres reciban información acerca de los aspectos relacionados con la náusea y el vómito en la gestación, incluyendo que la mayoría de los casos en el embarazo se resuelven espontáneamente antes de la semana 16 a 20 de gestación, y no suelen estar asociados con un resultado adverso del embarazo. 10.",
+          "lio espectro de intervenciones, las cuales mejoran los síntomas de náuseas y vómitos en el embarazo. Entre las intervenciones que han mostrado ser eficaces se encuentran intervenciones no farmacológicas basadas en cambios en el hábito alimenticio, uso de jengibre y acupuntura e intervenciones farmacológicas como los antihistamínicos, los cuales han mostrado ser eficaces y seguros.",
+          "rvenciones farmacológicas como los antihistamínicos, los cuales han mostrado ser eficaces y seguros. Dado lo anterior, el GDG concluyó que se pueden tener en cuenta durante el control prenatal intervenciones no farmacológicas como el jengibre y la acupuntura en el punto P6 y farmacológicas basadas principalmente en antihistamínicos RECOMENDACIONES CLÍNICAS juicio del médico tratante, las intervenciones recomendadas para la reducción de la nausea y el vómito incluyen el jengibre, los",
+          "derar si la mujer responde \"sí\" a cualquiera de las preguntas iniciales: ¿Siente que necesita ayuda? En las pacientes en que se detecte alto riesgo de depresión postparto se recomienda garantizar una intervención en el postparto inmediato. 9. ¿CUÁLES SON LAS INTERVENCIONES RECOMENDADAS PARA EL TRATAMIENTO DE LA NÁUSEA Y EL VÓMITO EN LA PRIMERA MITAD DEL EMBARAZO?"
+        ],
+        "generated_answer": "Según el contexto proporcionado, el tratamiento para las náuseas y el vómito en la primera mitad del embarazo incluye intervenciones tanto farmacológicas como no farmacológicas.\n\nAquí se resumen las recomendaciones:\n\n**Intervenciones No Farmacológicas:**\n*   **Jengibre:** Se menciona un estudio que evaluó una dosis de 250 mg cuatro veces al día.\n*   **Cambios en el hábito alimenticio.**\n*   **Acupuntura:** Específicamente en el punto P6.\n\n**Intervenciones Farmacológicas:**\n*   **Antihistamínicos:** Se describen como eficaces y seguros.\n*   **Vitamina B6.**\n\nAdemás, el texto subraya la importancia de informar a las mujeres que las náuseas y el vómito son síntomas muy comunes (presentes en cerca del 80% de las embarazadas) y que, en la mayoría de los casos, se resuelven espontáneamente antes de la semana 16 a 20 de gestación, sin estar asociados con resultados adversos para el embarazo.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9491495211398591,
+          "faithfulness": 0.875
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 574,
+          "output_tokens": 1139,
+          "total_tokens": 1713,
+          "input_cost_usd": 0.0007175,
+          "output_cost_usd": 0.005695,
+          "total_cost_usd": 0.0064125
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Tratamientos para náuseas y vómitos durante el embarazo\nURL: https://sites.jamanetwork.com/spanish-patient-pages/2016/hoja-para-el-paciente-de-jama-161004.pdf\nContent: Enfoque para el tratamiento Dado que no existe una causa clara de las náuseas y los vómitos durante el embarazo, el enfoque del tratamiento está en disminuir la gravedad de los síntomas. Tratamientos para náuseas y vómitos durante el embarazo Medicamentos de venta libre Medicamentos recetados • Acupresión • Vitamina B6 • Jengibre • Combinación de vitamina B6 y doxilamina • Antihistamínicos • Coma alimentos blandos con alto contenido en carbohidratos y proteínas • Evite alimentos con olores y sabores fuertes • \u0007 Antagonistas de la dopamina • \u0007 Antagonistas de la serotonina • Coma porciones pequeñas, con más frecuencia PARA OBTENER MÁS INFORMACIÓN •\tMayo Clinic www.mayoclinic.org/diseases-conditions/morning-sickness/ basics/definition/con-20033445 Para encontrar esta y otras Hojas para el Paciente de JAMA anteriores, vaya al enlace Patient Page (Hoja para el Paciente) del sitio web de JAMA en www.jama.com.\n\nTitle: Náuseas del embarazo - Goodtime Family Care\nURL: https://goodtimefamilycare.com/Embarazo-Nauseas-del-embarazo\nContent: *   El problema principal son las náuseas o el vómito a causa del embarazo *   Las náuseas y el vómito empiezan durante la semana 4 a 8 del embarazo *   Estos síntomas se conocen como náuseas y vómitos del embarazo o simplemente \"náuseas del embarazo\". *   Náuseas o vómitos leves por el embarazo Tratamiento de las náuseas y vómito del embarazo Aproximadamente 4 de cada 5 mujeres embarazadas tienen náuseas y 1 de cada 2 tiene vómito. *   Las mujeres embarazadas que tienen vómito necesitan mantenerse hidratadas; si se deshidratan deben llamar o ir al médico. Deje de tomar hierro si tiene náuseas con vómito por el embarazo. *   La especia de jengibre puede ayudar a disminuir las náuseas y los vómitos durante el embarazo.\n\nTitle: Alivio de las Náuseas del Embarazo: Tratamiento y Suplementos\nURL: https://americanpregnancy.org/es/healthy-pregnancy/pregnancy-health-wellness-healthy-pregnancy/morning-sickness-remedies/\nContent: Las Náuseas del Embarazo (comúnmente se llama enfermedad de la mañana) es la sensación de náuseas comúnmente experimentado durante el primer trimestre. Si pasas a despertarte en el medio de la noche para ir al baño, tratas a comer algo pequeño de tu un alijo por la cama. **Dispositivo de banda de alivio:** Un dispositivo que puede estar usado continúamente para el alivio de leves a moderadas náuseas y vomitando asociado con el embarazo. Hablas con tu proveedor de atención médica sobre cualquieres suplementos y tratamientos para las náuseas del embarazo. Si las náuseas del embarazo son tan graves que estás vomitando constantemente y no mantener nada en el estómago, consultes con tu proveedor de atención médica sobre la posibilidad de tener *hiperemesis gravídica*. + Suplementos para el embarazo y Medicamentos14"
+        ],
+        "generated_answer": "Según la información de los resultados de búsqueda, el tratamiento para las náuseas y el vómito del embarazo se enfoca en disminuir la gravedad de los síntomas. Las opciones de tratamiento incluyen cambios en el estilo de vida, remedios de venta libre y medicamentos recetados.\n\nAquí se detallan los tratamientos:\n\n### **Cambios en la Dieta y Estilo de Vida**\n*   **Comer porciones pequeñas con más frecuencia.**\n*   Consumir alimentos blandos con alto contenido en carbohidratos y proteínas.\n*   Evitar alimentos con olores y sabores fuertes.\n*   Mantenerse bien hidratada, especialmente si hay vómitos. Si ocurre deshidratación, se debe contactar a un médico.\n*   Comer algo pequeño, como galletas, si te despiertas durante la noche.\n\n### **Remedios y Tratamientos de Venta Libre**\n*   **Jengibre:** La especia de jengibre puede ayudar a disminuir las náuseas y los vómitos.\n*   **Vitamina B6:** Es uno de los tratamientos recomendados.\n*   **Acupresión:** Se pueden usar dispositivos de banda de alivio para las náuseas leves a moderadas.\n\n### **Medicamentos Recetados**\n*   **Combinación de vitamina B6 y doxilamina.**\n*   **Antihistamínicos.**\n*   **Antagonistas de la dopamina.**\n*   **Antagonistas de la serotonina.**\n\n### **Consideraciones Importantes**\n*   **Consultar al médico:** Siempre se debe hablar con un proveedor de atención médica antes de tomar cualquier suplemento o iniciar un tratamiento.\n*   **Suspender el hierro:** Se recomienda dejar de tomar suplementos de hierro si se tienen náuseas con vómito.\n*   **Hiperemesis gravídica:** Si las náuseas y los vómitos son tan graves que no se puede retener nada en el estómago, es crucial consultar a un médico, ya que podría ser una condición más seria llamada *hiperemesis gravídica*.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9638653949165684,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 818,
+          "output_tokens": 1933,
+          "total_tokens": 2751,
+          "input_cost_usd": 0.0010225,
+          "output_cost_usd": 0.009665,
+          "total_cost_usd": 0.0106875
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.0064125,
+        "mcp_cost_usd": 0.0106875,
+        "total_cost_usd": 0.0171,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "A juicio del médico tratante, las intervenciones recomendadas para la reducción de la náusea y el vómito incluyen el jengibre, los antihistamínicos y la vitamina B6",
+      "question_id": 10
+    },
+    {
+      "execution_id": "d324f2ac-9d77-4af8-ab78-346335bd6e58",
+      "timestamp": "2025-11-12T15:17:49.650895",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "naive",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "Cual es el tratamiento para las nauseas y vomito del embarazo",
+      "rag_results": {
+        "retrieved_context": [
+          "ENCIONES RECOMENDADAS PARA EL TRATAMIENTO DE LA NÁUSEA Y EL VÓMITO EN LA PRIMERA MITAD DEL EMBARAZO? La náusea y el vómito son los síntomas gastrointestinales que con más frecuencia se presentan durante el embarazo, presentándose en cerca del 80% de las embarazadas durante el primer trimestre. RESUMEN Y DESCRIPCION DE LA EVIDENCIA Un ECC que incluyó 70 pacientes evaluó el tratamiento de la náusea y el vómito con base en jengibre (250 mg cuatro veces al día) vs. placebo.",
+          "las intervenciones recomendadas para la reducción de la nausea y el vómito incluyen el jengibre, los antihistamínicos y la vitamina B6. Se recomienda que las mujeres reciban información acerca de los aspectos relacionados con la náusea y el vómito en la gestación, incluyendo que la mayoría de los casos en el embarazo se resuelven espontáneamente antes de la semana 16 a 20 de gestación, y no suelen estar asociados con un resultado adverso del embarazo. 10.",
+          "lio espectro de intervenciones, las cuales mejoran los síntomas de náuseas y vómitos en el embarazo. Entre las intervenciones que han mostrado ser eficaces se encuentran intervenciones no farmacológicas basadas en cambios en el hábito alimenticio, uso de jengibre y acupuntura e intervenciones farmacológicas como los antihistamínicos, los cuales han mostrado ser eficaces y seguros.",
+          "rvenciones farmacológicas como los antihistamínicos, los cuales han mostrado ser eficaces y seguros. Dado lo anterior, el GDG concluyó que se pueden tener en cuenta durante el control prenatal intervenciones no farmacológicas como el jengibre y la acupuntura en el punto P6 y farmacológicas basadas principalmente en antihistamínicos RECOMENDACIONES CLÍNICAS juicio del médico tratante, las intervenciones recomendadas para la reducción de la nausea y el vómito incluyen el jengibre, los",
+          "derar si la mujer responde \"sí\" a cualquiera de las preguntas iniciales: ¿Siente que necesita ayuda? En las pacientes en que se detecte alto riesgo de depresión postparto se recomienda garantizar una intervención en el postparto inmediato. 9. ¿CUÁLES SON LAS INTERVENCIONES RECOMENDADAS PARA EL TRATAMIENTO DE LA NÁUSEA Y EL VÓMITO EN LA PRIMERA MITAD DEL EMBARAZO?"
+        ],
+        "generated_answer": "Según el contexto proporcionado, el tratamiento para las náuseas y el vómito en el embarazo incluye intervenciones tanto no farmacológicas como farmacológicas.\n\nLas intervenciones recomendadas son:\n\n**Tratamientos no farmacológicos:**\n*   **Jengibre:** Se menciona un estudio que utilizó una dosis de 250 mg cuatro veces al día.\n*   **Cambios en el hábito alimenticio.**\n*   **Acupuntura:** Específicamente en el punto P6.\n\n**Tratamientos farmacológicos:**\n*   **Antihistamínicos:** Se describen como eficaces y seguros.\n*   **Vitamina B6.**\n\nAdemás, el texto subraya la importancia de informar a las mujeres que las náuseas y el vómito son síntomas muy comunes (presentes en cerca del 80% de las embarazadas) y que, en la mayoría de los casos, se resuelven espontáneamente antes de la semana 16 a 20 de gestación, sin estar asociados con resultados adversos para el embarazo.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9617997206716917,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 574,
+          "output_tokens": 1181,
+          "total_tokens": 1755,
+          "input_cost_usd": 0.0007175,
+          "output_cost_usd": 0.005905,
+          "total_cost_usd": 0.0066225
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. 17 remedios caseros para las náuseas y vómitos en el embarazo\n   URL: https://www.tuasaude.com/es/remedios-caseros-para-las-nauseas-y-vomitos-en-el-embarazo/\n   Summary: Cuandolasnáuseasson muy persistentesyprovocanvómitosconstantes, se debe informar al médico obstetraparaque pueda recetar un medicamentoparalasnáuseas, ya queesimportante quelamujer embarazada esté bien nutridaybien hidratadaparasu bienestaryeldesarrollodelbebé. Vea algunos medicamentosparaaliviarlasnáuseasyvómitosenelembarazo.\n\n2. Náuseas y vómitos en el embarazo (y hiperémesis gravídica)\n   URL: https://www.mdsaude.com/es/embarazo/nauseas-y-vomitos-en-el-embarazo/\n   Summary: En este texto vamos a abordarlascausasytratamientosparalassimplesnáuseasdelembarazoyparalallamada hiperémesis gravídica.\n\n3. Náuseas y vómitos en el embarazo: ¿qué los causa? ¿Se pueden aliviar?\n   URL: https://www.reproduccionasistida.org/aliviar-las-nauseas-en-el-embarazo/\n   Summary: Lasnáuseasylosvómitosson una delasmolestias más habituales enelembarazo. Esta molestia se produce, especialmente, a lo largodelprimer trimestre de gestación. Sin embargo, hay algunos consejosyrecomendaciones útiles quelaembarazada puede hacerparaaliviarlos.\n"
+        ],
+        "generated_answer": "Según los resultados de la búsqueda, el tratamiento para las náuseas y el vómito durante el embarazo depende de la severidad de los síntomas y puede incluir tanto remedios caseros como medicamentos recetados.\n\nAquí tienes un resumen de las opciones de tratamiento:\n\n*   **Consejos y remedios caseros:** Para las molestias más habituales, existen diversos consejos, recomendaciones y remedios caseros que la mujer embarazada puede seguir para aliviar los síntomas. Estos son especialmente comunes durante el primer trimestre.\n\n*   **Tratamiento médico:** Si las náuseas son muy persistentes y causan vómitos constantes, es fundamental consultar a un médico obstetra. El profesional de la salud puede recetar un medicamento específico para las náuseas.\n\nEs muy importante buscar ayuda médica en casos severos para asegurar que la madre se mantenga bien nutrida e hidratada, lo cual es crucial para su propio bienestar y el desarrollo del bebé.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.7777777777777778
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 438,
+          "output_tokens": 1573,
+          "total_tokens": 2011,
+          "input_cost_usd": 0.0005475,
+          "output_cost_usd": 0.007865,
+          "total_cost_usd": 0.0084125
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.0066225,
+        "mcp_cost_usd": 0.0084125,
+        "total_cost_usd": 0.015035,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "A juicio del médico tratante, las intervenciones recomendadas para la reducción de la náusea y el vómito incluyen el jengibre, los antihistamínicos y la vitamina B6",
+      "question_id": 10
+    },
+    {
+      "execution_id": "cbe75509-8f33-49c0-8521-3a96602b316b",
+      "timestamp": "2025-11-12T15:19:30.603216",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "hybrid",
+        "mcp_server": "tavily"
+      },
+      "prompt": "Cual es el tratamiento para las nauseas y vomito del embarazo",
+      "rag_results": {
+        "retrieved_context": [
+          "ENCIONES RECOMENDADAS PARA EL TRATAMIENTO DE LA NÁUSEA Y EL VÓMITO EN LA PRIMERA MITAD DEL EMBARAZO? La náusea y el vómito son los síntomas gastrointestinales que con más frecuencia se presentan durante el embarazo, presentándose en cerca del 80% de las embarazadas durante el primer trimestre. RESUMEN Y DESCRIPCION DE LA EVIDENCIA Un ECC que incluyó 70 pacientes evaluó el tratamiento de la náusea y el vómito con base en jengibre (250 mg cuatro veces al día) vs. placebo.",
+          "las intervenciones recomendadas para la reducción de la nausea y el vómito incluyen el jengibre, los antihistamínicos y la vitamina B6. Se recomienda que las mujeres reciban información acerca de los aspectos relacionados con la náusea y el vómito en la gestación, incluyendo que la mayoría de los casos en el embarazo se resuelven espontáneamente antes de la semana 16 a 20 de gestación, y no suelen estar asociados con un resultado adverso del embarazo. 10.",
+          "lio espectro de intervenciones, las cuales mejoran los síntomas de náuseas y vómitos en el embarazo. Entre las intervenciones que han mostrado ser eficaces se encuentran intervenciones no farmacológicas basadas en cambios en el hábito alimenticio, uso de jengibre y acupuntura e intervenciones farmacológicas como los antihistamínicos, los cuales han mostrado ser eficaces y seguros.",
+          "rvenciones farmacológicas como los antihistamínicos, los cuales han mostrado ser eficaces y seguros. Dado lo anterior, el GDG concluyó que se pueden tener en cuenta durante el control prenatal intervenciones no farmacológicas como el jengibre y la acupuntura en el punto P6 y farmacológicas basadas principalmente en antihistamínicos RECOMENDACIONES CLÍNICAS juicio del médico tratante, las intervenciones recomendadas para la reducción de la nausea y el vómito incluyen el jengibre, los",
+          "derar si la mujer responde \"sí\" a cualquiera de las preguntas iniciales: ¿Siente que necesita ayuda? En las pacientes en que se detecte alto riesgo de depresión postparto se recomienda garantizar una intervención en el postparto inmediato. 9. ¿CUÁLES SON LAS INTERVENCIONES RECOMENDADAS PARA EL TRATAMIENTO DE LA NÁUSEA Y EL VÓMITO EN LA PRIMERA MITAD DEL EMBARAZO?"
+        ],
+        "generated_answer": "Según el contexto proporcionado, el tratamiento para las náuseas y el vómito en la primera mitad del embarazo incluye intervenciones tanto no farmacológicas como farmacológicas.\n\n**Intervenciones recomendadas:**\n\n*   **No farmacológicas:**\n    *   **Jengibre:** Se menciona un estudio que evaluó una dosis de 250 mg cuatro veces al día.\n    *   **Cambios en el hábito alimenticio.**\n    *   **Acupuntura:** Específicamente en el punto P6.\n\n*   **Farmacológicas:**\n    *   **Antihistamínicos:** Se describen como eficaces y seguros.\n    *   **Vitamina B6.**\n\nAdemás, el texto subraya la importancia de informar a las mujeres que las náuseas y el vómito son síntomas muy frecuentes (presentes en cerca del 80% de las embarazadas) y que, en la mayoría de los casos, se resuelven espontáneamente antes de la semana 16 a 20 de gestación, sin estar asociados con resultados adversos para el embarazo.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.8847947209774921,
+          "faithfulness": 0.9
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 574,
+          "output_tokens": 1030,
+          "total_tokens": 1604,
+          "input_cost_usd": 0.0007175,
+          "output_cost_usd": 0.00515,
+          "total_cost_usd": 0.0058675
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Tratamientos para náuseas y vómitos durante el embarazo\nURL: https://sites.jamanetwork.com/spanish-patient-pages/2016/hoja-para-el-paciente-de-jama-161004.pdf\nContent: Enfoque para el tratamiento Dado que no existe una causa clara de las náuseas y los vómitos durante el embarazo, el enfoque del tratamiento está en disminuir la gravedad de los síntomas. Tratamientos para náuseas y vómitos durante el embarazo Medicamentos de venta libre Medicamentos recetados • Acupresión • Vitamina B6 • Jengibre • Combinación de vitamina B6 y doxilamina • Antihistamínicos • Coma alimentos blandos con alto contenido en carbohidratos y proteínas • Evite alimentos con olores y sabores fuertes • \u0007 Antagonistas de la dopamina • \u0007 Antagonistas de la serotonina • Coma porciones pequeñas, con más frecuencia PARA OBTENER MÁS INFORMACIÓN •\tMayo Clinic www.mayoclinic.org/diseases-conditions/morning-sickness/ basics/definition/con-20033445 Para encontrar esta y otras Hojas para el Paciente de JAMA anteriores, vaya al enlace Patient Page (Hoja para el Paciente) del sitio web de JAMA en www.jama.com.\n\nTitle: Náuseas del embarazo - Goodtime Family Care\nURL: https://goodtimefamilycare.com/Embarazo-Nauseas-del-embarazo\nContent: *   El problema principal son las náuseas o el vómito a causa del embarazo *   Las náuseas y el vómito empiezan durante la semana 4 a 8 del embarazo *   Estos síntomas se conocen como náuseas y vómitos del embarazo o simplemente \"náuseas del embarazo\". *   Náuseas o vómitos leves por el embarazo Tratamiento de las náuseas y vómito del embarazo Aproximadamente 4 de cada 5 mujeres embarazadas tienen náuseas y 1 de cada 2 tiene vómito. *   Las mujeres embarazadas que tienen vómito necesitan mantenerse hidratadas; si se deshidratan deben llamar o ir al médico. Deje de tomar hierro si tiene náuseas con vómito por el embarazo. *   La especia de jengibre puede ayudar a disminuir las náuseas y los vómitos durante el embarazo.\n\nTitle: Alivio de las Náuseas del Embarazo: Tratamiento y Suplementos\nURL: https://americanpregnancy.org/es/healthy-pregnancy/pregnancy-health-wellness-healthy-pregnancy/morning-sickness-remedies/\nContent: Las Náuseas del Embarazo (comúnmente se llama enfermedad de la mañana) es la sensación de náuseas comúnmente experimentado durante el primer trimestre. Si pasas a despertarte en el medio de la noche para ir al baño, tratas a comer algo pequeño de tu un alijo por la cama. **Dispositivo de banda de alivio:** Un dispositivo que puede estar usado continúamente para el alivio de leves a moderadas náuseas y vomitando asociado con el embarazo. Hablas con tu proveedor de atención médica sobre cualquieres suplementos y tratamientos para las náuseas del embarazo. Si las náuseas del embarazo son tan graves que estás vomitando constantemente y no mantener nada en el estómago, consultes con tu proveedor de atención médica sobre la posibilidad de tener *hiperemesis gravídica*. + Suplementos para el embarazo y Medicamentos14"
+        ],
+        "generated_answer": "Según los resultados de la búsqueda, el tratamiento para las náuseas y el vómito durante el embarazo se enfoca en disminuir la gravedad de los síntomas. Las opciones de tratamiento incluyen cambios en el estilo de vida, remedios de venta libre y medicamentos recetados.\n\nAquí hay un resumen de los tratamientos mencionados:\n\n### Cambios en la Dieta y Estilo de Vida\n*   **Comer porciones pequeñas y con más frecuencia:** Esto ayuda a evitar que el estómago esté vacío.\n*   **Elegir alimentos blandos:** Se recomiendan alimentos con alto contenido en carbohidratos y proteínas.\n*   **Evitar ciertos alimentos:** Es aconsejable evitar comidas con olores y sabores fuertes.\n*   **Mantenerse hidratada:** Es crucial beber líquidos, especialmente si hay vómitos. Si se presenta deshidratación, se debe contactar a un médico.\n*   **Comer un bocadillo por la noche:** Si te despiertas para ir al baño, comer algo pequeño puede ayudar.\n*   **Suspender el hierro:** Se sugiere dejar de tomar suplementos de hierro si se presentan náuseas con vómito.\n\n### Remedios y Opciones de Venta Libre\n*   **Jengibre:** La especia de jengibre puede ayudar a disminuir las náuseas y los vómitos.\n*   **Vitamina B6:** Es una opción de venta libre para tratar los síntomas.\n*   **Acupresión:** Se puede aplicar presión en ciertos puntos del cuerpo para aliviar las náuseas.\n*   **Dispositivo de banda de alivio:** Es un dispositivo que se puede usar continuamente para el alivio de náuseas leves a moderadas.\n\n### Medicamentos Recetados\n*   **Combinación de vitamina B6 y doxilamina:** Un medicamento comúnmente recetado.\n*   **Antihistamínicos.**\n*   **Antagonistas de la dopamina.**\n*   **Antagonistas de la serotonina.**\n\n### Cuándo Consultar a un Médico\nEs importante hablar con un proveedor de atención médica sobre cualquier suplemento o tratamiento. Se debe buscar atención médica si el vómito es constante y no se puede retener nada en el estómago, ya que podría ser una condición más grave llamada *hiperemesis gravídica*.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9588194741607291,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 818,
+          "output_tokens": 1821,
+          "total_tokens": 2639,
+          "input_cost_usd": 0.0010225,
+          "output_cost_usd": 0.009105,
+          "total_cost_usd": 0.0101275
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.0058675,
+        "mcp_cost_usd": 0.0101275,
+        "total_cost_usd": 0.015995,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "A juicio del médico tratante, las intervenciones recomendadas para la reducción de la náusea y el vómito incluyen el jengibre, los antihistamínicos y la vitamina B6",
+      "question_id": 10
+    },
+    {
+      "execution_id": "1a158bba-c4ed-4a1d-a3d5-82e7370728ef",
+      "timestamp": "2025-11-12T15:21:41.678984",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "hybrid",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "Cual es el tratamiento para las nauseas y vomito del embarazo",
+      "rag_results": {
+        "retrieved_context": [
+          "ENCIONES RECOMENDADAS PARA EL TRATAMIENTO DE LA NÁUSEA Y EL VÓMITO EN LA PRIMERA MITAD DEL EMBARAZO? La náusea y el vómito son los síntomas gastrointestinales que con más frecuencia se presentan durante el embarazo, presentándose en cerca del 80% de las embarazadas durante el primer trimestre. RESUMEN Y DESCRIPCION DE LA EVIDENCIA Un ECC que incluyó 70 pacientes evaluó el tratamiento de la náusea y el vómito con base en jengibre (250 mg cuatro veces al día) vs. placebo.",
+          "las intervenciones recomendadas para la reducción de la nausea y el vómito incluyen el jengibre, los antihistamínicos y la vitamina B6. Se recomienda que las mujeres reciban información acerca de los aspectos relacionados con la náusea y el vómito en la gestación, incluyendo que la mayoría de los casos en el embarazo se resuelven espontáneamente antes de la semana 16 a 20 de gestación, y no suelen estar asociados con un resultado adverso del embarazo. 10.",
+          "lio espectro de intervenciones, las cuales mejoran los síntomas de náuseas y vómitos en el embarazo. Entre las intervenciones que han mostrado ser eficaces se encuentran intervenciones no farmacológicas basadas en cambios en el hábito alimenticio, uso de jengibre y acupuntura e intervenciones farmacológicas como los antihistamínicos, los cuales han mostrado ser eficaces y seguros.",
+          "rvenciones farmacológicas como los antihistamínicos, los cuales han mostrado ser eficaces y seguros. Dado lo anterior, el GDG concluyó que se pueden tener en cuenta durante el control prenatal intervenciones no farmacológicas como el jengibre y la acupuntura en el punto P6 y farmacológicas basadas principalmente en antihistamínicos RECOMENDACIONES CLÍNICAS juicio del médico tratante, las intervenciones recomendadas para la reducción de la nausea y el vómito incluyen el jengibre, los",
+          "derar si la mujer responde \"sí\" a cualquiera de las preguntas iniciales: ¿Siente que necesita ayuda? En las pacientes en que se detecte alto riesgo de depresión postparto se recomienda garantizar una intervención en el postparto inmediato. 9. ¿CUÁLES SON LAS INTERVENCIONES RECOMENDADAS PARA EL TRATAMIENTO DE LA NÁUSEA Y EL VÓMITO EN LA PRIMERA MITAD DEL EMBARAZO?"
+        ],
+        "generated_answer": "Según el contexto proporcionado, el tratamiento para las náuseas y el vómito del embarazo incluye intervenciones tanto farmacológicas como no farmacológicas.\n\nLas intervenciones recomendadas son:\n\n**Intervenciones no farmacológicas:**\n*   **Jengibre:** Se menciona un estudio que utilizó una dosis de 250 mg cuatro veces al día.\n*   **Cambios en el hábito alimenticio.**\n*   **Acupuntura:** Específicamente en el punto P6.\n\n**Intervenciones farmacológicas:**\n*   **Antihistamínicos:** Se describen como eficaces y seguros.\n*   **Vitamina B6.**\n\nAdemás, el texto destaca que es importante informar a las mujeres que la mayoría de los casos se resuelven espontáneamente antes de la semana 16 a 20 de gestación y no suelen estar asociados con un resultado adverso del embarazo.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.8996080493827159,
+          "faithfulness": 0.875
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 574,
+          "output_tokens": 1230,
+          "total_tokens": 1804,
+          "input_cost_usd": 0.0007175,
+          "output_cost_usd": 0.00615,
+          "total_cost_usd": 0.0068675
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. 17 remedios caseros para las náuseas y vómitos en el embarazo\n   URL: https://www.tuasaude.com/es/remedios-caseros-para-las-nauseas-y-vomitos-en-el-embarazo/\n   Summary: Cuandolasnáuseasson muy persistentesyprovocanvómitosconstantes, se debe informar al médico obstetraparaque pueda recetar un medicamentoparalasnáuseas, ya queesimportante quelamujer embarazada esté bien nutridaybien hidratadaparasu bienestaryeldesarrollodelbebé. Vea algunos medicamentosparaaliviarlasnáuseasyvómitosenelembarazo.\n\n2. Náuseas y vómitos en el embarazo (y hiperémesis gravídica)\n   URL: https://www.mdsaude.com/es/embarazo/nauseas-y-vomitos-en-el-embarazo/\n   Summary: En este texto vamos a abordarlascausasytratamientosparalassimplesnáuseasdelembarazoyparalallamada hiperémesis gravídica.\n\n3. Náuseas y vómitos en el embarazo: ¿qué los causa? ¿Se pueden aliviar?\n   URL: https://www.reproduccionasistida.org/aliviar-las-nauseas-en-el-embarazo/\n   Summary: Lasnáuseasylosvómitosson una delasmolestias más habituales enelembarazo. Esta molestia se produce, especialmente, a lo largodelprimer trimestre de gestación. Sin embargo, hay algunos consejosyrecomendaciones útiles quelaembarazada puede hacerparaaliviarlos.\n"
+        ],
+        "generated_answer": "Según los resultados de la búsqueda, el tratamiento para las náuseas y el vómito durante el embarazo incluye tanto remedios y recomendaciones caseras como tratamiento médico, dependiendo de la severidad de los síntomas.\n\nAquí tienes un resumen de las opciones de tratamiento:\n\n*   **Consejos y remedios caseros:** Existen diversas recomendaciones y remedios que la mujer embarazada puede seguir para aliviar las náuseas y los vómitos, que son molestias muy habituales, especialmente durante el primer trimestre de gestación.\n\n*   **Tratamiento médico:** Cuando las náuseas son muy persistentes y provocan vómitos constantes, es fundamental informar al médico obstetra. El médico puede recetar un medicamento específico para controlar los síntomas.\n\nEs crucial buscar atención médica en casos severos para asegurar que la madre se mantenga bien nutrida e hidratada, lo cual es vital para su propio bienestar y el correcto desarrollo del bebé. Existen tratamientos tanto para las náuseas simples del embarazo como para condiciones más graves como la hiperémesis gravídica.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9628194011447782,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 438,
+          "output_tokens": 1466,
+          "total_tokens": 1904,
+          "input_cost_usd": 0.0005475,
+          "output_cost_usd": 0.00733,
+          "total_cost_usd": 0.0078775
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.0068675,
+        "mcp_cost_usd": 0.0078775,
+        "total_cost_usd": 0.014745,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "A juicio del médico tratante, las intervenciones recomendadas para la reducción de la náusea y el vómito incluyen el jengibre, los antihistamínicos y la vitamina B6",
+      "question_id": 10
+    }
+  ]
+}

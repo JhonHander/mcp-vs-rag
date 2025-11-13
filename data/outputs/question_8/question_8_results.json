@@ -1,0 +1,531 @@
+{
+  "question_id": 8,
+  "question": "¿Cuál es la probabilidad de parto vaginal luego de una cesárea?",
+  "ground_truth": "La probabilidad de parto vaginal es de 74% luego de una cesárea sin otros riesgos asociados.",
+  "total_configurations": 8,
+  "timestamp": "2025-11-12T14:45:54.339043",
+  "configurations": [
+    {
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo"
+    }
+  ],
+  "results": [
+    {
+      "execution_id": "ca5f32a2-7ca2-4b17-a847-97d3473121ef",
+      "timestamp": "2025-11-12T14:36:54.430709",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "naive",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Cuál es la probabilidad de parto vaginal luego de una cesárea?",
+      "rag_results": {
+        "retrieved_context": [
+          "ficios que conlleva para ella y el recién nacido el parto vaginal comparado con la cesárea electiva. Se recomienda informar a las mujeres que opten por una prueba de trabajo de parto después de una cesárea previa, que la probabilidad de parto vaginal es de 74%. Se recomienda que el control prenatal de una mujer embarazada con antecedente de una cesárea sin otros factores de riesgo se realice en una institución de baja complejidad; en la semana 32 debe ser remitida para valoración por",
+          "de parto vaginal después de cesárea (VBAC) y la relación riesgo-beneficio en la gestante y el feto . Se incluyeron mujeres sanas con una gestación única y cesárea previa, las cuales fueran elegibles para una prueba de trabajo de parto (PTP) o parto electivo por cesárea (CE). En 28 a 70% de gestantes con antecedente de cesárea se realizó una prueba de trabajo de parto (PTP). Los factores previos al parto que se asociaron con parto vaginal luego de una PTP fueron: tener un parto vaginal previo (OR",
+          "s candidatas para un parto vaginal, pero ninguno de ellos tuvo la capacidad de identificar de manera consistente las mujeres que están a riesgo de parto por cesárea. RELACION ENTRE LA EVIDENCIA Y LA RECOMENDACIÓN La evidencia muestra que el trabajo de parto después de una cesárea previa es una opción razonable y segura. Los riesgos de un resultado adverso materno y neonatal son similares",
+          "mujeres que fueron sometidas a trabajo de parto (0,74%) . 2++ Un estudio de cohorte que incluyó 13.331 mujeres embarazadas con al menos un parto previo por cesárea y en quienes se indicó parto vaginal, evaluó la asociación entre el intervalo intergenésico corto o largo con tres desenlaces maternos: ruptura uterina, morbilidad mayor (incluyendo ruptura, lesión de intestino o vejiga y laceración de arterias uterinas) y necesidad de transfusión sanguínea.",
+          "nacidos vivos (IC 95%= 0,59-3,04%) comparado con 0,5 x 1.000 (IC 95%=: 0,07-3,83) en el grupo de CE. Dentro de la revisión se encontraron cinco herramientas para predecir la probabilidad de parto por cesárea, dos de ellas que pueden ser usadas durante el control prenatal (área bajo la curva ROC= 75%). Todos los modelos ofrecieron una capacidad razonable para identificar a las mujeres que son buenas candidatas para un parto vaginal, pero ninguno de ellos tuvo la capacidad de identificar de manera"
+        ],
+        "generated_answer": "La probabilidad de lograr un parto vaginal después de una cesárea (VBAC), al intentar una prueba de trabajo de parto, es aproximadamente del 74%.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9687534720603679,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 615,
+          "output_tokens": 170,
+          "total_tokens": 785,
+          "input_cost_usd": 0.003075,
+          "output_cost_usd": 0.00255,
+          "total_cost_usd": 0.005625
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Parto vaginal después de una cesárea (VBAC) - Cigna Healthcare\nURL: https://www.cigna.com/es-us/knowledge-center/hw/temas-de-salud/parto-vaginal-despus-de-una-cesrea-hw200557\nContent: # Parto vaginal después de una cesárea (VBAC) ### ¿Qué es un parto vaginal después de una cesárea (VBAC)? * Embarazo: ¿Debería intentar un parto vaginal después de una cesárea anterior (VBAC)? * Embarazo: ¿Debería intentar tener un parto vaginal después de haber tenido una cesárea (VBAC)? La probabilidad de tener éxito con un parto vaginal después de una cesárea (VBAC) depende de muchas cosas. Riesgos del VBAC y de los partos por cesárea ## Riesgos del VBAC y de los partos por cesárea Por este motivo, las mujeres con factores de riesgo de ruptura uterina no deberían intentar tener un parto vaginal después de una cesárea (VBAC). Información, preparación y trabajo en equipo para un parto vaginal después de una cesárea (VBAC) con éxito.\n\nTitle: PVDC: Parto Vaginal Después de una Cesárea\nURL: https://americanpregnancy.org/es/healthy-pregnancy/labor-and-birth/vaginal-birth-after-cesarean/\nContent: En estudios más publicados, 60 a 80% – aproximadamente 3 a 4 de cada 5 – mujeres quienes se han sometido previamente a luz por cesárea pueden dar a luz con\n\nTitle: Parto vaginal después de cesárea - BabyCenter\nURL: https://espanol.babycenter.com/a900094/parto-vaginal-despu%C3%A9s-de-ces%C3%A1rea\nContent: Por supuesto, las probabilidades son mayores si en esta ocasión no parecen presentarse los mismos motivos que provocaron la cesárea anterior."
+        ],
+        "generated_answer": "En términos generales, entre 60% y 80% (aprox. 3–4 de cada 5) de las mujeres logran un parto vaginal después de una cesárea (PVDC o VBAC), cuando son buenas candidatas y el intento se realiza en condiciones adecuadas.\n\nEsta probabilidad varía según factores individuales, por ejemplo:\n- Motivo de la cesárea previa; las probabilidades son mayores si ese motivo no está presente en el embarazo actual.\n- Otros elementos de la historia clínica (tipo de incisión uterina previa, número de cesáreas previas, antecedentes de parto vaginal, etc.).\n\nFuentes:\n- American Pregnancy Association: 60–80% de éxito en los estudios publicados (https://americanpregnancy.org/es/healthy-pregnancy/labor-and-birth/vaginal-birth-after-cesarean/).\n- Cigna: el éxito depende de múltiples factores y debe evaluarse individualmente (https://www.cigna.com/es-us/knowledge-center/hw/temas-de-salud/parto-vaginal-despus-de-una-cesrea-hw200557).\n- BabyCenter: las probabilidades aumentan si no se repite la causa de la cesárea anterior (https://espanol.babycenter.com/a900094/parto-vaginal-despu%C3%A9s-de-ces%C3%A1rea).",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.6923076923076923
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 478,
+          "output_tokens": 878,
+          "total_tokens": 1356,
+          "input_cost_usd": 0.00239,
+          "output_cost_usd": 0.01317,
+          "total_cost_usd": 0.01556
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.005625,
+        "mcp_cost_usd": 0.01556,
+        "total_cost_usd": 0.021185,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "La probabilidad de parto vaginal es de 74% luego de una cesárea sin otros riesgos asociados.",
+      "question_id": 8
+    },
+    {
+      "execution_id": "7f2c0b01-bb35-4dfa-89b8-ede7046c54d5",
+      "timestamp": "2025-11-12T14:37:58.695748",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "naive",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Cuál es la probabilidad de parto vaginal luego de una cesárea?",
+      "rag_results": {
+        "retrieved_context": [
+          "ficios que conlleva para ella y el recién nacido el parto vaginal comparado con la cesárea electiva. Se recomienda informar a las mujeres que opten por una prueba de trabajo de parto después de una cesárea previa, que la probabilidad de parto vaginal es de 74%. Se recomienda que el control prenatal de una mujer embarazada con antecedente de una cesárea sin otros factores de riesgo se realice en una institución de baja complejidad; en la semana 32 debe ser remitida para valoración por",
+          "de parto vaginal después de cesárea (VBAC) y la relación riesgo-beneficio en la gestante y el feto . Se incluyeron mujeres sanas con una gestación única y cesárea previa, las cuales fueran elegibles para una prueba de trabajo de parto (PTP) o parto electivo por cesárea (CE). En 28 a 70% de gestantes con antecedente de cesárea se realizó una prueba de trabajo de parto (PTP). Los factores previos al parto que se asociaron con parto vaginal luego de una PTP fueron: tener un parto vaginal previo (OR",
+          "s candidatas para un parto vaginal, pero ninguno de ellos tuvo la capacidad de identificar de manera consistente las mujeres que están a riesgo de parto por cesárea. RELACION ENTRE LA EVIDENCIA Y LA RECOMENDACIÓN La evidencia muestra que el trabajo de parto después de una cesárea previa es una opción razonable y segura. Los riesgos de un resultado adverso materno y neonatal son similares",
+          "mujeres que fueron sometidas a trabajo de parto (0,74%) . 2++ Un estudio de cohorte que incluyó 13.331 mujeres embarazadas con al menos un parto previo por cesárea y en quienes se indicó parto vaginal, evaluó la asociación entre el intervalo intergenésico corto o largo con tres desenlaces maternos: ruptura uterina, morbilidad mayor (incluyendo ruptura, lesión de intestino o vejiga y laceración de arterias uterinas) y necesidad de transfusión sanguínea.",
+          "nacidos vivos (IC 95%= 0,59-3,04%) comparado con 0,5 x 1.000 (IC 95%=: 0,07-3,83) en el grupo de CE. Dentro de la revisión se encontraron cinco herramientas para predecir la probabilidad de parto por cesárea, dos de ellas que pueden ser usadas durante el control prenatal (área bajo la curva ROC= 75%). Todos los modelos ofrecieron una capacidad razonable para identificar a las mujeres que son buenas candidatas para un parto vaginal, pero ninguno de ellos tuvo la capacidad de identificar de manera"
+        ],
+        "generated_answer": "Aproximadamente 74% (alrededor de 3 de cada 4 mujeres) tras una prueba de trabajo de parto después de una cesárea previa.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9266530621955357,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 615,
+          "output_tokens": 172,
+          "total_tokens": 787,
+          "input_cost_usd": 0.003075,
+          "output_cost_usd": 0.00258,
+          "total_cost_usd": 0.005655
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. Parto vaginal después de la cesárea: Conoce las ventajas y las ...\n   URL: https://www.mayoclinic.org/es/healthy-lifestyle/labor-and-delivery/in-depth/vbac/art-20044869\n   Summary: Elpartovaginaltraslacesáreaesunaopción para muchas personas. Debes saber qué debes tener en cuenta antesderecurrir a este métododeparto.\n\n2. Parto vaginal después de una cesárea - MedlinePlus\n   URL: https://medlineplus.gov/spanish/ency/patientinstructions/000589.htm\n   Summary: Si usted tuvo unpartoporcesáreacon anterioridad, esto no significa que usted tendrá que dar a luzdelamisma manera. Muchas mujeres pueden tener unpartovaginaldespuésdehaber sido sometidas a\n\n3. Parto vaginal después de una cesárea (VBAC) | Cigna\n   URL: https://www.cigna.com/es-us/knowledge-center/hw/temas-de-salud/parto-vaginal-despus-de-una-cesrea-hw200557\n   Summary: ¿Quéesunpartovaginaldespuésdeunacesárea(VBAC)? Si usted ya ha tenido unpartoporcesárea,esposible que pueda dar a luz a su próximo bebé por víavaginal. Esto se llamapartovaginaldespuésdecesáreao VBAC, por sus siglas en inglés.Lamayoríadelasmujeres, ya sea que den a luz en formavaginalo por...\n"
+        ],
+        "generated_answer": "En términos generales, entre 60% y 80% de las mujeres que intentan un parto vaginal después de una cesárea (PVDC o VBAC) logran dar a luz por vía vaginal.\n\nEsta probabilidad varía según factores individuales:\n- Aumenta si la incisión uterina previa fue transversal baja, si la cesárea anterior fue por una causa no recurrente (por ejemplo, presentación podálica) y si ya has tenido un parto vaginal (antes o después de la cesárea).\n- Disminuye si la cesárea previa fue por detención del progreso del parto, si se necesita inducción, si el bebé es grande, si hay IMC elevado, edad materna mayor o si el intervalo entre embarazos es corto.\n\nFuentes: Mayo Clinic; MedlinePlus; Cigna.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.09090909090909091
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 391,
+          "output_tokens": 949,
+          "total_tokens": 1340,
+          "input_cost_usd": 0.001955,
+          "output_cost_usd": 0.014235,
+          "total_cost_usd": 0.01619
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.005655,
+        "mcp_cost_usd": 0.01619,
+        "total_cost_usd": 0.021845,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "La probabilidad de parto vaginal es de 74% luego de una cesárea sin otros riesgos asociados.",
+      "question_id": 8
+    },
+    {
+      "execution_id": "662fe7e1-dd78-439a-8e2e-cb6dfd3a6047",
+      "timestamp": "2025-11-12T14:39:02.485120",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "hybrid",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Cuál es la probabilidad de parto vaginal luego de una cesárea?",
+      "rag_results": {
+        "retrieved_context": [
+          "ficios que conlleva para ella y el recién nacido el parto vaginal comparado con la cesárea electiva. Se recomienda informar a las mujeres que opten por una prueba de trabajo de parto después de una cesárea previa, que la probabilidad de parto vaginal es de 74%. Se recomienda que el control prenatal de una mujer embarazada con antecedente de una cesárea sin otros factores de riesgo se realice en una institución de baja complejidad; en la semana 32 debe ser remitida para valoración por",
+          "de parto vaginal después de cesárea (VBAC) y la relación riesgo-beneficio en la gestante y el feto . Se incluyeron mujeres sanas con una gestación única y cesárea previa, las cuales fueran elegibles para una prueba de trabajo de parto (PTP) o parto electivo por cesárea (CE). En 28 a 70% de gestantes con antecedente de cesárea se realizó una prueba de trabajo de parto (PTP). Los factores previos al parto que se asociaron con parto vaginal luego de una PTP fueron: tener un parto vaginal previo (OR",
+          "s candidatas para un parto vaginal, pero ninguno de ellos tuvo la capacidad de identificar de manera consistente las mujeres que están a riesgo de parto por cesárea. RELACION ENTRE LA EVIDENCIA Y LA RECOMENDACIÓN La evidencia muestra que el trabajo de parto después de una cesárea previa es una opción razonable y segura. Los riesgos de un resultado adverso materno y neonatal son similares",
+          "mujeres que fueron sometidas a trabajo de parto (0,74%) . 2++ Un estudio de cohorte que incluyó 13.331 mujeres embarazadas con al menos un parto previo por cesárea y en quienes se indicó parto vaginal, evaluó la asociación entre el intervalo intergenésico corto o largo con tres desenlaces maternos: ruptura uterina, morbilidad mayor (incluyendo ruptura, lesión de intestino o vejiga y laceración de arterias uterinas) y necesidad de transfusión sanguínea.",
+          "nacidos vivos (IC 95%= 0,59-3,04%) comparado con 0,5 x 1.000 (IC 95%=: 0,07-3,83) en el grupo de CE. Dentro de la revisión se encontraron cinco herramientas para predecir la probabilidad de parto por cesárea, dos de ellas que pueden ser usadas durante el control prenatal (área bajo la curva ROC= 75%). Todos los modelos ofrecieron una capacidad razonable para identificar a las mujeres que son buenas candidatas para un parto vaginal, pero ninguno de ellos tuvo la capacidad de identificar de manera"
+        ],
+        "generated_answer": "Aproximadamente 74%. Es decir, en mujeres candidatas a prueba de trabajo de parto tras una cesárea previa, alrededor del 74% logra un parto vaginal.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9547829208425779,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 615,
+          "output_tokens": 238,
+          "total_tokens": 853,
+          "input_cost_usd": 0.003075,
+          "output_cost_usd": 0.00357,
+          "total_cost_usd": 0.006645
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Parto vaginal después de una cesárea (VBAC) - Cigna Healthcare\nURL: https://www.cigna.com/es-us/knowledge-center/hw/temas-de-salud/parto-vaginal-despus-de-una-cesrea-hw200557\nContent: # Parto vaginal después de una cesárea (VBAC) ### ¿Qué es un parto vaginal después de una cesárea (VBAC)? * Embarazo: ¿Debería intentar un parto vaginal después de una cesárea anterior (VBAC)? * Embarazo: ¿Debería intentar tener un parto vaginal después de haber tenido una cesárea (VBAC)? La probabilidad de tener éxito con un parto vaginal después de una cesárea (VBAC) depende de muchas cosas. Riesgos del VBAC y de los partos por cesárea ## Riesgos del VBAC y de los partos por cesárea Por este motivo, las mujeres con factores de riesgo de ruptura uterina no deberían intentar tener un parto vaginal después de una cesárea (VBAC). Información, preparación y trabajo en equipo para un parto vaginal después de una cesárea (VBAC) con éxito.\n\nTitle: PVDC: Parto Vaginal Después de una Cesárea\nURL: https://americanpregnancy.org/es/healthy-pregnancy/labor-and-birth/vaginal-birth-after-cesarean/\nContent: En estudios más publicados, 60 a 80% – aproximadamente 3 a 4 de cada 5 – mujeres quienes se han sometido previamente a luz por cesárea pueden dar a luz con\n\nTitle: Parto vaginal después de cesárea - BabyCenter\nURL: https://espanol.babycenter.com/a900094/parto-vaginal-despu%C3%A9s-de-ces%C3%A1rea\nContent: Por supuesto, las probabilidades son mayores si en esta ocasión no parecen presentarse los mismos motivos que provocaron la cesárea anterior."
+        ],
+        "generated_answer": "En general, entre el 60% y el 80% (aproximadamente 3 a 4 de cada 5 mujeres) logran un parto vaginal después de una cesárea (PVDC/VBAC). Esta probabilidad varía según factores individuales: es mayor si en el embarazo actual no se repiten las razones que motivaron la cesárea previa, y en presencia de ciertos factores de riesgo (por ejemplo, de ruptura uterina) no se recomienda intentar PVDC. Lo ideal es evaluar tu caso con tu equipo de salud.\n\nFuentes:\n- American Pregnancy Association: 60–80% de éxito en PVDC — https://americanpregnancy.org/es/healthy-pregnancy/labor-and-birth/vaginal-birth-after-cesarean/\n- Cigna Healthcare: la probabilidad depende de muchos factores y existen riesgos como la ruptura uterina — https://www.cigna.com/es-us/knowledge-center/hw/temas-de-salud/parto-vaginal-despus-de-una-cesrea-hw200557\n- BabyCenter: las probabilidades son mayores si no se repiten los motivos de la cesárea anterior — https://espanol.babycenter.com/a900094/parto-vaginal-despu%C3%A9s-de-ces%C3%A1rea",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.8333333333333334
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 478,
+          "output_tokens": 925,
+          "total_tokens": 1403,
+          "input_cost_usd": 0.00239,
+          "output_cost_usd": 0.013875,
+          "total_cost_usd": 0.016265
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.006645,
+        "mcp_cost_usd": 0.016265,
+        "total_cost_usd": 0.02291,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "La probabilidad de parto vaginal es de 74% luego de una cesárea sin otros riesgos asociados.",
+      "question_id": 8
+    },
+    {
+      "execution_id": "45fbc354-218d-4443-8875-b0e687e08c52",
+      "timestamp": "2025-11-12T14:39:57.670336",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "hybrid",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Cuál es la probabilidad de parto vaginal luego de una cesárea?",
+      "rag_results": {
+        "retrieved_context": [
+          "ficios que conlleva para ella y el recién nacido el parto vaginal comparado con la cesárea electiva. Se recomienda informar a las mujeres que opten por una prueba de trabajo de parto después de una cesárea previa, que la probabilidad de parto vaginal es de 74%. Se recomienda que el control prenatal de una mujer embarazada con antecedente de una cesárea sin otros factores de riesgo se realice en una institución de baja complejidad; en la semana 32 debe ser remitida para valoración por",
+          "de parto vaginal después de cesárea (VBAC) y la relación riesgo-beneficio en la gestante y el feto . Se incluyeron mujeres sanas con una gestación única y cesárea previa, las cuales fueran elegibles para una prueba de trabajo de parto (PTP) o parto electivo por cesárea (CE). En 28 a 70% de gestantes con antecedente de cesárea se realizó una prueba de trabajo de parto (PTP). Los factores previos al parto que se asociaron con parto vaginal luego de una PTP fueron: tener un parto vaginal previo (OR",
+          "s candidatas para un parto vaginal, pero ninguno de ellos tuvo la capacidad de identificar de manera consistente las mujeres que están a riesgo de parto por cesárea. RELACION ENTRE LA EVIDENCIA Y LA RECOMENDACIÓN La evidencia muestra que el trabajo de parto después de una cesárea previa es una opción razonable y segura. Los riesgos de un resultado adverso materno y neonatal son similares",
+          "mujeres que fueron sometidas a trabajo de parto (0,74%) . 2++ Un estudio de cohorte que incluyó 13.331 mujeres embarazadas con al menos un parto previo por cesárea y en quienes se indicó parto vaginal, evaluó la asociación entre el intervalo intergenésico corto o largo con tres desenlaces maternos: ruptura uterina, morbilidad mayor (incluyendo ruptura, lesión de intestino o vejiga y laceración de arterias uterinas) y necesidad de transfusión sanguínea.",
+          "nacidos vivos (IC 95%= 0,59-3,04%) comparado con 0,5 x 1.000 (IC 95%=: 0,07-3,83) en el grupo de CE. Dentro de la revisión se encontraron cinco herramientas para predecir la probabilidad de parto por cesárea, dos de ellas que pueden ser usadas durante el control prenatal (área bajo la curva ROC= 75%). Todos los modelos ofrecieron una capacidad razonable para identificar a las mujeres que son buenas candidatas para un parto vaginal, pero ninguno de ellos tuvo la capacidad de identificar de manera"
+        ],
+        "generated_answer": "Aproximadamente 74% (éxito de parto vaginal tras intentar trabajo de parto después de una cesárea previa).",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9552047007568832,
+          "faithfulness": 0.5
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 615,
+          "output_tokens": 292,
+          "total_tokens": 907,
+          "input_cost_usd": 0.003075,
+          "output_cost_usd": 0.00438,
+          "total_cost_usd": 0.007455
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. Parto vaginal después de la cesárea: Conoce las ventajas y las ...\n   URL: https://www.mayoclinic.org/es/healthy-lifestyle/labor-and-delivery/in-depth/vbac/art-20044869\n   Summary: Elpartovaginaltraslacesáreaesunaopción para muchas personas. Debes saber qué debes tener en cuenta antesderecurrir a este métododeparto.\n\n2. Parto vaginal después de una cesárea - MedlinePlus\n   URL: https://medlineplus.gov/spanish/ency/patientinstructions/000589.htm\n   Summary: Si usted tuvo unpartoporcesáreacon anterioridad, esto no significa que usted tendrá que dar a luzdelamisma manera. Muchas mujeres pueden tener unpartovaginaldespuésdehaber sido sometidas a\n\n3. Parto vaginal después de cesárea: respuesta a dudas frecuentes\n   URL: https://www.dexeus.com/blog/maternidad/parto-vaginal-despues-cesarea/\n   Summary: Aunquelacesáreaesunaintervención que se ha normalizado, no dejadeserunacirugía quedeentrada implica un mayor riesgo que unpartopor víavaginal. Por ello todaslasmujeres son conscientesdequeespreferible evitarla. Sin embargo, tras haber dado a luz un primer hijo porcesáreapara muchas […]\n"
+        ],
+        "generated_answer": "En términos generales, la probabilidad de lograr un parto vaginal después de una cesárea (PVDC o VBAC) es de aproximadamente 60–80% en mujeres candidatas adecuadas, según fuentes como Mayo Clinic y MedlinePlus. En centros con experiencia suele rondar el 70–75% (Dexeus).\n\nFactores que aumentan la probabilidad:\n- Haber tenido previamente un parto vaginal.\n- Solo una cesárea previa con incisión uterina transversal baja.\n- Motivo de la cesárea previa no recurrente (por ejemplo, presentación podálica).\n- Inicio espontáneo del trabajo de parto y cuello favorable.\n\nFactores que la reducen:\n- Inducción del parto, macrosomía fetal, IMC elevado, edad materna mayor, intervalo corto desde la cesárea previa.\n- Dos o más cesáreas previas sin partos vaginales.\n- Incisión uterina vertical “clásica” o antecedentes de ruptura uterina (en estos casos generalmente no se recomienda PVDC).\n\nConsulta con tu obstetra para valorar tu caso concreto y el lugar más seguro para intentarlo. Fuentes: Mayo Clinic, MedlinePlus, Dexeus.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.8
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 355,
+          "output_tokens": 895,
+          "total_tokens": 1250,
+          "input_cost_usd": 0.001775,
+          "output_cost_usd": 0.013425,
+          "total_cost_usd": 0.0152
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.007455,
+        "mcp_cost_usd": 0.0152,
+        "total_cost_usd": 0.022655,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "La probabilidad de parto vaginal es de 74% luego de una cesárea sin otros riesgos asociados.",
+      "question_id": 8
+    },
+    {
+      "execution_id": "34c97485-6175-4eb9-bcb9-655c35a3963f",
+      "timestamp": "2025-11-12T14:41:01.222064",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "naive",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Cuál es la probabilidad de parto vaginal luego de una cesárea?",
+      "rag_results": {
+        "retrieved_context": [
+          "ficios que conlleva para ella y el recién nacido el parto vaginal comparado con la cesárea electiva. Se recomienda informar a las mujeres que opten por una prueba de trabajo de parto después de una cesárea previa, que la probabilidad de parto vaginal es de 74%. Se recomienda que el control prenatal de una mujer embarazada con antecedente de una cesárea sin otros factores de riesgo se realice en una institución de baja complejidad; en la semana 32 debe ser remitida para valoración por",
+          "de parto vaginal después de cesárea (VBAC) y la relación riesgo-beneficio en la gestante y el feto . Se incluyeron mujeres sanas con una gestación única y cesárea previa, las cuales fueran elegibles para una prueba de trabajo de parto (PTP) o parto electivo por cesárea (CE). En 28 a 70% de gestantes con antecedente de cesárea se realizó una prueba de trabajo de parto (PTP). Los factores previos al parto que se asociaron con parto vaginal luego de una PTP fueron: tener un parto vaginal previo (OR",
+          "s candidatas para un parto vaginal, pero ninguno de ellos tuvo la capacidad de identificar de manera consistente las mujeres que están a riesgo de parto por cesárea. RELACION ENTRE LA EVIDENCIA Y LA RECOMENDACIÓN La evidencia muestra que el trabajo de parto después de una cesárea previa es una opción razonable y segura. Los riesgos de un resultado adverso materno y neonatal son similares",
+          "mujeres que fueron sometidas a trabajo de parto (0,74%) . 2++ Un estudio de cohorte que incluyó 13.331 mujeres embarazadas con al menos un parto previo por cesárea y en quienes se indicó parto vaginal, evaluó la asociación entre el intervalo intergenésico corto o largo con tres desenlaces maternos: ruptura uterina, morbilidad mayor (incluyendo ruptura, lesión de intestino o vejiga y laceración de arterias uterinas) y necesidad de transfusión sanguínea.",
+          "nacidos vivos (IC 95%= 0,59-3,04%) comparado con 0,5 x 1.000 (IC 95%=: 0,07-3,83) en el grupo de CE. Dentro de la revisión se encontraron cinco herramientas para predecir la probabilidad de parto por cesárea, dos de ellas que pueden ser usadas durante el control prenatal (área bajo la curva ROC= 75%). Todos los modelos ofrecieron una capacidad razonable para identificar a las mujeres que son buenas candidatas para un parto vaginal, pero ninguno de ellos tuvo la capacidad de identificar de manera"
+        ],
+        "generated_answer": "Según la información proporcionada en el contexto, la probabilidad de tener un parto vaginal luego de una cesárea es del **74%**.\n\nEl texto especifica: \"Se recomienda informar a las mujeres que opten por una prueba de trabajo de parto después de una cesárea previa, que la probabilidad de parto vaginal es de 74%\".",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9956232045526768,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 616,
+          "output_tokens": 1119,
+          "total_tokens": 1735,
+          "input_cost_usd": 0.00077,
+          "output_cost_usd": 0.005595,
+          "total_cost_usd": 0.006365
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Parto vaginal después de una cesárea (VBAC) - Cigna Healthcare\nURL: https://www.cigna.com/es-us/knowledge-center/hw/temas-de-salud/parto-vaginal-despus-de-una-cesrea-hw200557\nContent: # Parto vaginal después de una cesárea (VBAC) ### ¿Qué es un parto vaginal después de una cesárea (VBAC)? * Embarazo: ¿Debería intentar un parto vaginal después de una cesárea anterior (VBAC)? * Embarazo: ¿Debería intentar tener un parto vaginal después de haber tenido una cesárea (VBAC)? La probabilidad de tener éxito con un parto vaginal después de una cesárea (VBAC) depende de muchas cosas. Riesgos del VBAC y de los partos por cesárea ## Riesgos del VBAC y de los partos por cesárea Por este motivo, las mujeres con factores de riesgo de ruptura uterina no deberían intentar tener un parto vaginal después de una cesárea (VBAC). Información, preparación y trabajo en equipo para un parto vaginal después de una cesárea (VBAC) con éxito.\n\nTitle: PVDC: Parto Vaginal Después de una Cesárea\nURL: https://americanpregnancy.org/es/healthy-pregnancy/labor-and-birth/vaginal-birth-after-cesarean/\nContent: En estudios más publicados, 60 a 80% – aproximadamente 3 a 4 de cada 5 – mujeres quienes se han sometido previamente a luz por cesárea pueden dar a luz con\n\nTitle: Parto vaginal después de cesárea - BabyCenter\nURL: https://espanol.babycenter.com/a900094/parto-vaginal-despu%C3%A9s-de-ces%C3%A1rea\nContent: Por supuesto, las probabilidades son mayores si en esta ocasión no parecen presentarse los mismos motivos que provocaron la cesárea anterior."
+        ],
+        "generated_answer": "Según la información proporcionada, la probabilidad de tener un parto vaginal exitoso después de una cesárea (PVDC) es de entre un **60% y un 80%**.\n\nEsto significa que aproximadamente **3 a 4 de cada 5 mujeres** que han tenido una cesárea previa pueden tener un parto vaginal exitoso.\n\nEs importante destacar que la probabilidad de éxito depende de muchos factores. Las probabilidades son mayores si los motivos que provocaron la cesárea anterior no se presentan en el embarazo actual.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 500,
+          "output_tokens": 1383,
+          "total_tokens": 1883,
+          "input_cost_usd": 0.000625,
+          "output_cost_usd": 0.006915,
+          "total_cost_usd": 0.00754
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.006365,
+        "mcp_cost_usd": 0.00754,
+        "total_cost_usd": 0.013905,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "La probabilidad de parto vaginal es de 74% luego de una cesárea sin otros riesgos asociados.",
+      "question_id": 8
+    },
+    {
+      "execution_id": "0c2003fc-aaa7-4304-accc-46b4339ecb45",
+      "timestamp": "2025-11-12T14:42:06.873527",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "naive",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Cuál es la probabilidad de parto vaginal luego de una cesárea?",
+      "rag_results": {
+        "retrieved_context": [
+          "ficios que conlleva para ella y el recién nacido el parto vaginal comparado con la cesárea electiva. Se recomienda informar a las mujeres que opten por una prueba de trabajo de parto después de una cesárea previa, que la probabilidad de parto vaginal es de 74%. Se recomienda que el control prenatal de una mujer embarazada con antecedente de una cesárea sin otros factores de riesgo se realice en una institución de baja complejidad; en la semana 32 debe ser remitida para valoración por",
+          "de parto vaginal después de cesárea (VBAC) y la relación riesgo-beneficio en la gestante y el feto . Se incluyeron mujeres sanas con una gestación única y cesárea previa, las cuales fueran elegibles para una prueba de trabajo de parto (PTP) o parto electivo por cesárea (CE). En 28 a 70% de gestantes con antecedente de cesárea se realizó una prueba de trabajo de parto (PTP). Los factores previos al parto que se asociaron con parto vaginal luego de una PTP fueron: tener un parto vaginal previo (OR",
+          "s candidatas para un parto vaginal, pero ninguno de ellos tuvo la capacidad de identificar de manera consistente las mujeres que están a riesgo de parto por cesárea. RELACION ENTRE LA EVIDENCIA Y LA RECOMENDACIÓN La evidencia muestra que el trabajo de parto después de una cesárea previa es una opción razonable y segura. Los riesgos de un resultado adverso materno y neonatal son similares",
+          "mujeres que fueron sometidas a trabajo de parto (0,74%) . 2++ Un estudio de cohorte que incluyó 13.331 mujeres embarazadas con al menos un parto previo por cesárea y en quienes se indicó parto vaginal, evaluó la asociación entre el intervalo intergenésico corto o largo con tres desenlaces maternos: ruptura uterina, morbilidad mayor (incluyendo ruptura, lesión de intestino o vejiga y laceración de arterias uterinas) y necesidad de transfusión sanguínea.",
+          "nacidos vivos (IC 95%= 0,59-3,04%) comparado con 0,5 x 1.000 (IC 95%=: 0,07-3,83) en el grupo de CE. Dentro de la revisión se encontraron cinco herramientas para predecir la probabilidad de parto por cesárea, dos de ellas que pueden ser usadas durante el control prenatal (área bajo la curva ROC= 75%). Todos los modelos ofrecieron una capacidad razonable para identificar a las mujeres que son buenas candidatas para un parto vaginal, pero ninguno de ellos tuvo la capacidad de identificar de manera"
+        ],
+        "generated_answer": "Según la información proporcionada en el contexto, la probabilidad de tener un parto vaginal luego de una cesárea es del **74%**.\n\nEl texto especifica: \"Se recomienda informar a las mujeres que opten por una prueba de trabajo de parto después de una cesárea previa, que la probabilidad de parto vaginal es de 74%\".",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9786831474155296,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 616,
+          "output_tokens": 1119,
+          "total_tokens": 1735,
+          "input_cost_usd": 0.00077,
+          "output_cost_usd": 0.005595,
+          "total_cost_usd": 0.006365
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. Parto vaginal después de la cesárea: Conoce las ventajas y las ...\n   URL: https://www.mayoclinic.org/es/healthy-lifestyle/labor-and-delivery/in-depth/vbac/art-20044869\n   Summary: Elpartovaginaltraslacesáreaesunaopción para muchas personas. Debes saber qué debes tener en cuenta antesderecurrir a este métododeparto.\n\n2. Parto vaginal después de una cesárea - MedlinePlus\n   URL: https://medlineplus.gov/spanish/ency/patientinstructions/000589.htm\n   Summary: Si usted tuvo unpartoporcesáreacon anterioridad, esto no significa que usted tendrá que dar a luzdelamisma manera. Muchas mujeres pueden tener unpartovaginaldespuésdehaber sido sometidas a\n\n3. Parto vaginal después de una cesárea (VBAC) | Cigna\n   URL: https://www.cigna.com/es-us/knowledge-center/hw/temas-de-salud/parto-vaginal-despus-de-una-cesrea-hw200557\n   Summary: ¿Quéesunpartovaginaldespuésdeunacesárea(VBAC)? Si usted ya ha tenido unpartoporcesárea,esposible que pueda dar a luz a su próximo bebé por víavaginal. Esto se llamapartovaginaldespuésdecesáreao VBAC, por sus siglas en inglés.Lamayoríadelasmujeres, ya sea que den a luz en formavaginalo por...\n"
+        ],
+        "generated_answer": "Basado en los resultados de búsqueda proporcionados, no se especifica una cifra o porcentaje exacto sobre la probabilidad de tener un parto vaginal después de una cesárea.\n\nSin embargo, la información disponible confirma lo siguiente:\n\n*   **Es una opción viable:** Todas las fuentes (Clínica Mayo, MedlinePlus y Cigna) coinciden en que un parto vaginal después de una cesárea (PVDC o VBAC, por sus siglas en inglés) es una opción posible y común para muchas mujeres.\n*   **No es una obligación repetir la cesárea:** Se destaca que haber tenido una cesárea previa no significa que los partos futuros deban ser obligatoriamente por la misma vía.\n\nEn resumen, aunque los textos no ofrecen una probabilidad estadística, sí dejan claro que el parto vaginal tras una cesárea es una alternativa frecuente y a considerar.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 421,
+          "output_tokens": 1100,
+          "total_tokens": 1521,
+          "input_cost_usd": 0.00052625,
+          "output_cost_usd": 0.0055,
+          "total_cost_usd": 0.00602625
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.006365,
+        "mcp_cost_usd": 0.00602625,
+        "total_cost_usd": 0.01239125,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "La probabilidad de parto vaginal es de 74% luego de una cesárea sin otros riesgos asociados.",
+      "question_id": 8
+    },
+    {
+      "execution_id": "d3b68dae-d6fd-4633-af1c-24e36b31cb62",
+      "timestamp": "2025-11-12T14:43:22.360665",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "hybrid",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Cuál es la probabilidad de parto vaginal luego de una cesárea?",
+      "rag_results": {
+        "retrieved_context": [
+          "ficios que conlleva para ella y el recién nacido el parto vaginal comparado con la cesárea electiva. Se recomienda informar a las mujeres que opten por una prueba de trabajo de parto después de una cesárea previa, que la probabilidad de parto vaginal es de 74%. Se recomienda que el control prenatal de una mujer embarazada con antecedente de una cesárea sin otros factores de riesgo se realice en una institución de baja complejidad; en la semana 32 debe ser remitida para valoración por",
+          "de parto vaginal después de cesárea (VBAC) y la relación riesgo-beneficio en la gestante y el feto . Se incluyeron mujeres sanas con una gestación única y cesárea previa, las cuales fueran elegibles para una prueba de trabajo de parto (PTP) o parto electivo por cesárea (CE). En 28 a 70% de gestantes con antecedente de cesárea se realizó una prueba de trabajo de parto (PTP). Los factores previos al parto que se asociaron con parto vaginal luego de una PTP fueron: tener un parto vaginal previo (OR",
+          "s candidatas para un parto vaginal, pero ninguno de ellos tuvo la capacidad de identificar de manera consistente las mujeres que están a riesgo de parto por cesárea. RELACION ENTRE LA EVIDENCIA Y LA RECOMENDACIÓN La evidencia muestra que el trabajo de parto después de una cesárea previa es una opción razonable y segura. Los riesgos de un resultado adverso materno y neonatal son similares",
+          "mujeres que fueron sometidas a trabajo de parto (0,74%) . 2++ Un estudio de cohorte que incluyó 13.331 mujeres embarazadas con al menos un parto previo por cesárea y en quienes se indicó parto vaginal, evaluó la asociación entre el intervalo intergenésico corto o largo con tres desenlaces maternos: ruptura uterina, morbilidad mayor (incluyendo ruptura, lesión de intestino o vejiga y laceración de arterias uterinas) y necesidad de transfusión sanguínea.",
+          "nacidos vivos (IC 95%= 0,59-3,04%) comparado con 0,5 x 1.000 (IC 95%=: 0,07-3,83) en el grupo de CE. Dentro de la revisión se encontraron cinco herramientas para predecir la probabilidad de parto por cesárea, dos de ellas que pueden ser usadas durante el control prenatal (área bajo la curva ROC= 75%). Todos los modelos ofrecieron una capacidad razonable para identificar a las mujeres que son buenas candidatas para un parto vaginal, pero ninguno de ellos tuvo la capacidad de identificar de manera"
+        ],
+        "generated_answer": "Según el contexto proporcionado, la probabilidad de tener un parto vaginal luego de una cesárea es del **74%**.\n\nEsta cifra se aplica a las mujeres que optan por una \"prueba de trabajo de parto\" después de haber tenido una cesárea previa. El texto especifica: \"Se recomienda informar a las mujeres que opten por una prueba de trabajo de parto después de una cesárea previa, que la probabilidad de parto vaginal es de 74%\".",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9956273665116129,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 616,
+          "output_tokens": 1185,
+          "total_tokens": 1801,
+          "input_cost_usd": 0.00077,
+          "output_cost_usd": 0.005925,
+          "total_cost_usd": 0.006695
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Parto vaginal después de una cesárea (VBAC) - Cigna Healthcare\nURL: https://www.cigna.com/es-us/knowledge-center/hw/temas-de-salud/parto-vaginal-despus-de-una-cesrea-hw200557\nContent: # Parto vaginal después de una cesárea (VBAC) ### ¿Qué es un parto vaginal después de una cesárea (VBAC)? * Embarazo: ¿Debería intentar un parto vaginal después de una cesárea anterior (VBAC)? * Embarazo: ¿Debería intentar tener un parto vaginal después de haber tenido una cesárea (VBAC)? La probabilidad de tener éxito con un parto vaginal después de una cesárea (VBAC) depende de muchas cosas. Riesgos del VBAC y de los partos por cesárea ## Riesgos del VBAC y de los partos por cesárea Por este motivo, las mujeres con factores de riesgo de ruptura uterina no deberían intentar tener un parto vaginal después de una cesárea (VBAC). Información, preparación y trabajo en equipo para un parto vaginal después de una cesárea (VBAC) con éxito.\n\nTitle: PVDC: Parto Vaginal Después de una Cesárea\nURL: https://americanpregnancy.org/es/healthy-pregnancy/labor-and-birth/vaginal-birth-after-cesarean/\nContent: En estudios más publicados, 60 a 80% – aproximadamente 3 a 4 de cada 5 – mujeres quienes se han sometido previamente a luz por cesárea pueden dar a luz con\n\nTitle: Parto vaginal después de cesárea - BabyCenter\nURL: https://espanol.babycenter.com/a900094/parto-vaginal-despu%C3%A9s-de-ces%C3%A1rea\nContent: Por supuesto, las probabilidades son mayores si en esta ocasión no parecen presentarse los mismos motivos que provocaron la cesárea anterior."
+        ],
+        "generated_answer": "Según la información proporcionada, la probabilidad de tener un parto vaginal exitoso después de una cesárea (PVDC) es de entre un **60% y un 80%**.\n\nEsto significa que aproximadamente **3 a 4 de cada 5 mujeres** que han tenido una cesárea previa pueden tener un parto vaginal exitoso.\n\nEs importante destacar que la probabilidad de éxito depende de muchos factores. Las probabilidades son mayores si los motivos que provocaron la cesárea anterior no se presentan en el embarazo actual.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 500,
+          "output_tokens": 1383,
+          "total_tokens": 1883,
+          "input_cost_usd": 0.000625,
+          "output_cost_usd": 0.006915,
+          "total_cost_usd": 0.00754
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.006695,
+        "mcp_cost_usd": 0.00754,
+        "total_cost_usd": 0.014235,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "La probabilidad de parto vaginal es de 74% luego de una cesárea sin otros riesgos asociados.",
+      "question_id": 8
+    },
+    {
+      "execution_id": "861960a0-c795-4be8-9fb3-af589155de93",
+      "timestamp": "2025-11-12T14:44:42.256549",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "hybrid",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Cuál es la probabilidad de parto vaginal luego de una cesárea?",
+      "rag_results": {
+        "retrieved_context": [
+          "ficios que conlleva para ella y el recién nacido el parto vaginal comparado con la cesárea electiva. Se recomienda informar a las mujeres que opten por una prueba de trabajo de parto después de una cesárea previa, que la probabilidad de parto vaginal es de 74%. Se recomienda que el control prenatal de una mujer embarazada con antecedente de una cesárea sin otros factores de riesgo se realice en una institución de baja complejidad; en la semana 32 debe ser remitida para valoración por",
+          "de parto vaginal después de cesárea (VBAC) y la relación riesgo-beneficio en la gestante y el feto . Se incluyeron mujeres sanas con una gestación única y cesárea previa, las cuales fueran elegibles para una prueba de trabajo de parto (PTP) o parto electivo por cesárea (CE). En 28 a 70% de gestantes con antecedente de cesárea se realizó una prueba de trabajo de parto (PTP). Los factores previos al parto que se asociaron con parto vaginal luego de una PTP fueron: tener un parto vaginal previo (OR",
+          "s candidatas para un parto vaginal, pero ninguno de ellos tuvo la capacidad de identificar de manera consistente las mujeres que están a riesgo de parto por cesárea. RELACION ENTRE LA EVIDENCIA Y LA RECOMENDACIÓN La evidencia muestra que el trabajo de parto después de una cesárea previa es una opción razonable y segura. Los riesgos de un resultado adverso materno y neonatal son similares",
+          "mujeres que fueron sometidas a trabajo de parto (0,74%) . 2++ Un estudio de cohorte que incluyó 13.331 mujeres embarazadas con al menos un parto previo por cesárea y en quienes se indicó parto vaginal, evaluó la asociación entre el intervalo intergenésico corto o largo con tres desenlaces maternos: ruptura uterina, morbilidad mayor (incluyendo ruptura, lesión de intestino o vejiga y laceración de arterias uterinas) y necesidad de transfusión sanguínea.",
+          "nacidos vivos (IC 95%= 0,59-3,04%) comparado con 0,5 x 1.000 (IC 95%=: 0,07-3,83) en el grupo de CE. Dentro de la revisión se encontraron cinco herramientas para predecir la probabilidad de parto por cesárea, dos de ellas que pueden ser usadas durante el control prenatal (área bajo la curva ROC= 75%). Todos los modelos ofrecieron una capacidad razonable para identificar a las mujeres que son buenas candidatas para un parto vaginal, pero ninguno de ellos tuvo la capacidad de identificar de manera"
+        ],
+        "generated_answer": "Según el contexto proporcionado, la probabilidad de tener un parto vaginal luego de una cesárea es del **74%**.\n\nEsta cifra se aplica a las mujeres que optan por una \"prueba de trabajo de parto\" después de haber tenido una cesárea previa. El texto especifica: \"Se recomienda informar a las mujeres que opten por una prueba de trabajo de parto después de una cesárea previa, que la probabilidad de parto vaginal es de 74%\".",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9956164158810729,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 616,
+          "output_tokens": 1185,
+          "total_tokens": 1801,
+          "input_cost_usd": 0.00077,
+          "output_cost_usd": 0.005925,
+          "total_cost_usd": 0.006695
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. Parto vaginal después de la cesárea: Conoce las ventajas y las ...\n   URL: https://www.mayoclinic.org/es/healthy-lifestyle/labor-and-delivery/in-depth/vbac/art-20044869\n   Summary: Elpartovaginaltraslacesáreaesunaopción para muchas personas. Debes saber qué debes tener en cuenta antesderecurrir a este métododeparto.\n\n2. Parto vaginal después de una cesárea - MedlinePlus\n   URL: https://medlineplus.gov/spanish/ency/patientinstructions/000589.htm\n   Summary: Si usted tuvo unpartoporcesáreacon anterioridad, esto no significa que usted tendrá que dar a luzdelamisma manera. Muchas mujeres pueden tener unpartovaginaldespuésdehaber sido sometidas a\n\n3. Parto vaginal después de cesárea: respuesta a dudas frecuentes\n   URL: https://www.dexeus.com/blog/maternidad/parto-vaginal-despues-cesarea/\n   Summary: Aunquelacesáreaesunaintervención que se ha normalizado, no dejadeserunacirugía quedeentrada implica un mayor riesgo que unpartopor víavaginal. Por ello todaslasmujeres son conscientesdequeespreferible evitarla. Sin embargo, tras haber dado a luz un primer hijo porcesáreapara muchas […]\n"
+        ],
+        "generated_answer": "Según la información proporcionada en los resultados de búsqueda, no es posible determinar una probabilidad o un porcentaje específico de éxito para un parto vaginal después de una cesárea (PVDC).\n\nSin embargo, los resultados sí ofrecen la siguiente información clave:\n\n*   **Es una opción viable:** Las fuentes de Mayo Clinic y MedlinePlus coinciden en que el parto vaginal después de una cesárea es una opción para muchas mujeres y que haber tenido una cesárea previa no obliga a que los partos futuros sean de la misma manera.\n*   **Es una alternativa preferible a la cirugía:** El artículo de Dexeus señala que un parto vaginal es preferible a una cesárea, ya que esta última es una cirugía mayor que implica más riesgos.\n\nEn resumen, aunque los textos confirman que el parto vaginal después de una cesárea es una posibilidad real y a menudo recomendada, **no proporcionan datos numéricos sobre su tasa de éxito.**",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.8571428571428571
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 374,
+          "output_tokens": 1119,
+          "total_tokens": 1493,
+          "input_cost_usd": 0.0004675,
+          "output_cost_usd": 0.005595,
+          "total_cost_usd": 0.0060625
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.006695,
+        "mcp_cost_usd": 0.0060625,
+        "total_cost_usd": 0.0127575,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "La probabilidad de parto vaginal es de 74% luego de una cesárea sin otros riesgos asociados.",
+      "question_id": 8
+    }
+  ]
+}

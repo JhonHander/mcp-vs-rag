@@ -18,13 +18,16 @@ class RAGASEvaluator:
         Initialize RAGAS evaluator with LLM.
 
         Args:
-            llm: Optional LangChain LLM instance. If None, uses default OpenAI GPT-4.
+            llm: Optional LangChain LLM instance. If None, uses default OpenAI GPT-4o-mini.
         """
         if llm is None:
-            # Use GPT-4 as default for evaluation
+            # Use GPT-4o-mini: fastest and cheapest model for RAGAS evaluations
+            # Optimized settings to avoid timeouts and slow evaluations
             base_llm = ChatOpenAI(
-                model="gpt-4.1",
+                model="gpt-4o-mini",  # Correct model name
                 temperature=0.1,
+                request_timeout=60,  # 60 second timeout per request (increased from 30s)
+                max_retries=3,  # Retry 3 times to handle network issues
                 openai_api_key=os.getenv("OPENAI_API_KEY")
             )
         else:
@@ -57,35 +60,19 @@ class RAGASEvaluator:
             Dictionary with metric scores
         """
         try:
-            # Validate and clean contexts
+            # Basic validation
             if not contexts:
-                print("Warning: Empty contexts provided for evaluation")
-                return {
-                    "answer_relevancy": 0.0,
-                    "faithfulness": 0.0,
-                    "error": "Empty contexts"
-                }
+                return {"answer_relevancy": 0.0, "faithfulness": 0.0}
 
-            # Ensure contexts is a flat list of strings
+            # Clean contexts (handle nested lists)
             cleaned_contexts = []
             for ctx in contexts:
-                if isinstance(ctx, str):
-                    cleaned_contexts.append(ctx)
-                elif isinstance(ctx, list):
-                    # Flatten nested lists
+                if isinstance(ctx, list):
                     cleaned_contexts.extend([str(c) for c in ctx if c])
                 else:
                     cleaned_contexts.append(str(ctx))
 
-            if not cleaned_contexts:
-                print("Warning: No valid contexts after cleaning")
-                return {
-                    "answer_relevancy": 0.0,
-                    "faithfulness": 0.0,
-                    "error": "No valid contexts"
-                }
-
-            # Create dataset in the format expected by RAGAS
+            # Create dataset
             dataset = Dataset.from_dict({
                 "question": [question],
                 "answer": [answer],
@@ -93,32 +80,17 @@ class RAGASEvaluator:
             })
 
             # Run evaluation
-            # evaluate() returns an EvaluationResult object
             result = evaluate(dataset=dataset, metrics=self.metrics)
-
-            # Convert EvaluationResult to pandas DataFrame to extract scores
-            # According to RAGAS docs, this is the correct way to access individual scores
             df = result.to_pandas()
 
-            # Extract scalar values from the first (and only) row
-            # The DataFrame has one row per evaluation sample
-            answer_relevancy = float(df['answer_relevancy'].iloc[0])
-            faithfulness = float(df['faithfulness'].iloc[0])
-
             return {
-                "answer_relevancy": answer_relevancy,
-                "faithfulness": faithfulness
+                "answer_relevancy": float(df['answer_relevancy'].iloc[0]),
+                "faithfulness": float(df['faithfulness'].iloc[0])
             }
 
         except Exception as e:
-            print(f"Error in RAGAS evaluation: {e}")
-            import traceback
-            traceback.print_exc()
-            return {
-                "answer_relevancy": 0.0,
-                "faithfulness": 0.0,
-                "error": str(e)
-            }
+            print(f"❌ Error in RAGAS evaluation: {e}")
+            return {"answer_relevancy": 0.0, "faithfulness": 0.0}
 
     def batch_evaluate(
         self,

@@ -390,10 +390,89 @@ async def run_full_experiment(prompt: str):
         result = await run_single_experiment(prompt, config)
         results.append(result)
 
-        # Small delay between experiments
-        await asyncio.sleep(1)
+        # Small delay between experiments to avoid overwhelming APIs
+        await asyncio.sleep(2)
+        
+        # Force garbage collection after every 2 configs to prevent memory buildup
+        if i % 2 == 0:
+            import gc
+            gc.collect()
 
     return results
+
+
+async def run_experiment_with_specific_question(question_id: int):
+    """
+    Run experiment with a specific question by ID.
+    
+    Args:
+        question_id: The ID of the question to run (1-100)
+    """
+    try:
+        # Load ground truth dataset
+        print("Loading ground truth dataset...")
+        dataset = load_ground_truth_dataset()
+        
+        # Get specific question
+        question_data = dataset.get_question_by_id(question_id)
+        
+        if not question_data:
+            print(f"\n[ERROR] Question with ID {question_id} not found!")
+            return None
+        
+        question_text = question_data['question']
+        ground_truth = question_data['ground_truth']
+        
+        print(f"\n{'='*60}")
+        print(f"Running Question ID: {question_id}")
+        print(f"Q: {question_text}")
+        print(f"{'='*60}")
+        
+        # Run experiment with this question
+        results = await run_full_experiment(question_text)
+        
+        # Add ground truth and question_id to results
+        for result in results:
+            result['ground_truth'] = ground_truth
+            result['question_id'] = question_id
+        
+        print(f"\n{'='*60}")
+        print(f"Completed question {question_id}")
+        print(f"Total results: {len(results)}")
+        print(f"{'='*60}")
+        
+        # Save individual question results
+        question_output_dir = f"data/outputs/question_{question_id}"
+        os.makedirs(question_output_dir, exist_ok=True)
+        
+        # Save summary for this question
+        summary = {
+            "question_id": question_id,
+            "question": question_text,
+            "ground_truth": ground_truth,
+            "total_configurations": len(CONFIGURATIONS),
+            "timestamp": datetime.now().isoformat(),
+            "configurations": CONFIGURATIONS,
+            "results": results
+        }
+        
+        summary_path = os.path.join(question_output_dir, f"question_{question_id}_results.json")
+        with open(summary_path, 'w', encoding='utf-8') as f:
+            json.dump(summary, f, indent=2, ensure_ascii=False)
+        
+        print(f"Results saved to: {summary_path}")
+        print(f"{'='*60}")
+        
+        return results
+        
+    except FileNotFoundError:
+        print("\n[ERROR] Ground truth dataset not found!")
+        return None
+    except Exception as e:
+        print(f"\n[ERROR] Failed to run experiment: {e}")
+        import traceback
+        traceback.print_exc()
+        return None
 
 
 async def run_experiment_with_dataset(use_all_questions: bool = False, num_questions: int = 1):
@@ -441,6 +520,11 @@ async def run_experiment_with_dataset(use_all_questions: bool = False, num_quest
                 result['question_id'] = question_id
 
             all_results.extend(results)
+            
+            # Force garbage collection after each question to prevent memory leaks
+            import gc
+            gc.collect()
+            print(f"✓ Completed question {q_idx}/{len(questions)}, memory cleaned")
 
         print(f"\n{'='*60}")
         print(f"Completed experiment with {len(questions)} question(s)")
@@ -499,16 +583,23 @@ if __name__ == "__main__":
 
     # Parse command line arguments
     if len(sys.argv) > 1:
-        if sys.argv[1].isdigit():
-            # Run with N random questions
-            num = int(sys.argv[1])
+        arg = sys.argv[1]
+        
+        if arg.startswith("q") and arg[1:].isdigit():
+            # Run specific question by ID: python run_experiment.py q5
+            question_id = int(arg[1:])
+            asyncio.run(run_experiment_with_specific_question(question_id))
+        elif arg.isdigit():
+            # Run with N random questions: python run_experiment.py 5
+            num = int(arg)
             asyncio.run(run_experiment_with_dataset(
                 use_all_questions=False, num_questions=num))
         else:
             print("Usage:")
             print("  python run_experiment.py           # Run with ALL questions")
             print("  python run_experiment.py 5         # Run with 5 random questions")
-            print("  python run_experiment.py 1         # Run with 1 random question")
+            print("  python run_experiment.py q7        # Run ONLY question ID 7")
+            print("  python run_experiment.py q42       # Run ONLY question ID 42")
     else:
         # Default: run with ALL questions
         asyncio.run(run_experiment_with_dataset(

@@ -133,16 +133,21 @@ def create_llm(model_name: str):
     """
 
     # Create the base model based on the model name
+    # Optimized settings: shorter timeouts, max_tokens limit, streaming disabled
     if model_name == "gpt-5":
         base_model = ChatOpenAI(
             model="gpt-5",
             temperature=0,
+            request_timeout=60,  # 60 second timeout to avoid hanging (increased from 30s)
+            max_retries=3,  # Retry 3 times to handle network issues
+            streaming=False,  # Disable streaming for faster batch responses
             api_key=os.getenv("OPENAI_API_KEY")
         )
     elif model_name == "gemini-2.5-pro":
         base_model = ChatGoogleGenerativeAI(
             model="gemini-2.5-pro",
             temperature=0,
+            # max_output_tokens=500,  # Limit response length
             google_api_key=os.getenv("GOOGLE_API_KEY")
         )
     else:

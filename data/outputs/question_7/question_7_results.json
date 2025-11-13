@@ -1,0 +1,531 @@
+{
+  "question_id": 7,
+  "question": "¿Cada cuanto se realiza el tamizaje para depresión posparto durante el embarazo?",
+  "ground_truth": "Se recomienda que, en el primer control prenatal, en la semana 28 de gestación y en la consulta de puerperio se identifique el riesgo de depresión postparto",
+  "total_configurations": 8,
+  "timestamp": "2025-11-12T14:36:37.720194",
+  "configurations": [
+    {
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo"
+    }
+  ],
+  "results": [
+    {
+      "execution_id": "8eeb4299-caf3-4ef2-9fb3-3e4e42aea353",
+      "timestamp": "2025-11-12T14:23:21.677488",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "naive",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Cada cuanto se realiza el tamizaje para depresión posparto durante el embarazo?",
+      "rag_results": {
+        "retrieved_context": [
+          "n remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control. Se recomienda en cada trimestre del embarazo evaluar en la gestante, el estrés materno crónico, la ansiedad, los trastornos del sueño y el pobre apoyo de la red social. Se recomienda identificar la depresión materna mediante un tamizaje trimestral durante el control prenatal porque las mujeres con depresión durante el embarazo tienen mayor riesgo de parto pretérmino y bajo peso al nacer.",
+          "epresión postparto de Edimburgo (EPDS), se encontró que la EPDS a las 32 semanas identificó 13,5% de mujeres que desarrollaron depresión postparto, mientras que a la semana 8 sólo se identificó 9,1% de estas mujeres . Una revisión sistemática de 16 estudios poblacionales evaluó la efectividad del uso de herramientas de tamizaje antenatal para predecir la depresión posparto.",
+          "uó la efectividad del uso de herramientas de tamizaje antenatal para predecir la depresión posparto. En dos de los más grandes estudios poblacionales incluidos en la revisión, la proporción de mujeres identificadas como en riesgo de depresión fue 16% y 52%. Sin embargo, sólo 35% y 8% de estas mujeres desarrollaron depresión posparto . Un ECC que incluyó 296 pacientes evaluó el impacto de un programa de educación prenatal en la reducción de la depresión posparto.",
+          "identifique el riesgo de depresión postparto mediante dos preguntas: • Durante el mes pasado, ¿se ha sentido triste, deprimida o sin esperanza con frecuencia? • Durante el mes pasado, ¿ha permanecido preocupada por tener poco interés o placer para hacer las cosas cotidianas? • Una tercera pregunta se debe considerar si la mujer responde \"sí\" a cualquiera de las preguntas iniciales: ¿Siente que necesita ayuda?",
+          "Se recomienda que al inicio del control prenatal, los profesionales de la salud indaguen por antecedentes relevantes de trastornos mentales. Si la mujer tiene o se sospecha que tiene una enfermedad mental grave se debe garantizar su atención en un servicio especializado de salud mental. Se recomienda que en el primer control prenatal, en la semana 28 de gestación y en la consulta de puerperio se identifique el riesgo de depresión postparto mediante dos preguntas: • Durante el mes pasado, ¿se ha"
+        ],
+        "generated_answer": "Trimestralmente. Se recomienda tamizar en cada trimestre del embarazo (incluye el primer control prenatal y nuevamente alrededor de la semana 28) y repetir en el puerperio.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9320443367601047,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 553,
+          "output_tokens": 495,
+          "total_tokens": 1048,
+          "input_cost_usd": 0.002765,
+          "output_cost_usd": 0.007425,
+          "total_cost_usd": 0.01019
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Recomendaciones de detección - Postpartum Support International\nURL: https://es.postpartum.net/professionals/screening/\nContent: La detección debe existir en un sistema de atención que incluya proveedores capacitados, apoyo social para las familias y un protocolo para dar seguimiento a aquellos que se han evaluado por encima del puntaje límite en una herramienta de detección basada en evidencia, alineada con las recomendaciones de ACOG y USPSTF. Un número cada vez mayor de organizaciones profesionales recomiendan la detección obligatoria de la depresión en mujeres embarazadas y posparto: el Colegio Estadounidense de Obstetricia y Ginecología (ACOG, 2015), la Academia Estadounidense de Pediatría (2010) y la Asociación Médica Estadounidense, luego de la encuesta de 2016. (USPSTF, 2016) actualizó su recomendación de 2009 relacionada con la detección de depresión para incluir a mujeres embarazadas y en posparto, sumándose al consenso sobre la detección en el período perinatal y la recomendación de PSI.\n\nTitle: Evaluación de la depresión posparto - MedlinePlus\nURL: https://medlineplus.gov/spanish/pruebas-de-laboratorio/evaluacion-de-la-depresion-posparto/\nContent: Su profesional de la salud utiliza la prueba para ayudar a averiguar si usted tiene una depresión relacionada con tener un bebé. En general, los síntomas de la depresión posparto empiezan de 1 a 3 semanas después del parto, pero pueden comenzar en cualquier momento durante el primer año después del nacimiento del bebé. La depresión posparto puede afectar su salud, además del desarrollo del bebé. El profesional de la salud de su bebé puede hacer la evaluación de depresión posparto durante las visitas de rutina de su infante. Su profesional de la salud también puede solicitar una prueba de sangre para saber si una afección física, como hipertiroidismo o hipotiroidismo, puede estar causando su depresión.\n\nTitle: Depresión posparto - Síntomas y causas - Mayo Clinic\nURL: https://www.mayoclinic.org/es/diseases-conditions/postpartum-depression/symptoms-causes/syc-20376617\nContent: Es posible que tengas que completar un cuestionario para detectar la depresión durante el embarazo y después del parto. A veces, la depresión"
+        ],
+        "generated_answer": "Durante el embarazo se recomienda tamizar al inicio del control prenatal y repetir más adelante, típicamente una vez por trimestre (alineado con ACOG/USPSTF y lo que resume Postpartum Support International). Además, puede repetirse después del parto en controles rutinarios. Fuentes: PSI; Mayo Clinic; MedlinePlus.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.8822081295681921,
+          "faithfulness": 0.6
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 574,
+          "output_tokens": 1037,
+          "total_tokens": 1611,
+          "input_cost_usd": 0.00287,
+          "output_cost_usd": 0.015555,
+          "total_cost_usd": 0.018425
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.01019,
+        "mcp_cost_usd": 0.018425,
+        "total_cost_usd": 0.028615,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "Se recomienda que, en el primer control prenatal, en la semana 28 de gestación y en la consulta de puerperio se identifique el riesgo de depresión postparto",
+      "question_id": 7
+    },
+    {
+      "execution_id": "37c16328-75f4-48e5-bdaf-b5549208a759",
+      "timestamp": "2025-11-12T14:24:47.578557",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "naive",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Cada cuanto se realiza el tamizaje para depresión posparto durante el embarazo?",
+      "rag_results": {
+        "retrieved_context": [
+          "n remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control. Se recomienda en cada trimestre del embarazo evaluar en la gestante, el estrés materno crónico, la ansiedad, los trastornos del sueño y el pobre apoyo de la red social. Se recomienda identificar la depresión materna mediante un tamizaje trimestral durante el control prenatal porque las mujeres con depresión durante el embarazo tienen mayor riesgo de parto pretérmino y bajo peso al nacer.",
+          "epresión postparto de Edimburgo (EPDS), se encontró que la EPDS a las 32 semanas identificó 13,5% de mujeres que desarrollaron depresión postparto, mientras que a la semana 8 sólo se identificó 9,1% de estas mujeres . Una revisión sistemática de 16 estudios poblacionales evaluó la efectividad del uso de herramientas de tamizaje antenatal para predecir la depresión posparto.",
+          "uó la efectividad del uso de herramientas de tamizaje antenatal para predecir la depresión posparto. En dos de los más grandes estudios poblacionales incluidos en la revisión, la proporción de mujeres identificadas como en riesgo de depresión fue 16% y 52%. Sin embargo, sólo 35% y 8% de estas mujeres desarrollaron depresión posparto . Un ECC que incluyó 296 pacientes evaluó el impacto de un programa de educación prenatal en la reducción de la depresión posparto.",
+          "identifique el riesgo de depresión postparto mediante dos preguntas: • Durante el mes pasado, ¿se ha sentido triste, deprimida o sin esperanza con frecuencia? • Durante el mes pasado, ¿ha permanecido preocupada por tener poco interés o placer para hacer las cosas cotidianas? • Una tercera pregunta se debe considerar si la mujer responde \"sí\" a cualquiera de las preguntas iniciales: ¿Siente que necesita ayuda?",
+          "Se recomienda que al inicio del control prenatal, los profesionales de la salud indaguen por antecedentes relevantes de trastornos mentales. Si la mujer tiene o se sospecha que tiene una enfermedad mental grave se debe garantizar su atención en un servicio especializado de salud mental. Se recomienda que en el primer control prenatal, en la semana 28 de gestación y en la consulta de puerperio se identifique el riesgo de depresión postparto mediante dos preguntas: • Durante el mes pasado, ¿se ha"
+        ],
+        "generated_answer": "Trimestralmente. Las guías recomiendan tamizaje en cada trimestre del embarazo durante el control prenatal. Además, se sugiere hacerlo específicamente en el primer control y alrededor de la semana 28, y repetir en el puerperio.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.927568080849124,
+          "faithfulness": 0.6
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 553,
+          "output_tokens": 381,
+          "total_tokens": 934,
+          "input_cost_usd": 0.002765,
+          "output_cost_usd": 0.005715,
+          "total_cost_usd": 0.00848
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. Depresión en el embarazo y postparto - Síntesis de Conocimientos\n   URL: https://sintesis.med.uchile.cl/sin-categoria/14978-depresion-en-el-embarazo-y-postparto\n   Summary: Monitoreo del uso de fármacos antidepresivos enelembarazoy postparto Si bienduranteelembarazoy la lactancia, los fármacos noserecomiendan como primera línea de tratamiento, estos deben utilizarse cuando haya un claro beneficio que compense los riesgos potenciales.\n\n2. Tamizaje De Depresión Posparto Según Escala De Edimburgo En ...\n   URL: https://repositorio.unbosque.edu.co/bitstreams/ec3a5ee6-7ed9-4948-a4ac-ee0a3dbceda7/download\n   Summary: ayores síntomas depresivo que las madres adultas tanto enelembarazocomo enelpost parto. Lo cual significa que las madres adolescentes tienen mayor riesgo dedepresiónduranteelembarazoy postparto, por lo tanto deberían ser un objetivo prioritarioparamedidas de prevención e intervención (10).\n\n3. Depresión posparto: tamizaje, uso de servicios y barreras para su ...\n   URL: https://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0034-98872018000901001\n   Summary: En Chile, estudios efectuados en la década pasada estimaron la prevalencia de DPP entre 20% y 40% en la APS 2,3.Paramejorar la calidad de los servicios de salud materna en la APS,seha implementado untamizajeuniversalparala DPP y vinculación de los casos positivos conelprograma dedepresión4.\n"
+        ],
+        "generated_answer": "En la práctica habitual (APS en Chile), el tamizaje con la Escala de Edimburgo se realiza al menos dos veces durante el embarazo: en el primer control prenatal y se repite en el tercer trimestre (aprox. 32–36 semanas). Si existen factores de riesgo o síntomas, se recomienda repetirlo con mayor frecuencia.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.900580612575917,
+          "faithfulness": 0.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 448,
+          "output_tokens": 1679,
+          "total_tokens": 2127,
+          "input_cost_usd": 0.00224,
+          "output_cost_usd": 0.025185,
+          "total_cost_usd": 0.027425
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00848,
+        "mcp_cost_usd": 0.027425,
+        "total_cost_usd": 0.035905,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "Se recomienda que, en el primer control prenatal, en la semana 28 de gestación y en la consulta de puerperio se identifique el riesgo de depresión postparto",
+      "question_id": 7
+    },
+    {
+      "execution_id": "56d56f88-2a2e-4dfe-9abe-4cef668e0661",
+      "timestamp": "2025-11-12T14:26:07.141089",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "hybrid",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Cada cuanto se realiza el tamizaje para depresión posparto durante el embarazo?",
+      "rag_results": {
+        "retrieved_context": [
+          "n remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control. Se recomienda en cada trimestre del embarazo evaluar en la gestante, el estrés materno crónico, la ansiedad, los trastornos del sueño y el pobre apoyo de la red social. Se recomienda identificar la depresión materna mediante un tamizaje trimestral durante el control prenatal porque las mujeres con depresión durante el embarazo tienen mayor riesgo de parto pretérmino y bajo peso al nacer.",
+          "epresión postparto de Edimburgo (EPDS), se encontró que la EPDS a las 32 semanas identificó 13,5% de mujeres que desarrollaron depresión postparto, mientras que a la semana 8 sólo se identificó 9,1% de estas mujeres . Una revisión sistemática de 16 estudios poblacionales evaluó la efectividad del uso de herramientas de tamizaje antenatal para predecir la depresión posparto.",
+          "uó la efectividad del uso de herramientas de tamizaje antenatal para predecir la depresión posparto. En dos de los más grandes estudios poblacionales incluidos en la revisión, la proporción de mujeres identificadas como en riesgo de depresión fue 16% y 52%. Sin embargo, sólo 35% y 8% de estas mujeres desarrollaron depresión posparto . Un ECC que incluyó 296 pacientes evaluó el impacto de un programa de educación prenatal en la reducción de la depresión posparto.",
+          "identifique el riesgo de depresión postparto mediante dos preguntas: • Durante el mes pasado, ¿se ha sentido triste, deprimida o sin esperanza con frecuencia? • Durante el mes pasado, ¿ha permanecido preocupada por tener poco interés o placer para hacer las cosas cotidianas? • Una tercera pregunta se debe considerar si la mujer responde \"sí\" a cualquiera de las preguntas iniciales: ¿Siente que necesita ayuda?",
+          "Se recomienda que al inicio del control prenatal, los profesionales de la salud indaguen por antecedentes relevantes de trastornos mentales. Si la mujer tiene o se sospecha que tiene una enfermedad mental grave se debe garantizar su atención en un servicio especializado de salud mental. Se recomienda que en el primer control prenatal, en la semana 28 de gestación y en la consulta de puerperio se identifique el riesgo de depresión postparto mediante dos preguntas: • Durante el mes pasado, ¿se ha"
+        ],
+        "generated_answer": "Durante el embarazo, el tamizaje se realiza de forma trimestral (cada trimestre) en el control prenatal. En particular, se recomienda hacerlo en el primer control prenatal y nuevamente alrededor de la semana 28; además, repetirlo en la consulta de puerperio.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9423775193597247,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 553,
+          "output_tokens": 448,
+          "total_tokens": 1001,
+          "input_cost_usd": 0.002765,
+          "output_cost_usd": 0.00672,
+          "total_cost_usd": 0.009485
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Recomendaciones de detección - Postpartum Support International\nURL: https://es.postpartum.net/professionals/screening/\nContent: La detección debe existir en un sistema de atención que incluya proveedores capacitados, apoyo social para las familias y un protocolo para dar seguimiento a aquellos que se han evaluado por encima del puntaje límite en una herramienta de detección basada en evidencia, alineada con las recomendaciones de ACOG y USPSTF. Un número cada vez mayor de organizaciones profesionales recomiendan la detección obligatoria de la depresión en mujeres embarazadas y posparto: el Colegio Estadounidense de Obstetricia y Ginecología (ACOG, 2015), la Academia Estadounidense de Pediatría (2010) y la Asociación Médica Estadounidense, luego de la encuesta de 2016. (USPSTF, 2016) actualizó su recomendación de 2009 relacionada con la detección de depresión para incluir a mujeres embarazadas y en posparto, sumándose al consenso sobre la detección en el período perinatal y la recomendación de PSI.\n\nTitle: Evaluación de la depresión posparto - MedlinePlus\nURL: https://medlineplus.gov/spanish/pruebas-de-laboratorio/evaluacion-de-la-depresion-posparto/\nContent: Su profesional de la salud utiliza la prueba para ayudar a averiguar si usted tiene una depresión relacionada con tener un bebé. En general, los síntomas de la depresión posparto empiezan de 1 a 3 semanas después del parto, pero pueden comenzar en cualquier momento durante el primer año después del nacimiento del bebé. La depresión posparto puede afectar su salud, además del desarrollo del bebé. El profesional de la salud de su bebé puede hacer la evaluación de depresión posparto durante las visitas de rutina de su infante. Su profesional de la salud también puede solicitar una prueba de sangre para saber si una afección física, como hipertiroidismo o hipotiroidismo, puede estar causando su depresión.\n\nTitle: Depresión posparto - Síntomas y causas - Mayo Clinic\nURL: https://www.mayoclinic.org/es/diseases-conditions/postpartum-depression/symptoms-causes/syc-20376617\nContent: Es posible que tengas que completar un cuestionario para detectar la depresión durante el embarazo y después del parto. A veces, la depresión"
+        ],
+        "generated_answer": "En el embarazo se recomienda tamizar al inicio del control prenatal (primera visita) y repetir al menos una vez más más adelante en la gestación; muchas prácticas lo aplican una vez por trimestre. Estas recomendaciones siguen las guías de ACOG/USPSTF resumidas por Postpartum Support International. Después del parto, el tamizaje se repite en la visita posparto y también puede hacerse en los controles rutinarios del bebé, como señala MedlinePlus y Mayo Clinic.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9164498560467739,
+          "faithfulness": 0.42857142857142855
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 574,
+          "output_tokens": 1390,
+          "total_tokens": 1964,
+          "input_cost_usd": 0.00287,
+          "output_cost_usd": 0.02085,
+          "total_cost_usd": 0.02372
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.009485,
+        "mcp_cost_usd": 0.02372,
+        "total_cost_usd": 0.033205,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "Se recomienda que, en el primer control prenatal, en la semana 28 de gestación y en la consulta de puerperio se identifique el riesgo de depresión postparto",
+      "question_id": 7
+    },
+    {
+      "execution_id": "e8558b66-cdd2-4fb5-82c7-fb0177a30ce0",
+      "timestamp": "2025-11-12T14:27:36.285052",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "hybrid",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Cada cuanto se realiza el tamizaje para depresión posparto durante el embarazo?",
+      "rag_results": {
+        "retrieved_context": [
+          "n remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control. Se recomienda en cada trimestre del embarazo evaluar en la gestante, el estrés materno crónico, la ansiedad, los trastornos del sueño y el pobre apoyo de la red social. Se recomienda identificar la depresión materna mediante un tamizaje trimestral durante el control prenatal porque las mujeres con depresión durante el embarazo tienen mayor riesgo de parto pretérmino y bajo peso al nacer.",
+          "epresión postparto de Edimburgo (EPDS), se encontró que la EPDS a las 32 semanas identificó 13,5% de mujeres que desarrollaron depresión postparto, mientras que a la semana 8 sólo se identificó 9,1% de estas mujeres . Una revisión sistemática de 16 estudios poblacionales evaluó la efectividad del uso de herramientas de tamizaje antenatal para predecir la depresión posparto.",
+          "uó la efectividad del uso de herramientas de tamizaje antenatal para predecir la depresión posparto. En dos de los más grandes estudios poblacionales incluidos en la revisión, la proporción de mujeres identificadas como en riesgo de depresión fue 16% y 52%. Sin embargo, sólo 35% y 8% de estas mujeres desarrollaron depresión posparto . Un ECC que incluyó 296 pacientes evaluó el impacto de un programa de educación prenatal en la reducción de la depresión posparto.",
+          "identifique el riesgo de depresión postparto mediante dos preguntas: • Durante el mes pasado, ¿se ha sentido triste, deprimida o sin esperanza con frecuencia? • Durante el mes pasado, ¿ha permanecido preocupada por tener poco interés o placer para hacer las cosas cotidianas? • Una tercera pregunta se debe considerar si la mujer responde \"sí\" a cualquiera de las preguntas iniciales: ¿Siente que necesita ayuda?",
+          "Se recomienda que al inicio del control prenatal, los profesionales de la salud indaguen por antecedentes relevantes de trastornos mentales. Si la mujer tiene o se sospecha que tiene una enfermedad mental grave se debe garantizar su atención en un servicio especializado de salud mental. Se recomienda que en el primer control prenatal, en la semana 28 de gestación y en la consulta de puerperio se identifique el riesgo de depresión postparto mediante dos preguntas: • Durante el mes pasado, ¿se ha"
+        ],
+        "generated_answer": "Trimestralmente. Es decir, una vez por trimestre durante el control prenatal (por ejemplo, en el primer control y de nuevo alrededor de la semana 28), y luego en el puerperio.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9016178796422704,
+          "faithfulness": 0.5
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 553,
+          "output_tokens": 435,
+          "total_tokens": 988,
+          "input_cost_usd": 0.002765,
+          "output_cost_usd": 0.006525,
+          "total_cost_usd": 0.00929
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. Depresión en el embarazo y postparto - Síntesis de Conocimientos\n   URL: https://sintesis.med.uchile.cl/sin-categoria/14978-depresion-en-el-embarazo-y-postparto\n   Summary: Monitoreo del uso de fármacos antidepresivos enelembarazoy postparto Si bienduranteelembarazoy la lactancia, los fármacos noserecomiendan como primera línea de tratamiento, estos deben utilizarse cuando haya un claro beneficio que compense los riesgos potenciales.\n\n2. Tamizaje De Depresión Posparto Según Escala De Edimburgo En ...\n   URL: https://repositorio.unbosque.edu.co/bitstreams/ec3a5ee6-7ed9-4948-a4ac-ee0a3dbceda7/download\n   Summary: ayores síntomas depresivo que las madres adultas tanto enelembarazocomo enelpost parto. Lo cual significa que las madres adolescentes tienen mayor riesgo dedepresiónduranteelembarazoy postparto, por lo tanto deberían ser un objetivo prioritarioparamedidas de prevención e intervención (10).\n\n3. PDFTamizaje Para Depresión Postparto Aplicado a La Población Puérpera Del ...\n   URL: https://pdfs.semanticscholar.org/10a3/fb75bccd7b48b966c4685d7e1cbf5d281614.pdf\n   Summary: Los trastornos depresivos afectan a millones de personas enelmundo, con una mayor incidencia en las mujeres (Cruz, 2014).Elembarazoes una etapa de la vida queseasocia a consecuencias biológicas, psicológicas y sociales negativas tantoparala madre comoparaelhijo, mismo que predispone a mayor riesgoparadesarrollardepresiónen etapasposparto(DPP), (Vera Múñoz, E, Soledad, y ...\n"
+        ],
+        "generated_answer": "En la práctica clínica actual, el tamizaje para depresión perinatal se realiza:\n\n- Durante el embarazo: al menos en el primer control prenatal y se recomienda repetirlo más adelante en la gestación (muchos programas lo aplican una vez por trimestre con una escala validada como la EPDS).\n- Posparto: nuevamente en el control de 4–6 semanas y, de ser posible, en visitas subsiguientes de salud materna o del niño en los primeros meses.\n\nEn mujeres con mayor riesgo (p. ej., adolescentes, antecedentes de depresión, síntomas en curso) se sugiere tamizar con mayor frecuencia. Las referencias citadas utilizan la Escala de Edimburgo (EPDS) para este fin.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9307410510684156,
+          "faithfulness": 0.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 485,
+          "output_tokens": 1121,
+          "total_tokens": 1606,
+          "input_cost_usd": 0.002425,
+          "output_cost_usd": 0.016815,
+          "total_cost_usd": 0.01924
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00929,
+        "mcp_cost_usd": 0.01924,
+        "total_cost_usd": 0.02853,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "Se recomienda que, en el primer control prenatal, en la semana 28 de gestación y en la consulta de puerperio se identifique el riesgo de depresión postparto",
+      "question_id": 7
+    },
+    {
+      "execution_id": "fafd5c0f-82d5-4d6a-887a-405245a644ce",
+      "timestamp": "2025-11-12T14:29:16.320025",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "naive",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Cada cuanto se realiza el tamizaje para depresión posparto durante el embarazo?",
+      "rag_results": {
+        "retrieved_context": [
+          "n remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control. Se recomienda en cada trimestre del embarazo evaluar en la gestante, el estrés materno crónico, la ansiedad, los trastornos del sueño y el pobre apoyo de la red social. Se recomienda identificar la depresión materna mediante un tamizaje trimestral durante el control prenatal porque las mujeres con depresión durante el embarazo tienen mayor riesgo de parto pretérmino y bajo peso al nacer.",
+          "epresión postparto de Edimburgo (EPDS), se encontró que la EPDS a las 32 semanas identificó 13,5% de mujeres que desarrollaron depresión postparto, mientras que a la semana 8 sólo se identificó 9,1% de estas mujeres . Una revisión sistemática de 16 estudios poblacionales evaluó la efectividad del uso de herramientas de tamizaje antenatal para predecir la depresión posparto.",
+          "uó la efectividad del uso de herramientas de tamizaje antenatal para predecir la depresión posparto. En dos de los más grandes estudios poblacionales incluidos en la revisión, la proporción de mujeres identificadas como en riesgo de depresión fue 16% y 52%. Sin embargo, sólo 35% y 8% de estas mujeres desarrollaron depresión posparto . Un ECC que incluyó 296 pacientes evaluó el impacto de un programa de educación prenatal en la reducción de la depresión posparto.",
+          "identifique el riesgo de depresión postparto mediante dos preguntas: • Durante el mes pasado, ¿se ha sentido triste, deprimida o sin esperanza con frecuencia? • Durante el mes pasado, ¿ha permanecido preocupada por tener poco interés o placer para hacer las cosas cotidianas? • Una tercera pregunta se debe considerar si la mujer responde \"sí\" a cualquiera de las preguntas iniciales: ¿Siente que necesita ayuda?",
+          "Se recomienda que al inicio del control prenatal, los profesionales de la salud indaguen por antecedentes relevantes de trastornos mentales. Si la mujer tiene o se sospecha que tiene una enfermedad mental grave se debe garantizar su atención en un servicio especializado de salud mental. Se recomienda que en el primer control prenatal, en la semana 28 de gestación y en la consulta de puerperio se identifique el riesgo de depresión postparto mediante dos preguntas: • Durante el mes pasado, ¿se ha"
+        ],
+        "generated_answer": "Según la información proporcionada, el tamizaje para identificar el riesgo de depresión posparto durante el embarazo se recomienda realizar en los siguientes momentos:\n\n*   **En el primer control prenatal.**\n*   **En la semana 28 de gestación.**\n\nAdemás, el texto también menciona de forma más general que se recomienda un **tamizaje trimestral** para la depresión materna durante el control prenatal.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9649131491034347,
+          "faithfulness": 0.3333333333333333
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 543,
+          "output_tokens": 1095,
+          "total_tokens": 1638,
+          "input_cost_usd": 0.00067875,
+          "output_cost_usd": 0.005475,
+          "total_cost_usd": 0.00615375
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Recomendaciones de detección - Postpartum Support International\nURL: https://es.postpartum.net/professionals/screening/\nContent: La detección debe existir en un sistema de atención que incluya proveedores capacitados, apoyo social para las familias y un protocolo para dar seguimiento a aquellos que se han evaluado por encima del puntaje límite en una herramienta de detección basada en evidencia, alineada con las recomendaciones de ACOG y USPSTF. Un número cada vez mayor de organizaciones profesionales recomiendan la detección obligatoria de la depresión en mujeres embarazadas y posparto: el Colegio Estadounidense de Obstetricia y Ginecología (ACOG, 2015), la Academia Estadounidense de Pediatría (2010) y la Asociación Médica Estadounidense, luego de la encuesta de 2016. (USPSTF, 2016) actualizó su recomendación de 2009 relacionada con la detección de depresión para incluir a mujeres embarazadas y en posparto, sumándose al consenso sobre la detección en el período perinatal y la recomendación de PSI.\n\nTitle: Evaluación de la depresión posparto - MedlinePlus\nURL: https://medlineplus.gov/spanish/pruebas-de-laboratorio/evaluacion-de-la-depresion-posparto/\nContent: Su profesional de la salud utiliza la prueba para ayudar a averiguar si usted tiene una depresión relacionada con tener un bebé. En general, los síntomas de la depresión posparto empiezan de 1 a 3 semanas después del parto, pero pueden comenzar en cualquier momento durante el primer año después del nacimiento del bebé. La depresión posparto puede afectar su salud, además del desarrollo del bebé. El profesional de la salud de su bebé puede hacer la evaluación de depresión posparto durante las visitas de rutina de su infante. Su profesional de la salud también puede solicitar una prueba de sangre para saber si una afección física, como hipertiroidismo o hipotiroidismo, puede estar causando su depresión.\n\nTitle: Depresión posparto - Síntomas y causas - Mayo Clinic\nURL: https://www.mayoclinic.org/es/diseases-conditions/postpartum-depression/symptoms-causes/syc-20376617\nContent: Es posible que tengas que completar un cuestionario para detectar la depresión durante el embarazo y después del parto. A veces, la depresión"
+        ],
+        "generated_answer": "Según la información proporcionada en los resultados de la búsqueda, el tamizaje para la depresión se realiza **durante el embarazo**, aunque no se especifica una frecuencia exacta.\n\nAquí está el resumen de lo que indican las fuentes:\n\n*   **Recomendación general:** Diversas organizaciones profesionales, como el Colegio Estadounidense de Obstetricia y Ginecología (ACOG) y la USPSTF, recomiendan la detección obligatoria de la depresión en mujeres embarazadas y en el posparto.\n*   **Método:** La clínica Mayo menciona que es posible que se deba completar un cuestionario para detectar la depresión **durante el embarazo y después del parto**.\n\nEn conclusión, los textos confirman que la detección se realiza durante el periodo de gestación, pero **no detallan cada cuánto tiempo o en qué visitas específicas** se debe llevar a cabo.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 573,
+          "output_tokens": 1232,
+          "total_tokens": 1805,
+          "input_cost_usd": 0.00071625,
+          "output_cost_usd": 0.00616,
+          "total_cost_usd": 0.00687625
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00615375,
+        "mcp_cost_usd": 0.00687625,
+        "total_cost_usd": 0.01303,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "Se recomienda que, en el primer control prenatal, en la semana 28 de gestación y en la consulta de puerperio se identifique el riesgo de depresión postparto",
+      "question_id": 7
+    },
+    {
+      "execution_id": "a97f9f26-fdef-498e-92a3-812c036edb6e",
+      "timestamp": "2025-11-12T14:30:40.109135",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "naive",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Cada cuanto se realiza el tamizaje para depresión posparto durante el embarazo?",
+      "rag_results": {
+        "retrieved_context": [
+          "n remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control. Se recomienda en cada trimestre del embarazo evaluar en la gestante, el estrés materno crónico, la ansiedad, los trastornos del sueño y el pobre apoyo de la red social. Se recomienda identificar la depresión materna mediante un tamizaje trimestral durante el control prenatal porque las mujeres con depresión durante el embarazo tienen mayor riesgo de parto pretérmino y bajo peso al nacer.",
+          "epresión postparto de Edimburgo (EPDS), se encontró que la EPDS a las 32 semanas identificó 13,5% de mujeres que desarrollaron depresión postparto, mientras que a la semana 8 sólo se identificó 9,1% de estas mujeres . Una revisión sistemática de 16 estudios poblacionales evaluó la efectividad del uso de herramientas de tamizaje antenatal para predecir la depresión posparto.",
+          "uó la efectividad del uso de herramientas de tamizaje antenatal para predecir la depresión posparto. En dos de los más grandes estudios poblacionales incluidos en la revisión, la proporción de mujeres identificadas como en riesgo de depresión fue 16% y 52%. Sin embargo, sólo 35% y 8% de estas mujeres desarrollaron depresión posparto . Un ECC que incluyó 296 pacientes evaluó el impacto de un programa de educación prenatal en la reducción de la depresión posparto.",
+          "identifique el riesgo de depresión postparto mediante dos preguntas: • Durante el mes pasado, ¿se ha sentido triste, deprimida o sin esperanza con frecuencia? • Durante el mes pasado, ¿ha permanecido preocupada por tener poco interés o placer para hacer las cosas cotidianas? • Una tercera pregunta se debe considerar si la mujer responde \"sí\" a cualquiera de las preguntas iniciales: ¿Siente que necesita ayuda?",
+          "Se recomienda que al inicio del control prenatal, los profesionales de la salud indaguen por antecedentes relevantes de trastornos mentales. Si la mujer tiene o se sospecha que tiene una enfermedad mental grave se debe garantizar su atención en un servicio especializado de salud mental. Se recomienda que en el primer control prenatal, en la semana 28 de gestación y en la consulta de puerperio se identifique el riesgo de depresión postparto mediante dos preguntas: • Durante el mes pasado, ¿se ha"
+        ],
+        "generated_answer": "Según la información proporcionada, el tamizaje para identificar el riesgo de depresión posparto durante el embarazo se realiza en los siguientes momentos:\n\n*   En el **primer control prenatal**.\n*   En la **semana 28 de gestación**.\n\nAdemás, el texto también menciona una recomendación más general de realizar un **tamizaje trimestral** para la depresión materna durante el control prenatal.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9672017999068767,
+          "faithfulness": 0.6666666666666666
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 543,
+          "output_tokens": 1072,
+          "total_tokens": 1615,
+          "input_cost_usd": 0.00067875,
+          "output_cost_usd": 0.00536,
+          "total_cost_usd": 0.00603875
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. Depresión en el embarazo y postparto - Síntesis de Conocimientos\n   URL: https://sintesis.med.uchile.cl/sin-categoria/14978-depresion-en-el-embarazo-y-postparto\n   Summary: Monitoreo del uso de fármacos antidepresivos enelembarazoy postparto Si bienduranteelembarazoy la lactancia, los fármacos noserecomiendan como primera línea de tratamiento, estos deben utilizarse cuando haya un claro beneficio que compense los riesgos potenciales.\n\n2. Tamizaje De Depresión Posparto Según Escala De Edimburgo En ...\n   URL: https://repositorio.unbosque.edu.co/bitstreams/ec3a5ee6-7ed9-4948-a4ac-ee0a3dbceda7/download\n   Summary: ayores síntomas depresivo que las madres adultas tanto enelembarazocomo enelpost parto. Lo cual significa que las madres adolescentes tienen mayor riesgo dedepresiónduranteelembarazoy postparto, por lo tanto deberían ser un objetivo prioritarioparamedidas de prevención e intervención (10).\n\n3. Evidencias en el diagnóstico y tratamiento de la depresión posparto ...\n   URL: http://www.scielo.org.pe/scielo.php?script=sci_arttext&pid=S2304-51322024000100002\n   Summary: Sedebe aplicar herramientas como la Escala de Edimburgo a todas las gestantes en su primera cita de control prenatal,duranteeltercer trimestre y enelposparto. Existen diversas terapias seguras que han demostrado reducción de los síntomas y disminución en los niveles de recaída, con pocos efectos secundarios.\n"
+        ],
+        "generated_answer": "Según la información encontrada en los resultados de la búsqueda, el tamizaje para la depresión se debe realizar a todas las gestantes en los siguientes momentos durante el embarazo:\n\n*   **En la primera cita de control prenatal.**\n*   **Durante el tercer trimestre.**\n\nLa fuente especifica que se deben usar herramientas como la Escala de Edimburgo para este fin. Además, se menciona que el tamizaje también debe realizarse en el periodo posparto.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9467220590172075,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 466,
+          "output_tokens": 1095,
+          "total_tokens": 1561,
+          "input_cost_usd": 0.0005825,
+          "output_cost_usd": 0.005475,
+          "total_cost_usd": 0.0060575
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00603875,
+        "mcp_cost_usd": 0.0060575,
+        "total_cost_usd": 0.01209625,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "Se recomienda que, en el primer control prenatal, en la semana 28 de gestación y en la consulta de puerperio se identifique el riesgo de depresión postparto",
+      "question_id": 7
+    },
+    {
+      "execution_id": "6f5cdb4b-867d-4e77-81db-ef7fa95cb18a",
+      "timestamp": "2025-11-12T14:32:36.328987",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "hybrid",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Cada cuanto se realiza el tamizaje para depresión posparto durante el embarazo?",
+      "rag_results": {
+        "retrieved_context": [
+          "n remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control. Se recomienda en cada trimestre del embarazo evaluar en la gestante, el estrés materno crónico, la ansiedad, los trastornos del sueño y el pobre apoyo de la red social. Se recomienda identificar la depresión materna mediante un tamizaje trimestral durante el control prenatal porque las mujeres con depresión durante el embarazo tienen mayor riesgo de parto pretérmino y bajo peso al nacer.",
+          "epresión postparto de Edimburgo (EPDS), se encontró que la EPDS a las 32 semanas identificó 13,5% de mujeres que desarrollaron depresión postparto, mientras que a la semana 8 sólo se identificó 9,1% de estas mujeres . Una revisión sistemática de 16 estudios poblacionales evaluó la efectividad del uso de herramientas de tamizaje antenatal para predecir la depresión posparto.",
+          "uó la efectividad del uso de herramientas de tamizaje antenatal para predecir la depresión posparto. En dos de los más grandes estudios poblacionales incluidos en la revisión, la proporción de mujeres identificadas como en riesgo de depresión fue 16% y 52%. Sin embargo, sólo 35% y 8% de estas mujeres desarrollaron depresión posparto . Un ECC que incluyó 296 pacientes evaluó el impacto de un programa de educación prenatal en la reducción de la depresión posparto.",
+          "identifique el riesgo de depresión postparto mediante dos preguntas: • Durante el mes pasado, ¿se ha sentido triste, deprimida o sin esperanza con frecuencia? • Durante el mes pasado, ¿ha permanecido preocupada por tener poco interés o placer para hacer las cosas cotidianas? • Una tercera pregunta se debe considerar si la mujer responde \"sí\" a cualquiera de las preguntas iniciales: ¿Siente que necesita ayuda?",
+          "Se recomienda que al inicio del control prenatal, los profesionales de la salud indaguen por antecedentes relevantes de trastornos mentales. Si la mujer tiene o se sospecha que tiene una enfermedad mental grave se debe garantizar su atención en un servicio especializado de salud mental. Se recomienda que en el primer control prenatal, en la semana 28 de gestación y en la consulta de puerperio se identifique el riesgo de depresión postparto mediante dos preguntas: • Durante el mes pasado, ¿se ha"
+        ],
+        "generated_answer": "Según la información proporcionada, el tamizaje para identificar el riesgo de depresión posparto durante el embarazo se realiza en los siguientes momentos:\n\n*   En el **primer control prenatal**.\n*   En la **semana 28 de gestación**.\n\nAdemás, el texto también recomienda de forma más general realizar un **tamizaje trimestral** para la depresión materna durante el control prenatal, ya que las mujeres con depresión durante el embarazo tienen mayor riesgo de complicaciones.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9672017999068767,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 543,
+          "output_tokens": 1091,
+          "total_tokens": 1634,
+          "input_cost_usd": 0.00067875,
+          "output_cost_usd": 0.005455,
+          "total_cost_usd": 0.00613375
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Recomendaciones de detección - Postpartum Support International\nURL: https://es.postpartum.net/professionals/screening/\nContent: La detección debe existir en un sistema de atención que incluya proveedores capacitados, apoyo social para las familias y un protocolo para dar seguimiento a aquellos que se han evaluado por encima del puntaje límite en una herramienta de detección basada en evidencia, alineada con las recomendaciones de ACOG y USPSTF. Un número cada vez mayor de organizaciones profesionales recomiendan la detección obligatoria de la depresión en mujeres embarazadas y posparto: el Colegio Estadounidense de Obstetricia y Ginecología (ACOG, 2015), la Academia Estadounidense de Pediatría (2010) y la Asociación Médica Estadounidense, luego de la encuesta de 2016. (USPSTF, 2016) actualizó su recomendación de 2009 relacionada con la detección de depresión para incluir a mujeres embarazadas y en posparto, sumándose al consenso sobre la detección en el período perinatal y la recomendación de PSI.\n\nTitle: Evaluación de la depresión posparto - MedlinePlus\nURL: https://medlineplus.gov/spanish/pruebas-de-laboratorio/evaluacion-de-la-depresion-posparto/\nContent: Su profesional de la salud utiliza la prueba para ayudar a averiguar si usted tiene una depresión relacionada con tener un bebé. En general, los síntomas de la depresión posparto empiezan de 1 a 3 semanas después del parto, pero pueden comenzar en cualquier momento durante el primer año después del nacimiento del bebé. La depresión posparto puede afectar su salud, además del desarrollo del bebé. El profesional de la salud de su bebé puede hacer la evaluación de depresión posparto durante las visitas de rutina de su infante. Su profesional de la salud también puede solicitar una prueba de sangre para saber si una afección física, como hipertiroidismo o hipotiroidismo, puede estar causando su depresión.\n\nTitle: Depresión posparto - Síntomas y causas - Mayo Clinic\nURL: https://www.mayoclinic.org/es/diseases-conditions/postpartum-depression/symptoms-causes/syc-20376617\nContent: Es posible que tengas que completar un cuestionario para detectar la depresión durante el embarazo y después del parto. A veces, la depresión"
+        ],
+        "generated_answer": "Basado en la información de los resultados de búsqueda, los textos confirman que el tamizaje para la depresión se realiza durante el embarazo, pero **no especifican una frecuencia exacta** (por ejemplo, una vez por trimestre o en visitas específicas).\n\nAquí está el resumen de lo que indican las fuentes:\n\n*   **Postpartum Support International** señala que organizaciones profesionales como el Colegio Estadounidense de Obstetricia y Ginecología (ACOG) y la USPSTF recomiendan la **detección obligatoria de la depresión en mujeres embarazadas** y en posparto.\n*   La **Mayo Clinic** menciona que es posible que se deba completar un cuestionario para detectar la depresión **\"durante el embarazo y después del parto\"**.\n\nEn conclusión, aunque se establece claramente la recomendación de realizar el tamizaje durante el embarazo, la información proporcionada no detalla cada cuánto tiempo se lleva a cabo.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.5714285714285714
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 573,
+          "output_tokens": 1254,
+          "total_tokens": 1827,
+          "input_cost_usd": 0.00071625,
+          "output_cost_usd": 0.00627,
+          "total_cost_usd": 0.00698625
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00613375,
+        "mcp_cost_usd": 0.00698625,
+        "total_cost_usd": 0.01312,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "Se recomienda que, en el primer control prenatal, en la semana 28 de gestación y en la consulta de puerperio se identifique el riesgo de depresión postparto",
+      "question_id": 7
+    },
+    {
+      "execution_id": "d4149ccd-c69a-4f59-973c-c23093ba8ee2",
+      "timestamp": "2025-11-12T14:35:11.553425",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "hybrid",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Cada cuanto se realiza el tamizaje para depresión posparto durante el embarazo?",
+      "rag_results": {
+        "retrieved_context": [
+          "n remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control. Se recomienda en cada trimestre del embarazo evaluar en la gestante, el estrés materno crónico, la ansiedad, los trastornos del sueño y el pobre apoyo de la red social. Se recomienda identificar la depresión materna mediante un tamizaje trimestral durante el control prenatal porque las mujeres con depresión durante el embarazo tienen mayor riesgo de parto pretérmino y bajo peso al nacer.",
+          "epresión postparto de Edimburgo (EPDS), se encontró que la EPDS a las 32 semanas identificó 13,5% de mujeres que desarrollaron depresión postparto, mientras que a la semana 8 sólo se identificó 9,1% de estas mujeres . Una revisión sistemática de 16 estudios poblacionales evaluó la efectividad del uso de herramientas de tamizaje antenatal para predecir la depresión posparto.",
+          "uó la efectividad del uso de herramientas de tamizaje antenatal para predecir la depresión posparto. En dos de los más grandes estudios poblacionales incluidos en la revisión, la proporción de mujeres identificadas como en riesgo de depresión fue 16% y 52%. Sin embargo, sólo 35% y 8% de estas mujeres desarrollaron depresión posparto . Un ECC que incluyó 296 pacientes evaluó el impacto de un programa de educación prenatal en la reducción de la depresión posparto.",
+          "identifique el riesgo de depresión postparto mediante dos preguntas: • Durante el mes pasado, ¿se ha sentido triste, deprimida o sin esperanza con frecuencia? • Durante el mes pasado, ¿ha permanecido preocupada por tener poco interés o placer para hacer las cosas cotidianas? • Una tercera pregunta se debe considerar si la mujer responde \"sí\" a cualquiera de las preguntas iniciales: ¿Siente que necesita ayuda?",
+          "Se recomienda que al inicio del control prenatal, los profesionales de la salud indaguen por antecedentes relevantes de trastornos mentales. Si la mujer tiene o se sospecha que tiene una enfermedad mental grave se debe garantizar su atención en un servicio especializado de salud mental. Se recomienda que en el primer control prenatal, en la semana 28 de gestación y en la consulta de puerperio se identifique el riesgo de depresión postparto mediante dos preguntas: • Durante el mes pasado, ¿se ha"
+        ],
+        "generated_answer": "Según la información proporcionada, el tamizaje para identificar el riesgo de depresión posparto durante el embarazo se recomienda realizar en los siguientes momentos:\n\n*   **En el primer control prenatal.**\n*   **En la semana 28 de gestación.**\n\nAdemás, el texto también menciona de forma más general que se recomienda un **tamizaje trimestral** para la depresión materna durante el control prenatal.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9649131491034347,
+          "faithfulness": 0.3333333333333333
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 543,
+          "output_tokens": 1095,
+          "total_tokens": 1638,
+          "input_cost_usd": 0.00067875,
+          "output_cost_usd": 0.005475,
+          "total_cost_usd": 0.00615375
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. Depresión en el embarazo y postparto - Síntesis de Conocimientos\n   URL: https://sintesis.med.uchile.cl/sin-categoria/14978-depresion-en-el-embarazo-y-postparto\n   Summary: Monitoreo del uso de fármacos antidepresivos enelembarazoy postparto Si bienduranteelembarazoy la lactancia, los fármacos noserecomiendan como primera línea de tratamiento, estos deben utilizarse cuando haya un claro beneficio que compense los riesgos potenciales.\n\n2. Depresión perinatal - National Institute of Mental Health (NIMH)\n   URL: https://www.nimh.nih.gov/health/publications/espanol/depresion-perinatal\n   Summary: Ladepresiónperinatal es un trastorno del estado de ánimo que ocurreduranteelembarazoy después del parto. Los síntomas pueden ir de leves a graves. En casos excepcionales, los síntomas son suficientemente gravesparaponer en peligro la salud yelbienestar de la madre y del bebé. Ladepresiónperinatalsepuede tratar. Conozca los signos y los síntomas, los factores de riesgo ...\n\n3. Depresión posparto - Diagnóstico y tratamiento - Mayo Clinic\n   URL: https://www.mayoclinic.org/es/diseases-conditions/postpartum-depression/diagnosis-treatment/drc-20376623\n   Summary: Al parecer, la terapia electroconvulsiva provoca cambios en la neuroquímica cerebral que pueden reducir los síntomas de la psicosis y ladepresión, sobre todo cuando otros tratamientos no han dado resultado. La hospitalizaciónduranteeltratamiento de la psicosispospartopuede ser un inconvenienteparaque la madre pueda amamantar.\n"
+        ],
+        "generated_answer": "Basado en los resultados de la búsqueda proporcionados, no es posible determinar cada cuánto se realiza el tamizaje para la depresión posparto durante el embarazo.\n\nLa información disponible se centra en otros aspectos:\n\n*   **Definición:** La depresión perinatal es un trastorno del estado de ánimo que puede ocurrir durante el embarazo y después del parto (National Institute of Mental Health).\n*   **Diagnóstico y tratamiento:** Se mencionan opciones de diagnóstico y tratamiento para la depresión posparto, como la terapia electroconvulsiva en casos graves (Mayo Clinic).\n*   **Monitoreo de medicamentos:** Se habla del monitoreo del uso de fármacos antidepresivos durante el embarazo y el postparto (Síntesis de Conocimientos).\n\nSin embargo, ninguno de los resúmenes especifica la frecuencia o el cronograma recomendado para realizar el tamizaje de esta condición durante el periodo de gestación.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.9
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 452,
+          "output_tokens": 1159,
+          "total_tokens": 1611,
+          "input_cost_usd": 0.000565,
+          "output_cost_usd": 0.005795,
+          "total_cost_usd": 0.00636
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00615375,
+        "mcp_cost_usd": 0.00636,
+        "total_cost_usd": 0.01251375,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "Se recomienda que, en el primer control prenatal, en la semana 28 de gestación y en la consulta de puerperio se identifique el riesgo de depresión postparto",
+      "question_id": 7
+    }
+  ]
+}

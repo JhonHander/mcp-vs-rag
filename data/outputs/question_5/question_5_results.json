@@ -1,0 +1,531 @@
+{
+  "question_id": 5,
+  "question": "¿Con cuál herramienta realizo la valoración de riesgo psico social en los controles prenatales?",
+  "ground_truth": "Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial",
+  "total_configurations": 8,
+  "timestamp": "2025-11-12T14:04:08.335369",
+  "configurations": [
+    {
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo"
+    }
+  ],
+  "results": [
+    {
+      "execution_id": "fcceed34-e35b-49e5-b0e6-d1b54c244388",
+      "timestamp": "2025-11-12T13:49:19.762200",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "naive",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Con cuál herramienta realizo la valoración de riesgo psico social en los controles prenatales?",
+      "rag_results": {
+        "retrieved_context": [
+          "tra la escala de Herrera & Hurtado, la cual integra la evaluación de riesgo biológico y psicosocial. Dicha escala ha sido validada en poblaciones similares a la colombiana. El GDG junto con los expertos consultados para este tema recomienda el uso de la clasificación de riesgo en el control prenatal por medio de ésta escala en el momento de la inscripción y en las citas de control. Respecto a la detección de violencia hacia la gestante, se encontró evidencia que el uso de instrumentos simples de",
+          "implementación de una lista de chequeo acorde con los objetivos de cada cita de control prenatal. 5. ¿CÓMO DEBE REALIZARSE LA DETECCIÓN DE RIESGO EN EL CONTROL PRENATAL Y CUAL ES SU UTILIDAD EN GESTACIONES DE CURSO NORMAL? La evaluación del riesgo psicosocial y biológico es un elemento de la consulta de inscripción al control prenatal, a la vez que sirve como tamizaje para definir el profesional que realiza el primer control prenatal y la necesidad de un cuidado adicional por un equipo",
+          "psicosociales como determinantes de desenlaces adversos del embarazo, por lo que se recomienda que estos sean evaluados rutinariamente durante el control prenatal. No existe consenso de la manera como se deben explorar estos factores de riesgo, si de manera informal o mediante una escala de clasificación de riesgo. Las escalas de riesgo permitirían clasificar a las gestantes durante el control prenatal en categorías de bajo riesgo (las cuales deben desarrollar su control prenatal con enfermera o",
+          "n mayor número de problemas psicosociales que el control prenatal de rutina (OR=1,8; IC 95%= 1,3,0). Asimismo, las gestantes a las que se les aplicó la escala se sintieron más cómodas al expresar sus problemas psicosociales en comparación con el grupo control (11,2% vs. 2,3%; p=0,0006) . 1- Una cohorte que incluyó 937 registros de control prenatal de una institución de Australia, comparó el porcentaje de detección de violencia intrafamiliar usando la escala “Maternity Social Support” de seis",
+          "ción de violencia se realice por medio de una entrevista en todas las consultas de control prenatal. RECOMENDACIONES CLÍNICAS Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial. Si se identifica riesgo se deben remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control."
+        ],
+        "generated_answer": "Con la escala de Herrera & Hurtado. Esta escala integra el riesgo biológico y psicosocial y se recomienda aplicarla en la inscripción al control prenatal y en las citas de seguimiento (al menos cada trimestre). Si se identifica riesgo, remitir a atención especializada. Además, se sugiere indagar rutinariamente por violencia mediante entrevista.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.8833794691304737,
+          "faithfulness": 0.5
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 584,
+          "output_tokens": 526,
+          "total_tokens": 1110,
+          "input_cost_usd": 0.00292,
+          "output_cost_usd": 0.00789,
+          "total_cost_usd": 0.01081
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: [PDF] Valoración del riesgo biopsicosocial en gestantes de Cúcuta ...\nURL: https://copei.acofaen.org.co/wp-content/uploads/2021/08/Valoracion-del-riesgo-biopsicosocial-en-gestantes.pdf\nContent: La detección del riesgo biopsicosocial en las gestantes durante el control prenatal permite hacer un enfoque anticipatorio del riesgo de desarrollar\n\nTitle: [PDF] valoración del riesgo biopsicosocial en gestantes caso en la\nURL: https://scispace.com/pdf/valoracion-del-riesgo-biopsicosocial-en-gestantes-caso-en-la-44w51h1aay.pdf\nContent: El servicio de control prenatal que brinda la Unidad Básica de la Libertad tiene muchos beneficios para la población que se encuentra aledaña al mismo, especialmente las gestantes que por su estado requieren mayor cuidado, es de fácil acceso y la atención que se brinda es muy completa, se ha observado que no se realiza la correcta identificación de los factores de riesgos biopsicosociales y esto quizás porque se enfatizan más en riesgos obstétricos, es por esta razón que es fundamental caracterizar sociodemográficamente, mostrar la historia reproductiva, identificar las condiciones asociadas, enunciar las patologías presentes en el embarazo actual y determinar el riesgo psicosocial, para así tener una visión más profunda y poder analizar el riesgo biopsicosocial de las gestantes de la Unidad Básica Materno Infantil la Libertad.\n\nTitle: [PDF] ¿Qué instrumentos se han aplicado para evaluar el riesgo ...\nURL: https://etesa-sbe.minsal.cl/wp-content/uploads/2020/08/SRE_escalas-para-evaluar-riesgo-psicosocial-en-situaciones-de-emergencia.pdf\nContent: Esta síntesis aporta evidencia sobre las herramientas disponibles para la medición de riesgo psicosocial, vulneración de derechos y experiencias adversas"
+        ],
+        "generated_answer": "En los controles prenatales no existe un único instrumento “universal”; lo recomendado es aplicar la Ficha/Formato de Valoración de Riesgo Biopsicosocial de la gestante que usa tu institución/secretaría de salud y, según los hallazgos, complementar con escalas validadas para cada dimensión psicosocial. La literatura sobre control prenatal destaca precisamente la detección sistemática del riesgo biopsicosocial durante las consultas para orientar intervenciones oportunas (ver “Valoración del riesgo biopsicosocial en gestantes” en servicios de control prenatal) [copei.acofaen.org.co/wp-content/uploads/2021/08/Valoracion-del-riesgo-biopsicosocial-en-gestantes.pdf; scispace.com/pdf/valoracion-del-riesgo-biopsicosocial-en-gestantes-caso-en-la-44w51h1aay.pdf]. \n\nEscalas breves que se suelen integrar al tamizaje psicosocial:\n- Depresión perinatal: EPDS (Edinburgh Postnatal Depression Scale) o SRQ-20 para trastornos mentales comunes.\n- Violencia de pareja: HITS o WAST.\n- Consumo de alcohol/drogas: AUDIT-C y/o ASSIST.\n- Ansiedad: GAD-7; Depresión: PHQ-9 (si no se usa EPDS).\nLa síntesis de MINSAL sobre herramientas disponibles respalda el uso de estas escalas para medir riesgo psicosocial y vulneraciones de derechos [etesa-sbe.minsal.cl/wp-content/uploads/2020/08/SRE_escalas-para-evaluar-riesgo-psicosocial-en-situaciones-de-emergencia.pdf].\n\nRecomendación práctica:\n- En la primera consulta prenatal y al menos una vez por trimestre, aplica la Ficha de Riesgo Biopsicosocial institucional (que recoge datos socioeconómicos, apoyo social, violencia, salud mental, consumo de SPA, etc.). \n- Si hay alertas, aplica la(s) escala(s) específica(s) anteriores y actúa según protocolo (educación, intervención breve, referencia a salud mental o trabajo social). \n\nSi nos indicas tu país/IPS, puedo señalar la ficha exacta y los puntos de corte que aplica tu protocolo local.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.35294117647058826
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 459,
+          "output_tokens": 1955,
+          "total_tokens": 2414,
+          "input_cost_usd": 0.002295,
+          "output_cost_usd": 0.029325,
+          "total_cost_usd": 0.03162
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.01081,
+        "mcp_cost_usd": 0.03162,
+        "total_cost_usd": 0.04243,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial",
+      "question_id": 5
+    },
+    {
+      "execution_id": "8fa56be9-71ae-4c41-bebf-e845e8cab653",
+      "timestamp": "2025-11-12T13:51:35.162514",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "naive",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Con cuál herramienta realizo la valoración de riesgo psico social en los controles prenatales?",
+      "rag_results": {
+        "retrieved_context": [
+          "tra la escala de Herrera & Hurtado, la cual integra la evaluación de riesgo biológico y psicosocial. Dicha escala ha sido validada en poblaciones similares a la colombiana. El GDG junto con los expertos consultados para este tema recomienda el uso de la clasificación de riesgo en el control prenatal por medio de ésta escala en el momento de la inscripción y en las citas de control. Respecto a la detección de violencia hacia la gestante, se encontró evidencia que el uso de instrumentos simples de",
+          "implementación de una lista de chequeo acorde con los objetivos de cada cita de control prenatal. 5. ¿CÓMO DEBE REALIZARSE LA DETECCIÓN DE RIESGO EN EL CONTROL PRENATAL Y CUAL ES SU UTILIDAD EN GESTACIONES DE CURSO NORMAL? La evaluación del riesgo psicosocial y biológico es un elemento de la consulta de inscripción al control prenatal, a la vez que sirve como tamizaje para definir el profesional que realiza el primer control prenatal y la necesidad de un cuidado adicional por un equipo",
+          "psicosociales como determinantes de desenlaces adversos del embarazo, por lo que se recomienda que estos sean evaluados rutinariamente durante el control prenatal. No existe consenso de la manera como se deben explorar estos factores de riesgo, si de manera informal o mediante una escala de clasificación de riesgo. Las escalas de riesgo permitirían clasificar a las gestantes durante el control prenatal en categorías de bajo riesgo (las cuales deben desarrollar su control prenatal con enfermera o",
+          "n mayor número de problemas psicosociales que el control prenatal de rutina (OR=1,8; IC 95%= 1,3,0). Asimismo, las gestantes a las que se les aplicó la escala se sintieron más cómodas al expresar sus problemas psicosociales en comparación con el grupo control (11,2% vs. 2,3%; p=0,0006) . 1- Una cohorte que incluyó 937 registros de control prenatal de una institución de Australia, comparó el porcentaje de detección de violencia intrafamiliar usando la escala “Maternity Social Support” de seis",
+          "ción de violencia se realice por medio de una entrevista en todas las consultas de control prenatal. RECOMENDACIONES CLÍNICAS Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial. Si se identifica riesgo se deben remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control."
+        ],
+        "generated_answer": "Use la Escala de Herrera & Hurtado. Esta integra el riesgo biológico y psicosocial y se recomienda aplicarla al momento de la inscripción y luego en cada trimestre/control. Si identifica riesgo, remita a atención especializada. Para detección de violencia, realice entrevista en todas las consultas.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.8232841287470969,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 584,
+          "output_tokens": 390,
+          "total_tokens": 974,
+          "input_cost_usd": 0.00292,
+          "output_cost_usd": 0.00585,
+          "total_cost_usd": 0.00877
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. PDFTema 12 La Evaluación De Riesgos Psicosociales. Criterios Para ... - Insst\n   URL: https://www.insst.es/documents/94886/4155701/Tema%2012.%20La%20evaluaci%C3%B3n%20de%20riesgos%20psicosociales.pdf\n   Summary: Para llevar a cabo una evaluaciónderiesgospsicosociales, se deben tenerencuenta una seriedecriterios generales compatiblesconcualquier tipodeevaluación, relacionadosconlasunidadesdeanálisis,lapoblación trabajadora objetodeevaluación, el métododeevaluación y el trabajodecampo.\n\n2. PDFLos métodos de evaluación de los riesgos psicosociales en los entornos ...\n   URL: https://www.juntadeandalucia.es/sites/default/files/inline-files/2022/12/Coleccion_7_Prevencion_de_riesgos_psicosociales_en_el_trabajo....pdf\n   Summary: Introducción: el carácter obligatorio y técnicodelaevaluacióndelosriesgospsicosocialesLaprevención eficazdelosriesgospsicosocialesenel ámbito laboral forma partedelagestión preventivadelaempresa, conformándose como un deber jurídico inexorable e irrenunciable paralapersona empleadora. Consecuentemente, el problema no debedesituarseenlosinstrumentos ...\n\n3. Instrumentos más utilizados en la evaluación de los riesgos psicosociales\n   URL: https://www.researchgate.net/publication/370965083_Instrumentos_mas_utilizados_en_la_evaluacion_de_los_riesgos_psicosociales\n   Summary: Eneste trabajo se presentanlosinstrumentosdeevaluaciónpsicosocialmás utilizadosennuestro entorno, teniendoencuenta el criteriodelavalidación. Únicamente se han consideradolos...\n"
+        ],
+        "generated_answer": "En los controles prenatales no se usa una sola “herramienta de riesgo psicosocial” universal. Se recomienda un tamizaje multimodal con instrumentos validados para diferentes dominios:\n\n- Depresión perinatal: EPDS (Edinburgh Postnatal Depression Scale).\n- Ansiedad: GAD-7 (o escalas perinatales como PASS si están disponibles).\n- Violencia de pareja: AAS (Abuse Assessment Screen) o HITS.\n- Consumo de sustancias: ASSIST de la OMS o AUDIT-C para alcohol.\n- Apoyo/función familiar y red social: APGAR Familiar, DUKE-UNC o MOS Social Support.\n- Si desea un tamizaje estructurado integral: ALPHA (Antenatal Psychosocial Health Assessment) o R4U (donde esté implementado).\n\nNota: Las fuentes del buscador aportadas tratan de riesgos psicosociales en el trabajo (no en gestantes). Si me dices tu país/entidad, puedo indicarte la herramienta exacta que exigen las guías locales y los puntos de corte recomendados, así como flujos de remisión.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.1
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 457,
+          "output_tokens": 1398,
+          "total_tokens": 1855,
+          "input_cost_usd": 0.002285,
+          "output_cost_usd": 0.02097,
+          "total_cost_usd": 0.023255
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00877,
+        "mcp_cost_usd": 0.023255,
+        "total_cost_usd": 0.032025,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial",
+      "question_id": 5
+    },
+    {
+      "execution_id": "d6f95f17-7300-4fec-beb4-2456999b55a2",
+      "timestamp": "2025-11-12T13:53:35.405543",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "hybrid",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Con cuál herramienta realizo la valoración de riesgo psico social en los controles prenatales?",
+      "rag_results": {
+        "retrieved_context": [
+          "tra la escala de Herrera & Hurtado, la cual integra la evaluación de riesgo biológico y psicosocial. Dicha escala ha sido validada en poblaciones similares a la colombiana. El GDG junto con los expertos consultados para este tema recomienda el uso de la clasificación de riesgo en el control prenatal por medio de ésta escala en el momento de la inscripción y en las citas de control. Respecto a la detección de violencia hacia la gestante, se encontró evidencia que el uso de instrumentos simples de",
+          "implementación de una lista de chequeo acorde con los objetivos de cada cita de control prenatal. 5. ¿CÓMO DEBE REALIZARSE LA DETECCIÓN DE RIESGO EN EL CONTROL PRENATAL Y CUAL ES SU UTILIDAD EN GESTACIONES DE CURSO NORMAL? La evaluación del riesgo psicosocial y biológico es un elemento de la consulta de inscripción al control prenatal, a la vez que sirve como tamizaje para definir el profesional que realiza el primer control prenatal y la necesidad de un cuidado adicional por un equipo",
+          "psicosociales como determinantes de desenlaces adversos del embarazo, por lo que se recomienda que estos sean evaluados rutinariamente durante el control prenatal. No existe consenso de la manera como se deben explorar estos factores de riesgo, si de manera informal o mediante una escala de clasificación de riesgo. Las escalas de riesgo permitirían clasificar a las gestantes durante el control prenatal en categorías de bajo riesgo (las cuales deben desarrollar su control prenatal con enfermera o",
+          "n mayor número de problemas psicosociales que el control prenatal de rutina (OR=1,8; IC 95%= 1,3,0). Asimismo, las gestantes a las que se les aplicó la escala se sintieron más cómodas al expresar sus problemas psicosociales en comparación con el grupo control (11,2% vs. 2,3%; p=0,0006) . 1- Una cohorte que incluyó 937 registros de control prenatal de una institución de Australia, comparó el porcentaje de detección de violencia intrafamiliar usando la escala “Maternity Social Support” de seis",
+          "ción de violencia se realice por medio de una entrevista en todas las consultas de control prenatal. RECOMENDACIONES CLÍNICAS Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial. Si se identifica riesgo se deben remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control."
+        ],
+        "generated_answer": "Con la Escala de Herrera & Hurtado. Esta escala integra el riesgo biológico y psicosocial y se recomienda aplicarla en la inscripción al control prenatal y repetirla en los controles (al menos cada trimestre). Además, para detección de violencia, realice entrevista/chequeo en todas las consultas y remita si hay riesgo.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.8819472618999684,
+          "faithfulness": 0.6666666666666666
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 584,
+          "output_tokens": 527,
+          "total_tokens": 1111,
+          "input_cost_usd": 0.00292,
+          "output_cost_usd": 0.007905,
+          "total_cost_usd": 0.010825
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: [PDF] Valoración del riesgo biopsicosocial en gestantes de Cúcuta ...\nURL: https://copei.acofaen.org.co/wp-content/uploads/2021/08/Valoracion-del-riesgo-biopsicosocial-en-gestantes.pdf\nContent: La detección del riesgo biopsicosocial en las gestantes durante el control prenatal permite hacer un enfoque anticipatorio del riesgo de desarrollar\n\nTitle: [PDF] valoración del riesgo biopsicosocial en gestantes caso en la\nURL: https://scispace.com/pdf/valoracion-del-riesgo-biopsicosocial-en-gestantes-caso-en-la-44w51h1aay.pdf\nContent: El servicio de control prenatal que brinda la Unidad Básica de la Libertad tiene muchos beneficios para la población que se encuentra aledaña al mismo, especialmente las gestantes que por su estado requieren mayor cuidado, es de fácil acceso y la atención que se brinda es muy completa, se ha observado que no se realiza la correcta identificación de los factores de riesgos biopsicosociales y esto quizás porque se enfatizan más en riesgos obstétricos, es por esta razón que es fundamental caracterizar sociodemográficamente, mostrar la historia reproductiva, identificar las condiciones asociadas, enunciar las patologías presentes en el embarazo actual y determinar el riesgo psicosocial, para así tener una visión más profunda y poder analizar el riesgo biopsicosocial de las gestantes de la Unidad Básica Materno Infantil la Libertad.\n\nTitle: [PDF] ¿Qué instrumentos se han aplicado para evaluar el riesgo ...\nURL: https://etesa-sbe.minsal.cl/wp-content/uploads/2020/08/SRE_escalas-para-evaluar-riesgo-psicosocial-en-situaciones-de-emergencia.pdf\nContent: Esta síntesis aporta evidencia sobre las herramientas disponibles para la medición de riesgo psicosocial, vulneración de derechos y experiencias adversas"
+        ],
+        "generated_answer": "En los controles prenatales no hay una única “prueba universal”, sino un paquete de tamizajes estructurados dentro de la valoración de riesgo biopsicosocial. En la práctica, se recomienda usar la ficha/escala oficial que define tu jurisdicción y, como mínimo, aplicar los siguientes instrumentos validados:\n\n- Depresión perinatal: Escala de Depresión Postnatal de Edimburgo (EPDS).\n- Consumo de alcohol y otras sustancias: AUDIT-C y/o ASSIST.\n- Violencia de pareja/intrafamiliar: WAST o HITS.\n- Trastornos mentales comunes: SRQ-20.\n- Apoyo/red de soporte: APGAR Familiar o Duke-UNC de apoyo social.\n\nSi trabajas en Colombia, utiliza la Ficha de Valoración del Riesgo Biopsicosocial para Gestantes de la Ruta Integral Materno Perinatal (MSPS), que integra estos tamizajes y orienta la clasificación y la ruta de manejo.\n\nFundamento:\n- La evaluación del riesgo biopsicosocial durante el control prenatal es recomendada para identificar de forma anticipatoria factores psicosociales en gestantes [Valoración del riesgo biopsicosocial en gestantes – COPEI/ACOFaen].\n- La literatura regional sobre controles prenatales enfatiza caracterizar y determinar el riesgo psicosocial como parte de la valoración integral de la gestante [Valoración del riesgo biopsicosocial en gestantes – SciSpace].\n- Existen múltiples escalas validadas para medir riesgo psicosocial (depresión, violencia, consumo de sustancias, apoyo social) que pueden integrarse en la atención prenatal según lineamientos locales [Síntesis de herramientas para evaluar riesgo psicosocial – MINSAL Chile].\n\nRecomendación práctica: confirma el instrumento exigido por tu institución/autoridad sanitaria y asegúrate de registrar resultados, clasificar el riesgo y activar de inmediato las rutas de atención (salud mental, trabajo social, protección ante violencia, tratamiento de adicciones) según los puntajes obtenidos.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9255879852006552,
+          "faithfulness": 0.6875
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 459,
+          "output_tokens": 2094,
+          "total_tokens": 2553,
+          "input_cost_usd": 0.002295,
+          "output_cost_usd": 0.03141,
+          "total_cost_usd": 0.033705
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.010825,
+        "mcp_cost_usd": 0.033705,
+        "total_cost_usd": 0.04453,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial",
+      "question_id": 5
+    },
+    {
+      "execution_id": "51373ed2-fd78-40f0-8673-8b95d3e52220",
+      "timestamp": "2025-11-12T13:55:56.740552",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "hybrid",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Con cuál herramienta realizo la valoración de riesgo psico social en los controles prenatales?",
+      "rag_results": {
+        "retrieved_context": [
+          "tra la escala de Herrera & Hurtado, la cual integra la evaluación de riesgo biológico y psicosocial. Dicha escala ha sido validada en poblaciones similares a la colombiana. El GDG junto con los expertos consultados para este tema recomienda el uso de la clasificación de riesgo en el control prenatal por medio de ésta escala en el momento de la inscripción y en las citas de control. Respecto a la detección de violencia hacia la gestante, se encontró evidencia que el uso de instrumentos simples de",
+          "implementación de una lista de chequeo acorde con los objetivos de cada cita de control prenatal. 5. ¿CÓMO DEBE REALIZARSE LA DETECCIÓN DE RIESGO EN EL CONTROL PRENATAL Y CUAL ES SU UTILIDAD EN GESTACIONES DE CURSO NORMAL? La evaluación del riesgo psicosocial y biológico es un elemento de la consulta de inscripción al control prenatal, a la vez que sirve como tamizaje para definir el profesional que realiza el primer control prenatal y la necesidad de un cuidado adicional por un equipo",
+          "psicosociales como determinantes de desenlaces adversos del embarazo, por lo que se recomienda que estos sean evaluados rutinariamente durante el control prenatal. No existe consenso de la manera como se deben explorar estos factores de riesgo, si de manera informal o mediante una escala de clasificación de riesgo. Las escalas de riesgo permitirían clasificar a las gestantes durante el control prenatal en categorías de bajo riesgo (las cuales deben desarrollar su control prenatal con enfermera o",
+          "n mayor número de problemas psicosociales que el control prenatal de rutina (OR=1,8; IC 95%= 1,3,0). Asimismo, las gestantes a las que se les aplicó la escala se sintieron más cómodas al expresar sus problemas psicosociales en comparación con el grupo control (11,2% vs. 2,3%; p=0,0006) . 1- Una cohorte que incluyó 937 registros de control prenatal de una institución de Australia, comparó el porcentaje de detección de violencia intrafamiliar usando la escala “Maternity Social Support” de seis",
+          "ción de violencia se realice por medio de una entrevista en todas las consultas de control prenatal. RECOMENDACIONES CLÍNICAS Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial. Si se identifica riesgo se deben remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control."
+        ],
+        "generated_answer": "Con la Escala de Herrera y Hurtado. Úsala en la inscripción al control prenatal y luego de forma periódica (cada trimestre/consulta) para clasificar el riesgo biológico y psicosocial. Además, para detectar violencia, realiza una entrevista en todas las consultas (puedes apoyarte en listas de chequeo).",
+        "ragas_metrics": {
+          "answer_relevancy": 0.871559184993972,
+          "faithfulness": 0.8333333333333334
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 584,
+          "output_tokens": 588,
+          "total_tokens": 1172,
+          "input_cost_usd": 0.00292,
+          "output_cost_usd": 0.00882,
+          "total_cost_usd": 0.01174
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. PDFTema 12 La Evaluación De Riesgos Psicosociales. Criterios Para ... - Insst\n   URL: https://www.insst.es/documents/94886/4155701/Tema%2012.%20La%20evaluaci%C3%B3n%20de%20riesgos%20psicosociales.pdf\n   Summary: Para llevar a cabo una evaluaciónderiesgospsicosociales, se deben tenerencuenta una seriedecriterios generales compatiblesconcualquier tipodeevaluación, relacionadosconlasunidadesdeanálisis,lapoblación trabajadora objetodeevaluación, el métododeevaluación y el trabajodecampo.\n\n2. PDFBatería de instrumentos para la evaluación de factores de riesgo ...\n   URL: https://fondoriesgoslaborales.gov.co/wp-content/uploads/2018/10/Bateria-riesgo-psicosocial-1.pdf\n   Summary: Esta situación demuestralanecesidadderealizar procesos cualificadosdeidentificación, evaluación e intervencióndeestos factoresderiesgo,endondelosresultados se basenenhechos reales, que midanloque realmente se desea medir, que sean consistentes y que cuentenconparámetros para comparar estadísticamentelosdatos obtenidos por una persona,conun grupodereferencia.\n\n3. Herramientas para evaluar riesgos psicosociales. - Cumple con la NOM ...\n   URL: https://nom-35.com/blog/herramientas-para-evaluar-riesgos-psicosociales/\n   Summary: Si tu empresa está lista para dar el siguiente pasoenlagestióndelosriesgospsicosociales y cumplirconlasnormativas, contáctanos por WhatsApp para obtener más información sobrelassoluciones que Wellness México ofrece para evaluar y mitigarlosriesgospsicosociales.\n"
+        ],
+        "generated_answer": "En control prenatal no se utiliza la “Batería de instrumentos para la evaluación de factores de riesgo psicosocial” del ámbito laboral (como la del Fondo de Riesgos Laborales de Colombia) ni las guías de NOM‑035; esas herramientas son para contextos ocupacionales, no clínicos.\n\nPara la valoración de riesgo psicosocial en los controles prenatales se recomienda un tamizaje clínico con instrumentos validados específicos:\n- Depresión perinatal: EPDS (Edinburgh Postnatal Depression Scale)\n- Ansiedad: GAD‑7 (o GAD‑2 como tamizaje breve)\n- Violencia de pareja: HITS o WAST\n- Consumo de alcohol y otras sustancias: AUDIT‑C y/o ASSIST\n- Estrés percibido: PSS‑10 (opcional)\n- Apoyo social: Duke‑UNC o MOS-SSS (opcional)\n\nSi tu institución pide un tamizaje mínimo en una sola visita, una combinación práctica es: EPDS + HITS + AUDIT‑C (y ampliar con GAD‑7/ASSIST según resultado).",
+        "ragas_metrics": {
+          "answer_relevancy": 0.873311923897569,
+          "faithfulness": 0.07142857142857142
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 450,
+          "output_tokens": 2098,
+          "total_tokens": 2548,
+          "input_cost_usd": 0.00225,
+          "output_cost_usd": 0.03147,
+          "total_cost_usd": 0.03372
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.01174,
+        "mcp_cost_usd": 0.03372,
+        "total_cost_usd": 0.04546,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial",
+      "question_id": 5
+    },
+    {
+      "execution_id": "f973900e-e2b5-45f2-8ce7-3d112eb21a5e",
+      "timestamp": "2025-11-12T13:58:11.488303",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "naive",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Con cuál herramienta realizo la valoración de riesgo psico social en los controles prenatales?",
+      "rag_results": {
+        "retrieved_context": [
+          "tra la escala de Herrera & Hurtado, la cual integra la evaluación de riesgo biológico y psicosocial. Dicha escala ha sido validada en poblaciones similares a la colombiana. El GDG junto con los expertos consultados para este tema recomienda el uso de la clasificación de riesgo en el control prenatal por medio de ésta escala en el momento de la inscripción y en las citas de control. Respecto a la detección de violencia hacia la gestante, se encontró evidencia que el uso de instrumentos simples de",
+          "implementación de una lista de chequeo acorde con los objetivos de cada cita de control prenatal. 5. ¿CÓMO DEBE REALIZARSE LA DETECCIÓN DE RIESGO EN EL CONTROL PRENATAL Y CUAL ES SU UTILIDAD EN GESTACIONES DE CURSO NORMAL? La evaluación del riesgo psicosocial y biológico es un elemento de la consulta de inscripción al control prenatal, a la vez que sirve como tamizaje para definir el profesional que realiza el primer control prenatal y la necesidad de un cuidado adicional por un equipo",
+          "psicosociales como determinantes de desenlaces adversos del embarazo, por lo que se recomienda que estos sean evaluados rutinariamente durante el control prenatal. No existe consenso de la manera como se deben explorar estos factores de riesgo, si de manera informal o mediante una escala de clasificación de riesgo. Las escalas de riesgo permitirían clasificar a las gestantes durante el control prenatal en categorías de bajo riesgo (las cuales deben desarrollar su control prenatal con enfermera o",
+          "n mayor número de problemas psicosociales que el control prenatal de rutina (OR=1,8; IC 95%= 1,3,0). Asimismo, las gestantes a las que se les aplicó la escala se sintieron más cómodas al expresar sus problemas psicosociales en comparación con el grupo control (11,2% vs. 2,3%; p=0,0006) . 1- Una cohorte que incluyó 937 registros de control prenatal de una institución de Australia, comparó el porcentaje de detección de violencia intrafamiliar usando la escala “Maternity Social Support” de seis",
+          "ción de violencia se realice por medio de una entrevista en todas las consultas de control prenatal. RECOMENDACIONES CLÍNICAS Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial. Si se identifica riesgo se deben remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control."
+        ],
+        "generated_answer": "Según el contexto proporcionado, la herramienta recomendada para realizar la valoración de riesgo psicosocial en los controles prenatales es la **escala de Herrera & Hurtado**.\n\nEl texto especifica que esta escala integra la evaluación de riesgo tanto biológico como psicosocial y que su uso es recomendado por el Grupo de Desarrollo de la Guía (GDG) y expertos, tanto en el momento de la inscripción al control prenatal como en las citas de seguimiento.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9749434656328793,
+          "faithfulness": 0.75
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 583,
+          "output_tokens": 1064,
+          "total_tokens": 1647,
+          "input_cost_usd": 0.00072875,
+          "output_cost_usd": 0.00532,
+          "total_cost_usd": 0.00604875
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: [PDF] Valoración del riesgo biopsicosocial en gestantes de Cúcuta ...\nURL: https://copei.acofaen.org.co/wp-content/uploads/2021/08/Valoracion-del-riesgo-biopsicosocial-en-gestantes.pdf\nContent: La detección del riesgo biopsicosocial en las gestantes durante el control prenatal permite hacer un enfoque anticipatorio del riesgo de desarrollar\n\nTitle: [PDF] valoración del riesgo biopsicosocial en gestantes caso en la\nURL: https://scispace.com/pdf/valoracion-del-riesgo-biopsicosocial-en-gestantes-caso-en-la-44w51h1aay.pdf\nContent: El servicio de control prenatal que brinda la Unidad Básica de la Libertad tiene muchos beneficios para la población que se encuentra aledaña al mismo, especialmente las gestantes que por su estado requieren mayor cuidado, es de fácil acceso y la atención que se brinda es muy completa, se ha observado que no se realiza la correcta identificación de los factores de riesgos biopsicosociales y esto quizás porque se enfatizan más en riesgos obstétricos, es por esta razón que es fundamental caracterizar sociodemográficamente, mostrar la historia reproductiva, identificar las condiciones asociadas, enunciar las patologías presentes en el embarazo actual y determinar el riesgo psicosocial, para así tener una visión más profunda y poder analizar el riesgo biopsicosocial de las gestantes de la Unidad Básica Materno Infantil la Libertad.\n\nTitle: [PDF] ¿Qué instrumentos se han aplicado para evaluar el riesgo ...\nURL: https://etesa-sbe.minsal.cl/wp-content/uploads/2020/08/SRE_escalas-para-evaluar-riesgo-psicosocial-en-situaciones-de-emergencia.pdf\nContent: Esta síntesis aporta evidencia sobre las herramientas disponibles para la medición de riesgo psicosocial, vulneración de derechos y experiencias adversas"
+        ],
+        "generated_answer": "Basado en los resultados de búsqueda proporcionados, no se menciona el nombre de una herramienta o instrumento específico para realizar la valoración del riesgo psicosocial en los controles prenatales.\n\nSin embargo, la información confirma lo siguiente:\n\n*   **Importancia de la valoración:** Se reconoce que la detección y valoración del riesgo biopsicosocial es una parte fundamental del control prenatal.\n*   **Existencia de herramientas:** Uno de los documentos menciona que existen \"herramientas disponibles para la medición de riesgo psicosocial\", aunque no detalla cuáles son ni si se aplican específicamente en el contexto de la gestación.\n*   **Falta de aplicación:** Otro texto señala que, en algunos servicios de salud, no se realiza una correcta identificación de los factores de riesgo biopsicosocial, a pesar de su importancia.\n\nEn resumen, los textos confirman la necesidad y la existencia de métodos para evaluar el riesgo psicosocial en gestantes, pero **no nombran una herramienta concreta** para hacerlo.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 490,
+          "output_tokens": 1434,
+          "total_tokens": 1924,
+          "input_cost_usd": 0.0006125,
+          "output_cost_usd": 0.00717,
+          "total_cost_usd": 0.0077825
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00604875,
+        "mcp_cost_usd": 0.0077825,
+        "total_cost_usd": 0.01383125,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial",
+      "question_id": 5
+    },
+    {
+      "execution_id": "04712384-313e-4be9-98ba-5fa425953761",
+      "timestamp": "2025-11-12T13:59:54.872332",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "naive",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Con cuál herramienta realizo la valoración de riesgo psico social en los controles prenatales?",
+      "rag_results": {
+        "retrieved_context": [
+          "tra la escala de Herrera & Hurtado, la cual integra la evaluación de riesgo biológico y psicosocial. Dicha escala ha sido validada en poblaciones similares a la colombiana. El GDG junto con los expertos consultados para este tema recomienda el uso de la clasificación de riesgo en el control prenatal por medio de ésta escala en el momento de la inscripción y en las citas de control. Respecto a la detección de violencia hacia la gestante, se encontró evidencia que el uso de instrumentos simples de",
+          "implementación de una lista de chequeo acorde con los objetivos de cada cita de control prenatal. 5. ¿CÓMO DEBE REALIZARSE LA DETECCIÓN DE RIESGO EN EL CONTROL PRENATAL Y CUAL ES SU UTILIDAD EN GESTACIONES DE CURSO NORMAL? La evaluación del riesgo psicosocial y biológico es un elemento de la consulta de inscripción al control prenatal, a la vez que sirve como tamizaje para definir el profesional que realiza el primer control prenatal y la necesidad de un cuidado adicional por un equipo",
+          "psicosociales como determinantes de desenlaces adversos del embarazo, por lo que se recomienda que estos sean evaluados rutinariamente durante el control prenatal. No existe consenso de la manera como se deben explorar estos factores de riesgo, si de manera informal o mediante una escala de clasificación de riesgo. Las escalas de riesgo permitirían clasificar a las gestantes durante el control prenatal en categorías de bajo riesgo (las cuales deben desarrollar su control prenatal con enfermera o",
+          "n mayor número de problemas psicosociales que el control prenatal de rutina (OR=1,8; IC 95%= 1,3,0). Asimismo, las gestantes a las que se les aplicó la escala se sintieron más cómodas al expresar sus problemas psicosociales en comparación con el grupo control (11,2% vs. 2,3%; p=0,0006) . 1- Una cohorte que incluyó 937 registros de control prenatal de una institución de Australia, comparó el porcentaje de detección de violencia intrafamiliar usando la escala “Maternity Social Support” de seis",
+          "ción de violencia se realice por medio de una entrevista en todas las consultas de control prenatal. RECOMENDACIONES CLÍNICAS Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial. Si se identifica riesgo se deben remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control."
+        ],
+        "generated_answer": "Según el contexto proporcionado, la herramienta recomendada para realizar la valoración de riesgo psicosocial en los controles prenatales es la **escala de Herrera & Hurtado**.\n\nEl texto especifica lo siguiente:\n\n*   **Herramienta principal:** La \"escala de Herrera & Hurtado\" es la recomendada, ya que integra la evaluación de riesgo tanto biológico como psicosocial.\n*   **Recomendación de uso:** El GDG (Grupo Desarrollador de la Guía) y los expertos recomiendan utilizar esta escala en el momento de la inscripción al control prenatal y en las citas de control posteriores.\n*   **Frecuencia:** Se recomienda realizar una valoración de riesgo psicosocial al momento de la inscripción y luego en cada trimestre del embarazo.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9749918829771325,
+          "faithfulness": 0.8571428571428571
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 583,
+          "output_tokens": 1189,
+          "total_tokens": 1772,
+          "input_cost_usd": 0.00072875,
+          "output_cost_usd": 0.005945,
+          "total_cost_usd": 0.00667375
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. PDFTema 12 La Evaluación De Riesgos Psicosociales. Criterios Para ... - Insst\n   URL: https://www.insst.es/documents/94886/4155701/Tema%2012.%20La%20evaluaci%C3%B3n%20de%20riesgos%20psicosociales.pdf\n   Summary: Para llevar a cabo una evaluaciónderiesgospsicosociales, se deben tenerencuenta una seriedecriterios generales compatiblesconcualquier tipodeevaluación, relacionadosconlasunidadesdeanálisis,lapoblación trabajadora objetodeevaluación, el métododeevaluación y el trabajodecampo.\n\n2. PDFBatería de instrumentos para la evaluación de factores de riesgo ...\n   URL: https://fondoriesgoslaborales.gov.co/wp-content/uploads/2018/10/Bateria-riesgo-psicosocial-1.pdf\n   Summary: Esta situación demuestralanecesidadderealizar procesos cualificadosdeidentificación, evaluación e intervencióndeestos factoresderiesgo,endondelosresultados se basenenhechos reales, que midanloque realmente se desea medir, que sean consistentes y que cuentenconparámetros para comparar estadísticamentelosdatos obtenidos por una persona,conun grupodereferencia.\n\n3. Herramientas para evaluar riesgos psicosociales. - Cumple con la NOM ...\n   URL: https://nom-35.com/blog/herramientas-para-evaluar-riesgos-psicosociales/\n   Summary: Si tu empresa está lista para dar el siguiente pasoenlagestióndelosriesgospsicosociales y cumplirconlasnormativas, contáctanos por WhatsApp para obtener más información sobrelassoluciones que Wellness México ofrece para evaluar y mitigarlosriesgospsicosociales.\n"
+        ],
+        "generated_answer": "Basado en los resultados de búsqueda proporcionados, **no es posible identificar una herramienta específica para realizar la valoración de riesgo psicosocial en los controles prenatales.**\n\nLa información encontrada se centra exclusivamente en la evaluación de riesgos psicosociales en el **ámbito laboral y de las empresas**, no en el contexto clínico o de salud materna.\n\n*   El primer resultado del INSST se refiere a la \"población trabajadora\".\n*   El segundo resultado proviene del \"Fondo de Riesgos Laborales\" de Colombia.\n*   El tercer resultado habla de cómo las empresas pueden cumplir con la normativa NOM-35 en México, que regula los riesgos psicosociales en el trabajo.\n\nNinguno de los resúmenes menciona el seguimiento del embarazo o los controles prenatales. Para encontrar la herramienta adecuada, sería necesario consultar guías clínicas o protocolos del sector salud específicos para la atención materna.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.7777777777777778
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 490,
+          "output_tokens": 1373,
+          "total_tokens": 1863,
+          "input_cost_usd": 0.0006125,
+          "output_cost_usd": 0.006865,
+          "total_cost_usd": 0.0074775
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00667375,
+        "mcp_cost_usd": 0.0074775,
+        "total_cost_usd": 0.01415125,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial",
+      "question_id": 5
+    },
+    {
+      "execution_id": "c13189e5-c149-428e-8cb1-6a19ad1436b4",
+      "timestamp": "2025-11-12T14:01:39.544683",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "hybrid",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Con cuál herramienta realizo la valoración de riesgo psico social en los controles prenatales?",
+      "rag_results": {
+        "retrieved_context": [
+          "tra la escala de Herrera & Hurtado, la cual integra la evaluación de riesgo biológico y psicosocial. Dicha escala ha sido validada en poblaciones similares a la colombiana. El GDG junto con los expertos consultados para este tema recomienda el uso de la clasificación de riesgo en el control prenatal por medio de ésta escala en el momento de la inscripción y en las citas de control. Respecto a la detección de violencia hacia la gestante, se encontró evidencia que el uso de instrumentos simples de",
+          "implementación de una lista de chequeo acorde con los objetivos de cada cita de control prenatal. 5. ¿CÓMO DEBE REALIZARSE LA DETECCIÓN DE RIESGO EN EL CONTROL PRENATAL Y CUAL ES SU UTILIDAD EN GESTACIONES DE CURSO NORMAL? La evaluación del riesgo psicosocial y biológico es un elemento de la consulta de inscripción al control prenatal, a la vez que sirve como tamizaje para definir el profesional que realiza el primer control prenatal y la necesidad de un cuidado adicional por un equipo",
+          "psicosociales como determinantes de desenlaces adversos del embarazo, por lo que se recomienda que estos sean evaluados rutinariamente durante el control prenatal. No existe consenso de la manera como se deben explorar estos factores de riesgo, si de manera informal o mediante una escala de clasificación de riesgo. Las escalas de riesgo permitirían clasificar a las gestantes durante el control prenatal en categorías de bajo riesgo (las cuales deben desarrollar su control prenatal con enfermera o",
+          "n mayor número de problemas psicosociales que el control prenatal de rutina (OR=1,8; IC 95%= 1,3,0). Asimismo, las gestantes a las que se les aplicó la escala se sintieron más cómodas al expresar sus problemas psicosociales en comparación con el grupo control (11,2% vs. 2,3%; p=0,0006) . 1- Una cohorte que incluyó 937 registros de control prenatal de una institución de Australia, comparó el porcentaje de detección de violencia intrafamiliar usando la escala “Maternity Social Support” de seis",
+          "ción de violencia se realice por medio de una entrevista en todas las consultas de control prenatal. RECOMENDACIONES CLÍNICAS Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial. Si se identifica riesgo se deben remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control."
+        ],
+        "generated_answer": "Según el contexto proporcionado, la herramienta recomendada para realizar la valoración de riesgo psicosocial en los controles prenatales es la **escala de Herrera & Hurtado**.\n\nEl texto especifica lo siguiente:\n\n*   **Herramienta principal:** La \"escala de Herrera & Hurtado\", la cual integra la evaluación de riesgo tanto biológico como psicosocial.\n*   **Recomendación:** El GDG (Grupo Desarrollador de la Guía) y los expertos consultados recomiendan el uso de esta escala.\n*   **Momento de aplicación:** Se debe utilizar en el momento de la inscripción al control prenatal y en las citas de control posteriores.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9749434656328793,
+          "faithfulness": 0.8
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 583,
+          "output_tokens": 1178,
+          "total_tokens": 1761,
+          "input_cost_usd": 0.00072875,
+          "output_cost_usd": 0.00589,
+          "total_cost_usd": 0.00661875
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: [PDF] Valoración del riesgo biopsicosocial en gestantes de Cúcuta ...\nURL: https://copei.acofaen.org.co/wp-content/uploads/2021/08/Valoracion-del-riesgo-biopsicosocial-en-gestantes.pdf\nContent: La detección del riesgo biopsicosocial en las gestantes durante el control prenatal permite hacer un enfoque anticipatorio del riesgo de desarrollar\n\nTitle: [PDF] valoración del riesgo biopsicosocial en gestantes caso en la\nURL: https://scispace.com/pdf/valoracion-del-riesgo-biopsicosocial-en-gestantes-caso-en-la-44w51h1aay.pdf\nContent: El servicio de control prenatal que brinda la Unidad Básica de la Libertad tiene muchos beneficios para la población que se encuentra aledaña al mismo, especialmente las gestantes que por su estado requieren mayor cuidado, es de fácil acceso y la atención que se brinda es muy completa, se ha observado que no se realiza la correcta identificación de los factores de riesgos biopsicosociales y esto quizás porque se enfatizan más en riesgos obstétricos, es por esta razón que es fundamental caracterizar sociodemográficamente, mostrar la historia reproductiva, identificar las condiciones asociadas, enunciar las patologías presentes en el embarazo actual y determinar el riesgo psicosocial, para así tener una visión más profunda y poder analizar el riesgo biopsicosocial de las gestantes de la Unidad Básica Materno Infantil la Libertad.\n\nTitle: [PDF] ¿Qué instrumentos se han aplicado para evaluar el riesgo ...\nURL: https://etesa-sbe.minsal.cl/wp-content/uploads/2020/08/SRE_escalas-para-evaluar-riesgo-psicosocial-en-situaciones-de-emergencia.pdf\nContent: Esta síntesis aporta evidencia sobre las herramientas disponibles para la medición de riesgo psicosocial, vulneración de derechos y experiencias adversas"
+        ],
+        "generated_answer": "Basado en los resultados de búsqueda proporcionados, **no se menciona el nombre de una herramienta o instrumento específico** para realizar la valoración de riesgo psicosocial en los controles prenatales.\n\nSin embargo, la información confirma lo siguiente:\n\n*   **Es una práctica importante:** Se destaca la relevancia de la \"detección del riesgo biopsicosocial en las gestantes durante el control prenatal\" para un enfoque anticipatorio.\n*   **No siempre se realiza correctamente:** Uno de los documentos señala que en una unidad de salud específica no se realiza la \"correcta identificación de los factores de riesgos biopsicosociales\", ya que se da más énfasis a los riesgos obstétricos.\n*   **Existen herramientas:** Un texto menciona que hay \"herramientas disponibles para la medición de riesgo psicosocial\", aunque no detalla cuáles son en el fragmento proporcionado.\n\nEn resumen, los textos confirman la importancia de esta valoración y la existencia de herramientas para ello, pero no nombran ninguna en particular.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 490,
+          "output_tokens": 1527,
+          "total_tokens": 2017,
+          "input_cost_usd": 0.0006125,
+          "output_cost_usd": 0.007635,
+          "total_cost_usd": 0.0082475
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00661875,
+        "mcp_cost_usd": 0.0082475,
+        "total_cost_usd": 0.01486625,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial",
+      "question_id": 5
+    },
+    {
+      "execution_id": "e9a8b735-7c14-4681-9231-faacc898f0e4",
+      "timestamp": "2025-11-12T14:02:57.066194",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "hybrid",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Con cuál herramienta realizo la valoración de riesgo psico social en los controles prenatales?",
+      "rag_results": {
+        "retrieved_context": [
+          "tra la escala de Herrera & Hurtado, la cual integra la evaluación de riesgo biológico y psicosocial. Dicha escala ha sido validada en poblaciones similares a la colombiana. El GDG junto con los expertos consultados para este tema recomienda el uso de la clasificación de riesgo en el control prenatal por medio de ésta escala en el momento de la inscripción y en las citas de control. Respecto a la detección de violencia hacia la gestante, se encontró evidencia que el uso de instrumentos simples de",
+          "implementación de una lista de chequeo acorde con los objetivos de cada cita de control prenatal. 5. ¿CÓMO DEBE REALIZARSE LA DETECCIÓN DE RIESGO EN EL CONTROL PRENATAL Y CUAL ES SU UTILIDAD EN GESTACIONES DE CURSO NORMAL? La evaluación del riesgo psicosocial y biológico es un elemento de la consulta de inscripción al control prenatal, a la vez que sirve como tamizaje para definir el profesional que realiza el primer control prenatal y la necesidad de un cuidado adicional por un equipo",
+          "psicosociales como determinantes de desenlaces adversos del embarazo, por lo que se recomienda que estos sean evaluados rutinariamente durante el control prenatal. No existe consenso de la manera como se deben explorar estos factores de riesgo, si de manera informal o mediante una escala de clasificación de riesgo. Las escalas de riesgo permitirían clasificar a las gestantes durante el control prenatal en categorías de bajo riesgo (las cuales deben desarrollar su control prenatal con enfermera o",
+          "n mayor número de problemas psicosociales que el control prenatal de rutina (OR=1,8; IC 95%= 1,3,0). Asimismo, las gestantes a las que se les aplicó la escala se sintieron más cómodas al expresar sus problemas psicosociales en comparación con el grupo control (11,2% vs. 2,3%; p=0,0006) . 1- Una cohorte que incluyó 937 registros de control prenatal de una institución de Australia, comparó el porcentaje de detección de violencia intrafamiliar usando la escala “Maternity Social Support” de seis",
+          "ción de violencia se realice por medio de una entrevista en todas las consultas de control prenatal. RECOMENDACIONES CLÍNICAS Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial. Si se identifica riesgo se deben remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control."
+        ],
+        "generated_answer": "Según el contexto proporcionado, la herramienta recomendada para realizar la valoración de riesgo psicosocial en los controles prenatales es la **escala de Herrera & Hurtado**.\n\nEl texto especifica lo siguiente:\n\n*   **Herramienta principal:** La \"escala de Herrera & Hurtado\", la cual integra la evaluación de riesgo tanto biológico como psicosocial.\n*   **Recomendación:** El GDG (Grupo Desarrollador de la Guía) y los expertos consultados recomiendan el uso de esta escala.\n*   **Momento de aplicación:** Se debe utilizar en el momento de la inscripción al control prenatal y en las citas de control posteriores.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9749434656328793,
+          "faithfulness": 0.8
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 583,
+          "output_tokens": 1178,
+          "total_tokens": 1761,
+          "input_cost_usd": 0.00072875,
+          "output_cost_usd": 0.00589,
+          "total_cost_usd": 0.00661875
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. PDFTema 12 La Evaluación De Riesgos Psicosociales. Criterios Para ... - Insst\n   URL: https://www.insst.es/documents/94886/4155701/Tema%2012.%20La%20evaluaci%C3%B3n%20de%20riesgos%20psicosociales.pdf\n   Summary: Para llevar a cabo una evaluaciónderiesgospsicosociales, se deben tenerencuenta una seriedecriterios generales compatiblesconcualquier tipodeevaluación, relacionadosconlasunidadesdeanálisis,lapoblación trabajadora objetodeevaluación, el métododeevaluación y el trabajodecampo.\n\n2. Instrumentos de evaluación de factores de riesgo psicosocial laboral ...\n   URL: http://www.scielo.org.bo/scielo.php?script=sci_arttext&pid=S2664-32432025000100218\n   Summary: Entotal se incluyeron 15 estudios.Losresultados muestran que más del 50%delosinstrumentos evalúan cinco dimensionesderiesgo, utilizando cuestionarios desarrollados porlosinvestigadores o basadosenherramientascomo SUSESO ISTAS-21 y COPSOQ-ISTAS21.\n\n3. PDFMetodología para la evaluación de los riesgos psicosociales\n   URL: https://oiss.org/wp-content/uploads/2019/06/1-Metodologia-para-la-evaluacion-de-riesgos-psicosociales.pdf\n   Summary: Diferentes legislacionesentodo el mundo reconocenlaimportanciadelosfactores psicosocialesenlaprevencióndelosriesgoslaborales y planteanlanecesidaddemejorarlascondicionesdetrabajoconel findeprevenirlosriesgosderivadosdeestos factores.\n"
+        ],
+        "generated_answer": "Basado en los resultados de la búsqueda proporcionados, **no es posible identificar una herramienta específica para realizar la valoración de riesgo psicosocial en los controles prenatales.**\n\nLa información de los tres resultados se centra exclusivamente en la evaluación de riesgos psicosociales en el **ámbito laboral**, no en el contexto de la atención médica prenatal.\n\n*   El primer resultado habla de criterios generales para la evaluación en la \"población trabajadora\".\n*   El segundo resultado menciona herramientas como SUSESO ISTAS-21 y COPSOQ-ISTAS21, pero en el contexto de \"riesgo psicosocial laboral\".\n*   El tercer resultado se refiere a la \"prevención de los riesgos laborales\" y la mejora de las \"condiciones de trabajo\".\n\nPor lo tanto, los documentos proporcionados no contienen la respuesta a tu pregunta sobre herramientas para controles prenatales.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 497,
+          "output_tokens": 825,
+          "total_tokens": 1322,
+          "input_cost_usd": 0.00062125,
+          "output_cost_usd": 0.004125,
+          "total_cost_usd": 0.00474625
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00661875,
+        "mcp_cost_usd": 0.00474625,
+        "total_cost_usd": 0.011365,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial",
+      "question_id": 5
+    }
+  ]
+}

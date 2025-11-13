@@ -1,0 +1,531 @@
+{
+  "question_id": 9,
+  "question": "¿Cuáles son las metas de ganancia de peso en las mujeres gestantes?",
+  "ground_truth": "Se recomienda registrar el Índice de Masa Corporal (IMC) de la gestante en la cita de inscripción al control prenatal (alrededor de la semana 10) y con base en este establecer las metas de ganancia de peso durante la gestación de acuerdo a los siguientes parámetros: • IMC < 20 kg/m2 = ganancia entre 12 a 18 Kg • IMC entre 20 y 24,9 kg/m2 = ganancia entre 10 a 13 Kg • IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg",
+  "total_configurations": 8,
+  "timestamp": "2025-11-12T15:00:55.085565",
+  "configurations": [
+    {
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo"
+    }
+  ],
+  "results": [
+    {
+      "execution_id": "7ca26b78-77fd-4fbc-b348-eba40389d632",
+      "timestamp": "2025-11-12T14:46:06.146982",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "naive",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Cuáles son las metas de ganancia de peso en las mujeres gestantes?",
+      "rag_results": {
+        "retrieved_context": [
+          "RECOMENDACIONES CLÍNICAS Se recomienda registrar el Índice de Masa Corporal (IMC) de la gestante en la cita de inscripción al control prenatal (alrededor de la semana 10) y con base en este establecer las metas de ganancia de peso durante la gestación de acuerdo a los siguientes parámetros: • IMC < 20 kg/m2 = ganancia entre 12 a 18 Kg • IMC entre 20 y 24,9 kg/m2 = ganancia entre 10 a 13 Kg • IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg Se",
+          "• IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg Se recomienda debido a su alto riesgo de parto pretérmino, remitir a la gestante con IMC <20 kg/m2 a un plan de manejo nutricional especifico. Si la inscripción al control prenatal es tardía (después de la semana 16 – 18) se recomienda registrar el IMC pregestacional y con base en este establecer las metas de ganancia de peso durante la gestación. Se recomienda realizar seguimiento de la ganancia de",
+          "18 kg, de acuerdo a las características individuales de la gestante . En un estudio de cohorte de 7.589 gestantes, se encontró que el patrón de ganancia de peso no se relacionó con el parto pretérmino, contrario al IMC pregestacional <19,8 kg/m2(OR=1,98; IC 95%= 1,33-2,98) y a la ganancia inadecuada de peso en el tercer trimestre de la gestación (siendo esta menor a 0,34, 0,35, 0,30 y 0,30 kg/semana para mujeres con bajo peso, peso normal, sobrepeso y obesidad, respectivamente) (OR=1,91; IC 95%=",
+          "metas de ganancia de peso durante la gestación. Se recomienda realizar seguimiento de la ganancia de peso en cada uno de los controles prenatales; la gestante con inadecuada ganancia a las 28 semanas debe continuar su control a cargo de un equipo multidisciplinario especializado. No se recomiendan orientaciones nutricionales encaminadas a bajar de peso durante la gestación.",
+          "LA GESTACIÓN? El estado nutricional se relaciona directamente con resultados adversos del embarazo. Las gestantes con bajo peso tienen un riesgo mayor de fetos con restricción de crecimiento intrauterino y recién nacido de bajo peso, mientras que las gestantes con sobrepeso u obesidad tienen un riesgo mayor de diabetes, hipertensión y macrosomía fetal. Uno de los objetivos durante el control prenatal es ofrecer educación y asesoría a las mujeres que garanticen una ganancia adecuada de peso para"
+        ],
+        "generated_answer": "Las metas de ganancia de peso durante la gestación, según el IMC al inicio del control prenatal, son:\n\n- IMC < 20 kg/m²: 12 a 18 kg\n- IMC 20–24,9 kg/m²: 10 a 13 kg\n- IMC 25–29,9 kg/m²: 7 a 10 kg\n- IMC > 30 kg/m²: 6 a 7 kg",
+        "ragas_metrics": {
+          "answer_relevancy": 0.8615641036351036,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 688,
+          "output_tokens": 682,
+          "total_tokens": 1370,
+          "input_cost_usd": 0.00344,
+          "output_cost_usd": 0.01023,
+          "total_cost_usd": 0.01367
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Ganancia de peso gestacional como factor de riesgo para ...\nURL: http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0187-53372014000300007\nContent: Cada vez hay más mujeres con sobrepeso u obesidad que se embarazan, e igualmente se ha incrementado el número de mujeres con enfermedades crónicas, que resulta en una salud deteriorada en los años posteriores al embarazo.4 La tendencia actual es determinar la ganancia de peso ideal de acuerdo con el índice de masa corporal (IMC) previo a la gestación. El riesgo de hipertensión en el embarazo (preeclampsia), cesárea y macrosomía se relacionan directamente con el aumento del IMC.1,2 La diabetes gestacional está presente en pacientes con obesidad gestacional en un 5.2% comparado con las mujeres con peso normal.3\n\nTitle: Aumento de Peso en el Embarazo - American Pregnancy Association\nURL: https://americanpregnancy.org/es/healthy-pregnancy/pregnancy-health-wellness-healthy-pregnancy/pregnancy-weight-gain/\nContent: Las mujeres que comienzan el embarazo con sobrepeso, con un IMC de 25-29, deben ganar entre 15-25 libras a menos que su doctor diga diferente. Las mujeres\n\nTitle: Calculadora del peso ideal en el embarazo - Natalben\nURL: https://www.natalben.com/calculadora-peso-en-el-embarazo\nContent: # Calculadora del peso ideal en el embarazo *\"*Es importante mantenernos en un peso adecuado y más si cabe durante el embarazo, por eso debemos tener una **dieta saludable y hacer ejercicio suave a moderado** durante el mismo\", asegura la doctora Onica Armijo Suárez, ginecóloga especialista en Fertilidad del Hospital La Paz (Madrid). Según este índice previo al embarazo y en gestaciones de un solo bebé, calcularemos **la ganancia ideal de peso**. * El **tercer trimestre** es el de mayor ganancia de peso del bebé, notarás, a partir de la semana 28/30 de embarazo cómo crece tu barriga más rápidamente y empiezas a notar las molestias típicas que provoca el crecimiento del bebé. ### Cómo calcular tu peso ideal embarazada"
+        ],
+        "generated_answer": "Las metas de ganancia de peso en el embarazo se fijan según el IMC previo a la gestación (principio recomendado en la literatura actual), y varían para gestaciones múltiples o condiciones médicas particulares.\n\nPara embarazos de un solo bebé, las metas totales más usadas (IOM/APA) son:\n- IMC bajo (<18.5): 12.5–18 kg (28–40 lb)\n- IMC normal (18.5–24.9): 11.5–16 kg (25–35 lb)\n- Sobrepeso (25–29.9): 7–11.5 kg (15–25 lb)\n- Obesidad (≥30): 5–9 kg (11–20 lb)\n\nPuntos clave:\n- La recomendación se basa en el IMC previo al embarazo y debe individualizarse con el profesional de salud.\n- En el tercer trimestre suele producirse la mayor parte del aumento ponderal del bebé, por lo que el ritmo de ganancia puede ser mayor en esa etapa.\n\nFuentes:\n- SciELO: tendencia a ajustar la ganancia según IMC previo a la gestación.\n- American Pregnancy Association: rangos de ganancia por categoría de IMC (p. ej., 15–25 lb para sobrepeso).\n- Natalben: cálculo de ganancia ideal según IMC y nota sobre mayor ganancia en el tercer trimestre.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9535063086417259,
+          "faithfulness": 0.6666666666666666
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 537,
+          "output_tokens": 1325,
+          "total_tokens": 1862,
+          "input_cost_usd": 0.002685,
+          "output_cost_usd": 0.019875,
+          "total_cost_usd": 0.02256
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.01367,
+        "mcp_cost_usd": 0.02256,
+        "total_cost_usd": 0.03623,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "Se recomienda registrar el Índice de Masa Corporal (IMC) de la gestante en la cita de inscripción al control prenatal (alrededor de la semana 10) y con base en este establecer las metas de ganancia de peso durante la gestación de acuerdo a los siguientes parámetros: • IMC < 20 kg/m2 = ganancia entre 12 a 18 Kg • IMC entre 20 y 24,9 kg/m2 = ganancia entre 10 a 13 Kg • IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg",
+      "question_id": 9
+    },
+    {
+      "execution_id": "cf92dab3-5171-43fe-933c-a77fa3b409d9",
+      "timestamp": "2025-11-12T14:47:53.791592",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "naive",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Cuáles son las metas de ganancia de peso en las mujeres gestantes?",
+      "rag_results": {
+        "retrieved_context": [
+          "RECOMENDACIONES CLÍNICAS Se recomienda registrar el Índice de Masa Corporal (IMC) de la gestante en la cita de inscripción al control prenatal (alrededor de la semana 10) y con base en este establecer las metas de ganancia de peso durante la gestación de acuerdo a los siguientes parámetros: • IMC < 20 kg/m2 = ganancia entre 12 a 18 Kg • IMC entre 20 y 24,9 kg/m2 = ganancia entre 10 a 13 Kg • IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg Se",
+          "• IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg Se recomienda debido a su alto riesgo de parto pretérmino, remitir a la gestante con IMC <20 kg/m2 a un plan de manejo nutricional especifico. Si la inscripción al control prenatal es tardía (después de la semana 16 – 18) se recomienda registrar el IMC pregestacional y con base en este establecer las metas de ganancia de peso durante la gestación. Se recomienda realizar seguimiento de la ganancia de",
+          "18 kg, de acuerdo a las características individuales de la gestante . En un estudio de cohorte de 7.589 gestantes, se encontró que el patrón de ganancia de peso no se relacionó con el parto pretérmino, contrario al IMC pregestacional <19,8 kg/m2(OR=1,98; IC 95%= 1,33-2,98) y a la ganancia inadecuada de peso en el tercer trimestre de la gestación (siendo esta menor a 0,34, 0,35, 0,30 y 0,30 kg/semana para mujeres con bajo peso, peso normal, sobrepeso y obesidad, respectivamente) (OR=1,91; IC 95%=",
+          "metas de ganancia de peso durante la gestación. Se recomienda realizar seguimiento de la ganancia de peso en cada uno de los controles prenatales; la gestante con inadecuada ganancia a las 28 semanas debe continuar su control a cargo de un equipo multidisciplinario especializado. No se recomiendan orientaciones nutricionales encaminadas a bajar de peso durante la gestación.",
+          "LA GESTACIÓN? El estado nutricional se relaciona directamente con resultados adversos del embarazo. Las gestantes con bajo peso tienen un riesgo mayor de fetos con restricción de crecimiento intrauterino y recién nacido de bajo peso, mientras que las gestantes con sobrepeso u obesidad tienen un riesgo mayor de diabetes, hipertensión y macrosomía fetal. Uno de los objetivos durante el control prenatal es ofrecer educación y asesoría a las mujeres que garanticen una ganancia adecuada de peso para"
+        ],
+        "generated_answer": "Metas de ganancia de peso durante la gestación según IMC al inicio del control prenatal:\n\n- IMC < 20 kg/m²: 12 a 18 kg\n- IMC 20–24,9 kg/m²: 10 a 13 kg\n- IMC 25–29,9 kg/m²: 7 a 10 kg\n- IMC ≥ 30 kg/m²: 6 a 7 kg\n\nNotas complementarias:\n- Si la inscripción es tardía (después de 16–18 semanas), usar el IMC pregestacional para fijar estas metas.\n- Las gestantes con IMC < 20 kg/m² deben ser remitidas a manejo nutricional específico por mayor riesgo de parto pretérmino.\n- Se debe hacer seguimiento de la ganancia de peso en cada control prenatal y no se recomienda bajar de peso durante la gestación.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.8670501948863553,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 688,
+          "output_tokens": 707,
+          "total_tokens": 1395,
+          "input_cost_usd": 0.00344,
+          "output_cost_usd": 0.010605,
+          "total_cost_usd": 0.014045
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. Recomendaciones internacionales estándar sobre la ganancia de peso ...\n   URL: https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112021000200306\n   Summary: Métodos: estudio observacional retrospectivo sobre una muestrade4361mujerescuyo parto tuvo lugarenel Hospital UniversitariodelaRibera entre el 1 enerode2010 y el 31dediciembrede2015.Lasgestantesse clasificaronenfuncióndelaGPG segúnlasrecomendaciones internacionales: incrementodepesoadecuado, superior e inferior.\n\n2. Manejo del aumento de peso durante el embarazo - MedlinePlus\n   URL: https://medlineplus.gov/spanish/ency/patientinstructions/000603.htm\n   Summary: Lasmujeresdepesonormal que tienen gemelos necesitan aumentarde37 a 54 lb (16.5 a 24.5 kg). Una dieta equilibrada y ricaennutrientes, junto con el ejercicio, eslabase para un embarazo saludable.\n\n3. Aumento de peso durante el embarazo: ¿qué es saludable?\n   URL: https://www.mayoclinic.org/es/healthy-lifestyle/pregnancy-week-by-week/in-depth/pregnancy-weight-gain/art-20044360\n   Summary: Un aumentodepesosaludable durante el embarazo dependedevarios factores. Entre ellos, se incluye el índicedemasa corporal, también llamado IMC, que tenías antes del embarazo. El IMC es una medidadelamasa corporal basadaenelpesoylaestatura.Engeneral, un IMC más alto significa que una persona tiene más grasa corporal.\n"
+        ],
+        "generated_answer": "Las metas de ganancia de peso en el embarazo dependen principalmente del IMC previo a la gestación y de si es embarazo único o múltiple. Las recomendaciones internacionales (IOM/NAM) citadas por fuentes clínicas coinciden en los siguientes rangos para embarazos únicos:\n\n- IMC bajo (<18.5): 12.5 a 18 kg (28 a 40 lb)\n- IMC normal (18.5–24.9): 11.5 a 16 kg (25 a 35 lb)\n- Sobrepeso (25.0–29.9): 7 a 11.5 kg (15 a 25 lb)\n- Obesidad (≥30): 5 a 9 kg (11 a 20 lb)\n\nPara embarazos gemelares, las metas son mayores. Por ejemplo, en mujeres con IMC normal se recomienda una ganancia total de 16.5 a 24.5 kg (37 a 54 lb). En otros rangos de IMC las metas suelen ser algo menores, pero siguen siendo superiores a las de embarazos únicos.\n\nPatrón de ganancia:\n- Primer trimestre: suele ser modesto (≈0.5 a 2 kg en total).\n- Segundo y tercer trimestre: la mayor parte del aumento ocurre aquí; el ritmo semanal recomendado es mayor en IMC bajo y menor en IMC elevado.\n\nEstas metas deben individualizarse según tu situación clínica (p. ej., talla, edad, náuseas intensas, diabetes, hipertensión o embarazo múltiple).\n\nFuentes:\n- Mayo Clinic: “Aumento de peso durante el embarazo: ¿qué es saludable?” (mayoclinic.org)\n- MedlinePlus: “Manejo del aumento de peso durante el embarazo” (medlineplus.gov)\n- Revisión en SciELO sobre recomendaciones internacionales estándar (scielo.isciii.es)",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.4666666666666667
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 416,
+          "output_tokens": 2061,
+          "total_tokens": 2477,
+          "input_cost_usd": 0.00208,
+          "output_cost_usd": 0.030915,
+          "total_cost_usd": 0.032995
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.014045,
+        "mcp_cost_usd": 0.032995,
+        "total_cost_usd": 0.04704,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "Se recomienda registrar el Índice de Masa Corporal (IMC) de la gestante en la cita de inscripción al control prenatal (alrededor de la semana 10) y con base en este establecer las metas de ganancia de peso durante la gestación de acuerdo a los siguientes parámetros: • IMC < 20 kg/m2 = ganancia entre 12 a 18 Kg • IMC entre 20 y 24,9 kg/m2 = ganancia entre 10 a 13 Kg • IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg",
+      "question_id": 9
+    },
+    {
+      "execution_id": "745b9a36-b56e-4ef8-9e63-66e20c4f68ac",
+      "timestamp": "2025-11-12T14:50:04.953554",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "hybrid",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Cuáles son las metas de ganancia de peso en las mujeres gestantes?",
+      "rag_results": {
+        "retrieved_context": [
+          "RECOMENDACIONES CLÍNICAS Se recomienda registrar el Índice de Masa Corporal (IMC) de la gestante en la cita de inscripción al control prenatal (alrededor de la semana 10) y con base en este establecer las metas de ganancia de peso durante la gestación de acuerdo a los siguientes parámetros: • IMC < 20 kg/m2 = ganancia entre 12 a 18 Kg • IMC entre 20 y 24,9 kg/m2 = ganancia entre 10 a 13 Kg • IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg Se",
+          "• IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg Se recomienda debido a su alto riesgo de parto pretérmino, remitir a la gestante con IMC <20 kg/m2 a un plan de manejo nutricional especifico. Si la inscripción al control prenatal es tardía (después de la semana 16 – 18) se recomienda registrar el IMC pregestacional y con base en este establecer las metas de ganancia de peso durante la gestación. Se recomienda realizar seguimiento de la ganancia de",
+          "18 kg, de acuerdo a las características individuales de la gestante . En un estudio de cohorte de 7.589 gestantes, se encontró que el patrón de ganancia de peso no se relacionó con el parto pretérmino, contrario al IMC pregestacional <19,8 kg/m2(OR=1,98; IC 95%= 1,33-2,98) y a la ganancia inadecuada de peso en el tercer trimestre de la gestación (siendo esta menor a 0,34, 0,35, 0,30 y 0,30 kg/semana para mujeres con bajo peso, peso normal, sobrepeso y obesidad, respectivamente) (OR=1,91; IC 95%=",
+          "metas de ganancia de peso durante la gestación. Se recomienda realizar seguimiento de la ganancia de peso en cada uno de los controles prenatales; la gestante con inadecuada ganancia a las 28 semanas debe continuar su control a cargo de un equipo multidisciplinario especializado. No se recomiendan orientaciones nutricionales encaminadas a bajar de peso durante la gestación.",
+          "LA GESTACIÓN? El estado nutricional se relaciona directamente con resultados adversos del embarazo. Las gestantes con bajo peso tienen un riesgo mayor de fetos con restricción de crecimiento intrauterino y recién nacido de bajo peso, mientras que las gestantes con sobrepeso u obesidad tienen un riesgo mayor de diabetes, hipertensión y macrosomía fetal. Uno de los objetivos durante el control prenatal es ofrecer educación y asesoría a las mujeres que garanticen una ganancia adecuada de peso para"
+        ],
+        "generated_answer": "Metas de ganancia de peso durante la gestación (según IMC al inicio del control prenatal, aprox. semana 10; si el control es tardío, use el IMC pregestacional):\n\n- IMC < 20 kg/m²: ganar 12–18 kg\n- IMC 20–24,9 kg/m²: ganar 10–13 kg\n- IMC 25–29,9 kg/m²: ganar 7–10 kg\n- IMC ≥ 30 kg/m²: ganar 6–7 kg\n\nPuntos adicionales del seguimiento:\n- En el 3er trimestre, se considera inadecuada una ganancia <0,34; 0,35; 0,30 y 0,30 kg/semana para bajo peso, peso normal, sobrepeso y obesidad, respectivamente.\n- IMC <20 kg/m²: remitir a plan nutricional específico por mayor riesgo de parto pretérmino.\n- Vigilar la ganancia en cada control; no se recomienda buscar pérdida de peso durante el embarazo.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9612253124844862,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 688,
+          "output_tokens": 874,
+          "total_tokens": 1562,
+          "input_cost_usd": 0.00344,
+          "output_cost_usd": 0.01311,
+          "total_cost_usd": 0.01655
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Ganancia de peso gestacional como factor de riesgo para ...\nURL: http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0187-53372014000300007\nContent: Cada vez hay más mujeres con sobrepeso u obesidad que se embarazan, e igualmente se ha incrementado el número de mujeres con enfermedades crónicas, que resulta en una salud deteriorada en los años posteriores al embarazo.4 La tendencia actual es determinar la ganancia de peso ideal de acuerdo con el índice de masa corporal (IMC) previo a la gestación. El riesgo de hipertensión en el embarazo (preeclampsia), cesárea y macrosomía se relacionan directamente con el aumento del IMC.1,2 La diabetes gestacional está presente en pacientes con obesidad gestacional en un 5.2% comparado con las mujeres con peso normal.3\n\nTitle: Aumento de Peso en el Embarazo - American Pregnancy Association\nURL: https://americanpregnancy.org/es/healthy-pregnancy/pregnancy-health-wellness-healthy-pregnancy/pregnancy-weight-gain/\nContent: Las mujeres que comienzan el embarazo con sobrepeso, con un IMC de 25-29, deben ganar entre 15-25 libras a menos que su doctor diga diferente. Las mujeres\n\nTitle: Calculadora del peso ideal en el embarazo - Natalben\nURL: https://www.natalben.com/calculadora-peso-en-el-embarazo\nContent: # Calculadora del peso ideal en el embarazo *\"*Es importante mantenernos en un peso adecuado y más si cabe durante el embarazo, por eso debemos tener una **dieta saludable y hacer ejercicio suave a moderado** durante el mismo\", asegura la doctora Onica Armijo Suárez, ginecóloga especialista en Fertilidad del Hospital La Paz (Madrid). Según este índice previo al embarazo y en gestaciones de un solo bebé, calcularemos **la ganancia ideal de peso**. * El **tercer trimestre** es el de mayor ganancia de peso del bebé, notarás, a partir de la semana 28/30 de embarazo cómo crece tu barriga más rápidamente y empiezas a notar las molestias típicas que provoca el crecimiento del bebé. ### Cómo calcular tu peso ideal embarazada"
+        ],
+        "generated_answer": "Las metas de ganancia de peso en el embarazo se ajustan principalmente al IMC previo a la gestación y al número de fetos. Para gestaciones únicas, las guías internacionales (p. ej., IOM/CDC) recomiendan:\n\n- Bajo peso (IMC <18.5): 12.5–18 kg (28–40 lb)\n- Normopeso (IMC 18.5–24.9): 11.5–16 kg (25–35 lb)\n- Sobrepeso (IMC 25–29.9): 7–11.5 kg (15–25 lb)\n- Obesidad (IMC ≥30): 5–9 kg (11–20 lb)\n\nPara embarazo gemelar, las metas son mayores:\n- Normopeso: 16.8–24.5 kg (37–54 lb)\n- Sobrepeso: 14.1–22.7 kg (31–50 lb)\n- Obesidad: 11.4–19.1 kg (25–42 lb)\n\nNotas:\n- Estas metas concuerdan con la orientación de que las ganancias se individualizan según el IMC previo (como señalan las fuentes consultadas) y, por ejemplo, en mujeres con sobrepeso se recomienda ~15–25 lb.\n- Deben ajustarse según la evolución clínica, talla, edad materna, comorbilidades y recomendaciones del profesional tratante.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9534836464014204,
+          "faithfulness": 0.38461538461538464
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 537,
+          "output_tokens": 1459,
+          "total_tokens": 1996,
+          "input_cost_usd": 0.002685,
+          "output_cost_usd": 0.021885,
+          "total_cost_usd": 0.02457
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.01655,
+        "mcp_cost_usd": 0.02457,
+        "total_cost_usd": 0.04112,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "Se recomienda registrar el Índice de Masa Corporal (IMC) de la gestante en la cita de inscripción al control prenatal (alrededor de la semana 10) y con base en este establecer las metas de ganancia de peso durante la gestación de acuerdo a los siguientes parámetros: • IMC < 20 kg/m2 = ganancia entre 12 a 18 Kg • IMC entre 20 y 24,9 kg/m2 = ganancia entre 10 a 13 Kg • IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg",
+      "question_id": 9
+    },
+    {
+      "execution_id": "9a3cb068-a15f-4de0-951a-a2bf64e13d9e",
+      "timestamp": "2025-11-12T14:51:59.972048",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "hybrid",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Cuáles son las metas de ganancia de peso en las mujeres gestantes?",
+      "rag_results": {
+        "retrieved_context": [
+          "RECOMENDACIONES CLÍNICAS Se recomienda registrar el Índice de Masa Corporal (IMC) de la gestante en la cita de inscripción al control prenatal (alrededor de la semana 10) y con base en este establecer las metas de ganancia de peso durante la gestación de acuerdo a los siguientes parámetros: • IMC < 20 kg/m2 = ganancia entre 12 a 18 Kg • IMC entre 20 y 24,9 kg/m2 = ganancia entre 10 a 13 Kg • IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg Se",
+          "• IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg Se recomienda debido a su alto riesgo de parto pretérmino, remitir a la gestante con IMC <20 kg/m2 a un plan de manejo nutricional especifico. Si la inscripción al control prenatal es tardía (después de la semana 16 – 18) se recomienda registrar el IMC pregestacional y con base en este establecer las metas de ganancia de peso durante la gestación. Se recomienda realizar seguimiento de la ganancia de",
+          "18 kg, de acuerdo a las características individuales de la gestante . En un estudio de cohorte de 7.589 gestantes, se encontró que el patrón de ganancia de peso no se relacionó con el parto pretérmino, contrario al IMC pregestacional <19,8 kg/m2(OR=1,98; IC 95%= 1,33-2,98) y a la ganancia inadecuada de peso en el tercer trimestre de la gestación (siendo esta menor a 0,34, 0,35, 0,30 y 0,30 kg/semana para mujeres con bajo peso, peso normal, sobrepeso y obesidad, respectivamente) (OR=1,91; IC 95%=",
+          "metas de ganancia de peso durante la gestación. Se recomienda realizar seguimiento de la ganancia de peso en cada uno de los controles prenatales; la gestante con inadecuada ganancia a las 28 semanas debe continuar su control a cargo de un equipo multidisciplinario especializado. No se recomiendan orientaciones nutricionales encaminadas a bajar de peso durante la gestación.",
+          "LA GESTACIÓN? El estado nutricional se relaciona directamente con resultados adversos del embarazo. Las gestantes con bajo peso tienen un riesgo mayor de fetos con restricción de crecimiento intrauterino y recién nacido de bajo peso, mientras que las gestantes con sobrepeso u obesidad tienen un riesgo mayor de diabetes, hipertensión y macrosomía fetal. Uno de los objetivos durante el control prenatal es ofrecer educación y asesoría a las mujeres que garanticen una ganancia adecuada de peso para"
+        ],
+        "generated_answer": "Las metas de ganancia de peso durante la gestación, según el IMC al inicio del control prenatal, son:\n\n- IMC < 20 kg/m2: 12 a 18 kg\n- IMC 20–24,9 kg/m2: 10 a 13 kg\n- IMC 25–29,9 kg/m2: 7 a 10 kg\n- IMC ≥ 30 kg/m2: 6 a 7 kg\n\nSi la inscripción es tardía, usar el IMC pregestacional para definir estas metas. Se recomienda seguimiento en cada control prenatal.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9529227148052395,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 688,
+          "output_tokens": 582,
+          "total_tokens": 1270,
+          "input_cost_usd": 0.00344,
+          "output_cost_usd": 0.00873,
+          "total_cost_usd": 0.01217
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. Recomendaciones internacionales estándar sobre la ganancia de peso ...\n   URL: https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112021000200306\n   Summary: Métodos: estudio observacional retrospectivo sobre una muestrade4361mujerescuyo parto tuvo lugarenel Hospital UniversitariodelaRibera entre el 1 enerode2010 y el 31dediciembrede2015.Lasgestantesse clasificaronenfuncióndelaGPG segúnlasrecomendaciones internacionales: incrementodepesoadecuado, superior e inferior.\n\n2. Manejo del aumento de peso durante el embarazo - MedlinePlus\n   URL: https://medlineplus.gov/spanish/ency/patientinstructions/000603.htm\n   Summary: Lasmujeresdepesonormal que tienen gemelos necesitan aumentarde37 a 54 lb (16.5 a 24.5 kg). Una dieta equilibrada y ricaennutrientes, junto con el ejercicio, eslabase para un embarazo saludable.\n\n3. Tabla de recomendaciones de ganancia de peso para gestantes según ...\n   URL: https://repositorio.ins.gob.pe/bitstreams/f6227d68-2bc1-4c4a-8c18-bba4085fc5da/download\n   Summary: Comparar elpesoganado con los val res que aparecenenel recuadro y clasificarlagan uando elpesoes menor que el valor mínimo. AD lla < a 1,57 m .: monitorearenlos valores mínimosdelatabla recomendada según su IMC pregestacionLasgestantesadolescentes, monitorear según evaluacióndesu talla, edad y potencialdecrecimiento.\n"
+        ],
+        "generated_answer": "Las metas de ganancia de peso en el embarazo dependen del IMC pregestacional. Las recomendaciones internacionales estándar indican aproximadamente:\n\n- Bajo peso (IMC < 18.5): 12.5–18 kg (28–40 lb).\n- Normopeso (IMC 18.5–24.9): 11.5–16 kg (25–35 lb).\n- Sobrepeso (IMC 25–29.9): 7–11.5 kg (15–25 lb).\n- Obesidad (IMC ≥ 30): 5–9 kg (11–20 lb).\n  Fuente: recomendaciones internacionales resumidas en SciELO (scielo.isciii.es).\n\nConsideraciones especiales:\n- Embarazo gemelar: en mujeres con IMC normal, la meta es 16.5–24.5 kg (37–54 lb). Otras categorías de IMC con gestación múltiple requieren metas específicas individualizadas. Fuente: MedlinePlus (medlineplus.gov).\n- Adolescentes y mujeres de talla baja (<1.57 m): se recomienda monitorear de cerca y tender a los valores mínimos apropiados para su IMC pregestacional. Fuente: Instituto Nacional de Salud, Perú (repositorio.ins.gob.pe).\n\nEstas metas ayudan a clasificar la ganancia como adecuada, inferior o superior a lo recomendado y deben individualizarse según el control prenatal y condiciones clínicas.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9562075283957722,
+          "faithfulness": 0.5384615384615384
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 428,
+          "output_tokens": 1583,
+          "total_tokens": 2011,
+          "input_cost_usd": 0.00214,
+          "output_cost_usd": 0.023745,
+          "total_cost_usd": 0.025885
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.01217,
+        "mcp_cost_usd": 0.025885,
+        "total_cost_usd": 0.038055,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "Se recomienda registrar el Índice de Masa Corporal (IMC) de la gestante en la cita de inscripción al control prenatal (alrededor de la semana 10) y con base en este establecer las metas de ganancia de peso durante la gestación de acuerdo a los siguientes parámetros: • IMC < 20 kg/m2 = ganancia entre 12 a 18 Kg • IMC entre 20 y 24,9 kg/m2 = ganancia entre 10 a 13 Kg • IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg",
+      "question_id": 9
+    },
+    {
+      "execution_id": "fd6b5580-7add-45b9-8fb6-13d6ab08c53f",
+      "timestamp": "2025-11-12T14:54:30.791879",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "naive",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Cuáles son las metas de ganancia de peso en las mujeres gestantes?",
+      "rag_results": {
+        "retrieved_context": [
+          "RECOMENDACIONES CLÍNICAS Se recomienda registrar el Índice de Masa Corporal (IMC) de la gestante en la cita de inscripción al control prenatal (alrededor de la semana 10) y con base en este establecer las metas de ganancia de peso durante la gestación de acuerdo a los siguientes parámetros: • IMC < 20 kg/m2 = ganancia entre 12 a 18 Kg • IMC entre 20 y 24,9 kg/m2 = ganancia entre 10 a 13 Kg • IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg Se",
+          "• IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg Se recomienda debido a su alto riesgo de parto pretérmino, remitir a la gestante con IMC <20 kg/m2 a un plan de manejo nutricional especifico. Si la inscripción al control prenatal es tardía (después de la semana 16 – 18) se recomienda registrar el IMC pregestacional y con base en este establecer las metas de ganancia de peso durante la gestación. Se recomienda realizar seguimiento de la ganancia de",
+          "18 kg, de acuerdo a las características individuales de la gestante . En un estudio de cohorte de 7.589 gestantes, se encontró que el patrón de ganancia de peso no se relacionó con el parto pretérmino, contrario al IMC pregestacional <19,8 kg/m2(OR=1,98; IC 95%= 1,33-2,98) y a la ganancia inadecuada de peso en el tercer trimestre de la gestación (siendo esta menor a 0,34, 0,35, 0,30 y 0,30 kg/semana para mujeres con bajo peso, peso normal, sobrepeso y obesidad, respectivamente) (OR=1,91; IC 95%=",
+          "metas de ganancia de peso durante la gestación. Se recomienda realizar seguimiento de la ganancia de peso en cada uno de los controles prenatales; la gestante con inadecuada ganancia a las 28 semanas debe continuar su control a cargo de un equipo multidisciplinario especializado. No se recomiendan orientaciones nutricionales encaminadas a bajar de peso durante la gestación.",
+          "LA GESTACIÓN? El estado nutricional se relaciona directamente con resultados adversos del embarazo. Las gestantes con bajo peso tienen un riesgo mayor de fetos con restricción de crecimiento intrauterino y recién nacido de bajo peso, mientras que las gestantes con sobrepeso u obesidad tienen un riesgo mayor de diabetes, hipertensión y macrosomía fetal. Uno de los objetivos durante el control prenatal es ofrecer educación y asesoría a las mujeres que garanticen una ganancia adecuada de peso para"
+        ],
+        "generated_answer": "Según el contexto proporcionado, las metas de ganancia de peso para las mujeres gestantes se establecen con base en su Índice de Masa Corporal (IMC) registrado en la primera cita de control prenatal (alrededor de la semana 10).\n\nLas metas son las siguientes:\n\n*   **IMC < 20 kg/m²:** La ganancia de peso recomendada es **entre 12 a 18 kg**.\n*   **IMC entre 20 y 24,9 kg/m²:** La ganancia de peso recomendada es **entre 10 a 13 kg**.\n*   **IMC entre 25 y 29,9 kg/m²:** La ganancia de peso recomendada es **entre 7 a 10 kg**.\n*   **IMC > 30 kg/m²:** La ganancia de peso recomendada es **entre 6 a 7 kg**.\n\n**Información adicional importante del texto:**\n\n*   Si la inscripción al control prenatal es tardía (después de la semana 16-18), se debe utilizar el IMC pregestacional para establecer estas metas.\n*   No se recomiendan orientaciones nutricionales con el objetivo de bajar de peso durante la gestación.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9760957289322195,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 711,
+          "output_tokens": 1107,
+          "total_tokens": 1818,
+          "input_cost_usd": 0.00088875,
+          "output_cost_usd": 0.005535,
+          "total_cost_usd": 0.00642375
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Ganancia de peso gestacional como factor de riesgo para ...\nURL: http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0187-53372014000300007\nContent: Cada vez hay más mujeres con sobrepeso u obesidad que se embarazan, e igualmente se ha incrementado el número de mujeres con enfermedades crónicas, que resulta en una salud deteriorada en los años posteriores al embarazo.4 La tendencia actual es determinar la ganancia de peso ideal de acuerdo con el índice de masa corporal (IMC) previo a la gestación. El riesgo de hipertensión en el embarazo (preeclampsia), cesárea y macrosomía se relacionan directamente con el aumento del IMC.1,2 La diabetes gestacional está presente en pacientes con obesidad gestacional en un 5.2% comparado con las mujeres con peso normal.3\n\nTitle: Aumento de Peso en el Embarazo - American Pregnancy Association\nURL: https://americanpregnancy.org/es/healthy-pregnancy/pregnancy-health-wellness-healthy-pregnancy/pregnancy-weight-gain/\nContent: Las mujeres que comienzan el embarazo con sobrepeso, con un IMC de 25-29, deben ganar entre 15-25 libras a menos que su doctor diga diferente. Las mujeres\n\nTitle: Calculadora del peso ideal en el embarazo - Natalben\nURL: https://www.natalben.com/calculadora-peso-en-el-embarazo\nContent: # Calculadora del peso ideal en el embarazo *\"*Es importante mantenernos en un peso adecuado y más si cabe durante el embarazo, por eso debemos tener una **dieta saludable y hacer ejercicio suave a moderado** durante el mismo\", asegura la doctora Onica Armijo Suárez, ginecóloga especialista en Fertilidad del Hospital La Paz (Madrid). Según este índice previo al embarazo y en gestaciones de un solo bebé, calcularemos **la ganancia ideal de peso**. * El **tercer trimestre** es el de mayor ganancia de peso del bebé, notarás, a partir de la semana 28/30 de embarazo cómo crece tu barriga más rápidamente y empiezas a notar las molestias típicas que provoca el crecimiento del bebé. ### Cómo calcular tu peso ideal embarazada"
+        ],
+        "generated_answer": "Según la información de los resultados de búsqueda, las metas de ganancia de peso en las mujeres gestantes se determinan principalmente en función de su Índice de Masa Corporal (IMC) antes del embarazo.\n\nAquí están los puntos clave:\n\n*   **Basado en el IMC Previo:** La tendencia actual es determinar la ganancia de peso ideal de acuerdo con el IMC que la mujer tenía antes de la gestación.\n*   **Meta para Mujeres con Sobrepeso:** Para las mujeres que comienzan el embarazo con sobrepeso (un IMC entre 25 y 29), la meta de ganancia de peso recomendada es de **15 a 25 libras (aproximadamente 6.8 a 11.3 kg)**.\n*   **Importancia del Control de Peso:** Es crucial controlar el aumento de peso, ya que un IMC elevado y una ganancia excesiva se asocian con un mayor riesgo de complicaciones como la hipertensión en el embarazo (preeclampsia), cesárea, macrosomía (bebés muy grandes) y diabetes gestacional.\n*   **Recomendación Médica:** Siempre se debe seguir la recomendación de un médico, ya que las metas pueden ajustarse a las condiciones individuales de cada mujer.\n\nEn resumen, la ganancia de peso ideal no es una cifra única para todas, sino que se personaliza según el peso inicial de la madre, y es fundamental para prevenir riesgos tanto para la madre como para el bebé.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9594946287122589,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 552,
+          "output_tokens": 1569,
+          "total_tokens": 2121,
+          "input_cost_usd": 0.00069,
+          "output_cost_usd": 0.007845,
+          "total_cost_usd": 0.008535
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00642375,
+        "mcp_cost_usd": 0.008535,
+        "total_cost_usd": 0.01495875,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "Se recomienda registrar el Índice de Masa Corporal (IMC) de la gestante en la cita de inscripción al control prenatal (alrededor de la semana 10) y con base en este establecer las metas de ganancia de peso durante la gestación de acuerdo a los siguientes parámetros: • IMC < 20 kg/m2 = ganancia entre 12 a 18 Kg • IMC entre 20 y 24,9 kg/m2 = ganancia entre 10 a 13 Kg • IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg",
+      "question_id": 9
+    },
+    {
+      "execution_id": "4f3a5aad-c3a6-4264-b0ab-a08f8f6665fd",
+      "timestamp": "2025-11-12T14:56:03.408038",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "naive",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Cuáles son las metas de ganancia de peso en las mujeres gestantes?",
+      "rag_results": {
+        "retrieved_context": [
+          "RECOMENDACIONES CLÍNICAS Se recomienda registrar el Índice de Masa Corporal (IMC) de la gestante en la cita de inscripción al control prenatal (alrededor de la semana 10) y con base en este establecer las metas de ganancia de peso durante la gestación de acuerdo a los siguientes parámetros: • IMC < 20 kg/m2 = ganancia entre 12 a 18 Kg • IMC entre 20 y 24,9 kg/m2 = ganancia entre 10 a 13 Kg • IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg Se",
+          "• IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg Se recomienda debido a su alto riesgo de parto pretérmino, remitir a la gestante con IMC <20 kg/m2 a un plan de manejo nutricional especifico. Si la inscripción al control prenatal es tardía (después de la semana 16 – 18) se recomienda registrar el IMC pregestacional y con base en este establecer las metas de ganancia de peso durante la gestación. Se recomienda realizar seguimiento de la ganancia de",
+          "18 kg, de acuerdo a las características individuales de la gestante . En un estudio de cohorte de 7.589 gestantes, se encontró que el patrón de ganancia de peso no se relacionó con el parto pretérmino, contrario al IMC pregestacional <19,8 kg/m2(OR=1,98; IC 95%= 1,33-2,98) y a la ganancia inadecuada de peso en el tercer trimestre de la gestación (siendo esta menor a 0,34, 0,35, 0,30 y 0,30 kg/semana para mujeres con bajo peso, peso normal, sobrepeso y obesidad, respectivamente) (OR=1,91; IC 95%=",
+          "metas de ganancia de peso durante la gestación. Se recomienda realizar seguimiento de la ganancia de peso en cada uno de los controles prenatales; la gestante con inadecuada ganancia a las 28 semanas debe continuar su control a cargo de un equipo multidisciplinario especializado. No se recomiendan orientaciones nutricionales encaminadas a bajar de peso durante la gestación.",
+          "LA GESTACIÓN? El estado nutricional se relaciona directamente con resultados adversos del embarazo. Las gestantes con bajo peso tienen un riesgo mayor de fetos con restricción de crecimiento intrauterino y recién nacido de bajo peso, mientras que las gestantes con sobrepeso u obesidad tienen un riesgo mayor de diabetes, hipertensión y macrosomía fetal. Uno de los objetivos durante el control prenatal es ofrecer educación y asesoría a las mujeres que garanticen una ganancia adecuada de peso para"
+        ],
+        "generated_answer": "Según el contexto proporcionado, las metas de ganancia de peso en las mujeres gestantes se establecen con base en su Índice de Masa Corporal (IMC) al inicio del control prenatal (alrededor de la semana 10).\n\nLas metas recomendadas son las siguientes:\n\n*   **IMC < 20 kg/m² (Bajo peso):** La ganancia de peso debe ser entre **12 a 18 Kg**.\n*   **IMC entre 20 y 24,9 kg/m² (Peso normal):** La ganancia de peso debe ser entre **10 a 13 Kg**.\n*   **IMC entre 25 y 29,9 kg/m² (Sobrepeso):** La ganancia de peso debe ser entre **7 a 10 Kg**.\n*   **IMC > 30 kg/m² (Obesidad):** La ganancia de peso debe ser entre **6 a 7 Kg**.\n\n**Información adicional importante del texto:**\n\n*   Si el control prenatal inicia de forma tardía (después de la semana 16-18), se debe usar el IMC pregestacional para definir estas metas.\n*   El seguimiento de la ganancia de peso se debe realizar en cada control prenatal.\n*   No se recomienda dar orientaciones nutricionales para bajar de peso durante la gestación.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9668236172698138,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 711,
+          "output_tokens": 1539,
+          "total_tokens": 2250,
+          "input_cost_usd": 0.00088875,
+          "output_cost_usd": 0.007695,
+          "total_cost_usd": 0.00858375
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. Recomendaciones internacionales estándar sobre la ganancia de peso ...\n   URL: https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112021000200306\n   Summary: Métodos: estudio observacional retrospectivo sobre una muestrade4361mujerescuyo parto tuvo lugarenel Hospital UniversitariodelaRibera entre el 1 enerode2010 y el 31dediciembrede2015.Lasgestantesse clasificaronenfuncióndelaGPG segúnlasrecomendaciones internacionales: incrementodepesoadecuado, superior e inferior.\n\n2. Manejo del aumento de peso durante el embarazo - MedlinePlus\n   URL: https://medlineplus.gov/spanish/ency/patientinstructions/000603.htm\n   Summary: Lasmujeresdepesonormal que tienen gemelos necesitan aumentarde37 a 54 lb (16.5 a 24.5 kg). Una dieta equilibrada y ricaennutrientes, junto con el ejercicio, eslabase para un embarazo saludable.\n\n3. Aumento de peso durante el embarazo: ¿qué es saludable?\n   URL: https://www.mayoclinic.org/es/healthy-lifestyle/pregnancy-week-by-week/in-depth/pregnancy-weight-gain/art-20044360\n   Summary: Un aumentodepesosaludable durante el embarazo dependedevarios factores. Entre ellos, se incluye el índicedemasa corporal, también llamado IMC, que tenías antes del embarazo. El IMC es una medidadelamasa corporal basadaenelpesoylaestatura.Engeneral, un IMC más alto significa que una persona tiene más grasa corporal.\n"
+        ],
+        "generated_answer": "Según la información de los resultados de búsqueda, las metas de ganancia de peso en las mujeres gestantes se determinan principalmente por su estado de salud y su Índice de Masa Corporal (IMC) antes del embarazo.\n\nAquí están los puntos clave:\n\n*   **Dependencia del IMC pre-embarazo**: Un aumento de peso saludable durante el embarazo depende de varios factores, siendo el principal el Índice de Masa Corporal (IMC) que la mujer tenía antes de quedar embarazada. El IMC es una medida que relaciona el peso y la estatura.\n*   **Recomendaciones internacionales**: Existen recomendaciones internacionales que clasifican la ganancia de peso gestacional como adecuada, superior o inferior.\n*   **Ejemplo específico para embarazos múltiples**: Para las mujeres que tenían un peso normal antes del embarazo y esperan gemelos, la meta de ganancia de peso recomendada es de 16.5 a 24.5 kg (37 a 54 libras).\n\nEn resumen, no existe una única meta de ganancia de peso para todas las embarazadas. La cantidad recomendada es personalizada y se basa fundamentalmente en el IMC previo a la gestación.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.6666666666666666
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 454,
+          "output_tokens": 1334,
+          "total_tokens": 1788,
+          "input_cost_usd": 0.0005675,
+          "output_cost_usd": 0.00667,
+          "total_cost_usd": 0.0072375
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00858375,
+        "mcp_cost_usd": 0.0072375,
+        "total_cost_usd": 0.01582125,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "Se recomienda registrar el Índice de Masa Corporal (IMC) de la gestante en la cita de inscripción al control prenatal (alrededor de la semana 10) y con base en este establecer las metas de ganancia de peso durante la gestación de acuerdo a los siguientes parámetros: • IMC < 20 kg/m2 = ganancia entre 12 a 18 Kg • IMC entre 20 y 24,9 kg/m2 = ganancia entre 10 a 13 Kg • IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg",
+      "question_id": 9
+    },
+    {
+      "execution_id": "0fb4a1f5-33be-43aa-8fb5-68d93a387e3d",
+      "timestamp": "2025-11-12T14:57:51.607615",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "hybrid",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿Cuáles son las metas de ganancia de peso en las mujeres gestantes?",
+      "rag_results": {
+        "retrieved_context": [
+          "RECOMENDACIONES CLÍNICAS Se recomienda registrar el Índice de Masa Corporal (IMC) de la gestante en la cita de inscripción al control prenatal (alrededor de la semana 10) y con base en este establecer las metas de ganancia de peso durante la gestación de acuerdo a los siguientes parámetros: • IMC < 20 kg/m2 = ganancia entre 12 a 18 Kg • IMC entre 20 y 24,9 kg/m2 = ganancia entre 10 a 13 Kg • IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg Se",
+          "• IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg Se recomienda debido a su alto riesgo de parto pretérmino, remitir a la gestante con IMC <20 kg/m2 a un plan de manejo nutricional especifico. Si la inscripción al control prenatal es tardía (después de la semana 16 – 18) se recomienda registrar el IMC pregestacional y con base en este establecer las metas de ganancia de peso durante la gestación. Se recomienda realizar seguimiento de la ganancia de",
+          "18 kg, de acuerdo a las características individuales de la gestante . En un estudio de cohorte de 7.589 gestantes, se encontró que el patrón de ganancia de peso no se relacionó con el parto pretérmino, contrario al IMC pregestacional <19,8 kg/m2(OR=1,98; IC 95%= 1,33-2,98) y a la ganancia inadecuada de peso en el tercer trimestre de la gestación (siendo esta menor a 0,34, 0,35, 0,30 y 0,30 kg/semana para mujeres con bajo peso, peso normal, sobrepeso y obesidad, respectivamente) (OR=1,91; IC 95%=",
+          "metas de ganancia de peso durante la gestación. Se recomienda realizar seguimiento de la ganancia de peso en cada uno de los controles prenatales; la gestante con inadecuada ganancia a las 28 semanas debe continuar su control a cargo de un equipo multidisciplinario especializado. No se recomiendan orientaciones nutricionales encaminadas a bajar de peso durante la gestación.",
+          "LA GESTACIÓN? El estado nutricional se relaciona directamente con resultados adversos del embarazo. Las gestantes con bajo peso tienen un riesgo mayor de fetos con restricción de crecimiento intrauterino y recién nacido de bajo peso, mientras que las gestantes con sobrepeso u obesidad tienen un riesgo mayor de diabetes, hipertensión y macrosomía fetal. Uno de los objetivos durante el control prenatal es ofrecer educación y asesoría a las mujeres que garanticen una ganancia adecuada de peso para"
+        ],
+        "generated_answer": "Según el contexto proporcionado, las metas de ganancia de peso para las mujeres gestantes se establecen con base en su Índice de Masa Corporal (IMC) registrado en la primera cita de control prenatal (alrededor de la semana 10).\n\nLas metas son las siguientes:\n\n*   **IMC < 20 kg/m²:** La ganancia de peso recomendada es **entre 12 a 18 kg**.\n*   **IMC entre 20 y 24,9 kg/m²:** La ganancia de peso recomendada es **entre 10 a 13 kg**.\n*   **IMC entre 25 y 29,9 kg/m²:** La ganancia de peso recomendada es **entre 7 a 10 kg**.\n*   **IMC > 30 kg/m²:** La ganancia de peso recomendada es **entre 6 a 7 kg**.\n\n**Información adicional importante del texto:**\n\n*   Si la inscripción al control prenatal es tardía (después de la semana 16-18), se debe utilizar el IMC pregestacional para establecer estas metas.\n*   No se recomiendan orientaciones nutricionales con el objetivo de bajar de peso durante la gestación.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9760638656389952,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 711,
+          "output_tokens": 1107,
+          "total_tokens": 1818,
+          "input_cost_usd": 0.00088875,
+          "output_cost_usd": 0.005535,
+          "total_cost_usd": 0.00642375
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: Ganancia de peso gestacional como factor de riesgo para ...\nURL: http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0187-53372014000300007\nContent: Cada vez hay más mujeres con sobrepeso u obesidad que se embarazan, e igualmente se ha incrementado el número de mujeres con enfermedades crónicas, que resulta en una salud deteriorada en los años posteriores al embarazo.4 La tendencia actual es determinar la ganancia de peso ideal de acuerdo con el índice de masa corporal (IMC) previo a la gestación. El riesgo de hipertensión en el embarazo (preeclampsia), cesárea y macrosomía se relacionan directamente con el aumento del IMC.1,2 La diabetes gestacional está presente en pacientes con obesidad gestacional en un 5.2% comparado con las mujeres con peso normal.3\n\nTitle: Aumento de Peso en el Embarazo - American Pregnancy Association\nURL: https://americanpregnancy.org/es/healthy-pregnancy/pregnancy-health-wellness-healthy-pregnancy/pregnancy-weight-gain/\nContent: Las mujeres que comienzan el embarazo con sobrepeso, con un IMC de 25-29, deben ganar entre 15-25 libras a menos que su doctor diga diferente. Las mujeres\n\nTitle: Calculadora del peso ideal en el embarazo - Natalben\nURL: https://www.natalben.com/calculadora-peso-en-el-embarazo\nContent: # Calculadora del peso ideal en el embarazo *\"*Es importante mantenernos en un peso adecuado y más si cabe durante el embarazo, por eso debemos tener una **dieta saludable y hacer ejercicio suave a moderado** durante el mismo\", asegura la doctora Onica Armijo Suárez, ginecóloga especialista en Fertilidad del Hospital La Paz (Madrid). Según este índice previo al embarazo y en gestaciones de un solo bebé, calcularemos **la ganancia ideal de peso**. * El **tercer trimestre** es el de mayor ganancia de peso del bebé, notarás, a partir de la semana 28/30 de embarazo cómo crece tu barriga más rápidamente y empiezas a notar las molestias típicas que provoca el crecimiento del bebé. ### Cómo calcular tu peso ideal embarazada"
+        ],
+        "generated_answer": "Según la información de los resultados de búsqueda, las metas de ganancia de peso en las mujeres gestantes se determinan principalmente en función del Índice de Masa Corporal (IMC) que tenían antes del embarazo.\n\nAquí están los puntos clave:\n\n*   **Basado en el IMC pre-gestacional:** La tendencia actual es determinar la ganancia de peso ideal de acuerdo con el IMC de la mujer antes de quedar embarazada.\n*   **Ejemplo específico:** Para las mujeres que comienzan el embarazo con sobrepeso (un IMC de 25 a 29), la meta de ganancia de peso recomendada es de **15 a 25 libras (aproximadamente 6.8 a 11.3 kg)**.\n*   **Importancia de la meta:** Mantenerse dentro del rango de peso recomendado es crucial, ya que una ganancia de peso inadecuada se relaciona con un mayor riesgo de complicaciones como hipertensión en el embarazo (preeclampsia), diabetes gestacional, necesidad de cesárea y macrosomía (un bebé con peso excesivo al nacer).\n*   **Consulta médica:** Es fundamental que cada mujer consulte a su médico para recibir una recomendación personalizada, ya que las cifras pueden variar según las circunstancias individuales.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9594802035762249,
+          "faithfulness": 0.5714285714285714
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 552,
+          "output_tokens": 1317,
+          "total_tokens": 1869,
+          "input_cost_usd": 0.00069,
+          "output_cost_usd": 0.006585,
+          "total_cost_usd": 0.007275
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00642375,
+        "mcp_cost_usd": 0.007275,
+        "total_cost_usd": 0.01369875,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "Se recomienda registrar el Índice de Masa Corporal (IMC) de la gestante en la cita de inscripción al control prenatal (alrededor de la semana 10) y con base en este establecer las metas de ganancia de peso durante la gestación de acuerdo a los siguientes parámetros: • IMC < 20 kg/m2 = ganancia entre 12 a 18 Kg • IMC entre 20 y 24,9 kg/m2 = ganancia entre 10 a 13 Kg • IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg",
+      "question_id": 9
+    },
+    {
+      "execution_id": "8b9e4d21-6f0b-4705-9129-94ce7b292785",
+      "timestamp": "2025-11-12T14:59:18.857436",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "hybrid",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿Cuáles son las metas de ganancia de peso en las mujeres gestantes?",
+      "rag_results": {
+        "retrieved_context": [
+          "RECOMENDACIONES CLÍNICAS Se recomienda registrar el Índice de Masa Corporal (IMC) de la gestante en la cita de inscripción al control prenatal (alrededor de la semana 10) y con base en este establecer las metas de ganancia de peso durante la gestación de acuerdo a los siguientes parámetros: • IMC < 20 kg/m2 = ganancia entre 12 a 18 Kg • IMC entre 20 y 24,9 kg/m2 = ganancia entre 10 a 13 Kg • IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg Se",
+          "• IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg Se recomienda debido a su alto riesgo de parto pretérmino, remitir a la gestante con IMC <20 kg/m2 a un plan de manejo nutricional especifico. Si la inscripción al control prenatal es tardía (después de la semana 16 – 18) se recomienda registrar el IMC pregestacional y con base en este establecer las metas de ganancia de peso durante la gestación. Se recomienda realizar seguimiento de la ganancia de",
+          "18 kg, de acuerdo a las características individuales de la gestante . En un estudio de cohorte de 7.589 gestantes, se encontró que el patrón de ganancia de peso no se relacionó con el parto pretérmino, contrario al IMC pregestacional <19,8 kg/m2(OR=1,98; IC 95%= 1,33-2,98) y a la ganancia inadecuada de peso en el tercer trimestre de la gestación (siendo esta menor a 0,34, 0,35, 0,30 y 0,30 kg/semana para mujeres con bajo peso, peso normal, sobrepeso y obesidad, respectivamente) (OR=1,91; IC 95%=",
+          "metas de ganancia de peso durante la gestación. Se recomienda realizar seguimiento de la ganancia de peso en cada uno de los controles prenatales; la gestante con inadecuada ganancia a las 28 semanas debe continuar su control a cargo de un equipo multidisciplinario especializado. No se recomiendan orientaciones nutricionales encaminadas a bajar de peso durante la gestación.",
+          "LA GESTACIÓN? El estado nutricional se relaciona directamente con resultados adversos del embarazo. Las gestantes con bajo peso tienen un riesgo mayor de fetos con restricción de crecimiento intrauterino y recién nacido de bajo peso, mientras que las gestantes con sobrepeso u obesidad tienen un riesgo mayor de diabetes, hipertensión y macrosomía fetal. Uno de los objetivos durante el control prenatal es ofrecer educación y asesoría a las mujeres que garanticen una ganancia adecuada de peso para"
+        ],
+        "generated_answer": "Según el contexto proporcionado, las metas de ganancia de peso para las mujeres gestantes se establecen con base en su Índice de Masa Corporal (IMC) registrado en la primera cita de control prenatal (alrededor de la semana 10).\n\nLas metas son las siguientes:\n\n*   **IMC < 20 kg/m² (Bajo peso):** La ganancia de peso recomendada es de **12 a 18 kg**.\n*   **IMC entre 20 y 24,9 kg/m² (Peso normal):** La ganancia de peso recomendada es de **10 a 13 kg**.\n*   **IMC entre 25 y 29,9 kg/m² (Sobrepeso):** La ganancia de peso recomendada es de **7 a 10 kg**.\n*   **IMC > 30 kg/m² (Obesidad):** La ganancia de peso recomendada es de **6 a 7 kg**.\n\nAdemás, el texto especifica que si la inscripción al control prenatal es tardía (después de la semana 16-18), se debe utilizar el IMC pregestacional para establecer estas mismas metas. Es importante destacar que **no se recomienda bajar de peso** durante la gestación.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9760638656389952,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 711,
+          "output_tokens": 1162,
+          "total_tokens": 1873,
+          "input_cost_usd": 0.00088875,
+          "output_cost_usd": 0.00581,
+          "total_cost_usd": 0.00669875
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. Recomendaciones internacionales estándar sobre la ganancia de peso ...\n   URL: https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112021000200306\n   Summary: Métodos: estudio observacional retrospectivo sobre una muestrade4361mujerescuyo parto tuvo lugarenel Hospital UniversitariodelaRibera entre el 1 enerode2010 y el 31dediciembrede2015.Lasgestantesse clasificaronenfuncióndelaGPG segúnlasrecomendaciones internacionales: incrementodepesoadecuado, superior e inferior.\n\n2. Manejo del aumento de peso durante el embarazo - MedlinePlus\n   URL: https://medlineplus.gov/spanish/ency/patientinstructions/000603.htm\n   Summary: Lasmujeresdepesonormal que tienen gemelos necesitan aumentarde37 a 54 lb (16.5 a 24.5 kg). Una dieta equilibrada y ricaennutrientes, junto con el ejercicio, eslabase para un embarazo saludable.\n\n3. Aumento de peso durante el embarazo: ¿qué es saludable?\n   URL: https://www.mayoclinic.org/es/healthy-lifestyle/pregnancy-week-by-week/in-depth/pregnancy-weight-gain/art-20044360\n   Summary: Un aumentodepesosaludable durante el embarazo dependedevarios factores. Entre ellos, se incluye el índicedemasa corporal, también llamado IMC, que tenías antes del embarazo. El IMC es una medidadelamasa corporal basadaenelpesoylaestatura.Engeneral, un IMC más alto significa que una persona tiene más grasa corporal.\n"
+        ],
+        "generated_answer": "Según la información de los resultados de búsqueda, las metas de ganancia de peso durante el embarazo dependen de varios factores, principalmente del **Índice de Masa Corporal (IMC)** que la mujer tenía antes de la gestación.\n\nAquí se resumen los puntos clave:\n\n*   **Factor principal:** El aumento de peso saludable se determina en función del IMC previo al embarazo, que es una medida basada en el peso y la estatura de la persona.\n*   **Recomendaciones internacionales:** Existen estándares internacionales que clasifican la ganancia de peso gestacional como adecuada, superior o inferior.\n*   **Ejemplo específico:** Para mujeres con un peso normal que están embarazadas de gemelos, la meta de ganancia de peso recomendada es de **16.5 a 24.5 kg (37 a 54 libras)**.\n\nEn resumen, no existe una única meta de ganancia de peso para todas las mujeres embarazadas; esta se personaliza según el IMC previo al embarazo y otros factores como un embarazo múltiple.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 454,
+          "output_tokens": 1246,
+          "total_tokens": 1700,
+          "input_cost_usd": 0.0005675,
+          "output_cost_usd": 0.00623,
+          "total_cost_usd": 0.0067975
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00669875,
+        "mcp_cost_usd": 0.0067975,
+        "total_cost_usd": 0.01349625,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "Se recomienda registrar el Índice de Masa Corporal (IMC) de la gestante en la cita de inscripción al control prenatal (alrededor de la semana 10) y con base en este establecer las metas de ganancia de peso durante la gestación de acuerdo a los siguientes parámetros: • IMC < 20 kg/m2 = ganancia entre 12 a 18 Kg • IMC entre 20 y 24,9 kg/m2 = ganancia entre 10 a 13 Kg • IMC entre 25 y 29,9 kg/m2 = ganancia entre 7 a 10 Kg • IMC > 30 kg/m2 = ganancia entre 6 a 7 Kg",
+      "question_id": 9
+    }
+  ]
+}

@@ -1,7 +1,8 @@
 """
 Main workflow orchestration using LangGraph.
-Implements parallel RAG and MCP branches that merge into a single unified JSON output.
-Both pipelines execute independently using LangGraph's native parallelism.
+Implements sequential RAG and MCP execution that merges into a single unified JSON output.
+RAG pipeline executes first, then MCP pipeline executes after RAG completes.
+Sequential execution prevents parallel deadlocks while maintaining all functionality.
 """
 
 from datetime import datetime
@@ -43,13 +44,15 @@ class UnifiedWorkflowState(TypedDict):
 
 class UnifiedWorkflow:
     """
-    Unified workflow with parallel RAG and MCP branches using LangGraph's native parallelism.
+    Unified workflow with sequential RAG and MCP execution using LangGraph.
 
-    Architecture:
-        START fans out to both branches:
-        - RAG branch: retrieve_rag -> generate_rag -> evaluate_rag
-        - MCP branch: search_mcp -> generate_mcp -> evaluate_mcp
-        Both branches execute concurrently and converge at END.
+    Architecture (Sequential):
+        START → RAG chain → MCP chain → END
+        - RAG branch: retrieve_rag → generate_rag → evaluate_rag
+        - Then MCP branch: search_mcp → generate_mcp → evaluate_mcp
+        
+    Sequential execution prevents LangGraph parallel deadlocks while maintaining
+    all functionality. RAG executes first, then MCP executes after RAG completes.
     """
 
     def __init__(self):
@@ -62,14 +65,17 @@ class UnifiedWorkflow:
 
         def retrieve_rag_context(state: UnifiedWorkflowState) -> Dict[str, Any]:
             """RAG Branch Step 1: Retrieve context from RAG."""
+            print(f"  → [RAG] Retrieving context...")
             if state["rag_type"] == "naive":
                 contexts = self.naive_rag.retrieve(state["prompt"])
             else:
                 contexts = self.hybrid_rag.retrieve(state["prompt"])
+            print(f"  ✓ [RAG] Retrieved {len(contexts)} contexts")
             return {"rag_context": contexts}
 
         def generate_rag_answer(state: UnifiedWorkflowState) -> Dict[str, Any]:
             """RAG Branch Step 2: Generate answer using RAG context."""
+            print(f"  → [RAG] Generating answer with {state['model_name']}...")
             llm = create_llm(state["model_name"])
             rag_text = "\n".join(state["rag_context"])
             prompt_template = f"""Based on the following context, answer the question: {state["prompt"]}
@@ -81,6 +87,7 @@ Please provide a comprehensive answer based on the available information."""
             
             # Capture response and cost information
             response, cost = llm.invoke(prompt_template)
+            print(f"  ✓ [RAG] Generated answer ({len(response.content)} chars)")
             
             return {
                 "rag_answer": response.content,
@@ -89,15 +96,19 @@ Please provide a comprehensive answer based on the available information."""
 
         def evaluate_rag(state: UnifiedWorkflowState) -> Dict[str, Any]:
             """RAG Branch Step 3: Evaluate RAG answer with RAGAS."""
+            print(f"  → [RAG] Evaluating with RAGAS...")
             metrics = self.evaluator.evaluate_response(
                 question=state["prompt"],
                 answer=state["rag_answer"],
                 contexts=state["rag_context"]
             )
+            print(f"  ✓ [RAG] RAGAS complete: relevancy={metrics.get('answer_relevancy', 0):.2f}, faithfulness={metrics.get('faithfulness', 0):.2f}")
             return {"rag_metrics": metrics}
 
         async def search_mcp_context(state: UnifiedWorkflowState) -> Dict[str, Any]:
             """MCP Branch Step 1: Search using MCP tool with configurable limits."""
+            import asyncio
+            
             search_tool = await get_search_tool_for_server(state["mcp_server"])
             if not search_tool:
                 return {"mcp_context": f"No search tool available for {state['mcp_server']}"}
@@ -109,7 +120,11 @@ Please provide a comprehensive answer based on the available information."""
                 
                 print(f"🔍 MCP Search ({state['mcp_server']}): {search_params}")
                 
-                result = await search_tool.ainvoke(search_params)
+                # Add 45 second timeout for MCP search
+                result = await asyncio.wait_for(
+                    search_tool.ainvoke(search_params),
+                    timeout=45.0
+                )
                 result_str = str(result)
                 
                 # Check if truncation is needed
@@ -119,11 +134,16 @@ Please provide a comprehensive answer based on the available information."""
                     print(f"⚠️  Context truncated from {len(result_str)} to {len(final_context)} chars")
                 
                 return {"mcp_context": final_context}
+            except asyncio.TimeoutError:
+                print(f"⚠️  MCP search timed out after 45 seconds")
+                return {"mcp_context": f"Search timed out for {state['mcp_server']}"}
             except Exception as e:
+                print(f"❌ MCP search error: {str(e)}")
                 return {"mcp_context": f"Error executing search: {str(e)}"}
 
         def generate_mcp_answer(state: UnifiedWorkflowState) -> Dict[str, Any]:
             """MCP Branch Step 2: Generate answer using MCP context."""
+            print(f"  → [MCP] Generating answer with {state['model_name']}...")
             llm = create_llm(state["model_name"])
             prompt_template = f"""Based on the following web search results, answer the question: {state["prompt"]}
 
@@ -134,6 +154,7 @@ Please provide a comprehensive answer based on the available information."""
             
             # Capture response and cost information
             response, cost = llm.invoke(prompt_template)
+            print(f"  ✓ [MCP] Generated answer ({len(response.content)} chars)")
             
             return {
                 "mcp_answer": response.content,
@@ -142,12 +163,14 @@ Please provide a comprehensive answer based on the available information."""
 
         def evaluate_mcp(state: UnifiedWorkflowState) -> Dict[str, Any]:
             """MCP Branch Step 3: Evaluate MCP answer with RAGAS."""
+            print(f"  → [MCP] Evaluating with RAGAS...")
             contexts = [state["mcp_context"]] if state["mcp_context"] else []
             metrics = self.evaluator.evaluate_response(
                 question=state["prompt"],
                 answer=state["mcp_answer"],
                 contexts=contexts
             )
+            print(f"  ✓ [MCP] RAGAS complete: relevancy={metrics.get('answer_relevancy', 0):.2f}, faithfulness={metrics.get('faithfulness', 0):.2f}")
             return {"mcp_metrics": metrics}
 
         workflow = StateGraph(UnifiedWorkflowState)
@@ -160,13 +183,14 @@ Please provide a comprehensive answer based on the available information."""
         workflow.add_node("generate_mcp", generate_mcp_answer)
         workflow.add_node("evaluate_mcp", evaluate_mcp)
 
+        # Sequential execution: RAG first, then MCP
+        # START → RAG chain → MCP chain → END
         workflow.add_edge(START, "retrieve_rag")
-        workflow.add_edge(START, "search_mcp")
-
         workflow.add_edge("retrieve_rag", "generate_rag")
         workflow.add_edge("generate_rag", "evaluate_rag")
-        workflow.add_edge("evaluate_rag", END)
-
+        
+        # After RAG completes, start MCP chain
+        workflow.add_edge("evaluate_rag", "search_mcp")
         workflow.add_edge("search_mcp", "generate_mcp")
         workflow.add_edge("generate_mcp", "evaluate_mcp")
         workflow.add_edge("evaluate_mcp", END)
@@ -181,7 +205,7 @@ async def execute_unified_workflow(
     mcp_server: str
 ) -> Dict[str, Any]:
     """
-    Execute the unified workflow with parallel RAG and MCP branches.
+    Execute the unified workflow with sequential RAG and MCP execution.
 
     Args:
         prompt: User question
@@ -191,6 +215,9 @@ async def execute_unified_workflow(
 
     Returns:
         Single unified JSON with both RAG and MCP results
+        
+    Execution order: RAG chain completes first, then MCP chain executes.
+    This sequential approach prevents LangGraph deadlocks.
     """
     unified_workflow = UnifiedWorkflow()
     workflow = unified_workflow.create_workflow()

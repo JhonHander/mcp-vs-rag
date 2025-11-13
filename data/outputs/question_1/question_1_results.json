@@ -1,0 +1,531 @@
+{
+  "question_id": 1,
+  "question": "¿En qué momento y quien debe reevaluar el riesgo clínico de una paciente con embarazo de curso normal?",
+  "ground_truth": "El Ginecobstetra en la semana 28 - 30 y semana 34 – 36.",
+  "total_configurations": 8,
+  "timestamp": "2025-11-12T12:01:29.418925",
+  "configurations": [
+    {
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gpt-5",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "naive",
+      "mcp_server": "duckduckgo"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "tavily"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "rag_type": "hybrid",
+      "mcp_server": "duckduckgo"
+    }
+  ],
+  "results": [
+    {
+      "execution_id": "52eae12f-0d8d-4efc-a155-5c1802add75a",
+      "timestamp": "2025-11-12T11:48:47.829091",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "naive",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿En qué momento y quien debe reevaluar el riesgo clínico de una paciente con embarazo de curso normal?",
+      "rag_results": {
+        "retrieved_context": [
+          "materno–perinatal. La participación rutinaria de gineco-obstetras (GO) en la atención de mujeres con un embarazo de curso normal no está recomendada para la mejoría de los resultados perinatales. Sin embargo, se recomienda la valoración del GO en la semana 28 - 30 y semana 34 – 36 para una nueva valoración del riesgo. Se recomienda que el control prenatal sea proporcionado por un pequeño grupo de profesionales con los que la gestante se sienta cómoda.",
+          "considerarse como indicadores de alarma de patologías médicas que pueden complicar el embarazo? 30. ¿Cuáles son las pruebas recomendadas para la identificación de gestantes con riesgo de desarrollar patologías que complican el embarazo? 1. ¿QUÉ PROFESIONAL DEBE LLEVAR A CABO EL CONTROL PRENATAL? En embarazos de bajo riesgo o de curso normal, el control prenatal puede ser realizado por profesionales en enfermería capacitados o por médicos generales, con la condición que se garantice la",
+          "n remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control. Se recomienda en cada trimestre del embarazo evaluar en la gestante, el estrés materno crónico, la ansiedad, los trastornos del sueño y el pobre apoyo de la red social. Se recomienda identificar la depresión materna mediante un tamizaje trimestral durante el control prenatal porque las mujeres con depresión durante el embarazo tienen mayor riesgo de parto pretérmino y bajo peso al nacer.",
+          "psicosociales como determinantes de desenlaces adversos del embarazo, por lo que se recomienda que estos sean evaluados rutinariamente durante el control prenatal. No existe consenso de la manera como se deben explorar estos factores de riesgo, si de manera informal o mediante una escala de clasificación de riesgo. Las escalas de riesgo permitirían clasificar a las gestantes durante el control prenatal en categorías de bajo riesgo (las cuales deben desarrollar su control prenatal con enfermera o",
+          "ción de violencia se realice por medio de una entrevista en todas las consultas de control prenatal. RECOMENDACIONES CLÍNICAS Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial. Si se identifica riesgo se deben remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control."
+        ],
+        "generated_answer": "En embarazos de curso normal, la reevaluación del riesgo clínico debe hacerla un gineco‑obstetra en dos momentos: entre las semanas 28–30 y nuevamente entre las semanas 34–36 de gestación.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9700128642385317,
+          "faithfulness": 0.75
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 547,
+          "output_tokens": 378,
+          "total_tokens": 925,
+          "input_cost_usd": 0.002735,
+          "output_cost_usd": 0.00567,
+          "total_cost_usd": 0.008405
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: [PDF] Norma técnica para la detección temprana de las alteraciones del ...\nURL: https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/VS/PP/norma-tecnica-para-la-deteccion-temprana-embarazo.pdf\nContent: El médico deberá realizar el control prenatal a las gestantes cuyas características y condiciones indiquen una gestación de alto riesgo. Los últimos 2 controles\n\nTitle: [PDF] ATENCIÓN PREGESTACIONAL - Gob MX\nURL: https://www.gob.mx/cms/uploads/attachment/file/458238/web_Atenci_n_Pregestacional_final.pdf\nContent: Embarazo de alto riesgo: es en el cual se tiene la probabilidad de que pueda presentar alguna complicación en la salud de la madre, el feto o la persona recién.\n\nTitle: Evaluación de la paciente obstétrica - Ginecología y obstetricia\nURL: https://www.msdmanuals.com/es/professional/ginecolog%C3%ADa-y-obstetricia/abordaje-de-la-mujer-embarazada-y-atenci%C3%B3n-prenatal/evaluaci%C3%B3n-de-la-paciente-obst%C3%A9trica\nContent: La primera visita prenatal de rutina debe realizarse a las 6 y las 8 semanas de edad gestacional. Las consultas de seguimiento por lo general se"
+        ],
+        "generated_answer": "- Momento: el riesgo clínico debe reevaluarse en cada control prenatal a lo largo de todo el embarazo, no solo al inicio.\n- Quién: el profesional que realiza el control prenatal. En un embarazo de curso normal puede hacerlo enfermería; sin embargo, según la Norma técnica del Ministerio de Salud de Colombia, los últimos dos controles deben ser realizados por médico y, si en cualquier momento aparecen factores de alto riesgo, la gestante debe pasar a control médico de alto riesgo.\n\nFuentes: Norma técnica para la detección temprana de las alteraciones del embarazo (MinSalud Colombia) y pautas generales de control prenatal (MSD Manual).",
+        "ragas_metrics": {
+          "answer_relevancy": 0.8153916541251076,
+          "faithfulness": 0.2857142857142857
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 365,
+          "output_tokens": 1359,
+          "total_tokens": 1724,
+          "input_cost_usd": 0.001825,
+          "output_cost_usd": 0.020385,
+          "total_cost_usd": 0.02221
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.008405,
+        "mcp_cost_usd": 0.02221,
+        "total_cost_usd": 0.030615,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "El Ginecobstetra en la semana 28 - 30 y semana 34 – 36.",
+      "question_id": 1
+    },
+    {
+      "execution_id": "27dc5d44-58dc-4206-9266-e40ac7d82342",
+      "timestamp": "2025-11-12T11:49:56.109147",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "naive",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿En qué momento y quien debe reevaluar el riesgo clínico de una paciente con embarazo de curso normal?",
+      "rag_results": {
+        "retrieved_context": [
+          "materno–perinatal. La participación rutinaria de gineco-obstetras (GO) en la atención de mujeres con un embarazo de curso normal no está recomendada para la mejoría de los resultados perinatales. Sin embargo, se recomienda la valoración del GO en la semana 28 - 30 y semana 34 – 36 para una nueva valoración del riesgo. Se recomienda que el control prenatal sea proporcionado por un pequeño grupo de profesionales con los que la gestante se sienta cómoda.",
+          "considerarse como indicadores de alarma de patologías médicas que pueden complicar el embarazo? 30. ¿Cuáles son las pruebas recomendadas para la identificación de gestantes con riesgo de desarrollar patologías que complican el embarazo? 1. ¿QUÉ PROFESIONAL DEBE LLEVAR A CABO EL CONTROL PRENATAL? En embarazos de bajo riesgo o de curso normal, el control prenatal puede ser realizado por profesionales en enfermería capacitados o por médicos generales, con la condición que se garantice la",
+          "n remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control. Se recomienda en cada trimestre del embarazo evaluar en la gestante, el estrés materno crónico, la ansiedad, los trastornos del sueño y el pobre apoyo de la red social. Se recomienda identificar la depresión materna mediante un tamizaje trimestral durante el control prenatal porque las mujeres con depresión durante el embarazo tienen mayor riesgo de parto pretérmino y bajo peso al nacer.",
+          "psicosociales como determinantes de desenlaces adversos del embarazo, por lo que se recomienda que estos sean evaluados rutinariamente durante el control prenatal. No existe consenso de la manera como se deben explorar estos factores de riesgo, si de manera informal o mediante una escala de clasificación de riesgo. Las escalas de riesgo permitirían clasificar a las gestantes durante el control prenatal en categorías de bajo riesgo (las cuales deben desarrollar su control prenatal con enfermera o",
+          "ción de violencia se realice por medio de una entrevista en todas las consultas de control prenatal. RECOMENDACIONES CLÍNICAS Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial. Si se identifica riesgo se deben remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control."
+        ],
+        "generated_answer": "Entre las semanas 28–30 y nuevamente entre las 34–36 semanas, y debe realizarla el gineco‑obstetra (GO). El control rutinario puede llevarlo enfermería capacitada o un médico general, pero la reevaluación del riesgo clínico en esas ventanas corresponde al GO.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9260395037092933,
+          "faithfulness": 0.6
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 547,
+          "output_tokens": 456,
+          "total_tokens": 1003,
+          "input_cost_usd": 0.002735,
+          "output_cost_usd": 0.00684,
+          "total_cost_usd": 0.009575
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. Evaluación de la paciente obstétrica - Ginecología y obstetricia ...\n   URL: https://www.msdmanuals.com/es/professional/ginecolog%C3%ADa-y-obstetricia/abordaje-de-la-mujer-embarazada-y-atenci%C3%B3n-prenatal/evaluaci%C3%B3n-de-la-paciente-obst%C3%A9trica\n   Summary: Durante la visita inicial, los médicos deben realizarunaanamnesis completaqueincluya: Antecedentes obstétricos,conelresultadodetodos losembarazosprevios, incluidas complicaciones maternas o fetales (p. ej., diabetes gestacional, preeclampsia, malformaciones congénitas, feto muerto) Anamnesis, incluidos los antecedentes quirúrgicosypsiquiátricos Antecedentes familiares para ...\n\n2. Gestión De Riesgo y Seguridad Clínica - Síntesis de Conocimientos\n   URL: https://sintesis.med.uchile.cl/sin-categoria/13900-gestion-de-riesgo-y-seguridad-clinica\n   Summary: Conla entradaenvigenciadela Ley 20.584,queregula los derechosydeberesquetienen las personasenrelación a acciones vinculadas a su atenciónensaludel1ºdeOctubre del 2012, se difundieron por parte del MINSAL,unaseriedeprotocolosynormas sobre seguridad delpacienteycalidaddeatención.\n\n3. Valoración de riesgos en el paciente hospitalizado: una herramienta ...\n   URL: https://revistamedica.com/valoracion-riesgos-paciente-hospitalizado-seguridad-clinica/\n   Summary: Principalesriesgosenelpacientehospitalizado Durante su estancia hospitalaria, lospacientespueden presentar distintosriesgossegún su edad, diagnóstico, niveldemovilidad, estado nutricional, dependencia funcional, entre otros. Entre los eventos adversos más comunes se encuentran:\n"
+        ],
+        "generated_answer": "En un embarazo de curso normal, el riesgo clínico debe reevaluarse en cada control prenatal (desde la primera consulta y en todos los controles subsiguientes) y de inmediato ante cualquier nuevo síntoma o cambio clínico.\n\nEsta reevaluación la realiza el profesional que lleva el control en ese momento: la matrona/obstetra o el médico tratante del control prenatal. Esto se alinea con la evaluación inicial completa y la vigilancia continua recomendadas en manuales de obstetricia (p. ej., MSD Manual) y con los principios generales de seguridad clínica que exigen reevaluación periódica del riesgo.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9639932131423071,
+          "faithfulness": 0.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 494,
+          "output_tokens": 1032,
+          "total_tokens": 1526,
+          "input_cost_usd": 0.00247,
+          "output_cost_usd": 0.01548,
+          "total_cost_usd": 0.01795
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.009575,
+        "mcp_cost_usd": 0.01795,
+        "total_cost_usd": 0.027525,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "El Ginecobstetra en la semana 28 - 30 y semana 34 – 36.",
+      "question_id": 1
+    },
+    {
+      "execution_id": "84f6a9fb-4170-45da-bab1-0a217c4c2bf5",
+      "timestamp": "2025-11-12T11:50:58.081478",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "hybrid",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿En qué momento y quien debe reevaluar el riesgo clínico de una paciente con embarazo de curso normal?",
+      "rag_results": {
+        "retrieved_context": [
+          "materno–perinatal. La participación rutinaria de gineco-obstetras (GO) en la atención de mujeres con un embarazo de curso normal no está recomendada para la mejoría de los resultados perinatales. Sin embargo, se recomienda la valoración del GO en la semana 28 - 30 y semana 34 – 36 para una nueva valoración del riesgo. Se recomienda que el control prenatal sea proporcionado por un pequeño grupo de profesionales con los que la gestante se sienta cómoda.",
+          "considerarse como indicadores de alarma de patologías médicas que pueden complicar el embarazo? 30. ¿Cuáles son las pruebas recomendadas para la identificación de gestantes con riesgo de desarrollar patologías que complican el embarazo? 1. ¿QUÉ PROFESIONAL DEBE LLEVAR A CABO EL CONTROL PRENATAL? En embarazos de bajo riesgo o de curso normal, el control prenatal puede ser realizado por profesionales en enfermería capacitados o por médicos generales, con la condición que se garantice la",
+          "n remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control. Se recomienda en cada trimestre del embarazo evaluar en la gestante, el estrés materno crónico, la ansiedad, los trastornos del sueño y el pobre apoyo de la red social. Se recomienda identificar la depresión materna mediante un tamizaje trimestral durante el control prenatal porque las mujeres con depresión durante el embarazo tienen mayor riesgo de parto pretérmino y bajo peso al nacer.",
+          "psicosociales como determinantes de desenlaces adversos del embarazo, por lo que se recomienda que estos sean evaluados rutinariamente durante el control prenatal. No existe consenso de la manera como se deben explorar estos factores de riesgo, si de manera informal o mediante una escala de clasificación de riesgo. Las escalas de riesgo permitirían clasificar a las gestantes durante el control prenatal en categorías de bajo riesgo (las cuales deben desarrollar su control prenatal con enfermera o",
+          "ción de violencia se realice por medio de una entrevista en todas las consultas de control prenatal. RECOMENDACIONES CLÍNICAS Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial. Si se identifica riesgo se deben remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control."
+        ],
+        "generated_answer": "Por el gineco‑obstetra, en dos momentos específicos: entre las semanas 28–30 y nuevamente entre las semanas 34–36 de gestación.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.8847250092158153,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 547,
+          "output_tokens": 363,
+          "total_tokens": 910,
+          "input_cost_usd": 0.002735,
+          "output_cost_usd": 0.005445,
+          "total_cost_usd": 0.00818
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: [PDF] Norma técnica para la detección temprana de las alteraciones del ...\nURL: https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/VS/PP/norma-tecnica-para-la-deteccion-temprana-embarazo.pdf\nContent: El médico deberá realizar el control prenatal a las gestantes cuyas características y condiciones indiquen una gestación de alto riesgo. Los últimos 2 controles\n\nTitle: [PDF] ATENCIÓN PREGESTACIONAL - Gob MX\nURL: https://www.gob.mx/cms/uploads/attachment/file/458238/web_Atenci_n_Pregestacional_final.pdf\nContent: Embarazo de alto riesgo: es en el cual se tiene la probabilidad de que pueda presentar alguna complicación en la salud de la madre, el feto o la persona recién.\n\nTitle: Evaluación de la paciente obstétrica - Ginecología y obstetricia\nURL: https://www.msdmanuals.com/es/professional/ginecolog%C3%ADa-y-obstetricia/abordaje-de-la-mujer-embarazada-y-atenci%C3%B3n-prenatal/evaluaci%C3%B3n-de-la-paciente-obst%C3%A9trica\nContent: La primera visita prenatal de rutina debe realizarse a las 6 y las 8 semanas de edad gestacional. Las consultas de seguimiento por lo general se"
+        ],
+        "generated_answer": "- Momento: en cada control prenatal (desde la primera consulta y sucesivamente se debe reevaluar el riesgo clínico).\n- Quién: el profesional que realiza el control. En un embarazo de curso normal los controles pueden ser hechos por enfermera(o) profesional; si aparecen factores de riesgo o para los dos últimos controles del embarazo, la valoración debe hacerla el médico.\n\nFuente: Norma técnica para la detección temprana de las alteraciones del embarazo – Ministerio de Salud de Colombia.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.8163484766443246,
+          "faithfulness": 0.0
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 365,
+          "output_tokens": 1069,
+          "total_tokens": 1434,
+          "input_cost_usd": 0.001825,
+          "output_cost_usd": 0.016035,
+          "total_cost_usd": 0.01786
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00818,
+        "mcp_cost_usd": 0.01786,
+        "total_cost_usd": 0.02604,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "El Ginecobstetra en la semana 28 - 30 y semana 34 – 36.",
+      "question_id": 1
+    },
+    {
+      "execution_id": "e76b7825-2a2a-4fce-a854-059370ebc440",
+      "timestamp": "2025-11-12T11:52:42.494579",
+      "configuration": {
+        "model": "gpt-5",
+        "rag_type": "hybrid",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿En qué momento y quien debe reevaluar el riesgo clínico de una paciente con embarazo de curso normal?",
+      "rag_results": {
+        "retrieved_context": [
+          "materno–perinatal. La participación rutinaria de gineco-obstetras (GO) en la atención de mujeres con un embarazo de curso normal no está recomendada para la mejoría de los resultados perinatales. Sin embargo, se recomienda la valoración del GO en la semana 28 - 30 y semana 34 – 36 para una nueva valoración del riesgo. Se recomienda que el control prenatal sea proporcionado por un pequeño grupo de profesionales con los que la gestante se sienta cómoda.",
+          "considerarse como indicadores de alarma de patologías médicas que pueden complicar el embarazo? 30. ¿Cuáles son las pruebas recomendadas para la identificación de gestantes con riesgo de desarrollar patologías que complican el embarazo? 1. ¿QUÉ PROFESIONAL DEBE LLEVAR A CABO EL CONTROL PRENATAL? En embarazos de bajo riesgo o de curso normal, el control prenatal puede ser realizado por profesionales en enfermería capacitados o por médicos generales, con la condición que se garantice la",
+          "n remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control. Se recomienda en cada trimestre del embarazo evaluar en la gestante, el estrés materno crónico, la ansiedad, los trastornos del sueño y el pobre apoyo de la red social. Se recomienda identificar la depresión materna mediante un tamizaje trimestral durante el control prenatal porque las mujeres con depresión durante el embarazo tienen mayor riesgo de parto pretérmino y bajo peso al nacer.",
+          "psicosociales como determinantes de desenlaces adversos del embarazo, por lo que se recomienda que estos sean evaluados rutinariamente durante el control prenatal. No existe consenso de la manera como se deben explorar estos factores de riesgo, si de manera informal o mediante una escala de clasificación de riesgo. Las escalas de riesgo permitirían clasificar a las gestantes durante el control prenatal en categorías de bajo riesgo (las cuales deben desarrollar su control prenatal con enfermera o",
+          "ción de violencia se realice por medio de una entrevista en todas las consultas de control prenatal. RECOMENDACIONES CLÍNICAS Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial. Si se identifica riesgo se deben remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control."
+        ],
+        "generated_answer": "En un embarazo de curso normal, el riesgo clínico debe ser reevaluado por un gineco‑obstetra en dos momentos: entre las semanas 28–30 y nuevamente entre las semanas 34–36. El control prenatal habitual puede llevarlo una enfermera capacitada o un médico general, pero esas reevaluaciones específicas las realiza el GO.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9755465869512288,
+          "faithfulness": 0.5
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 547,
+          "output_tokens": 402,
+          "total_tokens": 949,
+          "input_cost_usd": 0.002735,
+          "output_cost_usd": 0.00603,
+          "total_cost_usd": 0.008765
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. Evaluación de la paciente obstétrica - Ginecología y obstetricia ...\n   URL: https://www.msdmanuals.com/es/professional/ginecolog%C3%ADa-y-obstetricia/abordaje-de-la-mujer-embarazada-y-atenci%C3%B3n-prenatal/evaluaci%C3%B3n-de-la-paciente-obst%C3%A9trica\n   Summary: Durante la visita inicial, los médicos deben realizarunaanamnesis completaqueincluya: Antecedentes obstétricos,conelresultadodetodos losembarazosprevios, incluidas complicaciones maternas o fetales (p. ej., diabetes gestacional, preeclampsia, malformaciones congénitas, feto muerto) Anamnesis, incluidos los antecedentes quirúrgicosypsiquiátricos Antecedentes familiares para ...\n\n2. Caso clínico plan de cuidados de Enfermería de una paciente embarazada ...\n   URL: https://revistamedica.com/plan-cuidados-enfermeria-paciente-embarazada-servicio-urgencias/\n   Summary: Enfermería CasoclínicoplandecuidadosdeEnfermeríadeunapacienteembarazadaenelServiciodeUrgencias Índice [Ocultar] 1 Resumen 2 Casoclínico2.1 Antecedentes obstétrico-ginecológicos 2.2 Exploración física 3 ValoracióndeEnfermería según necesidadesdeVirginia Henderson 4 Plandecuidados 5 Discusiónyconclusiones 6 ...\n\n3. Gestión De Riesgo y Seguridad Clínica - Síntesis de Conocimientos\n   URL: https://sintesis.med.uchile.cl/sin-categoria/13900-gestion-de-riesgo-y-seguridad-clinica\n   Summary: Conla entradaenvigenciadela Ley 20.584,queregula los derechosydeberesquetienen las personasenrelación a acciones vinculadas a su atenciónensaludel1ºdeOctubre del 2012, se difundieron por parte del MINSAL,unaseriedeprotocolosynormas sobre seguridad delpacienteycalidaddeatención.\n"
+        ],
+        "generated_answer": "En un embarazo de curso normal, el riesgo clínico debe reevaluarse en cada control prenatal (desde la primera consulta y en todas las subsecuentes) y de inmediato si aparecen nuevos signos, síntomas o resultados anormales entre controles. Esta reevaluación la realiza el profesional a cargo del control prenatal: matrona/matrón u obstetra, médico general/gineco-obstetra (y, según el sistema, enfermera obstetra), derivando a alto riesgo cuando corresponda.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.928643701220818,
+          "faithfulness": 0.14285714285714285
+        },
+        "cost_details": {
+          "model": "gpt-5",
+          "input_tokens": 534,
+          "output_tokens": 1006,
+          "total_tokens": 1540,
+          "input_cost_usd": 0.00267,
+          "output_cost_usd": 0.01509,
+          "total_cost_usd": 0.01776
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.008765,
+        "mcp_cost_usd": 0.01776,
+        "total_cost_usd": 0.026525,
+        "model_used": "gpt-5"
+      },
+      "ground_truth": "El Ginecobstetra en la semana 28 - 30 y semana 34 – 36.",
+      "question_id": 1
+    },
+    {
+      "execution_id": "55b78665-9130-4918-a700-25def82bbfd7",
+      "timestamp": "2025-11-12T11:53:33.997651",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "naive",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿En qué momento y quien debe reevaluar el riesgo clínico de una paciente con embarazo de curso normal?",
+      "rag_results": {
+        "retrieved_context": [
+          "materno–perinatal. La participación rutinaria de gineco-obstetras (GO) en la atención de mujeres con un embarazo de curso normal no está recomendada para la mejoría de los resultados perinatales. Sin embargo, se recomienda la valoración del GO en la semana 28 - 30 y semana 34 – 36 para una nueva valoración del riesgo. Se recomienda que el control prenatal sea proporcionado por un pequeño grupo de profesionales con los que la gestante se sienta cómoda.",
+          "considerarse como indicadores de alarma de patologías médicas que pueden complicar el embarazo? 30. ¿Cuáles son las pruebas recomendadas para la identificación de gestantes con riesgo de desarrollar patologías que complican el embarazo? 1. ¿QUÉ PROFESIONAL DEBE LLEVAR A CABO EL CONTROL PRENATAL? En embarazos de bajo riesgo o de curso normal, el control prenatal puede ser realizado por profesionales en enfermería capacitados o por médicos generales, con la condición que se garantice la",
+          "n remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control. Se recomienda en cada trimestre del embarazo evaluar en la gestante, el estrés materno crónico, la ansiedad, los trastornos del sueño y el pobre apoyo de la red social. Se recomienda identificar la depresión materna mediante un tamizaje trimestral durante el control prenatal porque las mujeres con depresión durante el embarazo tienen mayor riesgo de parto pretérmino y bajo peso al nacer.",
+          "psicosociales como determinantes de desenlaces adversos del embarazo, por lo que se recomienda que estos sean evaluados rutinariamente durante el control prenatal. No existe consenso de la manera como se deben explorar estos factores de riesgo, si de manera informal o mediante una escala de clasificación de riesgo. Las escalas de riesgo permitirían clasificar a las gestantes durante el control prenatal en categorías de bajo riesgo (las cuales deben desarrollar su control prenatal con enfermera o",
+          "ción de violencia se realice por medio de una entrevista en todas las consultas de control prenatal. RECOMENDACIONES CLÍNICAS Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial. Si se identifica riesgo se deben remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control."
+        ],
+        "generated_answer": "Según el contexto proporcionado, la reevaluación del riesgo clínico en una paciente con embarazo de curso normal se debe realizar en los siguientes momentos y por los siguientes profesionales:\n\n1.  **Reevaluación por un especialista:**\n    *   **Quién:** Un **gineco-obstetra (GO)**.\n    *   **Momento:** Se recomienda su valoración en dos momentos específicos: en la **semana 28 - 30** y nuevamente en la **semana 34 – 36** para una nueva valoración del riesgo.\n\n2.  **Evaluación continua de otros riesgos:**\n    *   **Quién:** El profesional a cargo del control prenatal de bajo riesgo, que puede ser un **profesional en enfermería capacitado o un médico general**.\n    *   **Momento y tipo de riesgo:**\n        *   **Riesgo psicosocial:** Se valora al momento de la inscripción al control prenatal y luego en **cada trimestre**.\n        *   **Estrés, ansiedad, trastornos del sueño y apoyo social:** Se evalúan en **cada trimestre**.\n        *   **Depresión materna:** Se identifica mediante un tamizaje **trimestral**.\n        *   **Violencia:** Se debe detectar mediante una entrevista en **todas las consultas** de control prenatal.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9867340147943757,
+          "faithfulness": 0.8181818181818182
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 543,
+          "output_tokens": 1445,
+          "total_tokens": 1988,
+          "input_cost_usd": 0.00067875,
+          "output_cost_usd": 0.007225,
+          "total_cost_usd": 0.00790375
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: [PDF] Norma técnica para la detección temprana de las alteraciones del ...\nURL: https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/VS/PP/norma-tecnica-para-la-deteccion-temprana-embarazo.pdf\nContent: El médico deberá realizar el control prenatal a las gestantes cuyas características y condiciones indiquen una gestación de alto riesgo. Los últimos 2 controles\n\nTitle: [PDF] ATENCIÓN PREGESTACIONAL - Gob MX\nURL: https://www.gob.mx/cms/uploads/attachment/file/458238/web_Atenci_n_Pregestacional_final.pdf\nContent: Embarazo de alto riesgo: es en el cual se tiene la probabilidad de que pueda presentar alguna complicación en la salud de la madre, el feto o la persona recién.\n\nTitle: Evaluación de la paciente obstétrica - Ginecología y obstetricia\nURL: https://www.msdmanuals.com/es/professional/ginecolog%C3%ADa-y-obstetricia/abordaje-de-la-mujer-embarazada-y-atenci%C3%B3n-prenatal/evaluaci%C3%B3n-de-la-paciente-obst%C3%A9trica\nContent: La primera visita prenatal de rutina debe realizarse a las 6 y las 8 semanas de edad gestacional. Las consultas de seguimiento por lo general se"
+        ],
+        "generated_answer": "Según la información proporcionada en los resultados de búsqueda, se puede concluir lo siguiente:\n\n**¿Quién debe reevaluar el riesgo?**\n\n*   El profesional encargado del control prenatal. El primer resultado menciona específicamente que **\"el médico deberá realizar el control prenatal\"** a las gestantes de alto riesgo, lo que indica que el personal médico es responsable de la evaluación y seguimiento del riesgo.\n\n**¿En qué momento se debe reevaluar?**\n\n*   La reevaluación del riesgo clínico es un proceso continuo que se realiza **durante las consultas de seguimiento del control prenatal**.\n*   La evaluación inicial se realiza en la primera visita, que suele ser entre las 6 y 8 semanas de gestación. A partir de ahí, en cada una de las **\"consultas de seguimiento\"**, se debe reevaluar el estado de la paciente para detectar cualquier cambio que pueda reclasificar un embarazo de curso normal a uno de alto riesgo.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9114372593360585,
+          "faithfulness": 0.5555555555555556
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 392,
+          "output_tokens": 1297,
+          "total_tokens": 1689,
+          "input_cost_usd": 0.00049,
+          "output_cost_usd": 0.006485,
+          "total_cost_usd": 0.006975
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00790375,
+        "mcp_cost_usd": 0.006975,
+        "total_cost_usd": 0.01487875,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "El Ginecobstetra en la semana 28 - 30 y semana 34 – 36.",
+      "question_id": 1
+    },
+    {
+      "execution_id": "11cf919a-92a6-4abb-8b81-d272faa95ed7",
+      "timestamp": "2025-11-12T11:55:45.597316",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "naive",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿En qué momento y quien debe reevaluar el riesgo clínico de una paciente con embarazo de curso normal?",
+      "rag_results": {
+        "retrieved_context": [
+          "materno–perinatal. La participación rutinaria de gineco-obstetras (GO) en la atención de mujeres con un embarazo de curso normal no está recomendada para la mejoría de los resultados perinatales. Sin embargo, se recomienda la valoración del GO en la semana 28 - 30 y semana 34 – 36 para una nueva valoración del riesgo. Se recomienda que el control prenatal sea proporcionado por un pequeño grupo de profesionales con los que la gestante se sienta cómoda.",
+          "considerarse como indicadores de alarma de patologías médicas que pueden complicar el embarazo? 30. ¿Cuáles son las pruebas recomendadas para la identificación de gestantes con riesgo de desarrollar patologías que complican el embarazo? 1. ¿QUÉ PROFESIONAL DEBE LLEVAR A CABO EL CONTROL PRENATAL? En embarazos de bajo riesgo o de curso normal, el control prenatal puede ser realizado por profesionales en enfermería capacitados o por médicos generales, con la condición que se garantice la",
+          "n remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control. Se recomienda en cada trimestre del embarazo evaluar en la gestante, el estrés materno crónico, la ansiedad, los trastornos del sueño y el pobre apoyo de la red social. Se recomienda identificar la depresión materna mediante un tamizaje trimestral durante el control prenatal porque las mujeres con depresión durante el embarazo tienen mayor riesgo de parto pretérmino y bajo peso al nacer.",
+          "psicosociales como determinantes de desenlaces adversos del embarazo, por lo que se recomienda que estos sean evaluados rutinariamente durante el control prenatal. No existe consenso de la manera como se deben explorar estos factores de riesgo, si de manera informal o mediante una escala de clasificación de riesgo. Las escalas de riesgo permitirían clasificar a las gestantes durante el control prenatal en categorías de bajo riesgo (las cuales deben desarrollar su control prenatal con enfermera o",
+          "ción de violencia se realice por medio de una entrevista en todas las consultas de control prenatal. RECOMENDACIONES CLÍNICAS Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial. Si se identifica riesgo se deben remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control."
+        ],
+        "generated_answer": "Según el contexto proporcionado, la reevaluación del riesgo clínico en una paciente con embarazo de curso normal se debe realizar en los siguientes momentos y por los siguientes profesionales:\n\n1.  **Reevaluación por un especialista:**\n    *   **Quién:** Un **gineco-obstetra (GO)**.\n    *   **Momento:** Se recomienda su valoración en dos momentos específicos: en la **semana 28 - 30** y nuevamente en la **semana 34 – 36** para una nueva valoración del riesgo.\n\n2.  **Evaluación continua de otros riesgos:**\n    *   **Quién:** El profesional a cargo del control prenatal de bajo riesgo, que puede ser un **profesional en enfermería capacitado o un médico general**.\n    *   **Momento y tipo de riesgo:**\n        *   **Riesgo psicosocial:** Se valora al momento de la inscripción al control prenatal y luego en **cada trimestre**.\n        *   **Estrés, ansiedad, trastornos del sueño y apoyo social:** Se evalúan en **cada trimestre**.\n        *   **Depresión materna:** Se identifica mediante un tamizaje **trimestral**.\n        *   **Violencia:** Se debe detectar mediante una entrevista en **todas las consultas** de control prenatal.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9867340147943757,
+          "faithfulness": 0.8181818181818182
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 543,
+          "output_tokens": 1445,
+          "total_tokens": 1988,
+          "input_cost_usd": 0.00067875,
+          "output_cost_usd": 0.007225,
+          "total_cost_usd": 0.00790375
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. Evaluación de la paciente obstétrica - Ginecología y obstetricia ...\n   URL: https://www.msdmanuals.com/es/professional/ginecolog%C3%ADa-y-obstetricia/abordaje-de-la-mujer-embarazada-y-atenci%C3%B3n-prenatal/evaluaci%C3%B3n-de-la-paciente-obst%C3%A9trica\n   Summary: Durante la visita inicial, los médicos deben realizarunaanamnesis completaqueincluya: Antecedentes obstétricos,conelresultadodetodos losembarazosprevios, incluidas complicaciones maternas o fetales (p. ej., diabetes gestacional, preeclampsia, malformaciones congénitas, feto muerto) Anamnesis, incluidos los antecedentes quirúrgicosypsiquiátricos Antecedentes familiares para ...\n\n2. Gestión De Riesgo y Seguridad Clínica - Síntesis de Conocimientos\n   URL: https://sintesis.med.uchile.cl/sin-categoria/13900-gestion-de-riesgo-y-seguridad-clinica\n   Summary: Conla entradaenvigenciadela Ley 20.584,queregula los derechosydeberesquetienen las personasenrelación a acciones vinculadas a su atenciónensaludel1ºdeOctubre del 2012, se difundieron por parte del MINSAL,unaseriedeprotocolosynormas sobre seguridad delpacienteycalidaddeatención.\n\n3. Valoración de riesgos en el paciente hospitalizado: una herramienta ...\n   URL: https://revistamedica.com/valoracion-riesgos-paciente-hospitalizado-seguridad-clinica/\n   Summary: Principalesriesgosenelpacientehospitalizado Durante su estancia hospitalaria, lospacientespueden presentar distintosriesgossegún su edad, diagnóstico, niveldemovilidad, estado nutricional, dependencia funcional, entre otros. Entre los eventos adversos más comunes se encuentran:\n"
+        ],
+        "generated_answer": "Basado en la información proporcionada por los resultados de la búsqueda, la respuesta es la siguiente:\n\nLos resultados de la búsqueda se centran en la evaluación inicial del riesgo clínico. Específicamente, el manual MSD indica que **durante la visita inicial, los médicos** deben realizar una anamnesis completa para evaluar los antecedentes y posibles riesgos.\n\nLa información proporcionada **no especifica en qué momento o quién debe reevaluar** el riesgo clínico a lo largo de un embarazo que se considera de curso normal. Los textos se enfocan en la primera evaluación o en la gestión de riesgos en un contexto más general (pacientes hospitalizados o marcos legales), sin detallar el seguimiento y la reevaluación periódica en la atención prenatal de rutina.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 1.0
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 517,
+          "output_tokens": 892,
+          "total_tokens": 1409,
+          "input_cost_usd": 0.00064625,
+          "output_cost_usd": 0.00446,
+          "total_cost_usd": 0.00510625
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00790375,
+        "mcp_cost_usd": 0.00510625,
+        "total_cost_usd": 0.01301,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "El Ginecobstetra en la semana 28 - 30 y semana 34 – 36.",
+      "question_id": 1
+    },
+    {
+      "execution_id": "5dda4394-6e8e-40f8-a8cc-98ce2d6805ef",
+      "timestamp": "2025-11-12T11:57:13.472839",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "hybrid",
+        "mcp_server": "tavily"
+      },
+      "prompt": "¿En qué momento y quien debe reevaluar el riesgo clínico de una paciente con embarazo de curso normal?",
+      "rag_results": {
+        "retrieved_context": [
+          "materno–perinatal. La participación rutinaria de gineco-obstetras (GO) en la atención de mujeres con un embarazo de curso normal no está recomendada para la mejoría de los resultados perinatales. Sin embargo, se recomienda la valoración del GO en la semana 28 - 30 y semana 34 – 36 para una nueva valoración del riesgo. Se recomienda que el control prenatal sea proporcionado por un pequeño grupo de profesionales con los que la gestante se sienta cómoda.",
+          "considerarse como indicadores de alarma de patologías médicas que pueden complicar el embarazo? 30. ¿Cuáles son las pruebas recomendadas para la identificación de gestantes con riesgo de desarrollar patologías que complican el embarazo? 1. ¿QUÉ PROFESIONAL DEBE LLEVAR A CABO EL CONTROL PRENATAL? En embarazos de bajo riesgo o de curso normal, el control prenatal puede ser realizado por profesionales en enfermería capacitados o por médicos generales, con la condición que se garantice la",
+          "n remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control. Se recomienda en cada trimestre del embarazo evaluar en la gestante, el estrés materno crónico, la ansiedad, los trastornos del sueño y el pobre apoyo de la red social. Se recomienda identificar la depresión materna mediante un tamizaje trimestral durante el control prenatal porque las mujeres con depresión durante el embarazo tienen mayor riesgo de parto pretérmino y bajo peso al nacer.",
+          "psicosociales como determinantes de desenlaces adversos del embarazo, por lo que se recomienda que estos sean evaluados rutinariamente durante el control prenatal. No existe consenso de la manera como se deben explorar estos factores de riesgo, si de manera informal o mediante una escala de clasificación de riesgo. Las escalas de riesgo permitirían clasificar a las gestantes durante el control prenatal en categorías de bajo riesgo (las cuales deben desarrollar su control prenatal con enfermera o",
+          "ción de violencia se realice por medio de una entrevista en todas las consultas de control prenatal. RECOMENDACIONES CLÍNICAS Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial. Si se identifica riesgo se deben remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control."
+        ],
+        "generated_answer": "Basado en el contexto proporcionado, la reevaluación del riesgo clínico de una paciente con un embarazo de curso normal debe ser realizada por un **gineco-obstetra (GO)** en dos momentos específicos:\n\n*   **Entre la semana 28 y 30** del embarazo.\n*   **Entre la semana 34 y 36** del embarazo.\n\nAdicionalmente, el texto menciona que se deben realizar otras evaluaciones de riesgo de manera más frecuente durante el control prenatal de rutina:\n\n*   **Riesgo psicosocial:** Se debe realizar una valoración al momento de la inscripción al control prenatal y luego en cada trimestre.\n*   **Estrés, ansiedad y depresión:** Se recomienda evaluarlos y realizar un tamizaje en cada trimestre.\n*   **Violencia:** Se recomienda indagar sobre este riesgo en todas las consultas de control prenatal.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9801019587337406,
+          "faithfulness": 0.7777777777777778
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 543,
+          "output_tokens": 1267,
+          "total_tokens": 1810,
+          "input_cost_usd": 0.00067875,
+          "output_cost_usd": 0.006335,
+          "total_cost_usd": 0.00701375
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Detailed Results:\n\nTitle: [PDF] Norma técnica para la detección temprana de las alteraciones del ...\nURL: https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/VS/PP/norma-tecnica-para-la-deteccion-temprana-embarazo.pdf\nContent: El médico deberá realizar el control prenatal a las gestantes cuyas características y condiciones indiquen una gestación de alto riesgo. Los últimos 2 controles\n\nTitle: [PDF] ATENCIÓN PREGESTACIONAL - Gob MX\nURL: https://www.gob.mx/cms/uploads/attachment/file/458238/web_Atenci_n_Pregestacional_final.pdf\nContent: Embarazo de alto riesgo: es en el cual se tiene la probabilidad de que pueda presentar alguna complicación en la salud de la madre, el feto o la persona recién.\n\nTitle: Evaluación de la paciente obstétrica - Ginecología y obstetricia\nURL: https://www.msdmanuals.com/es/professional/ginecolog%C3%ADa-y-obstetricia/abordaje-de-la-mujer-embarazada-y-atenci%C3%B3n-prenatal/evaluaci%C3%B3n-de-la-paciente-obst%C3%A9trica\nContent: La primera visita prenatal de rutina debe realizarse a las 6 y las 8 semanas de edad gestacional. Las consultas de seguimiento por lo general se"
+        ],
+        "generated_answer": "Basado en los resultados de la búsqueda web proporcionados, la información sobre quién y en qué momento específico se debe reevaluar el riesgo de una paciente con un embarazo de curso normal es limitada. Sin embargo, se pueden extraer los siguientes puntos:\n\n*   **Momento de la evaluación:** La evaluación del riesgo comienza en la **primera visita prenatal**, que según uno de los documentos, debe realizarse entre las **6 y 8 semanas de gestación**. La reevaluación del riesgo se llevaría a cabo en las **\"consultas de seguimiento\"** posteriores, aunque la frecuencia de estas no se detalla en los fragmentos proporcionados.\n\n*   **Quién realiza la evaluación:** Un documento indica que **\"el médico deberá realizar el control prenatal a las gestantes cuyas características y condiciones indiquen una gestación de alto riesgo\"**. Esto sugiere que el médico es el principal responsable en casos de alto riesgo, pero no especifica explícitamente quién se encarga de la reevaluación en un embarazo de curso normal, aunque es lógico inferir que también es una responsabilidad del profesional de la salud que lleva el control prenatal (médico, matrona, etc.).\n\nEn resumen, la reevaluación del riesgo clínico en un embarazo normal se realiza **durante las consultas de seguimiento prenatal** por parte del profesional de la salud a cargo. La evaluación inicial se hace en la primera visita, entre las 6 y 8 semanas de embarazo. Los textos no ofrecen un calendario detallado para las reevaluaciones posteriores.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.6666666666666666
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 392,
+          "output_tokens": 1427,
+          "total_tokens": 1819,
+          "input_cost_usd": 0.00049,
+          "output_cost_usd": 0.007135,
+          "total_cost_usd": 0.007625
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00701375,
+        "mcp_cost_usd": 0.007625,
+        "total_cost_usd": 0.01463875,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "El Ginecobstetra en la semana 28 - 30 y semana 34 – 36.",
+      "question_id": 1
+    },
+    {
+      "execution_id": "f192e5dc-10ea-431a-990e-fe76f6d11724",
+      "timestamp": "2025-11-12T11:59:18.715173",
+      "configuration": {
+        "model": "gemini-2.5-pro",
+        "rag_type": "hybrid",
+        "mcp_server": "duckduckgo"
+      },
+      "prompt": "¿En qué momento y quien debe reevaluar el riesgo clínico de una paciente con embarazo de curso normal?",
+      "rag_results": {
+        "retrieved_context": [
+          "materno–perinatal. La participación rutinaria de gineco-obstetras (GO) en la atención de mujeres con un embarazo de curso normal no está recomendada para la mejoría de los resultados perinatales. Sin embargo, se recomienda la valoración del GO en la semana 28 - 30 y semana 34 – 36 para una nueva valoración del riesgo. Se recomienda que el control prenatal sea proporcionado por un pequeño grupo de profesionales con los que la gestante se sienta cómoda.",
+          "considerarse como indicadores de alarma de patologías médicas que pueden complicar el embarazo? 30. ¿Cuáles son las pruebas recomendadas para la identificación de gestantes con riesgo de desarrollar patologías que complican el embarazo? 1. ¿QUÉ PROFESIONAL DEBE LLEVAR A CABO EL CONTROL PRENATAL? En embarazos de bajo riesgo o de curso normal, el control prenatal puede ser realizado por profesionales en enfermería capacitados o por médicos generales, con la condición que se garantice la",
+          "n remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control. Se recomienda en cada trimestre del embarazo evaluar en la gestante, el estrés materno crónico, la ansiedad, los trastornos del sueño y el pobre apoyo de la red social. Se recomienda identificar la depresión materna mediante un tamizaje trimestral durante el control prenatal porque las mujeres con depresión durante el embarazo tienen mayor riesgo de parto pretérmino y bajo peso al nacer.",
+          "psicosociales como determinantes de desenlaces adversos del embarazo, por lo que se recomienda que estos sean evaluados rutinariamente durante el control prenatal. No existe consenso de la manera como se deben explorar estos factores de riesgo, si de manera informal o mediante una escala de clasificación de riesgo. Las escalas de riesgo permitirían clasificar a las gestantes durante el control prenatal en categorías de bajo riesgo (las cuales deben desarrollar su control prenatal con enfermera o",
+          "ción de violencia se realice por medio de una entrevista en todas las consultas de control prenatal. RECOMENDACIONES CLÍNICAS Se recomienda que las gestantes de bajo riesgo reciban en el momento de la inscripción al control prenatal, y luego en cada trimestre, una valoración de riesgo psicosocial. Si se identifica riesgo se deben remitir a una consulta especializada garantizando la continuidad con el grupo a cargo del control."
+        ],
+        "generated_answer": "Según el contexto proporcionado, la reevaluación del riesgo clínico de una paciente con un embarazo de curso normal debe ser realizada por un **gineco-obstetra (GO)** en dos momentos específicos:\n\n*   Entre la **semana 28 y 30** del embarazo.\n*   Nuevamente, entre la **semana 34 y 36** del embarazo.\n\nAdicionalmente, el texto menciona que se debe realizar una **valoración del riesgo psicosocial** en los siguientes momentos:\n\n*   Al momento de la **inscripción** al control prenatal.\n*   Posteriormente, **en cada trimestre** del embarazo.\n\nEsta valoración psicosocial se realiza durante el control prenatal, el cual puede ser llevado a cabo por **profesionales en enfermería capacitados o por médicos generales** en embarazos de bajo riesgo.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.9800661612938792,
+          "faithfulness": 0.875
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 543,
+          "output_tokens": 1295,
+          "total_tokens": 1838,
+          "input_cost_usd": 0.00067875,
+          "output_cost_usd": 0.006475,
+          "total_cost_usd": 0.00715375
+        }
+      },
+      "mcp_results": {
+        "retrieved_context": [
+          "Found 3 search results:\n\n1. Evaluación de la paciente obstétrica - Ginecología y obstetricia ...\n   URL: https://www.msdmanuals.com/es/professional/ginecolog%C3%ADa-y-obstetricia/abordaje-de-la-mujer-embarazada-y-atenci%C3%B3n-prenatal/evaluaci%C3%B3n-de-la-paciente-obst%C3%A9trica\n   Summary: Durante la visita inicial, los médicos deben realizarunaanamnesis completaqueincluya: Antecedentes obstétricos,conelresultadodetodos losembarazosprevios, incluidas complicaciones maternas o fetales (p. ej., diabetes gestacional, preeclampsia, malformaciones congénitas, feto muerto) Anamnesis, incluidos los antecedentes quirúrgicosypsiquiátricos Antecedentes familiares para ...\n\n2. Gestión De Riesgo y Seguridad Clínica - Síntesis de Conocimientos\n   URL: https://sintesis.med.uchile.cl/sin-categoria/13900-gestion-de-riesgo-y-seguridad-clinica\n   Summary: Conla entradaenvigenciadela Ley 20.584,queregula los derechosydeberesquetienen las personasenrelación a acciones vinculadas a su atenciónensaludel1ºdeOctubre del 2012, se difundieron por parte del MINSAL,unaseriedeprotocolosynormas sobre seguridad delpacienteycalidaddeatención.\n\n3. Valoración de riesgos en el paciente hospitalizado: una herramienta ...\n   URL: https://revistamedica.com/valoracion-riesgos-paciente-hospitalizado-seguridad-clinica/\n   Summary: Principalesriesgosenelpacientehospitalizado Durante su estancia hospitalaria, lospacientespueden presentar distintosriesgossegún su edad, diagnóstico, niveldemovilidad, estado nutricional, dependencia funcional, entre otros. Entre los eventos adversos más comunes se encuentran:\n"
+        ],
+        "generated_answer": "Basado en los resultados de la búsqueda proporcionados, la información disponible se centra en la evaluación inicial de la paciente embarazada, pero no especifica el momento o la frecuencia de las reevaluaciones posteriores en un embarazo de curso normal.\n\nA continuación se detalla lo que se puede extraer de los textos:\n\n*   **Quién realiza la evaluación inicial:** El manual MSD indica que **los médicos** deben realizar una anamnesis completa durante la **visita inicial** para evaluar los antecedentes y posibles riesgos.\n*   **Momento de la reevaluación:** Los textos proporcionados **no especifican en qué momento o con qué frecuencia se debe reevaluar el riesgo clínico** a lo largo de un embarazo que transcurre con normalidad. La información se enfoca en la primera consulta o en el contexto de pacientes hospitalizados, lo cual no aplica directamente a un embarazo de curso normal ambulatorio.\n\nEn resumen, según la información disponible, **los médicos** son los encargados de la evaluación de riesgo inicial, pero los documentos no detallan quién o en qué momentos específicos se debe **reevaluar** dicho riesgo en las siguientes etapas de un embarazo normal.",
+        "ragas_metrics": {
+          "answer_relevancy": 0.0,
+          "faithfulness": 0.8888888888888888
+        },
+        "cost_details": {
+          "model": "gemini-2.5-pro",
+          "input_tokens": 517,
+          "output_tokens": 1005,
+          "total_tokens": 1522,
+          "input_cost_usd": 0.00064625,
+          "output_cost_usd": 0.005025,
+          "total_cost_usd": 0.00567125
+        }
+      },
+      "cost_summary": {
+        "rag_cost_usd": 0.00715375,
+        "mcp_cost_usd": 0.00567125,
+        "total_cost_usd": 0.012825,
+        "model_used": "gemini-2.5-pro"
+      },
+      "ground_truth": "El Ginecobstetra en la semana 28 - 30 y semana 34 – 36.",
+      "question_id": 1
+    }
+  ]
+}
