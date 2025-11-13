@@ -10,7 +10,7 @@ Anteriormente, las búsquedas MCP (Tavily y DuckDuckGo) devolvían demasiado con
 ## ✅ Solución Implementada
 
 ### 1. **Archivo de Configuración Centralizado**
-**`src/config/mcp_config.py`**
+**`src/mcp/config.py`**
 
 ```python
 MCP_SEARCH_LIMITS = {
@@ -67,7 +67,7 @@ return {"mcp_context": final_context}
 
 ## 🎚️ Configuración Ajustable
 
-Puedes modificar los límites en `src/config/mcp_config.py`:
+Puedes modificar los límites en `src/mcp/config.py`:
 
 ```python
 # Para resultados más completos (más tokens, más costo):
@@ -83,15 +83,15 @@ MAX_CONTEXT_LENGTH = 2000
 
 ## 📁 Archivos Modificados
 
-1. ✅ **`src/config/mcp_config.py`** (NUEVO)
+1. ✅ **`src/mcp/config.py`** (NUEVO)
    - Configuración centralizada de límites MCP
    - Funciones helper: `get_mcp_search_config()`, `should_truncate_context()`
 
-2. ✅ **`src/config/__init__.py`** (NUEVO)
-   - Módulo de configuración
+2. ✅ **`src/mcp/__init__.py`** (NUEVO)
+   - Exporta las funciones de configuración
 
 3. ✅ **`src/workflow/main_workflow.py`** (MODIFICADO)
-   - Importa configuración MCP
+   - Importa configuración MCP desde `src.mcp`
    - Aplica límites en `search_mcp_context()`
    - Registra truncamientos
 

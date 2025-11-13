@@ -36,10 +36,10 @@ RAG_SEARCH_LIMITS = {
 def get_mcp_search_config(server_type: str) -> dict:
     """
     Get search configuration for a specific MCP server.
-    
+
     Args:
         server_type: Type of MCP server ("tavily" or "duckduckgo")
-        
+
     Returns:
         Dictionary with search parameters for that server
     """
@@ -49,14 +49,15 @@ def get_mcp_search_config(server_type: str) -> dict:
 def should_truncate_context(context: str) -> tuple[bool, str]:
     """
     Check if context should be truncated and return truncated version.
-    
+
     Args:
         context: The context string to check
-        
+
     Returns:
         Tuple of (should_truncate: bool, truncated_context: str)
     """
     if len(context) > MAX_CONTEXT_LENGTH:
-        truncated = context[:MAX_CONTEXT_LENGTH] + "\n\n[Context truncated to avoid excessive token usage]"
+        truncated = context[:MAX_CONTEXT_LENGTH] + \
+            "\n\n[Context truncated to avoid excessive token usage]"
         return True, truncated
     return False, context
