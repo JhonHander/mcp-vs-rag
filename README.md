@@ -1,20 +1,37 @@
-# MCP vs RAG Comparison Project
+<div align="center">
 
-A research project comparing static retrieval (RAG - Retrieval Augmented Generation) with dynamic web search (MCP - Model Context Protocol) for question-answering systems using parallel execution and unified evaluation.
+<!-- Featured Image Placeholder -->
+<!-- Replace the src with your project banner/logo when available -->
+<!-- <img src="assets/banner.png" alt="MCP vs RAG" width="800"> -->
 
-## 🎯 Overview
+# MCP vs RAG
+
+**A unified research framework for comparing RAG and MCP approaches in question-answering systems**
+
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![LangGraph](https://img.shields.io/badge/LangGraph-Workflow-1C3C3C?style=flat)](https://github.com/langchain-ai/langgraph)
+[![Qdrant](https://img.shields.io/badge/Qdrant-Vector_DB-DC382D?style=flat)](https://qdrant.tech/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat)](LICENSE)
+
+---
+
+</div>
+
+## Overview
 
 This project implements a unified LangGraph workflow with **parallel RAG and MCP branches** that execute simultaneously and merge their results into a **single JSON output** for direct comparison.
 
 ### Key Features
 
-- ✅ **Parallel Execution**: RAG and MCP run simultaneously using `asyncio.gather()`
-- ✅ **Context Isolation**: Each approach maintains its own context (never mixed)
-- ✅ **Unified Output**: Single JSON file per configuration with both results
-- ✅ **Independent Evaluation**: RAGAS metrics calculated separately for each approach
-- ✅ **Fair Comparison**: Same prompt, model, and execution conditions
+| Feature | Description |
+|---------|-------------|
+| **Parallel Execution** | RAG and MCP run simultaneously using `asyncio.gather()` |
+| **Context Isolation** | Each approach maintains its own context (never mixed) |
+| **Unified Output** | Single JSON file per configuration with both results |
+| **Independent Evaluation** | RAGAS metrics calculated separately for each approach |
+| **Fair Comparison** | Same prompt, model, and execution conditions |
 
-### Architecture Flow
+### Architecture
 
 ```
                     User Prompt
@@ -32,7 +49,9 @@ This project implements a unified LangGraph workflow with **parallel RAG and MCP
               (Contains both RAG and MCP results)
 ```
 
-## 📋 Project Structure
+---
+
+## Project Structure
 
 ```
 mcp-vs-rag/
@@ -54,7 +73,9 @@ mcp-vs-rag/
 └── copilot-instructions.md     # Development guide
 ```
 
-## 🚀 Quick Start
+---
+
+## Quick Start
 
 ### 1. Install Dependencies
 
@@ -66,11 +87,12 @@ pip install -r requirements.txt
 
 ```bash
 cp .env.example .env
-# Edit .env with your API keys:
-# - OPENAI_API_KEY (for GPT-5)
-# - GOOGLE_API_KEY (for Gemini 2.5 Pro)
-# - TAVILY_API_KEY (for Tavily MCP tool)
 ```
+
+Edit `.env` with your API keys:
+- `OPENAI_API_KEY` — for GPT-5
+- `GOOGLE_API_KEY` — for Gemini 2.5 Pro
+- `TAVILY_API_KEY` — for Tavily MCP tool
 
 ### 3. Start Qdrant Database
 
@@ -87,33 +109,40 @@ python run_experiment.py
 
 This executes the experiment with **ALL questions** from the ground truth dataset, running **8 configurations** for each question:
 
-- **Models**: GPT-5 (OpenAI) vs Gemini 2.5 Pro (Google)
-- **RAG Types**: Naive vs Hybrid
-- **MCP Tools**: Tavily vs DuckDuckGo
+| Models | RAG Types | MCP Tools |
+|--------|-----------|-----------|
+| GPT-5 (OpenAI) | Naive | Tavily |
+| Gemini 2.5 Pro (Google) | Hybrid | DuckDuckGo |
 
 #### Command Line Options
 
-- `python run_experiment.py` - Run with ALL questions (default)
-- `python run_experiment.py 5` - Run with 5 random questions
-- `python run_experiment.py 1` - Run with 1 random question
+| Command | Description |
+|---------|-------------|
+| `python run_experiment.py` | Run with ALL questions (default) |
+| `python run_experiment.py 5` | Run with 5 random questions |
+| `python run_experiment.py 1` | Run with 1 random question |
 
 Results are saved to `data/outputs/` as two main JSON files.
 
-## 📊 Output Files
+---
+
+## Output Files
 
 When running experiments with multiple questions, the system generates **only two main files**:
 
-### Main Output Files
-- **`experiment_summary.json`** - Complete experiment summary with all results from all questions and configurations
-- **`consolidated_analysis.json`** - Global comparative analysis across ALL questions with metrics grouped by:
-  - Model performance (GPT-5 vs Gemini 2.5 Pro)
-  - RAG type performance (Naive vs Hybrid)
-  - MCP server performance (Tavily vs DuckDuckGo)
-  - Question-by-question performance
+| File | Description |
+|------|-------------|
+| `experiment_summary.json` | Complete experiment summary with all results from all questions and configurations |
+| `consolidated_analysis.json` | Global comparative analysis across ALL questions with metrics grouped by model, RAG type, MCP server, and question-by-question performance |
 
-## 📊 Output Format
+---
+
+## Output Format
 
 Each experiment produces a **unified JSON file** containing both RAG and MCP results:
+
+<details>
+<summary>View JSON Structure</summary>
 
 ```json
 {
@@ -146,11 +175,18 @@ Each experiment produces a **unified JSON file** containing both RAG and MCP res
 }
 ```
 
-## 🔧 Configuration
+</details>
+
+---
+
+## Configuration
 
 ### Experiment Configurations
 
 The system runs 8 combinations defined in `run_experiment.py`:
+
+<details>
+<summary>View Configurations</summary>
 
 ```python
 CONFIGURATIONS = [
@@ -165,6 +201,8 @@ CONFIGURATIONS = [
 ]
 ```
 
+</details>
+
 ### Customization
 
 Modify `run_experiment.py` to:
@@ -173,39 +211,35 @@ Modify `run_experiment.py` to:
 - Adjust output formats
 - Modify evaluation metrics
 
-## 🧪 Technology Stack
+---
 
-- **Orchestration**: LangGraph (parallel workflow execution)
-- **Vector Database**: Qdrant (Docker)
-- **MCP Tools**: Tavily & DuckDuckGo (web search)
-- **Evaluation**: RAGAS (Answer Relevancy + Faithfulness)
-- **LLM Models**: 
-  - GPT-5 (OpenAI, released August 2025)
-  - Gemini 2.5 Pro (Google)
-- **Language**: Python 3.8+
+## Technology Stack
 
-## 📈 Analysis & Comparison
+| Category | Technology |
+|----------|------------|
+| **Orchestration** | LangGraph (parallel workflow execution) |
+| **Vector Database** | Qdrant (Docker) |
+| **MCP Tools** | Tavily & DuckDuckGo (web search) |
+| **Evaluation** | RAGAS (Answer Relevancy + Faithfulness) |
+| **LLM Models** | GPT-5 (OpenAI), Gemini 2.5 Pro (Google) |
+| **Language** | Python 3.8+ |
+
+---
+
+## Analysis & Comparison
 
 After running experiments, you can analyze:
 
-### 1. RAG vs MCP Performance
-- Which approach has better relevancy scores?
-- Which has better faithfulness?
-- Does performance vary by model or RAG type?
+| Analysis Type | Questions to Answer |
+|---------------|---------------------|
+| **RAG vs MCP Performance** | Which approach has better relevancy/faithfulness scores? |
+| **Model Comparison** | Does GPT-5 or Gemini 2.5 Pro perform better? |
+| **RAG Strategy Evaluation** | Does Hybrid RAG outperform Naive RAG? |
+| **MCP Tool Selection** | Does Tavily or DuckDuckGo provide better context? |
 
-### 2. Model Comparison
-- Does GPT-5 or Gemini 2.5 Pro perform better?
-- Are differences consistent across RAG/MCP?
+---
 
-### 3. RAG Strategy Evaluation
-- Does Hybrid RAG outperform Naive RAG?
-- Is the complexity worth the improvement?
-
-### 4. MCP Tool Selection
-- Does Tavily or DuckDuckGo provide better context?
-- Which integrates better with each model?
-
-## 🛠️ Development
+## Development
 
 For detailed development instructions, see [`copilot-instructions.md`](copilot-instructions.md).
 
@@ -224,8 +258,10 @@ result = await execute_unified_workflow(
 
 ### Running Tests
 
+<details>
+<summary>View Test Example</summary>
+
 ```bash
-# Run specific configuration
 python -c "
 import asyncio
 from src.workflow.main_workflow import execute_unified_workflow
@@ -243,19 +279,31 @@ asyncio.run(test())
 "
 ```
 
-## 📋 Requirements
+</details>
 
-- Python 3.8+
-- Docker (for Qdrant)
-- API Keys:
-  - OpenAI API key (for GPT-5)
-  - Google API key (for Gemini 2.5 Pro)
-  - Tavily API key (for web search)
-- MCP Servers:
-  - Tavily (Docker: `docker run -i --rm -e TAVILY_API_KEY mcp/tavily`)
-  - DuckDuckGo (Docker: `docker run -i --rm mcp/duckduckgo`)
+---
 
-## 🤝 Contributing
+## Requirements
+
+| Requirement | Details |
+|-------------|---------|
+| **Python** | 3.8+ |
+| **Docker** | For Qdrant |
+| **API Keys** | OpenAI, Google, Tavily |
+
+### MCP Servers
+
+```bash
+# Tavily
+docker run -i --rm -e TAVILY_API_KEY mcp/tavily
+
+# DuckDuckGo
+docker run -i --rm mcp/duckduckgo
+```
+
+---
+
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -263,10 +311,16 @@ asyncio.run(test())
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
+---
 
-[Specify your license here]
+## License
 
-## 🙋 Support
+[MIT License](LICENSE)
 
-For questions or issues, please refer to `copilot-instructions.md` or open an issue in the repository.
+---
+
+<div align="center">
+
+**[Report Bug](../../issues) · [Request Feature](../../issues)**
+
+</div>
