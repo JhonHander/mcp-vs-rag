@@ -1,10 +1,8 @@
 <div align="center">
 
-<!-- Featured Image Placeholder -->
-<!-- Replace the src with your project banner/logo when available -->
-<!-- <img src="assets/banner.png" alt="MCP vs RAG" width="800"> -->
+<img src="public/rag-vs-mcp-readme.png" alt="MCP vs RAG" width="800" height="350"/>
 
-# MCP vs RAG
+<!-- # MCP vs RAG -->
 
 **A unified research framework for comparing RAG and MCP approaches in question-answering systems**
 

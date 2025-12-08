@@ -90,3 +90,5 @@ desktop.ini
 *.temp
 *.bak
 *.swp
+data/visualizations/bubble_chart_rag_vs_mcp.png
+data/visualizations/bubble_chart.py
