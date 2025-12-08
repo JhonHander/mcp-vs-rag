@@ -4,12 +4,12 @@
 
 <!-- # MCP vs RAG -->
 
-**A unified research framework for comparing RAG and MCP approaches in question-answering systems**
+<h2>A unified research framework for comparing RAG and MCP approaches in question-answering systems</h2>
 
-[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
-[![LangGraph](https://img.shields.io/badge/LangGraph-Workflow-1C3C3C?style=flat)](https://github.com/langchain-ai/langgraph)
-[![Qdrant](https://img.shields.io/badge/Qdrant-Vector_DB-DC382D?style=flat)](https://qdrant.tech/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![LangGraph](https://img.shields.io/badge/LangGraph-Workflow-FF6B35?style=for-the-badge&logo=langchain&logoColor=white)](https://github.com/langchain-ai/langgraph)
+[![Qdrant](https://img.shields.io/badge/Qdrant-Vector_DB-DC382D?style=for-the-badge&logo=qdrant&logoColor=white)](https://qdrant.tech/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge&logo=mit&logoColor=white)](LICENSE)
 
 ---
 
