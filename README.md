@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="public/rag-vs-mcp-readme.png" alt="MCP vs RAG" width="800" height="350"/>
+<img src="public/rag-vs-mcp-readme-v2.png" alt="MCP vs RAG" width="800" height="350"/>
 
 <!-- # MCP vs RAG -->
 
